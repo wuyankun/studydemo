@@ -1,0 +1,266 @@
+.
+|-- AndroidManifest_test.xml
+|-- AndroidManifest.xml
+|-- Android.mk
+|-- Bluetooth.tree
+|-- CleanSpec.mk
+|-- res
+|   |-- drawable-hdpi
+|   |   |-- bt_incomming_file_notification.png
+|   |   |-- bt_share.png
+|   |   `-- ic_launcher_folder_bluetooth.png
+|   |-- drawable-mdpi
+|   |   |-- bt_incomming_file_notification.png
+|   |   |-- bt_share.png
+|   |   `-- ic_launcher_folder_bluetooth.png
+|   |-- layout
+|   |   |-- auth.xml
+|   |   |-- bluetooth_transfer_item.xml
+|   |   |-- bluetooth_transfers_page.xml
+|   |   |-- bt_enabling_progress.xml
+|   |   |-- confirm_dialog.xml
+|   |   |-- file_transfer.xml
+|   |   |-- no_transfers.xml
+|   |   `-- testactivity_main.xml
+|   |-- menu
+|   |   |-- receivedfilescontextfinished.xml
+|   |   |-- transferhistorycontextfinished.xml
+|   |   `-- transferhistory.xml
+|   |-- values
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-af
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-am
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-ar
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-bg
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-ca
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-cs
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-da
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-de
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-el
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-en-rGB
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-es
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-es-rUS
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-fa
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-fi
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-fr
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-hi
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-hr
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-hu
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-in
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-it
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-iw
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-ja
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-ko
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-lt
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-lv
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-ms
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-nb
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-nl
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-pl
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-pt
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-pt-rPT
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-rm
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-ro
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-ru
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-sk
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-sl
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-sr
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-sv
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-sw
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-th
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-tl
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-tr
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-uk
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-vi
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-zh-rCN
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   |-- values-zh-rTW
+|   |   |-- strings_pbap.xml
+|   |   |-- strings.xml
+|   |   `-- test_strings.xml
+|   `-- values-zu
+|       |-- strings_pbap.xml
+|       |-- strings.xml
+|       `-- test_strings.xml
+`-- src
+    `-- com
+        `-- android
+            `-- bluetooth
+                |-- opp
+                |   |-- BluetoothOppBatch.java
+                |   |-- BluetoothOppBtEnableActivity.java
+                |   |-- BluetoothOppBtEnablingActivity.java
+                |   |-- BluetoothOppBtErrorActivity.java
+                |   |-- BluetoothOppIncomingFileConfirmActivity.java
+                |   |-- BluetoothOppLauncherActivity.java
+                |   |-- BluetoothOppLiveFolder.java
+                |   |-- BluetoothOppManager.java
+                |   |-- BluetoothOppNotification.java
+                |   |-- BluetoothOppObexClientSession.java
+                |   |-- BluetoothOppObexServerSession.java
+                |   |-- BluetoothOppObexSession.java
+                |   |-- BluetoothOppPreference.java
+                |   |-- BluetoothOppProvider.java
+                |   |-- BluetoothOppReceiveFileInfo.java
+                |   |-- BluetoothOppReceiver.java
+                |   |-- BluetoothOppRfcommListener.java
+                |   |-- BluetoothOppRfcommTransport.java
+                |   |-- BluetoothOppSendFileInfo.java
+                |   |-- BluetoothOppService.java
+                |   |-- BluetoothOppShareInfo.java
+                |   |-- BluetoothOppTransferActivity.java
+                |   |-- BluetoothOppTransferAdapter.java
+                |   |-- BluetoothOppTransferHistory.java
+                |   |-- BluetoothOppTransferInfo.java
+                |   |-- BluetoothOppTransfer.java
+                |   |-- BluetoothOppUtility.java
+                |   |-- BluetoothShare.java
+                |   |-- Constants.java
+                |   `-- TestActivity.java
+                `-- pbap
+                    |-- BluetoothPbapActivity.java
+                    |-- BluetoothPbapAuthenticator.java
+                    |-- BluetoothPbapCallLogComposer.java
+                    |-- BluetoothPbapObexServer.java
+                    |-- BluetoothPbapReceiver.java
+                    |-- BluetoothPbapRfcommTransport.java
+                    |-- BluetoothPbapService.java
+                    `-- BluetoothPbapVcardManager.java
+
+59 directories, 204 files

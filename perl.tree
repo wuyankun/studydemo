@@ -1,0 +1,6627 @@
+.
+|-- Artistic
+|-- AUTHORS
+|-- autodoc.pl
+|-- av.c
+|-- av.h
+|-- beos
+|   |-- beos.c
+|   |-- beosish.h
+|   `-- nm.c
+|-- cflags.SH
+|-- Changes
+|-- charclass_invlists.h
+|-- config_h.SH
+|-- configpm
+|-- Configure
+|-- configure.com
+|-- configure.gnu
+|-- cop.h
+|-- Copying
+|-- cpan
+|   |-- Archive-Extract
+|   |   |-- lib
+|   |   |   `-- Archive
+|   |   |       `-- Extract.pm
+|   |   `-- t
+|   |       |-- 01_Archive-Extract.t
+|   |       `-- src
+|   |           |-- double_dir.zip
+|   |           |-- x.bz2
+|   |           |-- x.ear
+|   |           |-- x.gz
+|   |           |-- x.jar
+|   |           |-- x.lzma
+|   |           |-- x.par
+|   |           |-- x.tar
+|   |           |-- x.tar.gz
+|   |           |-- x.tar.xz
+|   |           |-- x.tgz
+|   |           |-- x.txz
+|   |           |-- x.war
+|   |           |-- x.xz
+|   |           |-- x.Z
+|   |           |-- x.zip
+|   |           |-- y.ear
+|   |           |-- y.jar
+|   |           |-- y.par
+|   |           |-- y.tar
+|   |           |-- y.tar.bz2
+|   |           |-- y.tar.gz
+|   |           |-- y.tar.xz
+|   |           |-- y.tbz
+|   |           |-- y.tgz
+|   |           |-- y.txz
+|   |           |-- y.war
+|   |           `-- y.zip
+|   |-- Archive-Tar
+|   |   |-- bin
+|   |   |   |-- ptar
+|   |   |   |-- ptardiff
+|   |   |   `-- ptargrep
+|   |   |-- lib
+|   |   |   `-- Archive
+|   |   |       |-- Tar
+|   |   |       |   |-- Constant.pm
+|   |   |       |   `-- File.pm
+|   |   |       `-- Tar.pm
+|   |   `-- t
+|   |       |-- 01_use.t
+|   |       |-- 02_methods.t
+|   |       |-- 03_file.t
+|   |       |-- 04_resolved_issues.t
+|   |       |-- 05_iter.t
+|   |       |-- 06_error.t
+|   |       |-- 90_symlink.t
+|   |       |-- 99_pod.t
+|   |       `-- src
+|   |           |-- header
+|   |           |   `-- signed.tar
+|   |           |-- linktest
+|   |           |   |-- linktest_missing_dir.tar
+|   |           |   `-- linktest_with_dir.tar
+|   |           |-- long
+|   |           |   |-- b
+|   |           |   |-- bar.tar
+|   |           |   |-- foo.tbz
+|   |           |   `-- foo.tgz
+|   |           `-- short
+|   |               |-- b
+|   |               |-- bar.tar
+|   |               |-- foo.tbz
+|   |               `-- foo.tgz
+|   |-- autodie
+|   |   |-- lib
+|   |   |   |-- autodie
+|   |   |   |   |-- exception
+|   |   |   |   |   `-- system.pm
+|   |   |   |   |-- exception.pm
+|   |   |   |   `-- hints.pm
+|   |   |   |-- autodie.pm
+|   |   |   `-- Fatal.pm
+|   |   `-- t
+|   |       |-- 00-load.t
+|   |       |-- autodie.t
+|   |       |-- autodie_test_module.pm
+|   |       |-- backcompat.t
+|   |       |-- basic_exceptions.t
+|   |       |-- binmode.t
+|   |       |-- blog_hints.t
+|   |       |-- caller.t
+|   |       |-- context_lexical.t
+|   |       |-- context.t
+|   |       |-- crickey.t
+|   |       |-- dbmopen.t
+|   |       |-- eval_error.t
+|   |       |-- exception_class.t
+|   |       |-- exceptions.t
+|   |       |-- exec.t
+|   |       |-- Fatal.t
+|   |       |-- filehandles.t
+|   |       |-- fileno.t
+|   |       |-- flock.t
+|   |       |-- format-clobber.t
+|   |       |-- hints_insist.t
+|   |       |-- hints_pod_examples.t
+|   |       |-- hints_provider_does.t
+|   |       |-- hints_provider_easy_does_it.t
+|   |       |-- hints_provider_isa.t
+|   |       |-- hints.t
+|   |       |-- internal-backcompat.t
+|   |       |-- internal.t
+|   |       |-- lethal.t
+|   |       |-- lib
+|   |       |   |-- autodie
+|   |       |   |   `-- test
+|   |       |   |       |-- au
+|   |       |   |       |   `-- exception.pm
+|   |       |   |       |-- au.pm
+|   |       |   |       |-- badname.pm
+|   |       |   |       `-- missing.pm
+|   |       |   |-- Caller_helper.pm
+|   |       |   |-- Hints_pod_examples.pm
+|   |       |   |-- Hints_provider_does.pm
+|   |       |   |-- Hints_provider_easy_does_it.pm
+|   |       |   |-- Hints_provider_isa.pm
+|   |       |   |-- Hints_test.pm
+|   |       |   |-- lethal.pm
+|   |       |   |-- my
+|   |       |   |   `-- autodie.pm
+|   |       |   |-- OtherTypes.pm
+|   |       |   |-- pujHa
+|   |       |   |   |-- ghach
+|   |       |   |   |   `-- Dotlh.pm
+|   |       |   |   `-- ghach.pm
+|   |       |   `-- Some
+|   |       |       `-- Module.pm
+|   |       |-- mkdir.t
+|   |       |-- open.t
+|   |       |-- recv.t
+|   |       |-- repeat.t
+|   |       |-- scope_leak.t
+|   |       |-- string-eval-basic.t
+|   |       |-- string-eval-leak.t
+|   |       |-- sysopen.t
+|   |       |-- truncate.t
+|   |       |-- unlink.t
+|   |       |-- user-context.t
+|   |       |-- usersub.t
+|   |       |-- version.t
+|   |       `-- version_tag.t
+|   |-- AutoLoader
+|   |   |-- lib
+|   |   |   |-- AutoLoader.pm
+|   |   |   `-- AutoSplit.pm
+|   |   `-- t
+|   |       |-- 01AutoLoader.t
+|   |       `-- 02AutoSplit.t
+|   |-- B-Debug
+|   |   |-- Debug.pm
+|   |   `-- t
+|   |       `-- debug.t
+|   |-- CGI
+|   |   |-- Changes
+|   |   |-- examples
+|   |   |   |-- caution.xbm
+|   |   |   |-- clickable_image.cgi
+|   |   |   |-- cookie.cgi
+|   |   |   |-- crash.cgi
+|   |   |   |-- customize.cgi
+|   |   |   |-- diff_upload.cgi
+|   |   |   |-- dna.small.gif
+|   |   |   |-- file_upload.cgi
+|   |   |   |-- frameset.cgi
+|   |   |   |-- index.html
+|   |   |   |-- internal_links.cgi
+|   |   |   |-- javascript.cgi
+|   |   |   |-- make_links.pl
+|   |   |   |-- monty.cgi
+|   |   |   |-- multiple_forms.cgi
+|   |   |   |-- nph-clock.cgi
+|   |   |   |-- nph-multipart.cgi
+|   |   |   |-- popup.cgi
+|   |   |   |-- save_state.cgi
+|   |   |   |-- tryit.cgi
+|   |   |   `-- wilogo.gif
+|   |   |-- lib
+|   |   |   |-- CGI
+|   |   |   |   |-- Apache.pm
+|   |   |   |   |-- Carp.pm
+|   |   |   |   |-- Cookie.pm
+|   |   |   |   |-- Fast.pm
+|   |   |   |   |-- Pretty.pm
+|   |   |   |   |-- Push.pm
+|   |   |   |   |-- Switch.pm
+|   |   |   |   `-- Util.pm
+|   |   |   `-- CGI.pm
+|   |   `-- t
+|   |       |-- apache.t
+|   |       |-- autoescape.t
+|   |       |-- can.t
+|   |       |-- carp.t
+|   |       |-- charset.t
+|   |       |-- checkbox_group.t
+|   |       |-- cookie.t
+|   |       |-- delete.t
+|   |       |-- Dump.t
+|   |       |-- end_form.t
+|   |       |-- form.t
+|   |       |-- function.t
+|   |       |-- headers.t
+|   |       |-- hidden.t
+|   |       |-- html.t
+|   |       |-- http.t
+|   |       |-- init.t
+|   |       |-- init_test.txt
+|   |       |-- no_tabindex.t
+|   |       |-- param_fetch.t
+|   |       |-- popup_menu.t
+|   |       |-- pretty.t
+|   |       |-- push.t
+|   |       |-- query_string.t
+|   |       |-- request.t
+|   |       |-- rt-52469.t
+|   |       |-- save_read_roundtrip.t
+|   |       |-- start_end_asterisk.t
+|   |       |-- start_end_end.t
+|   |       |-- start_end_start.t
+|   |       |-- switch.t
+|   |       |-- tmpdir.t
+|   |       |-- unescapeHTML.t
+|   |       |-- uploadInfo.t
+|   |       |-- upload_post_text.txt
+|   |       |-- upload.t
+|   |       |-- url.t
+|   |       |-- user_agent.t
+|   |       |-- utf8.t
+|   |       |-- util-58.t
+|   |       `-- util.t
+|   |-- Compress-Raw-Bzip2
+|   |   |-- bzip2-src
+|   |   |   |-- blocksort.c
+|   |   |   |-- bzlib.c
+|   |   |   |-- bzlib.h
+|   |   |   |-- bzlib_private.h
+|   |   |   |-- compress.c
+|   |   |   |-- crctable.c
+|   |   |   |-- decompress.c
+|   |   |   |-- huffman.c
+|   |   |   |-- LICENSE
+|   |   |   `-- randtable.c
+|   |   |-- Bzip2.xs
+|   |   |-- Changes
+|   |   |-- fallback
+|   |   |   |-- constants.h
+|   |   |   `-- constants.xs
+|   |   |-- lib
+|   |   |   `-- Compress
+|   |   |       `-- Raw
+|   |   |           `-- Bzip2.pm
+|   |   |-- Makefile.PL
+|   |   |-- private
+|   |   |   `-- MakeUtil.pm
+|   |   |-- README
+|   |   |-- t
+|   |   |   |-- 000prereq.t
+|   |   |   |-- 01bzip2.t
+|   |   |   |-- 09limitoutput.t
+|   |   |   |-- 99pod.t
+|   |   |   `-- compress
+|   |   |       `-- CompTestUtils.pm
+|   |   `-- typemap
+|   |-- Compress-Raw-Zlib
+|   |   |-- Changes
+|   |   |-- config.in
+|   |   |-- examples
+|   |   |   |-- filtdef
+|   |   |   `-- filtinf
+|   |   |-- fallback
+|   |   |   |-- constants.h
+|   |   |   `-- constants.xs
+|   |   |-- lib
+|   |   |   `-- Compress
+|   |   |       `-- Raw
+|   |   |           `-- Zlib.pm
+|   |   |-- Makefile.PL
+|   |   |-- private
+|   |   |   `-- MakeUtil.pm
+|   |   |-- README
+|   |   |-- t
+|   |   |   |-- 01version.t
+|   |   |   |-- 02zlib.t
+|   |   |   |-- 07bufsize.t
+|   |   |   |-- 09limitoutput.t
+|   |   |   |-- 18lvalue.t
+|   |   |   `-- compress
+|   |   |       `-- CompTestUtils.pm
+|   |   |-- typemap
+|   |   |-- zlib-src
+|   |   |   |-- adler32.c
+|   |   |   |-- compress.c
+|   |   |   |-- crc32.c
+|   |   |   |-- crc32.h
+|   |   |   |-- deflate.c
+|   |   |   |-- deflate.h
+|   |   |   |-- infback.c
+|   |   |   |-- inffast.c
+|   |   |   |-- inffast.h
+|   |   |   |-- inffixed.h
+|   |   |   |-- inflate.c
+|   |   |   |-- inflate.h
+|   |   |   |-- inftrees.c
+|   |   |   |-- inftrees.h
+|   |   |   |-- trees.c
+|   |   |   |-- trees.h
+|   |   |   |-- uncompr.c
+|   |   |   |-- zconf.h
+|   |   |   |-- zlib.h
+|   |   |   |-- zutil.c
+|   |   |   `-- zutil.h
+|   |   `-- Zlib.xs
+|   |-- CPAN
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   |-- App
+|   |   |   |   `-- Cpan.pm
+|   |   |   |-- CPAN
+|   |   |   |   |-- API
+|   |   |   |   |   `-- HOWTO.pod
+|   |   |   |   |-- Author.pm
+|   |   |   |   |-- Bundle.pm
+|   |   |   |   |-- CacheMgr.pm
+|   |   |   |   |-- Complete.pm
+|   |   |   |   |-- Debug.pm
+|   |   |   |   |-- DeferredCode.pm
+|   |   |   |   |-- Distribution.pm
+|   |   |   |   |-- Distroprefs.pm
+|   |   |   |   |-- Distrostatus.pm
+|   |   |   |   |-- Exception
+|   |   |   |   |   |-- blocked_urllist.pm
+|   |   |   |   |   |-- RecursiveDependency.pm
+|   |   |   |   |   |-- yaml_not_installed.pm
+|   |   |   |   |   `-- yaml_process_error.pm
+|   |   |   |   |-- FirstTime.pm
+|   |   |   |   |-- FTP
+|   |   |   |   |   `-- netrc.pm
+|   |   |   |   |-- FTP.pm
+|   |   |   |   |-- HandleConfig.pm
+|   |   |   |   |-- HTTP
+|   |   |   |   |   |-- Client.pm
+|   |   |   |   |   `-- Credentials.pm
+|   |   |   |   |-- Index.pm
+|   |   |   |   |-- InfoObj.pm
+|   |   |   |   |-- Kwalify
+|   |   |   |   |   |-- distroprefs.dd
+|   |   |   |   |   `-- distroprefs.yml
+|   |   |   |   |-- Kwalify.pm
+|   |   |   |   |-- LWP
+|   |   |   |   |   `-- UserAgent.pm
+|   |   |   |   |-- Mirrors.pm
+|   |   |   |   |-- Module.pm
+|   |   |   |   |-- Nox.pm
+|   |   |   |   |-- Prompt.pm
+|   |   |   |   |-- Queue.pm
+|   |   |   |   |-- Shell.pm
+|   |   |   |   |-- Tarzip.pm
+|   |   |   |   |-- URL.pm
+|   |   |   |   `-- Version.pm
+|   |   |   `-- CPAN.pm
+|   |   |-- PAUSE2003.pub
+|   |   |-- PAUSE2005.pub
+|   |   |-- PAUSE2007.pub
+|   |   |-- PAUSE2009.pub
+|   |   |-- PAUSE2011.pub
+|   |   |-- scripts
+|   |   |   `-- cpan
+|   |   `-- t
+|   |       |-- 01loadme.t
+|   |       |-- 02nox.t
+|   |       |-- 03pkgs.t
+|   |       |-- 10version.t
+|   |       `-- 11mirroredby.t
+|   |-- CPAN-Meta
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   `-- CPAN
+|   |   |       |-- Meta
+|   |   |       |   |-- Converter.pm
+|   |   |       |   |-- Feature.pm
+|   |   |       |   |-- History.pm
+|   |   |       |   |-- Prereqs.pm
+|   |   |       |   |-- Requirements.pm
+|   |   |       |   |-- Spec.pm
+|   |   |       |   `-- Validator.pm
+|   |   |       `-- Meta.pm
+|   |   `-- t
+|   |       |-- accepts.t
+|   |       |-- bad_version_hook.t
+|   |       |-- basic.t
+|   |       |-- converter-bad.t
+|   |       |-- converter-fail.t
+|   |       |-- converter.t
+|   |       |-- data
+|   |       |   |-- gpl-1_4.yml
+|   |       |   |-- META-1_0.yml
+|   |       |   |-- META-1_1.yml
+|   |       |   |-- META-1_2.yml
+|   |       |   |-- META-1_3.yml
+|   |       |   |-- META-1_4.yml
+|   |       |   |-- META-2.json
+|   |       |   |-- resources.yml
+|   |       |   |-- restricted-2.json
+|   |       |   |-- restrictive-1_4.yml
+|   |       |   |-- unicode.yml
+|   |       |   |-- version-not-normal.json
+|   |       |   |-- version-ranges-1_4.yml
+|   |       |   `-- version-ranges-2.json
+|   |       |-- data-bad
+|   |       |   |-- 107650337-META.yml
+|   |       |   |-- 1122575719-META.yml
+|   |       |   |-- 1206545041-META.yml
+|   |       |   |-- 1598804075-META.yml
+|   |       |   |-- 1927486199-META.yml
+|   |       |   |-- 1985684504-META.yml
+|   |       |   |-- 1985980974-META.yml
+|   |       |   |-- 2031017050-META.yml
+|   |       |   |-- 284247103-META.yml
+|   |       |   |-- 344981821-META.yml
+|   |       |   |-- 35478989-META.yml
+|   |       |   |-- 476602558-META.yml
+|   |       |   |-- 98042513-META.yml
+|   |       |   |-- META-1_0.yml
+|   |       |   |-- META-1_1.yml
+|   |       |   |-- META-1_2.yml
+|   |       |   |-- META-1_3.yml
+|   |       |   |-- META-1_4.yml
+|   |       |   |-- META-2.json
+|   |       |   |-- restrictive-2.json
+|   |       |   `-- version-ranges-2.json
+|   |       |-- data-fail
+|   |       |   |-- META-1_0.yml
+|   |       |   |-- META-1_1.yml
+|   |       |   |-- META-1_2.yml
+|   |       |   |-- META-1_3.yml
+|   |       |   |-- META-1_4.yml
+|   |       |   `-- META-2.json
+|   |       |-- finalize.t
+|   |       |-- from-hash.t
+|   |       |-- load-bad.t
+|   |       |-- merge.t
+|   |       |-- meta-obj.t
+|   |       |-- no-index.t
+|   |       |-- prereqs-finalize.t
+|   |       |-- prereqs-merge.t
+|   |       |-- prereqs.t
+|   |       |-- repository.t
+|   |       |-- save-load.t
+|   |       |-- strings.t
+|   |       `-- validator.t
+|   |-- CPAN-Meta-YAML
+|   |   |-- lib
+|   |   |   `-- CPAN
+|   |   |       `-- Meta
+|   |   |           `-- YAML.pm
+|   |   `-- t
+|   |       |-- 01_compile.t
+|   |       |-- 02_basic.t
+|   |       |-- 03_regression.t
+|   |       |-- 05_export.t
+|   |       |-- 11_meta_yml.t
+|   |       |-- 12_plagger.t
+|   |       |-- 13_perl_smith.t
+|   |       |-- 14_yaml_org.t
+|   |       |-- 15_multibyte.t
+|   |       |-- 16_nullrefs.t
+|   |       |-- 17_toolbar.t
+|   |       |-- 18_tap.t
+|   |       |-- 19_errors.t
+|   |       |-- 20_subclass.t
+|   |       |-- 21_bom.t
+|   |       |-- 22_comments.t
+|   |       |-- data
+|   |       |   |-- HTML-WebDAO.yml
+|   |       |   |-- multibyte.yml
+|   |       |   |-- one.yml
+|   |       |   |-- sample.yml
+|   |       |   |-- Spreadsheet-Read.yml
+|   |       |   |-- Template-Provider-Unicode-Japanese.yml
+|   |       |   |-- toolbar.yml
+|   |       |   |-- two.yml
+|   |       |   |-- utf_16_le_bom.yml
+|   |       |   `-- vanilla.yml
+|   |       `-- lib
+|   |           `-- Test.pm
+|   |-- CPANPLUS
+|   |   |-- bin
+|   |   |   |-- cpan2dist
+|   |   |   |-- cpanp
+|   |   |   `-- cpanp-run-perl
+|   |   |-- lib
+|   |   |   |-- CPANPLUS
+|   |   |   |   |-- Backend
+|   |   |   |   |   `-- RV.pm
+|   |   |   |   |-- Backend.pm
+|   |   |   |   |-- Config.pm
+|   |   |   |   |-- Configure
+|   |   |   |   |   `-- Setup.pm
+|   |   |   |   |-- Configure.pm
+|   |   |   |   |-- Dist
+|   |   |   |   |   |-- Autobundle.pm
+|   |   |   |   |   |-- Base.pm
+|   |   |   |   |   |-- MM.pm
+|   |   |   |   |   `-- Sample.pm
+|   |   |   |   |-- Dist.pm
+|   |   |   |   |-- Error.pm
+|   |   |   |   |-- FAQ.pod
+|   |   |   |   |-- Hacking.pod
+|   |   |   |   |-- Internals
+|   |   |   |   |   |-- Constants
+|   |   |   |   |   |   `-- Report.pm
+|   |   |   |   |   |-- Constants.pm
+|   |   |   |   |   |-- Extract.pm
+|   |   |   |   |   |-- Fetch.pm
+|   |   |   |   |   |-- Report.pm
+|   |   |   |   |   |-- Search.pm
+|   |   |   |   |   |-- Source
+|   |   |   |   |   |   |-- Memory.pm
+|   |   |   |   |   |   |-- SQLite
+|   |   |   |   |   |   |   `-- Tie.pm
+|   |   |   |   |   |   `-- SQLite.pm
+|   |   |   |   |   |-- Source.pm
+|   |   |   |   |   |-- Utils
+|   |   |   |   |   |   `-- Autoflush.pm
+|   |   |   |   |   `-- Utils.pm
+|   |   |   |   |-- Internals.pm
+|   |   |   |   |-- Module
+|   |   |   |   |   |-- Author
+|   |   |   |   |   |   `-- Fake.pm
+|   |   |   |   |   |-- Author.pm
+|   |   |   |   |   |-- Checksums.pm
+|   |   |   |   |   |-- Fake.pm
+|   |   |   |   |   `-- Signature.pm
+|   |   |   |   |-- Module.pm
+|   |   |   |   |-- Selfupdate.pm
+|   |   |   |   |-- Shell
+|   |   |   |   |   |-- Classic.pm
+|   |   |   |   |   |-- Default
+|   |   |   |   |   |   `-- Plugins
+|   |   |   |   |   |       |-- CustomSource.pm
+|   |   |   |   |   |       |-- HOWTO.pod
+|   |   |   |   |   |       |-- Remote.pm
+|   |   |   |   |   |       `-- Source.pm
+|   |   |   |   |   `-- Default.pm
+|   |   |   |   `-- Shell.pm
+|   |   |   `-- CPANPLUS.pm
+|   |   |-- Makefile.PL
+|   |   `-- t
+|   |       |-- 00_CPANPLUS-Internals-Utils.t
+|   |       |-- 01_CPANPLUS-Configure.t
+|   |       |-- 02_CPANPLUS-Internals.t
+|   |       |-- 03_CPANPLUS-Internals-Source.t
+|   |       |-- 04_CPANPLUS-Module.t
+|   |       |-- 05_CPANPLUS-Internals-Fetch.t
+|   |       |-- 06_CPANPLUS-Internals-Constants.t
+|   |       |-- 07_CPANPLUS-Internals-Extract.t
+|   |       |-- 08_CPANPLUS-Backend.t
+|   |       |-- 09_CPANPLUS-Internals-Search.t
+|   |       |-- 10_CPANPLUS-Error.t
+|   |       |-- 15_CPANPLUS-Shell.t
+|   |       |-- 19_CPANPLUS-Dist.t
+|   |       |-- 20_CPANPLUS-Dist-MM.t
+|   |       |-- 21_CPANPLUS-Dist-No-Build.t
+|   |       |-- 25_CPANPLUS.t
+|   |       |-- 30_CPANPLUS-Internals-Selfupdate.t
+|   |       |-- 40_CPANPLUS-Internals-Report.t
+|   |       |-- dummy-CPAN
+|   |       |   |-- authors
+|   |       |   |   |-- 01mailrc.txt.gz
+|   |       |   |   `-- id
+|   |       |   |       |-- EUNOXS
+|   |       |   |       |   |-- Bundle-Foo-Bar-0.01.tar.gz
+|   |       |   |       |   |-- CHECKSUMS
+|   |       |   |       |   |-- Foo-Bar-0.01.meta
+|   |       |   |       |   |-- Foo-Bar-0.01.readme
+|   |       |   |       |   |-- Foo-Bar-0.01.tar.gz
+|   |       |   |       |   `-- perl5.005_03.tar.gz
+|   |       |   |       |-- EUXS
+|   |       |   |       |   |-- CHECKSUMS
+|   |       |   |       |   |-- Foo-Bar-0.01.readme
+|   |       |   |       |   `-- Foo-Bar-0.01.tar.gz
+|   |       |   |       |-- MBNOXS
+|   |       |   |       |   |-- CHECKSUMS
+|   |       |   |       |   |-- Foo-Bar-0.01.readme
+|   |       |   |       |   `-- Foo-Bar-0.01.tar.gz
+|   |       |   |       `-- MBXS
+|   |       |   |           |-- CHECKSUMS
+|   |       |   |           |-- Foo-Bar-0.01.readme
+|   |       |   |           `-- Foo-Bar-0.01.tar.gz
+|   |       |   |-- autobundle
+|   |       |   |   `-- Snapshot.pm
+|   |       |   `-- modules
+|   |       |       |-- 02packages.details.txt.gz
+|   |       |       `-- 03modlist.data.gz
+|   |       `-- inc
+|   |           `-- conf.pl
+|   |-- CPANPLUS-Dist-Build
+|   |   |-- lib
+|   |   |   `-- CPANPLUS
+|   |   |       `-- Dist
+|   |   |           |-- Build
+|   |   |           |   `-- Constants.pm
+|   |   |           `-- Build.pm
+|   |   `-- t
+|   |       |-- 01_CPANPLUS-Dist-Build-Constants.t
+|   |       |-- 02_CPANPLUS-Dist-Build.t
+|   |       |-- dummy-CPAN
+|   |       |   |-- authors
+|   |       |   |   `-- 01mailrc.txt.gz
+|   |       |   `-- modules
+|   |       |       |-- 02packages.details.txt.gz
+|   |       |       `-- 03modlist.data.gz
+|   |       |-- dummy-perl
+|   |       |-- inc
+|   |       |   `-- conf.pl
+|   |       `-- src
+|   |           |-- noxs
+|   |           |   `-- Foo-Bar-0.01.tar.gz
+|   |           `-- xs
+|   |               `-- Foo-Bar-0.01.tar.gz
+|   |-- DB_File
+|   |   |-- Changes
+|   |   |-- config.in
+|   |   |-- DB_File_BS
+|   |   |-- DB_File.pm
+|   |   |-- DB_File.xs
+|   |   |-- dbinfo
+|   |   |-- hints
+|   |   |   |-- dynixptx.pl
+|   |   |   `-- sco.pl
+|   |   |-- Makefile.PL
+|   |   |-- t
+|   |   |   |-- db-btree.t
+|   |   |   |-- db-hash.t
+|   |   |   `-- db-recno.t
+|   |   |-- typemap
+|   |   `-- version.c
+|   |-- Devel-PPPort
+|   |   |-- apicheck_c.PL
+|   |   |-- Changes
+|   |   |-- devel
+|   |   |   |-- buildperl.pl
+|   |   |   |-- devtools.pl
+|   |   |   |-- mkapidoc.sh
+|   |   |   |-- mktodo
+|   |   |   |-- mktodo.pl
+|   |   |   |-- regenerate
+|   |   |   `-- scanprov
+|   |   |-- HACKERS
+|   |   |-- Makefile.PL
+|   |   |-- MANIFEST.SKIP
+|   |   |-- mktests.PL
+|   |   |-- module2.c
+|   |   |-- module3.c
+|   |   |-- parts
+|   |   |   |-- apicheck.pl
+|   |   |   |-- apidoc.fnc
+|   |   |   |-- base
+|   |   |   |   |-- 5004000
+|   |   |   |   |-- 5004010
+|   |   |   |   |-- 5004020
+|   |   |   |   |-- 5004030
+|   |   |   |   |-- 5004040
+|   |   |   |   |-- 5004050
+|   |   |   |   |-- 5005000
+|   |   |   |   |-- 5005010
+|   |   |   |   |-- 5005020
+|   |   |   |   |-- 5005030
+|   |   |   |   |-- 5005040
+|   |   |   |   |-- 5006000
+|   |   |   |   |-- 5006001
+|   |   |   |   |-- 5006002
+|   |   |   |   |-- 5007000
+|   |   |   |   |-- 5007001
+|   |   |   |   |-- 5007002
+|   |   |   |   |-- 5007003
+|   |   |   |   |-- 5008000
+|   |   |   |   |-- 5008001
+|   |   |   |   |-- 5008002
+|   |   |   |   |-- 5008003
+|   |   |   |   |-- 5008004
+|   |   |   |   |-- 5008005
+|   |   |   |   |-- 5008006
+|   |   |   |   |-- 5008007
+|   |   |   |   |-- 5008008
+|   |   |   |   |-- 5008009
+|   |   |   |   |-- 5009000
+|   |   |   |   |-- 5009001
+|   |   |   |   |-- 5009002
+|   |   |   |   |-- 5009003
+|   |   |   |   |-- 5009004
+|   |   |   |   |-- 5009005
+|   |   |   |   |-- 5010000
+|   |   |   |   |-- 5010001
+|   |   |   |   |-- 5011000
+|   |   |   |   |-- 5011001
+|   |   |   |   |-- 5011002
+|   |   |   |   |-- 5011003
+|   |   |   |   |-- 5011004
+|   |   |   |   |-- 5011005
+|   |   |   |   |-- 5012000
+|   |   |   |   |-- 5012001
+|   |   |   |   |-- 5012002
+|   |   |   |   |-- 5012003
+|   |   |   |   |-- 5013000
+|   |   |   |   |-- 5013001
+|   |   |   |   |-- 5013002
+|   |   |   |   |-- 5013003
+|   |   |   |   |-- 5013004
+|   |   |   |   |-- 5013005
+|   |   |   |   |-- 5013006
+|   |   |   |   |-- 5013007
+|   |   |   |   |-- 5013008
+|   |   |   |   |-- 5013009
+|   |   |   |   |-- 5013010
+|   |   |   |   |-- 5013011
+|   |   |   |   `-- 5014000
+|   |   |   |-- embed.fnc
+|   |   |   |-- inc
+|   |   |   |   |-- call
+|   |   |   |   |-- cop
+|   |   |   |   |-- exception
+|   |   |   |   |-- format
+|   |   |   |   |-- grok
+|   |   |   |   |-- gv
+|   |   |   |   |-- HvNAME
+|   |   |   |   |-- limits
+|   |   |   |   |-- magic
+|   |   |   |   |-- memory
+|   |   |   |   |-- misc
+|   |   |   |   |-- mPUSH
+|   |   |   |   |-- MY_CXT
+|   |   |   |   |-- newCONSTSUB
+|   |   |   |   |-- newRV
+|   |   |   |   |-- newSVpv
+|   |   |   |   |-- newSV_type
+|   |   |   |   |-- podtest
+|   |   |   |   |-- ppphbin
+|   |   |   |   |-- ppphdoc
+|   |   |   |   |-- ppphtest
+|   |   |   |   |-- pvs
+|   |   |   |   |-- pv_tools
+|   |   |   |   |-- shared_pv
+|   |   |   |   |-- snprintf
+|   |   |   |   |-- sprintf
+|   |   |   |   |-- strlfuncs
+|   |   |   |   |-- SvPV
+|   |   |   |   |-- SvREFCNT
+|   |   |   |   |-- Sv_set
+|   |   |   |   |-- sv_xpvf
+|   |   |   |   |-- threads
+|   |   |   |   |-- uv
+|   |   |   |   |-- variables
+|   |   |   |   |-- version
+|   |   |   |   `-- warn
+|   |   |   |-- ppport.fnc
+|   |   |   |-- ppptools.pl
+|   |   |   `-- todo
+|   |   |       |-- 5004000
+|   |   |       |-- 5004010
+|   |   |       |-- 5004020
+|   |   |       |-- 5004030
+|   |   |       |-- 5004040
+|   |   |       |-- 5004050
+|   |   |       |-- 5005000
+|   |   |       |-- 5005010
+|   |   |       |-- 5005020
+|   |   |       |-- 5005030
+|   |   |       |-- 5005040
+|   |   |       |-- 5006000
+|   |   |       |-- 5006001
+|   |   |       |-- 5006002
+|   |   |       |-- 5007000
+|   |   |       |-- 5007001
+|   |   |       |-- 5007002
+|   |   |       |-- 5007003
+|   |   |       |-- 5008000
+|   |   |       |-- 5008001
+|   |   |       |-- 5008002
+|   |   |       |-- 5008003
+|   |   |       |-- 5008004
+|   |   |       |-- 5008005
+|   |   |       |-- 5008006
+|   |   |       |-- 5008007
+|   |   |       |-- 5008008
+|   |   |       |-- 5008009
+|   |   |       |-- 5009000
+|   |   |       |-- 5009001
+|   |   |       |-- 5009002
+|   |   |       |-- 5009003
+|   |   |       |-- 5009004
+|   |   |       |-- 5009005
+|   |   |       |-- 5010000
+|   |   |       |-- 5010001
+|   |   |       |-- 5011000
+|   |   |       |-- 5011001
+|   |   |       |-- 5011002
+|   |   |       |-- 5011003
+|   |   |       |-- 5011004
+|   |   |       |-- 5011005
+|   |   |       |-- 5012000
+|   |   |       |-- 5012001
+|   |   |       |-- 5012002
+|   |   |       |-- 5012003
+|   |   |       |-- 5013000
+|   |   |       |-- 5013001
+|   |   |       |-- 5013002
+|   |   |       |-- 5013003
+|   |   |       |-- 5013004
+|   |   |       |-- 5013005
+|   |   |       |-- 5013006
+|   |   |       |-- 5013007
+|   |   |       |-- 5013008
+|   |   |       |-- 5013009
+|   |   |       |-- 5013010
+|   |   |       |-- 5013011
+|   |   |       `-- 5014000
+|   |   |-- ppport_h.PL
+|   |   |-- PPPort_pm.PL
+|   |   |-- PPPort.xs
+|   |   |-- PPPort_xs.PL
+|   |   |-- README
+|   |   |-- soak
+|   |   |-- t
+|   |   |   |-- call.t
+|   |   |   |-- cop.t
+|   |   |   |-- exception.t
+|   |   |   |-- format.t
+|   |   |   |-- grok.t
+|   |   |   |-- gv.t
+|   |   |   |-- HvNAME.t
+|   |   |   |-- limits.t
+|   |   |   |-- magic.t
+|   |   |   |-- memory.t
+|   |   |   |-- misc.t
+|   |   |   |-- mPUSH.t
+|   |   |   |-- MY_CXT.t
+|   |   |   |-- newCONSTSUB.t
+|   |   |   |-- newRV.t
+|   |   |   |-- newSVpv.t
+|   |   |   |-- newSV_type.t
+|   |   |   |-- podtest.t
+|   |   |   |-- ppphtest.t
+|   |   |   |-- pvs.t
+|   |   |   |-- pv_tools.t
+|   |   |   |-- shared_pv.t
+|   |   |   |-- snprintf.t
+|   |   |   |-- sprintf.t
+|   |   |   |-- strlfuncs.t
+|   |   |   |-- SvPV.t
+|   |   |   |-- SvREFCNT.t
+|   |   |   |-- Sv_set.t
+|   |   |   |-- sv_xpvf.t
+|   |   |   |-- testutil.pl
+|   |   |   |-- threads.t
+|   |   |   |-- uv.t
+|   |   |   |-- variables.t
+|   |   |   `-- warn.t
+|   |   |-- TODO
+|   |   `-- typemap
+|   |-- Digest
+|   |   |-- Changes
+|   |   |-- Digest
+|   |   |   |-- base.pm
+|   |   |   `-- file.pm
+|   |   |-- Digest.pm
+|   |   `-- t
+|   |       |-- base.t
+|   |       |-- digest.t
+|   |       |-- file.t
+|   |       |-- lib
+|   |       |   `-- Digest
+|   |       |       `-- Dummy.pm
+|   |       `-- security.t
+|   |-- Digest-MD5
+|   |   |-- Changes
+|   |   |-- hints
+|   |   |   |-- dec_osf.pl
+|   |   |   |-- irix_6.pl
+|   |   |   `-- MacOS.pl
+|   |   |-- Makefile.PL
+|   |   |-- MD5.pm
+|   |   |-- MD5.xs
+|   |   |-- README
+|   |   |-- t
+|   |   |   |-- align.t
+|   |   |   |-- badfile.t
+|   |   |   |-- bits.t
+|   |   |   |-- clone.t
+|   |   |   |-- files.t
+|   |   |   |-- md5-aaa.t
+|   |   |   |-- threads.t
+|   |   |   `-- utf8.t
+|   |   `-- typemap
+|   |-- Digest-SHA
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   `-- Digest
+|   |   |       `-- SHA.pm
+|   |   |-- Makefile.PL
+|   |   |-- README
+|   |   |-- shasum
+|   |   |-- SHA.xs
+|   |   |-- src
+|   |   |   |-- hmac.c
+|   |   |   |-- hmac.h
+|   |   |   |-- hmacxtra.c
+|   |   |   |-- sha64bit.c
+|   |   |   |-- sha64bit.h
+|   |   |   |-- sha.c
+|   |   |   |-- sha.h
+|   |   |   `-- shaxtra.c
+|   |   |-- t
+|   |   |   |-- allfcns.t
+|   |   |   |-- base64.t
+|   |   |   |-- bitbuf.t
+|   |   |   |-- dumpload.t
+|   |   |   |-- fips180-4.t
+|   |   |   |-- fips198.t
+|   |   |   |-- gglong.t
+|   |   |   |-- gg.t
+|   |   |   |-- hmacsha.t
+|   |   |   |-- ireland.t
+|   |   |   |-- methods.t
+|   |   |   |-- nistbit.t
+|   |   |   |-- nistbyte.t
+|   |   |   |-- rfc2202.t
+|   |   |   |-- sha1.t
+|   |   |   |-- sha224.t
+|   |   |   |-- sha256.t
+|   |   |   |-- sha384.t
+|   |   |   |-- sha512.t
+|   |   |   `-- woodbury.t
+|   |   `-- typemap
+|   |-- Encode
+|   |   |-- AUTHORS
+|   |   |-- bin
+|   |   |   |-- enc2xs
+|   |   |   |-- piconv
+|   |   |   |-- ucm2table
+|   |   |   |-- ucmlint
+|   |   |   |-- ucmsort
+|   |   |   `-- unidump
+|   |   |-- Byte
+|   |   |   |-- Byte.pm
+|   |   |   `-- Makefile.PL
+|   |   |-- Changes
+|   |   |-- CN
+|   |   |   |-- CN.pm
+|   |   |   `-- Makefile.PL
+|   |   |-- EBCDIC
+|   |   |   |-- EBCDIC.pm
+|   |   |   `-- Makefile.PL
+|   |   |-- encengine.c
+|   |   |-- Encode
+|   |   |   |-- Changes.e2x
+|   |   |   |-- ConfigLocal_PM.e2x
+|   |   |   |-- encode.h
+|   |   |   |-- Makefile_PL.e2x
+|   |   |   |-- _PM.e2x
+|   |   |   |-- README.e2x
+|   |   |   `-- _T.e2x
+|   |   |-- Encode.pm
+|   |   |-- Encode.xs
+|   |   |-- encoding.pm
+|   |   |-- JP
+|   |   |   |-- JP.pm
+|   |   |   `-- Makefile.PL
+|   |   |-- KR
+|   |   |   |-- KR.pm
+|   |   |   `-- Makefile.PL
+|   |   |-- lib
+|   |   |   `-- Encode
+|   |   |       |-- Alias.pm
+|   |   |       |-- CJKConstants.pm
+|   |   |       |-- CN
+|   |   |       |   `-- HZ.pm
+|   |   |       |-- Config.pm
+|   |   |       |-- Encoder.pm
+|   |   |       |-- Encoding.pm
+|   |   |       |-- GSM0338.pm
+|   |   |       |-- Guess.pm
+|   |   |       |-- JP
+|   |   |       |   |-- H2Z.pm
+|   |   |       |   `-- JIS7.pm
+|   |   |       |-- KR
+|   |   |       |   `-- 2022_KR.pm
+|   |   |       |-- MIME
+|   |   |       |   |-- Header
+|   |   |       |   |   `-- ISO_2022_JP.pm
+|   |   |       |   |-- Header.pm
+|   |   |       |   `-- Name.pm
+|   |   |       |-- PerlIO.pod
+|   |   |       |-- Supported.pod
+|   |   |       `-- Unicode
+|   |   |           `-- UTF7.pm
+|   |   |-- Makefile.PL
+|   |   |-- MANIFEST
+|   |   |-- META.yml
+|   |   |-- README
+|   |   |-- Symbol
+|   |   |   |-- Makefile.PL
+|   |   |   `-- Symbol.pm
+|   |   |-- t
+|   |   |   |-- Aliases.t
+|   |   |   |-- at-cn.t
+|   |   |   |-- at-tw.t
+|   |   |   |-- big5-eten.enc
+|   |   |   |-- big5-eten.utf
+|   |   |   |-- big5-hkscs.enc
+|   |   |   |-- big5-hkscs.utf
+|   |   |   |-- CJKT.t
+|   |   |   |-- enc_data.t
+|   |   |   |-- enc_eucjp.t
+|   |   |   |-- enc_module.enc
+|   |   |   |-- enc_module.t
+|   |   |   |-- Encoder.t
+|   |   |   |-- Encode.t
+|   |   |   |-- encoding.t
+|   |   |   |-- enc_utf8.t
+|   |   |   |-- fallback.t
+|   |   |   |-- from_to.t
+|   |   |   |-- gb2312.enc
+|   |   |   |-- gb2312.utf
+|   |   |   |-- grow.t
+|   |   |   |-- gsm0338.t
+|   |   |   |-- guess.t
+|   |   |   |-- jis7-fallback.t
+|   |   |   |-- jisx0201.enc
+|   |   |   |-- jisx0201.utf
+|   |   |   |-- jisx0208.enc
+|   |   |   |-- jisx0208.utf
+|   |   |   |-- jisx0212.enc
+|   |   |   |-- jisx0212.utf
+|   |   |   |-- jperl.t
+|   |   |   |-- ksc5601.enc
+|   |   |   |-- ksc5601.utf
+|   |   |   |-- mime_header_iso2022jp.t
+|   |   |   |-- mime-header.t
+|   |   |   |-- mime-name.t
+|   |   |   |-- Mod_EUCJP.pm
+|   |   |   |-- perlio.t
+|   |   |   |-- piconv.t
+|   |   |   |-- rt.pl
+|   |   |   |-- unibench.pl
+|   |   |   |-- Unicode.t
+|   |   |   |-- utf8ref.t
+|   |   |   `-- utf8strict.t
+|   |   |-- TW
+|   |   |   |-- Makefile.PL
+|   |   |   `-- TW.pm
+|   |   |-- ucm
+|   |   |   |-- 8859-10.ucm
+|   |   |   |-- 8859-11.ucm
+|   |   |   |-- 8859-13.ucm
+|   |   |   |-- 8859-14.ucm
+|   |   |   |-- 8859-15.ucm
+|   |   |   |-- 8859-16.ucm
+|   |   |   |-- 8859-1.ucm
+|   |   |   |-- 8859-2.ucm
+|   |   |   |-- 8859-3.ucm
+|   |   |   |-- 8859-4.ucm
+|   |   |   |-- 8859-5.ucm
+|   |   |   |-- 8859-6.ucm
+|   |   |   |-- 8859-7.ucm
+|   |   |   |-- 8859-8.ucm
+|   |   |   |-- 8859-9.ucm
+|   |   |   |-- adobeStdenc.ucm
+|   |   |   |-- adobeSymbol.ucm
+|   |   |   |-- adobeZdingbat.ucm
+|   |   |   |-- ascii.ucm
+|   |   |   |-- big5-eten.ucm
+|   |   |   |-- big5-hkscs.ucm
+|   |   |   |-- cp037.ucm
+|   |   |   |-- cp1006.ucm
+|   |   |   |-- cp1026.ucm
+|   |   |   |-- cp1047.ucm
+|   |   |   |-- cp1250.ucm
+|   |   |   |-- cp1251.ucm
+|   |   |   |-- cp1252.ucm
+|   |   |   |-- cp1253.ucm
+|   |   |   |-- cp1254.ucm
+|   |   |   |-- cp1255.ucm
+|   |   |   |-- cp1256.ucm
+|   |   |   |-- cp1257.ucm
+|   |   |   |-- cp1258.ucm
+|   |   |   |-- cp424.ucm
+|   |   |   |-- cp437.ucm
+|   |   |   |-- cp500.ucm
+|   |   |   |-- cp737.ucm
+|   |   |   |-- cp775.ucm
+|   |   |   |-- cp850.ucm
+|   |   |   |-- cp852.ucm
+|   |   |   |-- cp855.ucm
+|   |   |   |-- cp856.ucm
+|   |   |   |-- cp857.ucm
+|   |   |   |-- cp858.ucm
+|   |   |   |-- cp860.ucm
+|   |   |   |-- cp861.ucm
+|   |   |   |-- cp862.ucm
+|   |   |   |-- cp863.ucm
+|   |   |   |-- cp864.ucm
+|   |   |   |-- cp865.ucm
+|   |   |   |-- cp866.ucm
+|   |   |   |-- cp869.ucm
+|   |   |   |-- cp874.ucm
+|   |   |   |-- cp875.ucm
+|   |   |   |-- cp932.ucm
+|   |   |   |-- cp936.ucm
+|   |   |   |-- cp949.ucm
+|   |   |   |-- cp950.ucm
+|   |   |   |-- ctrl.ucm
+|   |   |   |-- dingbats.ucm
+|   |   |   |-- euc-cn.ucm
+|   |   |   |-- euc-jp.ucm
+|   |   |   |-- euc-kr.ucm
+|   |   |   |-- gb12345.ucm
+|   |   |   |-- gb2312.ucm
+|   |   |   |-- hp-roman8.ucm
+|   |   |   |-- ir-165.ucm
+|   |   |   |-- jis0201.ucm
+|   |   |   |-- jis0208.ucm
+|   |   |   |-- jis0212.ucm
+|   |   |   |-- johab.ucm
+|   |   |   |-- koi8-f.ucm
+|   |   |   |-- koi8-r.ucm
+|   |   |   |-- koi8-u.ucm
+|   |   |   |-- ksc5601.ucm
+|   |   |   |-- macArabic.ucm
+|   |   |   |-- macCentEuro.ucm
+|   |   |   |-- macChinsimp.ucm
+|   |   |   |-- macChintrad.ucm
+|   |   |   |-- macCroatian.ucm
+|   |   |   |-- macCyrillic.ucm
+|   |   |   |-- macDingbats.ucm
+|   |   |   |-- macFarsi.ucm
+|   |   |   |-- macGreek.ucm
+|   |   |   |-- macHebrew.ucm
+|   |   |   |-- macIceland.ucm
+|   |   |   |-- macJapanese.ucm
+|   |   |   |-- macKorean.ucm
+|   |   |   |-- macRoman.ucm
+|   |   |   |-- macROMnn.ucm
+|   |   |   |-- macRUMnn.ucm
+|   |   |   |-- macSami.ucm
+|   |   |   |-- macSymbol.ucm
+|   |   |   |-- macThai.ucm
+|   |   |   |-- macTurkish.ucm
+|   |   |   |-- macUkraine.ucm
+|   |   |   |-- nextstep.ucm
+|   |   |   |-- null.ucm
+|   |   |   |-- posix-bc.ucm
+|   |   |   |-- shiftjis.ucm
+|   |   |   |-- symbol.ucm
+|   |   |   `-- viscii.ucm
+|   |   `-- Unicode
+|   |       |-- Makefile.PL
+|   |       |-- Unicode.pm
+|   |       `-- Unicode.xs
+|   |-- encoding-warnings
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   `-- encoding
+|   |   |       `-- warnings.pm
+|   |   `-- t
+|   |       |-- 1-warning.t
+|   |       |-- 2-fatal.t
+|   |       |-- 3-normal.t
+|   |       `-- 4-lexical.t
+|   |-- ExtUtils-Constant
+|   |   |-- lib
+|   |   |   `-- ExtUtils
+|   |   |       |-- Constant
+|   |   |       |   |-- Base.pm
+|   |   |       |   |-- ProxySubs.pm
+|   |   |       |   |-- Utils.pm
+|   |   |       |   `-- XS.pm
+|   |   |       `-- Constant.pm
+|   |   `-- t
+|   |       `-- Constant.t
+|   |-- ExtUtils-MakeMaker
+|   |   |-- bin
+|   |   |   `-- instmodsh
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   `-- ExtUtils
+|   |   |       |-- Command
+|   |   |       |   `-- MM.pm
+|   |   |       |-- Liblist
+|   |   |       |   `-- Kid.pm
+|   |   |       |-- Liblist.pm
+|   |   |       |-- MakeMaker
+|   |   |       |   |-- Config.pm
+|   |   |       |   |-- FAQ.pod
+|   |   |       |   `-- Tutorial.pod
+|   |   |       |-- MakeMaker.pm
+|   |   |       |-- Mkbootstrap.pm
+|   |   |       |-- Mksymlists.pm
+|   |   |       |-- MM_AIX.pm
+|   |   |       |-- MM_Any.pm
+|   |   |       |-- MM_BeOS.pm
+|   |   |       |-- MM_Cygwin.pm
+|   |   |       |-- MM_Darwin.pm
+|   |   |       |-- MM_DOS.pm
+|   |   |       |-- MM_MacOS.pm
+|   |   |       |-- MM_NW5.pm
+|   |   |       |-- MM_OS2.pm
+|   |   |       |-- MM.pm
+|   |   |       |-- MM_QNX.pm
+|   |   |       |-- MM_Unix.pm
+|   |   |       |-- MM_UWIN.pm
+|   |   |       |-- MM_VMS.pm
+|   |   |       |-- MM_VOS.pm
+|   |   |       |-- MM_Win32.pm
+|   |   |       |-- MM_Win95.pm
+|   |   |       |-- MY.pm
+|   |   |       `-- testlib.pm
+|   |   |-- MANIFEST
+|   |   |-- NOTES
+|   |   |-- PATCHING
+|   |   |-- README
+|   |   |-- README.packaging
+|   |   |-- t
+|   |   |   |-- 00compile.t
+|   |   |   |-- arch_check.t
+|   |   |   |-- backwards.t
+|   |   |   |-- basic.t
+|   |   |   |-- build_man.t
+|   |   |   |-- cd.t
+|   |   |   |-- config.t
+|   |   |   |-- dir_target.t
+|   |   |   |-- echo.t
+|   |   |   |-- FIRST_MAKEFILE.t
+|   |   |   |-- fixin.t
+|   |   |   |-- fix_libs.t
+|   |   |   |-- hints.t
+|   |   |   |-- INSTALL_BASE.t
+|   |   |   |-- installed_file.t
+|   |   |   |-- INST_PREFIX.t
+|   |   |   |-- INST.t
+|   |   |   |-- is_of_type.t
+|   |   |   |-- lib
+|   |   |   |   |-- MakeMaker
+|   |   |   |   |   `-- Test
+|   |   |   |   |       |-- NoXS.pm
+|   |   |   |   |       |-- Setup
+|   |   |   |   |       |   |-- BFD.pm
+|   |   |   |   |       |   |-- MPV.pm
+|   |   |   |   |       |   |-- PL_FILES.pm
+|   |   |   |   |       |   |-- Problem.pm
+|   |   |   |   |       |   |-- Recurs.pm
+|   |   |   |   |       |   |-- SAS.pm
+|   |   |   |   |       |   `-- XS.pm
+|   |   |   |   |       `-- Utils.pm
+|   |   |   |   |-- TieIn.pm
+|   |   |   |   `-- TieOut.pm
+|   |   |   |-- Liblist.t
+|   |   |   |-- MakeMaker_Parameters.t
+|   |   |   |-- make.t
+|   |   |   |-- maketext_filter.t
+|   |   |   |-- meta_convert.t
+|   |   |   |-- metafile_data.t
+|   |   |   |-- metafile_file.t
+|   |   |   |-- META_for_testing.json
+|   |   |   |-- META_for_testing_tricky_version.yml
+|   |   |   |-- META_for_testing.yml
+|   |   |   |-- miniperl.t
+|   |   |   |-- min_perl_version.t
+|   |   |   |-- Mkbootstrap.t
+|   |   |   |-- MM_Any.t
+|   |   |   |-- MM_BeOS.t
+|   |   |   |-- MM_Cygwin.t
+|   |   |   |-- MM_NW5.t
+|   |   |   |-- MM_OS2.t
+|   |   |   |-- MM_Unix.t
+|   |   |   |-- MM_VMS.t
+|   |   |   |-- MM_Win32.t
+|   |   |   |-- oneliner.t
+|   |   |   |-- parse_abstract.t
+|   |   |   |-- parse_version.t
+|   |   |   |-- PL_FILES.t
+|   |   |   |-- pm.t
+|   |   |   |-- pm_to_blib.t
+|   |   |   |-- pod2man.t
+|   |   |   |-- postamble.t
+|   |   |   |-- prefixify.t
+|   |   |   |-- prereq_print.t
+|   |   |   |-- prereq.t
+|   |   |   |-- problems.t
+|   |   |   |-- prompt.t
+|   |   |   |-- recurs.t
+|   |   |   |-- revision.t
+|   |   |   |-- several_authors.t
+|   |   |   |-- split_command.t
+|   |   |   |-- test_boilerplate.t
+|   |   |   |-- testdata
+|   |   |   |   `-- reallylongdirectoryname
+|   |   |   |       |-- arch1
+|   |   |   |       |   `-- Config.pm
+|   |   |   |       `-- arch2
+|   |   |   |           `-- Config.pm
+|   |   |   |-- testlib.t
+|   |   |   |-- VERSION_FROM.t
+|   |   |   |-- WriteEmptyMakefile.t
+|   |   |   |-- writemakefile_args.t
+|   |   |   `-- xs.t
+|   |   `-- TODO
+|   |-- File-Fetch
+|   |   |-- lib
+|   |   |   `-- File
+|   |   |       `-- Fetch.pm
+|   |   `-- t
+|   |       |-- 01_File-Fetch.t
+|   |       `-- null_subclass.t
+|   |-- File-Path
+|   |   |-- lib
+|   |   |   `-- File
+|   |   |       `-- Path.pm
+|   |   `-- t
+|   |       |-- Path.t
+|   |       `-- taint.t
+|   |-- File-Temp
+|   |   |-- t
+|   |   |   |-- cmp.t
+|   |   |   |-- fork.t
+|   |   |   |-- lock.t
+|   |   |   |-- mktemp.t
+|   |   |   |-- object.t
+|   |   |   |-- posix.t
+|   |   |   |-- security.t
+|   |   |   |-- seekable.t
+|   |   |   `-- tempfile.t
+|   |   `-- Temp.pm
+|   |-- Filter-Util-Call
+|   |   |-- Call.pm
+|   |   |-- Call.xs
+|   |   |-- filter-util.pl
+|   |   `-- t
+|   |       `-- call.t
+|   |-- Getopt-Long
+|   |   |-- CHANGES
+|   |   |-- lib
+|   |   |   `-- Getopt
+|   |   |       `-- Long.pm
+|   |   |-- README
+|   |   `-- t
+|   |       |-- gol-basic.t
+|   |       |-- gol-linkage.t
+|   |       |-- gol-oo.t
+|   |       |-- gol-xargv.t
+|   |       `-- gol-xstring.t
+|   |-- HTTP-Tiny
+|   |   |-- lib
+|   |   |   `-- HTTP
+|   |   |       `-- Tiny.pm
+|   |   `-- t
+|   |       |-- 000_load.t
+|   |       |-- 001_api.t
+|   |       |-- 002_croakage.t
+|   |       |-- 00-compile.t
+|   |       |-- 010_url.t
+|   |       |-- 020_headers.t
+|   |       |-- 030_response.t
+|   |       |-- 040_content.t
+|   |       |-- 050_chunked_body.t
+|   |       |-- 060_http_date.t
+|   |       |-- 100_get.t
+|   |       |-- 101_head.t
+|   |       |-- 102_put.t
+|   |       |-- 103_delete.t
+|   |       |-- 104_post.t
+|   |       |-- 110_mirror.t
+|   |       |-- 130_redirect.t
+|   |       |-- 140_proxy.t
+|   |       |-- 150_post_form.t
+|   |       |-- cases
+|   |       |   |-- delete-01.txt
+|   |       |   |-- form-01.txt
+|   |       |   |-- form-02.txt
+|   |       |   |-- form-03.txt
+|   |       |   |-- form-04.txt
+|   |       |   |-- get-01.txt
+|   |       |   |-- get-02.txt
+|   |       |   |-- get-03.txt
+|   |       |   |-- get-04.txt
+|   |       |   |-- get-05.txt
+|   |       |   |-- get-06.txt
+|   |       |   |-- get-07.txt
+|   |       |   |-- get-08.txt
+|   |       |   |-- get-09.txt
+|   |       |   |-- get-10.txt
+|   |       |   |-- get-11.txt
+|   |       |   |-- get-12.txt
+|   |       |   |-- get-13.txt
+|   |       |   |-- get-14.txt
+|   |       |   |-- get-15.txt
+|   |       |   |-- get-16.txt
+|   |       |   |-- get-17.txt
+|   |       |   |-- get-18.txt
+|   |       |   |-- get-19.txt
+|   |       |   |-- get-20.txt
+|   |       |   |-- get-21.txt
+|   |       |   |-- head-01.txt
+|   |       |   |-- mirror-01.txt
+|   |       |   |-- mirror-02.txt
+|   |       |   |-- mirror-03.txt
+|   |       |   |-- mirror-04.txt
+|   |       |   |-- mirror-05.txt
+|   |       |   |-- post-01.txt
+|   |       |   |-- put-01.txt
+|   |       |   |-- put-02.txt
+|   |       |   |-- put-03.txt
+|   |       |   |-- put-04.txt
+|   |       |   |-- put-05.txt
+|   |       |   |-- redirect-01.txt
+|   |       |   |-- redirect-02.txt
+|   |       |   |-- redirect-03.txt
+|   |       |   |-- redirect-04.txt
+|   |       |   |-- redirect-05.txt
+|   |       |   |-- redirect-06.txt
+|   |       |   |-- redirect-07.txt
+|   |       |   |-- redirect-08.txt
+|   |       |   `-- redirect-09.txt
+|   |       `-- Util.pm
+|   |-- IO-Compress
+|   |   |-- bin
+|   |   |   `-- zipdetails
+|   |   |-- Changes
+|   |   |-- examples
+|   |   |   |-- compress-zlib
+|   |   |   |   |-- filtdef
+|   |   |   |   |-- filtinf
+|   |   |   |   |-- gzcat
+|   |   |   |   |-- gzgrep
+|   |   |   |   `-- gzstream
+|   |   |   `-- io
+|   |   |       |-- anycat
+|   |   |       |-- bzip2
+|   |   |       |   |-- bzcat
+|   |   |       |   |-- bzgrep
+|   |   |       |   `-- bzstream
+|   |   |       `-- gzip
+|   |   |           |-- gzappend
+|   |   |           |-- gzcat
+|   |   |           |-- gzgrep
+|   |   |           `-- gzstream
+|   |   |-- lib
+|   |   |   |-- Compress
+|   |   |   |   `-- Zlib.pm
+|   |   |   |-- File
+|   |   |   |   `-- GlobMapper.pm
+|   |   |   `-- IO
+|   |   |       |-- Compress
+|   |   |       |   |-- Adapter
+|   |   |       |   |   |-- Bzip2.pm
+|   |   |       |   |   |-- Deflate.pm
+|   |   |       |   |   `-- Identity.pm
+|   |   |       |   |-- Base
+|   |   |       |   |   `-- Common.pm
+|   |   |       |   |-- Base.pm
+|   |   |       |   |-- Bzip2.pm
+|   |   |       |   |-- Deflate.pm
+|   |   |       |   |-- FAQ.pod
+|   |   |       |   |-- Gzip
+|   |   |       |   |   `-- Constants.pm
+|   |   |       |   |-- Gzip.pm
+|   |   |       |   |-- RawDeflate.pm
+|   |   |       |   |-- Zip
+|   |   |       |   |   `-- Constants.pm
+|   |   |       |   |-- Zip.pm
+|   |   |       |   `-- Zlib
+|   |   |       |       |-- Constants.pm
+|   |   |       |       `-- Extra.pm
+|   |   |       `-- Uncompress
+|   |   |           |-- Adapter
+|   |   |           |   |-- Bunzip2.pm
+|   |   |           |   |-- Identity.pm
+|   |   |           |   `-- Inflate.pm
+|   |   |           |-- AnyInflate.pm
+|   |   |           |-- AnyUncompress.pm
+|   |   |           |-- Base.pm
+|   |   |           |-- Bunzip2.pm
+|   |   |           |-- Gunzip.pm
+|   |   |           |-- Inflate.pm
+|   |   |           |-- RawInflate.pm
+|   |   |           `-- Unzip.pm
+|   |   |-- Makefile.PL
+|   |   |-- private
+|   |   |   `-- MakeUtil.pm
+|   |   |-- README
+|   |   `-- t
+|   |       |-- 000prereq.t
+|   |       |-- 001bzip2.t
+|   |       |-- 001zlib-generic-deflate.t
+|   |       |-- 001zlib-generic-gzip.t
+|   |       |-- 001zlib-generic-rawdeflate.t
+|   |       |-- 001zlib-generic-zip.t
+|   |       |-- 002any-deflate.t
+|   |       |-- 002any-gzip.t
+|   |       |-- 002any-rawdeflate.t
+|   |       |-- 002any-transparent.t
+|   |       |-- 002any-zip.t
+|   |       |-- 004gziphdr.t
+|   |       |-- 005defhdr.t
+|   |       |-- 006zip.t
+|   |       |-- 010examples-bzip2.t
+|   |       |-- 010examples-zlib.t
+|   |       |-- 01misc.t
+|   |       |-- 020isize.t
+|   |       |-- 050interop-gzip.t
+|   |       |-- 100generic-bzip2.t
+|   |       |-- 100generic-deflate.t
+|   |       |-- 100generic-gzip.t
+|   |       |-- 100generic-rawdeflate.t
+|   |       |-- 100generic-zip.t
+|   |       |-- 101truncate-bzip2.t
+|   |       |-- 101truncate-deflate.t
+|   |       |-- 101truncate-gzip.t
+|   |       |-- 101truncate-rawdeflate.t
+|   |       |-- 101truncate-zip.t
+|   |       |-- 102tied-bzip2.t
+|   |       |-- 102tied-deflate.t
+|   |       |-- 102tied-gzip.t
+|   |       |-- 102tied-rawdeflate.t
+|   |       |-- 102tied-zip.t
+|   |       |-- 103newtied-bzip2.t
+|   |       |-- 103newtied-deflate.t
+|   |       |-- 103newtied-gzip.t
+|   |       |-- 103newtied-rawdeflate.t
+|   |       |-- 103newtied-zip.t
+|   |       |-- 104destroy-bzip2.t
+|   |       |-- 104destroy-deflate.t
+|   |       |-- 104destroy-gzip.t
+|   |       |-- 104destroy-rawdeflate.t
+|   |       |-- 104destroy-zip.t
+|   |       |-- 105oneshot-bzip2.t
+|   |       |-- 105oneshot-deflate.t
+|   |       |-- 105oneshot-gzip-only.t
+|   |       |-- 105oneshot-gzip.t
+|   |       |-- 105oneshot-rawdeflate.t
+|   |       |-- 105oneshot-zip-bzip2-only.t
+|   |       |-- 105oneshot-zip-only.t
+|   |       |-- 105oneshot-zip-store-only.t
+|   |       |-- 105oneshot-zip.t
+|   |       |-- 106prime-bzip2.t
+|   |       |-- 106prime-deflate.t
+|   |       |-- 106prime-gzip.t
+|   |       |-- 106prime-rawdeflate.t
+|   |       |-- 106prime-zip.t
+|   |       |-- 107multi-bzip2.t
+|   |       |-- 107multi-deflate.t
+|   |       |-- 107multi-gzip.t
+|   |       |-- 107multi-rawdeflate.t
+|   |       |-- 107multi-zip.t
+|   |       |-- 108anyunc-bzip2.t
+|   |       |-- 108anyunc-deflate.t
+|   |       |-- 108anyunc-gzip.t
+|   |       |-- 108anyunc-rawdeflate.t
+|   |       |-- 108anyunc-transparent.t
+|   |       |-- 108anyunc-zip.t
+|   |       |-- 109merge-deflate.t
+|   |       |-- 109merge-gzip.t
+|   |       |-- 109merge-rawdeflate.t
+|   |       |-- 109merge-zip.t
+|   |       |-- 110encode-bzip2.t
+|   |       |-- 110encode-deflate.t
+|   |       |-- 110encode-gzip.t
+|   |       |-- 110encode-rawdeflate.t
+|   |       |-- 110encode-zip.t
+|   |       |-- 111const-deflate.t
+|   |       |-- 999pod.t
+|   |       |-- compress
+|   |       |   |-- any.pl
+|   |       |   |-- anyunc.pl
+|   |       |   |-- CompTestUtils.pm
+|   |       |   |-- destroy.pl
+|   |       |   |-- encode.pl
+|   |       |   |-- generic.pl
+|   |       |   |-- merge.pl
+|   |       |   |-- multi.pl
+|   |       |   |-- newtied.pl
+|   |       |   |-- oneshot.pl
+|   |       |   |-- prime.pl
+|   |       |   |-- tied.pl
+|   |       |   |-- truncate.pl
+|   |       |   `-- zlib-generic.pl
+|   |       |-- cz-01version.t
+|   |       |-- cz-03zlib-v1.t
+|   |       |-- cz-05examples.t
+|   |       |-- cz-06gzsetp.t
+|   |       |-- cz-08encoding.t
+|   |       |-- cz-14gzopen.t
+|   |       `-- globmapper.t
+|   |-- IO-Zlib
+|   |   |-- t
+|   |   |   |-- basic.t
+|   |   |   |-- external.t
+|   |   |   |-- getc.t
+|   |   |   |-- getline.t
+|   |   |   |-- import.t
+|   |   |   |-- large.t
+|   |   |   |-- tied.t
+|   |   |   |-- uncomp1.t
+|   |   |   `-- uncomp2.t
+|   |   `-- Zlib.pm
+|   |-- IPC-Cmd
+|   |   |-- lib
+|   |   |   `-- IPC
+|   |   |       `-- Cmd.pm
+|   |   `-- t
+|   |       |-- 01_IPC-Cmd.t
+|   |       |-- 02_Interactive.t
+|   |       `-- src
+|   |           |-- child.pl
+|   |           |-- output.pl
+|   |           `-- x.tgz
+|   |-- IPC-SysV
+|   |   |-- Changes
+|   |   |-- hints
+|   |   |   |-- cygwin.pl
+|   |   |   `-- next_3.pl
+|   |   |-- lib
+|   |   |   `-- IPC
+|   |   |       |-- Msg.pm
+|   |   |       |-- Semaphore.pm
+|   |   |       |-- SharedMem.pm
+|   |   |       `-- SysV.pm
+|   |   |-- Makefile.PL
+|   |   |-- MANIFEST.SKIP
+|   |   |-- README
+|   |   |-- regen.pl
+|   |   |-- SysV.xs
+|   |   |-- t
+|   |   |   |-- ipcsysv.t
+|   |   |   |-- msg.t
+|   |   |   |-- podcov.t
+|   |   |   |-- pod.t
+|   |   |   |-- sem.t
+|   |   |   `-- shm.t
+|   |   |-- TODO
+|   |   `-- typemap
+|   |-- JSON-PP
+|   |   |-- bin
+|   |   |   `-- json_pp
+|   |   |-- lib
+|   |   |   `-- JSON
+|   |   |       |-- PP
+|   |   |       |   `-- Boolean.pm
+|   |   |       `-- PP.pm
+|   |   `-- t
+|   |       |-- 000_load.t
+|   |       |-- 001_utf8.t
+|   |       |-- 002_error.t
+|   |       |-- 003_types.t
+|   |       |-- 006_pc_pretty.t
+|   |       |-- 007_pc_esc.t
+|   |       |-- 008_pc_base.t
+|   |       |-- 009_pc_extra_number.t
+|   |       |-- 010_pc_keysort.t
+|   |       |-- 011_pc_expo.t
+|   |       |-- 012_blessed.t
+|   |       |-- 013_limit.t
+|   |       |-- 014_latin1.t
+|   |       |-- 015_prefix.t
+|   |       |-- 016_tied.t
+|   |       |-- 017_relaxed.t
+|   |       |-- 018_json_checker.t
+|   |       |-- 019_incr.t
+|   |       |-- 020_unknown.t
+|   |       |-- 021_evans_bugrep.t
+|   |       |-- 022_comment_at_eof.t
+|   |       |-- 099_binary.t
+|   |       |-- 104_sortby.t
+|   |       |-- 105_esc_slash.t
+|   |       |-- 106_allow_barekey.t
+|   |       |-- 107_allow_singlequote.t
+|   |       |-- 108_decode.t
+|   |       |-- 109_encode.t
+|   |       |-- 110_bignum.t
+|   |       |-- 112_upgrade.t
+|   |       |-- 113_overloaded_eq.t
+|   |       |-- 114_decode_prefix.t
+|   |       |-- 115_tie_ixhash.t
+|   |       |-- 116_incr_parse_fixed.t
+|   |       `-- _unicode_handling.pm
+|   |-- libnet
+|   |   |-- Changes
+|   |   |-- Config.eg
+|   |   |-- demos
+|   |   |   |-- ftp
+|   |   |   |-- inetd
+|   |   |   |-- nntp
+|   |   |   |-- nntp.mirror
+|   |   |   |-- pop3
+|   |   |   |-- smtp.self
+|   |   |   `-- time
+|   |   |-- Hostname.pm.eg
+|   |   |-- Makefile.PL
+|   |   |-- Net
+|   |   |   |-- Cmd.pm
+|   |   |   |-- Config.pm
+|   |   |   |-- Domain.pm
+|   |   |   |-- FTP
+|   |   |   |   |-- A.pm
+|   |   |   |   |-- dataconn.pm
+|   |   |   |   |-- E.pm
+|   |   |   |   |-- I.pm
+|   |   |   |   `-- L.pm
+|   |   |   |-- FTP.pm
+|   |   |   |-- libnetFAQ.pod
+|   |   |   |-- Netrc.pm
+|   |   |   |-- NNTP.pm
+|   |   |   |-- POP3.pm
+|   |   |   |-- SMTP.pm
+|   |   |   `-- Time.pm
+|   |   |-- README
+|   |   `-- t
+|   |       |-- config.t
+|   |       |-- datasend.t
+|   |       |-- ftp.t
+|   |       |-- hostname.t
+|   |       |-- libnet_t.pl
+|   |       |-- netrc.t
+|   |       |-- nntp.t
+|   |       |-- require.t
+|   |       |-- smtp.t
+|   |       `-- time.t
+|   |-- List-Util
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   |-- List
+|   |   |   |   |-- Util
+|   |   |   |   |   `-- XS.pm
+|   |   |   |   `-- Util.pm
+|   |   |   `-- Scalar
+|   |   |       `-- Util.pm
+|   |   |-- ListUtil.xs
+|   |   |-- Makefile.PL
+|   |   |-- multicall.h
+|   |   |-- README
+|   |   `-- t
+|   |       |-- 00version.t
+|   |       |-- blessed.t
+|   |       |-- dualvar.t
+|   |       |-- first.t
+|   |       |-- getmagic-once.t
+|   |       |-- isvstring.t
+|   |       |-- lln.t
+|   |       |-- maxstr.t
+|   |       |-- max.t
+|   |       |-- minstr.t
+|   |       |-- min.t
+|   |       |-- openhan.t
+|   |       |-- proto.t
+|   |       |-- readonly.t
+|   |       |-- reduce.t
+|   |       |-- refaddr.t
+|   |       |-- reftype.t
+|   |       |-- shuffle.t
+|   |       |-- stack-corruption.t
+|   |       |-- sum.t
+|   |       |-- tainted.t
+|   |       `-- weak.t
+|   |-- Locale-Codes
+|   |   |-- ChangeLog
+|   |   |-- lib
+|   |   |   `-- Locale
+|   |   |       |-- Codes
+|   |   |       |   |-- API.pod
+|   |   |       |   |-- Changes.pod
+|   |   |       |   |-- Constants.pm
+|   |   |       |   |-- Constants.pod
+|   |   |       |   |-- Country_Codes.pm
+|   |   |       |   |-- Country.pm
+|   |   |       |   |-- Country.pod
+|   |   |       |   |-- Country_Retired.pm
+|   |   |       |   |-- Currency_Codes.pm
+|   |   |       |   |-- Currency.pm
+|   |   |       |   |-- Currency.pod
+|   |   |       |   |-- Currency_Retired.pm
+|   |   |       |   |-- LangExt_Codes.pm
+|   |   |       |   |-- LangExt.pm
+|   |   |       |   |-- LangExt.pod
+|   |   |       |   |-- LangExt_Retired.pm
+|   |   |       |   |-- LangFam_Codes.pm
+|   |   |       |   |-- LangFam.pm
+|   |   |       |   |-- LangFam.pod
+|   |   |       |   |-- LangFam_Retired.pm
+|   |   |       |   |-- Language_Codes.pm
+|   |   |       |   |-- Language.pm
+|   |   |       |   |-- Language.pod
+|   |   |       |   |-- Language_Retired.pm
+|   |   |       |   |-- LangVar_Codes.pm
+|   |   |       |   |-- LangVar.pm
+|   |   |       |   |-- LangVar.pod
+|   |   |       |   |-- LangVar_Retired.pm
+|   |   |       |   |-- Script_Codes.pm
+|   |   |       |   |-- Script.pm
+|   |   |       |   |-- Script.pod
+|   |   |       |   `-- Script_Retired.pm
+|   |   |       |-- Codes.pm
+|   |   |       |-- Codes.pod
+|   |   |       |-- Country.pm
+|   |   |       |-- Country.pod
+|   |   |       |-- Currency.pm
+|   |   |       |-- Currency.pod
+|   |   |       |-- Language.pm
+|   |   |       |-- Language.pod
+|   |   |       |-- Script.pm
+|   |   |       `-- Script.pod
+|   |   |-- LICENSE
+|   |   |-- README.first
+|   |   `-- t
+|   |       |-- alias_code_old.t
+|   |       |-- alias_code.t
+|   |       |-- code2country_old.t
+|   |       |-- code2country.t
+|   |       |-- code2currency.t
+|   |       |-- code2langext.t
+|   |       |-- code2langfam.t
+|   |       |-- code2language.t
+|   |       |-- code2langvar.t
+|   |       |-- code2script.t
+|   |       |-- country2code_old.t
+|   |       |-- country2code.t
+|   |       |-- country_code2code_old.t
+|   |       |-- country_code2code.t
+|   |       |-- country_old.t
+|   |       |-- country.t
+|   |       |-- currency2code_old.t
+|   |       |-- currency2code.t
+|   |       |-- langext2code.t
+|   |       |-- langfam2code.t
+|   |       |-- language2code.t
+|   |       |-- language_old.t
+|   |       |-- language.t
+|   |       |-- langvar2code.t
+|   |       |-- script2code_old.t
+|   |       |-- script2code.t
+|   |       `-- testfunc.pl
+|   |-- Locale-Maketext-Simple
+|   |   |-- lib
+|   |   |   `-- Locale
+|   |   |       `-- Maketext
+|   |   |           `-- Simple.pm
+|   |   `-- t
+|   |       |-- 0-signature.t
+|   |       |-- 1-basic.t
+|   |       |-- 2-load_po_without_i_default.t
+|   |       |-- 3-load_po_with_i_default.t
+|   |       |-- po_with_i_default
+|   |       |   |-- en.po
+|   |       |   |-- fr.po
+|   |       |   `-- i_default.po
+|   |       `-- po_without_i_default
+|   |           |-- en.po
+|   |           `-- fr.po
+|   |-- Log-Message
+|   |   |-- lib
+|   |   |   `-- Log
+|   |   |       |-- Message
+|   |   |       |   |-- Config.pm
+|   |   |       |   |-- Handlers.pm
+|   |   |       |   `-- Item.pm
+|   |   |       `-- Message.pm
+|   |   `-- t
+|   |       |-- 01_Log-Message-Config.t
+|   |       |-- 02_Log-Message.t
+|   |       `-- conf
+|   |           |-- config_file
+|   |           `-- LoadMe.pl
+|   |-- Log-Message-Simple
+|   |   |-- lib
+|   |   |   `-- Log
+|   |   |       `-- Message
+|   |   |           `-- Simple.pm
+|   |   `-- t
+|   |       |-- 01_use.t
+|   |       |-- 02_imports.t
+|   |       `-- 03_functions.t
+|   |-- Math-Complex
+|   |   |-- ChangeLog
+|   |   |-- lib
+|   |   |   `-- Math
+|   |   |       |-- Complex.pm
+|   |   |       `-- Trig.pm
+|   |   |-- Makefile.PL
+|   |   `-- t
+|   |       |-- Complex.t
+|   |       |-- Trig.t
+|   |       `-- underbar.t
+|   |-- Memoize
+|   |   |-- Memoize
+|   |   |   |-- AnyDBM_File.pm
+|   |   |   |-- ExpireFile.pm
+|   |   |   |-- Expire.pm
+|   |   |   |-- ExpireTest.pm
+|   |   |   |-- NDBM_File.pm
+|   |   |   |-- SDBM_File.pm
+|   |   |   `-- Storable.pm
+|   |   |-- Memoize.pm
+|   |   |-- t
+|   |   |   |-- array_confusion.t
+|   |   |   |-- array.t
+|   |   |   |-- correctness.t
+|   |   |   |-- errors.t
+|   |   |   |-- expfile.t
+|   |   |   |-- expire.t
+|   |   |   |-- expmod_n.t
+|   |   |   |-- expmod_t.t
+|   |   |   |-- flush.t
+|   |   |   |-- normalize.t
+|   |   |   |-- prototype.t
+|   |   |   |-- speed.t
+|   |   |   |-- tiefeatures.t
+|   |   |   |-- tie_gdbm.t
+|   |   |   |-- tie_ndbm.t
+|   |   |   |-- tie_sdbm.t
+|   |   |   |-- tie_storable.t
+|   |   |   |-- tie.t
+|   |   |   `-- unmemoize.t
+|   |   `-- TODO
+|   |-- MIME-Base64
+|   |   |-- Base64.pm
+|   |   |-- Base64.xs
+|   |   |-- Changes
+|   |   |-- Makefile.PL
+|   |   |-- QuotedPrint.pm
+|   |   |-- README
+|   |   `-- t
+|   |       |-- base64.t
+|   |       |-- length.t
+|   |       |-- quoted-print.t
+|   |       `-- unicode.t
+|   |-- Module-Build
+|   |   |-- bin
+|   |   |   `-- config_data
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   |-- inc
+|   |   |   |   |-- latest
+|   |   |   |   |   `-- private.pm
+|   |   |   |   `-- latest.pm
+|   |   |   `-- Module
+|   |   |       |-- Build
+|   |   |       |   |-- API.pod
+|   |   |       |   |-- Authoring.pod
+|   |   |       |   |-- Base.pm
+|   |   |       |   |-- Bundling.pod
+|   |   |       |   |-- Compat.pm
+|   |   |       |   |-- ConfigData.pm
+|   |   |       |   |-- Config.pm
+|   |   |       |   |-- Cookbook.pm
+|   |   |       |   |-- Dumper.pm
+|   |   |       |   |-- ModuleInfo.pm
+|   |   |       |   |-- Notes.pm
+|   |   |       |   |-- Platform
+|   |   |       |   |   |-- aix.pm
+|   |   |       |   |   |-- Amiga.pm
+|   |   |       |   |   |-- cygwin.pm
+|   |   |       |   |   |-- darwin.pm
+|   |   |       |   |   |-- Default.pm
+|   |   |       |   |   |-- EBCDIC.pm
+|   |   |       |   |   |-- MacOS.pm
+|   |   |       |   |   |-- MPEiX.pm
+|   |   |       |   |   |-- os2.pm
+|   |   |       |   |   |-- RiscOS.pm
+|   |   |       |   |   |-- Unix.pm
+|   |   |       |   |   |-- VMS.pm
+|   |   |       |   |   |-- VOS.pm
+|   |   |       |   |   `-- Windows.pm
+|   |   |       |   |-- PodParser.pm
+|   |   |       |   |-- PPMMaker.pm
+|   |   |       |   |-- Version.pm
+|   |   |       |   `-- YAML.pm
+|   |   |       `-- Build.pm
+|   |   `-- t
+|   |       |-- 00-compile.t
+|   |       |-- actions
+|   |       |   |-- installdeps.t
+|   |       |   `-- manifest_skip.t
+|   |       |-- add_property.t
+|   |       |-- basic.t
+|   |       |-- bundled
+|   |       |   |-- Software
+|   |       |   |   `-- License.pm
+|   |       |   `-- Tie
+|   |       |       `-- CPHash.pm
+|   |       |-- bundle_inc.t
+|   |       |-- compat
+|   |       |   `-- exit.t
+|   |       |-- compat.t
+|   |       |-- debug.t
+|   |       |-- destinations.t
+|   |       |-- extend.t
+|   |       |-- ext.t
+|   |       |-- files.t
+|   |       |-- help.t
+|   |       |-- install_extra_target.t
+|   |       |-- install.t
+|   |       |-- lib
+|   |       |   |-- DistGen.pm
+|   |       |   |-- MBTest.pm
+|   |       |   |-- Module
+|   |       |   |   `-- Signature.pm
+|   |       |   `-- Software
+|   |       |       `-- License
+|   |       |           `-- VaporWare.pm
+|   |       |-- manifypods.t
+|   |       |-- metadata2.t
+|   |       |-- metadata.t
+|   |       |-- mymeta.t
+|   |       |-- new_from_context.t
+|   |       |-- notes.t
+|   |       |-- parents.t
+|   |       |-- perl_mb_opt.t
+|   |       |-- PL_files.t
+|   |       |-- pod_parser.t
+|   |       |-- ppm.t
+|   |       |-- properties
+|   |       |   |-- dist_suffix.t
+|   |       |   |-- license.t
+|   |       |   |-- module_name.t
+|   |       |   |-- needs_compiler.t
+|   |       |   |-- release_status.t
+|   |       |   |-- requires.t
+|   |       |   `-- share_dir.t
+|   |       |-- README.pod
+|   |       |-- resume.t
+|   |       |-- runthrough.t
+|   |       |-- sample.t
+|   |       |-- script_dist.t
+|   |       |-- test_file_exts.t
+|   |       |-- test_types.t
+|   |       |-- test_type.t
+|   |       |-- tilde.t
+|   |       |-- use_tap_harness.t
+|   |       |-- versions.t
+|   |       |-- write_default_maniskip.t
+|   |       `-- xs.t
+|   |-- Module-Load
+|   |   |-- lib
+|   |   |   `-- Module
+|   |   |       `-- Load.pm
+|   |   `-- t
+|   |       |-- 01_Module-Load.t
+|   |       `-- to_load
+|   |           |-- config_file
+|   |           |-- LoadIt.pm
+|   |           |-- LoadMe.pl
+|   |           |-- Must
+|   |           |   `-- Be
+|   |           |       `-- Loaded.pm
+|   |           |-- TestModule.pm
+|   |           `-- ToBeLoaded
+|   |-- Module-Load-Conditional
+|   |   |-- lib
+|   |   |   `-- Module
+|   |   |       `-- Load
+|   |   |           `-- Conditional.pm
+|   |   `-- t
+|   |       |-- 01_Module_Load_Conditional.t
+|   |       |-- 02_Parse_Version.t
+|   |       `-- to_load
+|   |           |-- Commented.pm
+|   |           |-- InPod.pm
+|   |           |-- LoadIt.pm
+|   |           |-- LoadMe.pl
+|   |           |-- MustBe
+|   |           |   `-- Loaded.pm
+|   |           `-- ToBeLoaded
+|   |-- Module-Loaded
+|   |   |-- lib
+|   |   |   `-- Module
+|   |   |       `-- Loaded.pm
+|   |   `-- t
+|   |       `-- 01_Module-Loaded.t
+|   |-- Module-Metadata
+|   |   |-- lib
+|   |   |   `-- Module
+|   |   |       `-- Metadata.pm
+|   |   `-- t
+|   |       |-- lib
+|   |       |   |-- 0_1
+|   |       |   |   `-- Foo.pm
+|   |       |   |-- 0_2
+|   |       |   |   `-- Foo.pm
+|   |       |   |-- DistGen.pm
+|   |       |   |-- MBTest.pm
+|   |       |   `-- Tie
+|   |       |       `-- CPHash.pm
+|   |       |-- metadata.t
+|   |       `-- version.t
+|   |-- Module-Pluggable
+|   |   |-- lib
+|   |   |   |-- Devel
+|   |   |   |   `-- InnerPackage.pm
+|   |   |   `-- Module
+|   |   |       |-- Pluggable
+|   |   |       |   `-- Object.pm
+|   |   |       `-- Pluggable.pm
+|   |   |-- Makefile.PL
+|   |   `-- t
+|   |       |-- 01use.t
+|   |       |-- 02alsoworks.t
+|   |       |-- 02works.t
+|   |       |-- 02works_taint.t
+|   |       |-- 03diffname.t
+|   |       |-- 04acmedir_single.t
+|   |       |-- 04acmedir.t
+|   |       |-- 04acmepath_single.t
+|   |       |-- 04acmepath.t
+|   |       |-- 05postpath.t
+|   |       |-- 06multipath.t
+|   |       |-- 07instantiate.t
+|   |       |-- 08nothing.t
+|   |       |-- 09require.t
+|   |       |-- 10innerpack_inner.t
+|   |       |-- 10innerpack_noinner.t
+|   |       |-- 10innerpack_onefile.t
+|   |       |-- 10innerpack_override.t
+|   |       |-- 10innerpack_super.t
+|   |       |-- 10innerpack.t
+|   |       |-- 11usetwice.t
+|   |       |-- 12onlyarray.t
+|   |       |-- 12onlyregex.t
+|   |       |-- 12onlyrequire.t
+|   |       |-- 12only.t
+|   |       |-- 13exceptarray.t
+|   |       |-- 13exceptregex.t
+|   |       |-- 13except.t
+|   |       |-- 14package.t
+|   |       |-- 15topicsafe.t
+|   |       |-- 16different_extension.t
+|   |       |-- 17devel_inner_package.t
+|   |       |-- 18skipped_package.t
+|   |       |-- 19can_ok_clobber.t
+|   |       |-- 20dodgy_files.t
+|   |       |-- 21editor_junk.t
+|   |       |-- acme
+|   |       |   `-- Acme
+|   |       |       `-- MyTest
+|   |       |           `-- Plugin
+|   |       |               `-- Foo.pm
+|   |       `-- lib
+|   |           |-- Acme
+|   |           |   |-- Foo-Bar.pm
+|   |           |   `-- MyTest
+|   |           |       `-- Plugin
+|   |           |           `-- Foo.pm
+|   |           |-- EditorJunk
+|   |           |   `-- Plugin
+|   |           |       |-- Bar.pm
+|   |           |       |-- Bar.pm~
+|   |           |       |-- Bar.pm.swo
+|   |           |       |-- Bar.pm.swp
+|   |           |       `-- Foo.pm
+|   |           |-- ExtTest
+|   |           |   `-- Plugin
+|   |           |       |-- Bar.plugin
+|   |           |       |-- Foo.plugin
+|   |           |       `-- Quux
+|   |           |           `-- Foo.plugin
+|   |           |-- InnerTest
+|   |           |   `-- Plugin
+|   |           |       `-- Foo.pm
+|   |           |-- MyOtherTest
+|   |           |   `-- Plugin
+|   |           |       |-- Bar.pm
+|   |           |       |-- Foo.pm
+|   |           |       |-- Quux
+|   |           |       |   `-- Foo.pm
+|   |           |       `-- Quux.pm
+|   |           |-- MyTest
+|   |           |   |-- Extend
+|   |           |   |   `-- Plugin
+|   |           |   |       `-- Bar.pm
+|   |           |   `-- Plugin
+|   |           |       |-- Bar.pm
+|   |           |       |-- Foo.pm
+|   |           |       `-- Quux
+|   |           |           `-- Foo.pm
+|   |           |-- No
+|   |           |   `-- Middle.pm
+|   |           |-- OddTest
+|   |           |   `-- Plugin
+|   |           |       `-- Foo.pm
+|   |           |-- TA
+|   |           |   `-- C
+|   |           |       `-- A
+|   |           |           `-- I.pm
+|   |           `-- Zot
+|   |-- NEXT
+|   |   |-- lib
+|   |   |   `-- NEXT.pm
+|   |   `-- t
+|   |       |-- actual.t
+|   |       |-- actuns.t
+|   |       |-- dynamically_scoped_regex_vars.t
+|   |       |-- next.t
+|   |       |-- stringify.t
+|   |       `-- unseen.t
+|   |-- Object-Accessor
+|   |   |-- lib
+|   |   |   `-- Object
+|   |   |       `-- Accessor.pm
+|   |   `-- t
+|   |       |-- 00_Object-Accessor.t
+|   |       |-- 01_Object-Accessor-Subclassed.t
+|   |       |-- 02_Object-Accessor-allow.t
+|   |       |-- 03_Object-Accessor-local.t
+|   |       |-- 04_Object-Accessor-lvalue.t
+|   |       |-- 05_Object-Accessor-callback.t
+|   |       `-- 06_Object-Accessor-alias.t
+|   |-- Package-Constants
+|   |   |-- lib
+|   |   |   `-- Package
+|   |   |       `-- Constants.pm
+|   |   `-- t
+|   |       `-- 01_list.t
+|   |-- Params-Check
+|   |   |-- lib
+|   |   |   `-- Params
+|   |   |       `-- Check.pm
+|   |   `-- t
+|   |       `-- 01_Params-Check.t
+|   |-- parent
+|   |   |-- lib
+|   |   |   `-- parent.pm
+|   |   `-- t
+|   |       |-- compile-time-file.t
+|   |       |-- compile-time.t
+|   |       |-- lib
+|   |       |   |-- Dummy
+|   |       |   |   `-- Outside.pm
+|   |       |   |-- Dummy2.plugin
+|   |       |   |-- Dummy.pm
+|   |       |   |-- FileThatOnlyExistsAsPMC.pmc
+|   |       |   `-- ReturnsFalse.pm
+|   |       |-- parent-classfromclassfile.t
+|   |       |-- parent-classfromfile.t
+|   |       |-- parent-pmc.t
+|   |       |-- parent-returns-false.t
+|   |       `-- parent.t
+|   |-- Parse-CPAN-Meta
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   `-- Parse
+|   |   |       `-- CPAN
+|   |   |           `-- Meta.pm
+|   |   `-- t
+|   |       |-- 01_compile.t
+|   |       |-- 02_api.t
+|   |       |-- 03_functions.t
+|   |       |-- 04_export.t
+|   |       |-- 05_errors.t
+|   |       |-- data
+|   |       |   |-- VR-META.json
+|   |       |   `-- VR-META.yml
+|   |       `-- lib
+|   |           `-- Parse
+|   |               `-- CPAN
+|   |                   `-- Meta
+|   |                       `-- Test.pm
+|   |-- perlfaq
+|   |   `-- lib
+|   |       |-- perlfaq1.pod
+|   |       |-- perlfaq2.pod
+|   |       |-- perlfaq3.pod
+|   |       |-- perlfaq4.pod
+|   |       |-- perlfaq5.pod
+|   |       |-- perlfaq6.pod
+|   |       |-- perlfaq7.pod
+|   |       |-- perlfaq8.pod
+|   |       |-- perlfaq9.pod
+|   |       |-- perlfaq.pm
+|   |       |-- perlfaq.pod
+|   |       `-- perlglossary.pod
+|   |-- PerlIO-via-QuotedPrint
+|   |   |-- lib
+|   |   |   `-- PerlIO
+|   |   |       `-- via
+|   |   |           `-- QuotedPrint.pm
+|   |   `-- t
+|   |       `-- QuotedPrint.t
+|   |-- Perl-OSType
+|   |   |-- lib
+|   |   |   `-- Perl
+|   |   |       `-- OSType.pm
+|   |   `-- t
+|   |       |-- 00-compile.t
+|   |       `-- OSType.t
+|   |-- Pod-Escapes
+|   |   |-- ChangeLog
+|   |   |-- lib
+|   |   |   `-- Pod
+|   |   |       `-- Escapes.pm
+|   |   |-- README
+|   |   `-- t
+|   |       |-- 01_about_verbose.t
+|   |       |-- 10_main.t
+|   |       `-- 15_name2charnum.t
+|   |-- Pod-LaTeX
+|   |   |-- lib
+|   |   |   `-- Pod
+|   |   |       `-- LaTeX.pm
+|   |   |-- pod2latex.PL
+|   |   `-- t
+|   |       |-- pod2latex.t
+|   |       `-- user.t
+|   |-- podlators
+|   |   |-- lib
+|   |   |   `-- Pod
+|   |   |       |-- Man.pm
+|   |   |       |-- ParseLink.pm
+|   |   |       |-- Text
+|   |   |       |   |-- Color.pm
+|   |   |       |   |-- Overstrike.pm
+|   |   |       |   `-- Termcap.pm
+|   |   |       `-- Text.pm
+|   |   |-- scripts
+|   |   |   |-- pod2man.PL
+|   |   |   `-- pod2text.PL
+|   |   |-- t
+|   |   |   |-- basic.cap
+|   |   |   |-- basic.clr
+|   |   |   |-- basic.man
+|   |   |   |-- basic.ovr
+|   |   |   |-- basic.pod
+|   |   |   |-- basic.t
+|   |   |   |-- basic.txt
+|   |   |   |-- color.t
+|   |   |   |-- devise-date.t
+|   |   |   |-- filehandle.t
+|   |   |   |-- man-heading.t
+|   |   |   |-- man-options.t
+|   |   |   |-- man-perlio.t
+|   |   |   |-- man.t
+|   |   |   |-- man-utf8.t
+|   |   |   |-- overstrike.t
+|   |   |   |-- parselink.t
+|   |   |   |-- pod-parser.t
+|   |   |   |-- pod-spelling.t
+|   |   |   |-- pod.t
+|   |   |   |-- termcap.t
+|   |   |   |-- text-encoding.t
+|   |   |   |-- text-options.t
+|   |   |   |-- text-perlio.t
+|   |   |   |-- text.t
+|   |   |   `-- text-utf8.t
+|   |   `-- VERSION
+|   |-- Pod-Parser
+|   |   |-- lib
+|   |   |   `-- Pod
+|   |   |       |-- Checker.pm
+|   |   |       |-- Find.pm
+|   |   |       |-- InputObjects.pm
+|   |   |       |-- Parser.pm
+|   |   |       |-- ParseUtils.pm
+|   |   |       |-- PlainText.pm
+|   |   |       |-- Select.pm
+|   |   |       `-- Usage.pm
+|   |   |-- scripts
+|   |   |   |-- pod2usage.PL
+|   |   |   |-- podchecker.PL
+|   |   |   `-- podselect.PL
+|   |   `-- t
+|   |       `-- pod
+|   |           |-- contains_bad_pod.xr
+|   |           |-- contains_pod.t
+|   |           |-- contains_pod.xr
+|   |           |-- emptycmd.t
+|   |           |-- emptycmd.xr
+|   |           |-- empty.xr
+|   |           |-- find.t
+|   |           |-- for.t
+|   |           |-- for.xr
+|   |           |-- headings.t
+|   |           |-- headings.xr
+|   |           |-- included.t
+|   |           |-- included.xr
+|   |           |-- include.t
+|   |           |-- include.xr
+|   |           |-- lref.t
+|   |           |-- lref.xr
+|   |           |-- multiline_items.t
+|   |           |-- multiline_items.xr
+|   |           |-- nested_items.t
+|   |           |-- nested_items.xr
+|   |           |-- nested_seqs.t
+|   |           |-- nested_seqs.xr
+|   |           |-- oneline_cmds.t
+|   |           |-- oneline_cmds.xr
+|   |           |-- p2u_data.pl
+|   |           |-- pod2usage2.t
+|   |           |-- pod2usage.t
+|   |           |-- pod2usage.xr
+|   |           |-- podchkenc.t
+|   |           |-- podchkenc.xr
+|   |           |-- poderrs.t
+|   |           |-- poderrs.xr
+|   |           |-- podselect.t
+|   |           |-- podselect.xr
+|   |           |-- selfcheck.t
+|   |           |-- special_seqs.t
+|   |           |-- special_seqs.xr
+|   |           |-- testcmp.pl
+|   |           |-- testp2pt.pl
+|   |           |-- testpchk.pl
+|   |           |-- testpods
+|   |           |   `-- lib
+|   |           |       `-- Pod
+|   |           |           `-- Stuff.pm
+|   |           |-- twice.t
+|   |           |-- usage2.pod
+|   |           `-- usage.pod
+|   |-- Pod-Perldoc
+|   |   |-- corpus
+|   |   |   |-- no-head.pod
+|   |   |   |-- perlfunc.pod
+|   |   |   `-- utf8.pod
+|   |   |-- lib
+|   |   |   |-- perldoc.pod
+|   |   |   `-- Pod
+|   |   |       |-- Perldoc
+|   |   |       |   |-- BaseTo.pm
+|   |   |       |   |-- GetOptsOO.pm
+|   |   |       |   |-- ToANSI.pm
+|   |   |       |   |-- ToChecker.pm
+|   |   |       |   |-- ToMan.pm
+|   |   |       |   |-- ToNroff.pm
+|   |   |       |   |-- ToPod.pm
+|   |   |       |   |-- ToRtf.pm
+|   |   |       |   |-- ToTerm.pm
+|   |   |       |   |-- ToText.pm
+|   |   |       |   |-- ToTk.pm
+|   |   |       |   `-- ToXml.pm
+|   |   |       `-- Perldoc.pm
+|   |   `-- t
+|   |       |-- load.t
+|   |       |-- man
+|   |       |   `-- _get_columns.t
+|   |       `-- pod.t
+|   |-- Pod-Simple
+|   |   |-- ChangeLog
+|   |   |-- lib
+|   |   |   `-- Pod
+|   |   |       |-- Simple
+|   |   |       |   |-- BlackBox.pm
+|   |   |       |   |-- Checker.pm
+|   |   |       |   |-- Debug.pm
+|   |   |       |   |-- DumpAsText.pm
+|   |   |       |   |-- DumpAsXML.pm
+|   |   |       |   |-- HTMLBatch.pm
+|   |   |       |   |-- HTMLLegacy.pm
+|   |   |       |   |-- HTML.pm
+|   |   |       |   |-- LinkSection.pm
+|   |   |       |   |-- Methody.pm
+|   |   |       |   |-- Progress.pm
+|   |   |       |   |-- PullParserEndToken.pm
+|   |   |       |   |-- PullParser.pm
+|   |   |       |   |-- PullParserStartToken.pm
+|   |   |       |   |-- PullParserTextToken.pm
+|   |   |       |   |-- PullParserToken.pm
+|   |   |       |   |-- RTF.pm
+|   |   |       |   |-- Search.pm
+|   |   |       |   |-- SimpleTree.pm
+|   |   |       |   |-- Subclassing.pod
+|   |   |       |   |-- TextContent.pm
+|   |   |       |   |-- Text.pm
+|   |   |       |   |-- TiedOutFH.pm
+|   |   |       |   |-- TranscodeDumb.pm
+|   |   |       |   |-- Transcode.pm
+|   |   |       |   |-- TranscodeSmart.pm
+|   |   |       |   |-- XHTML.pm
+|   |   |       |   `-- XMLOutStream.pm
+|   |   |       |-- Simple.pm
+|   |   |       `-- Simple.pod
+|   |   |-- README
+|   |   `-- t
+|   |       |-- 00about.t
+|   |       |-- 20_skip.t
+|   |       |-- accept01.t
+|   |       |-- accept05.t
+|   |       |-- ac_d.t
+|   |       |-- basic.t
+|   |       |-- begin.t
+|   |       |-- cbacks.t
+|   |       |-- chunking.t
+|   |       |-- closeys.t
+|   |       |-- corpus
+|   |       |   |-- 2202jp.txt
+|   |       |   |-- 2202jp.xml
+|   |       |   |-- 2202jpx.txt
+|   |       |   |-- 2202jpx.xml
+|   |       |   |-- 2202jpy.txt
+|   |       |   |-- 2202jpy.xml
+|   |       |   |-- 2202jpz.txt
+|   |       |   |-- 2202jpz.xml
+|   |       |   |-- 8859_7.pod
+|   |       |   |-- 8859_7.xml
+|   |       |   |-- cp1256.txt
+|   |       |   |-- cp1256.xml
+|   |       |   |-- fet_cont.txt
+|   |       |   |-- fet_cont.xml
+|   |       |   |-- fet_dup.txt
+|   |       |   |-- fet_dup.xml
+|   |       |   |-- iso6.txt
+|   |       |   |-- iso6.xml
+|   |       |   |-- koi8r.txt
+|   |       |   |-- koi8r.xml
+|   |       |   |-- laozi38b.txt
+|   |       |   |-- laozi38b.xml
+|   |       |   |-- laozi38p.pod
+|   |       |   |-- laozi38p.xml
+|   |       |   |-- laozi38.txt
+|   |       |   |-- laozi38.xml
+|   |       |   |-- lat1frim.txt
+|   |       |   |-- lat1frim.xml
+|   |       |   |-- lat1fr.txt
+|   |       |   |-- lat1fr.xml
+|   |       |   |-- nonesuch.txt
+|   |       |   |-- nonesuch.xml
+|   |       |   |-- pasternak_cp1251.txt
+|   |       |   |-- pasternak_cp1251.xml
+|   |       |   |-- plain_explicit.txt
+|   |       |   |-- plain_explicit.xml
+|   |       |   |-- plain_latin1.txt
+|   |       |   |-- plain_latin1.xml
+|   |       |   |-- plain.txt
+|   |       |   |-- plain_utf8.txt
+|   |       |   |-- plain_utf8.xml
+|   |       |   |-- plain.xml
+|   |       |   |-- polish_utf8.txt
+|   |       |   |-- polish_utf8.xml
+|   |       |   |-- s2763_sjis.txt
+|   |       |   |-- s2763_sjis.xml
+|   |       |   |-- thai_iso11.txt
+|   |       |   `-- thai_iso11.xml
+|   |       |-- corpus2
+|   |       |   |-- fiqhakbar_iso6.txt
+|   |       |   |-- fiqhakbar_iso6.xml
+|   |       |   |-- polish_implicit_utf8.txt
+|   |       |   |-- polish_utf16be_bom.txt
+|   |       |   |-- polish_utf16le_bom.txt
+|   |       |   |-- polish_utf8_bom2.txt
+|   |       |   |-- polish_utf8_bom2.xml
+|   |       |   |-- polish_utf8_bom.txt
+|   |       |   |-- polish_utf8_bom.xml
+|   |       |   `-- README
+|   |       |-- corpus.t
+|   |       |-- emptylists.t
+|   |       |-- encod01.t
+|   |       |-- encod02.t
+|   |       |-- encod03.t
+|   |       |-- end_over.t
+|   |       |-- eol2.t
+|   |       |-- eol.t
+|   |       |-- fake-closers.t
+|   |       |-- fcodes_e.t
+|   |       |-- fcodes_l.t
+|   |       |-- fcodes_s.t
+|   |       |-- fcodes.t
+|   |       |-- fornot.t
+|   |       |-- for.t
+|   |       |-- heads.t
+|   |       |-- html01.t
+|   |       |-- html02.t
+|   |       |-- html03.t
+|   |       |-- htmlbat.t
+|   |       |-- items02.t
+|   |       |-- items.t
+|   |       |-- itemstar.t
+|   |       |-- junk1o.txt
+|   |       |-- junk1.pod
+|   |       |-- junk2o.txt
+|   |       |-- junk2.pod
+|   |       |-- linkclas.t
+|   |       |-- output.t
+|   |       |-- perlcygo.txt
+|   |       |-- perlcyg.pod
+|   |       |-- perlfaqo.txt
+|   |       |-- perlfaq.pod
+|   |       |-- perlvaro.txt
+|   |       |-- perlvar.pod
+|   |       |-- puller.t
+|   |       |-- pulltitl.t
+|   |       |-- reinit.t
+|   |       |-- render.t
+|   |       |-- search05.t
+|   |       |-- search10.t
+|   |       |-- search12.t
+|   |       |-- search20.t
+|   |       |-- search22.t
+|   |       |-- search25.t
+|   |       |-- search26.t
+|   |       |-- search27.t
+|   |       |-- search28.t
+|   |       |-- search29.t
+|   |       |-- search50.t
+|   |       |-- stree.t
+|   |       |-- strpvbtm.t
+|   |       |-- testlib1
+|   |       |   |-- Blorm.pm
+|   |       |   |-- hinkhonk
+|   |       |   |   |-- Glunk.pod
+|   |       |   |   |-- readme.txt
+|   |       |   |   `-- Vliff.pm
+|   |       |   |-- pod
+|   |       |   |   |-- perlflif.pod
+|   |       |   |   `-- perlthng.pod
+|   |       |   |-- squaa
+|   |       |   |   |-- Glunk.pod
+|   |       |   |   `-- Vliff.pm
+|   |       |   |-- squaa.pm
+|   |       |   |-- zikzik.pod
+|   |       |   `-- Zonk
+|   |       |       |-- Fiddle.txt
+|   |       |       |-- Pronk.pm
+|   |       |       `-- Veng.pm
+|   |       |-- testlib2
+|   |       |   |-- hinkhonk
+|   |       |   |   |-- Glunk.pod
+|   |       |   |   |-- readme.txt
+|   |       |   |   `-- Vliff.pm
+|   |       |   |-- pod
+|   |       |   |   |-- perlthng.pod
+|   |       |   |   `-- perlzuk.pod
+|   |       |   |-- squaa
+|   |       |   |   |-- Vliff.pm
+|   |       |   |   `-- Wowo.pod
+|   |       |   `-- Suzzle.pm
+|   |       |-- testlib3
+|   |       |   `-- squaa
+|   |       |       `-- Vliff.pm
+|   |       |-- tiedfh.t
+|   |       |-- verbatim.t
+|   |       |-- verb_fmt.t
+|   |       |-- xhtml01.t
+|   |       |-- xhtml05.t
+|   |       |-- xhtml10.t
+|   |       |-- xhtml15.t
+|   |       `-- x_nixer.t
+|   |-- Socket
+|   |   |-- Makefile.PL
+|   |   |-- Socket.pm
+|   |   |-- Socket.xs
+|   |   |-- t
+|   |   |   |-- getaddrinfo.t
+|   |   |   |-- getnameinfo.t
+|   |   |   |-- ipv6_mreq.t
+|   |   |   |-- sockaddr.t
+|   |   |   |-- socketpair.t
+|   |   |   `-- Socket.t
+|   |   `-- typemap
+|   |-- Sys-Syslog
+|   |   |-- Changes
+|   |   |-- fallback
+|   |   |   |-- const-c.inc
+|   |   |   |-- const-xs.inc
+|   |   |   `-- syslog.h
+|   |   |-- Makefile.PL
+|   |   |-- README
+|   |   |-- README.win32
+|   |   |-- Syslog.pm
+|   |   |-- Syslog.xs
+|   |   |-- t
+|   |   |   |-- 00-load.t
+|   |   |   |-- constants.t
+|   |   |   `-- syslog.t
+|   |   `-- win32
+|   |       |-- compile.pl
+|   |       |-- PerlLog_dll.uu
+|   |       |-- PerlLog.mc
+|   |       |-- PerlLog_RES.uu
+|   |       `-- Win32.pm
+|   |-- Term-ANSIColor
+|   |   |-- ANSIColor.pm
+|   |   |-- ChangeLog
+|   |   |-- README
+|   |   `-- t
+|   |       |-- basic.t
+|   |       `-- stringify.t
+|   |-- Term-Cap
+|   |   |-- Cap.pm
+|   |   `-- test.pl
+|   |-- Term-UI
+|   |   |-- lib
+|   |   |   `-- Term
+|   |   |       |-- UI
+|   |   |       |   `-- History.pm
+|   |   |       `-- UI.pm
+|   |   `-- t
+|   |       |-- 00_load.t
+|   |       |-- 01_history.t
+|   |       `-- 02_ui.t
+|   |-- Test
+|   |   |-- lib
+|   |   |   `-- Test.pm
+|   |   `-- t
+|   |       |-- 05_about_verbose.t
+|   |       |-- fail.t
+|   |       |-- mix.t
+|   |       |-- multiline.t
+|   |       |-- onfail.t
+|   |       |-- qr.t
+|   |       |-- skip.t
+|   |       |-- success.t
+|   |       `-- todo.t
+|   |-- Test-Harness
+|   |   |-- bin
+|   |   |   `-- prove
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   |-- App
+|   |   |   |   |-- Prove
+|   |   |   |   |   |-- State
+|   |   |   |   |   |   |-- Result
+|   |   |   |   |   |   |   `-- Test.pm
+|   |   |   |   |   |   `-- Result.pm
+|   |   |   |   |   `-- State.pm
+|   |   |   |   `-- Prove.pm
+|   |   |   |-- TAP
+|   |   |   |   |-- Base.pm
+|   |   |   |   |-- Formatter
+|   |   |   |   |   |-- Base.pm
+|   |   |   |   |   |-- Color.pm
+|   |   |   |   |   |-- Console
+|   |   |   |   |   |   |-- ParallelSession.pm
+|   |   |   |   |   |   `-- Session.pm
+|   |   |   |   |   |-- Console.pm
+|   |   |   |   |   |-- File
+|   |   |   |   |   |   `-- Session.pm
+|   |   |   |   |   |-- File.pm
+|   |   |   |   |   `-- Session.pm
+|   |   |   |   |-- Harness
+|   |   |   |   |   `-- Beyond.pod
+|   |   |   |   |-- Harness.pm
+|   |   |   |   |-- Object.pm
+|   |   |   |   |-- Parser
+|   |   |   |   |   |-- Aggregator.pm
+|   |   |   |   |   |-- Grammar.pm
+|   |   |   |   |   |-- Iterator
+|   |   |   |   |   |   |-- Array.pm
+|   |   |   |   |   |   |-- Process.pm
+|   |   |   |   |   |   `-- Stream.pm
+|   |   |   |   |   |-- IteratorFactory.pm
+|   |   |   |   |   |-- Iterator.pm
+|   |   |   |   |   |-- Multiplexer.pm
+|   |   |   |   |   |-- Result
+|   |   |   |   |   |   |-- Bailout.pm
+|   |   |   |   |   |   |-- Comment.pm
+|   |   |   |   |   |   |-- Plan.pm
+|   |   |   |   |   |   |-- Pragma.pm
+|   |   |   |   |   |   |-- Test.pm
+|   |   |   |   |   |   |-- Unknown.pm
+|   |   |   |   |   |   |-- Version.pm
+|   |   |   |   |   |   `-- YAML.pm
+|   |   |   |   |   |-- ResultFactory.pm
+|   |   |   |   |   |-- Result.pm
+|   |   |   |   |   |-- Scheduler
+|   |   |   |   |   |   |-- Job.pm
+|   |   |   |   |   |   `-- Spinner.pm
+|   |   |   |   |   |-- Scheduler.pm
+|   |   |   |   |   |-- SourceHandler
+|   |   |   |   |   |   |-- Executable.pm
+|   |   |   |   |   |   |-- File.pm
+|   |   |   |   |   |   |-- Handle.pm
+|   |   |   |   |   |   |-- Perl.pm
+|   |   |   |   |   |   `-- RawTAP.pm
+|   |   |   |   |   |-- SourceHandler.pm
+|   |   |   |   |   |-- Source.pm
+|   |   |   |   |   |-- Utils.pm
+|   |   |   |   |   `-- YAMLish
+|   |   |   |   |       |-- Reader.pm
+|   |   |   |   |       `-- Writer.pm
+|   |   |   |   `-- Parser.pm
+|   |   |   `-- Test
+|   |   |       `-- Harness.pm
+|   |   |-- MANIFEST
+|   |   |-- MANIFEST.CUMMULATIVE
+|   |   `-- t
+|   |       |-- 000-load.t
+|   |       |-- aggregator.t
+|   |       |-- bailout.t
+|   |       |-- base.t
+|   |       |-- callbacks.t
+|   |       |-- compat
+|   |       |   |-- env.t
+|   |       |   |-- failure.t
+|   |       |   |-- inc-propagation.t
+|   |       |   |-- inc_taint.t
+|   |       |   |-- nonumbers.t
+|   |       |   |-- regression.t
+|   |       |   |-- subclass.t
+|   |       |   |-- switches.t
+|   |       |   |-- test-harness-compat.t
+|   |       |   `-- version.t
+|   |       |-- console.t
+|   |       |-- data
+|   |       |   |-- catme.1
+|   |       |   |-- proverc
+|   |       |   `-- sample.yml
+|   |       |-- errors.t
+|   |       |-- file.t
+|   |       |-- glob-to-regexp.t
+|   |       |-- grammar.t
+|   |       |-- harness-bailout.t
+|   |       |-- harness-subclass.t
+|   |       |-- harness.t
+|   |       |-- iterator_factory.t
+|   |       |-- iterators.t
+|   |       |-- lib
+|   |       |   |-- App
+|   |       |   |   `-- Prove
+|   |       |   |       `-- Plugin
+|   |       |   |           |-- Dummy2.pm
+|   |       |   |           `-- Dummy.pm
+|   |       |   |-- Dev
+|   |       |   |   `-- Null.pm
+|   |       |   |-- EmptyParser.pm
+|   |       |   |-- IO
+|   |       |   |   `-- c55Capture.pm
+|   |       |   |-- MyCustom.pm
+|   |       |   |-- MyFileSourceHandler.pm
+|   |       |   |-- MyGrammar.pm
+|   |       |   |-- MyIterator.pm
+|   |       |   |-- MyPerlSourceHandler.pm
+|   |       |   |-- MyResultFactory.pm
+|   |       |   |-- MyResult.pm
+|   |       |   |-- MySourceHandler.pm
+|   |       |   |-- NoFork.pm
+|   |       |   |-- NOP.pm
+|   |       |   `-- TAP
+|   |       |       |-- Harness
+|   |       |       |   `-- TestSubclass.pm
+|   |       |       `-- Parser
+|   |       |           `-- SubclassTest.pm
+|   |       |-- multiplexer.t
+|   |       |-- nested.t
+|   |       |-- nofork-mux.t
+|   |       |-- nofork.t
+|   |       |-- object.t
+|   |       |-- parser-config.t
+|   |       |-- parser-subclass.t
+|   |       |-- parse.t
+|   |       |-- perl5lib.t
+|   |       |-- premature-bailout.t
+|   |       |-- process.t
+|   |       |-- proveenv.t
+|   |       |-- proverc
+|   |       |   `-- emptyexec
+|   |       |-- proverc.t
+|   |       |-- proverun.t
+|   |       |-- prove.t
+|   |       |-- proveversion.t
+|   |       |-- regression.t
+|   |       |-- results.t
+|   |       |-- sample-tests
+|   |       |   |-- bailout
+|   |       |   |-- bignum
+|   |       |   |-- bignum_many
+|   |       |   |-- combined
+|   |       |   |-- combined_compat
+|   |       |   |-- delayed
+|   |       |   |-- descriptive
+|   |       |   |-- descriptive_trailing
+|   |       |   |-- die
+|   |       |   |-- die_head_end
+|   |       |   |-- die_last_minute
+|   |       |   |-- die_unfinished
+|   |       |   |-- duplicates
+|   |       |   |-- echo
+|   |       |   |-- empty
+|   |       |   |-- escape_eol
+|   |       |   |-- escape_hash
+|   |       |   |-- head_end
+|   |       |   |-- head_fail
+|   |       |   |-- inc_taint
+|   |       |   |-- junk_before_plan
+|   |       |   |-- lone_not_bug
+|   |       |   |-- no_nums
+|   |       |   |-- no_output
+|   |       |   |-- out_err_mix
+|   |       |   |-- out_of_order
+|   |       |   |-- schwern
+|   |       |   |-- schwern-todo-quiet
+|   |       |   |-- segfault
+|   |       |   |-- sequence_misparse
+|   |       |   |-- shbang_misparse
+|   |       |   |-- simple
+|   |       |   |-- simple_fail
+|   |       |   |-- simple_yaml
+|   |       |   |-- simple_yaml_missing_version13
+|   |       |   |-- skip
+|   |       |   |-- skipall
+|   |       |   |-- skipall_nomsg
+|   |       |   |-- skipall_v13
+|   |       |   |-- skip_nomsg
+|   |       |   |-- space_after_plan
+|   |       |   |-- stdout_stderr
+|   |       |   |-- strict
+|   |       |   |-- switches
+|   |       |   |-- taint
+|   |       |   |-- taint_warn
+|   |       |   |-- todo
+|   |       |   |-- todo_inline
+|   |       |   |-- todo_misparse
+|   |       |   |-- too_many
+|   |       |   |-- version_good
+|   |       |   |-- version_late
+|   |       |   |-- version_old
+|   |       |   |-- vms_nit
+|   |       |   |-- with_comments
+|   |       |   |-- yaml_late_plan
+|   |       |   `-- zero_valid
+|   |       |-- scheduler.t
+|   |       |-- source_handler.t
+|   |       |-- source.t
+|   |       |-- source_tests
+|   |       |   |-- harness
+|   |       |   |-- harness_badtap
+|   |       |   |-- harness_complain
+|   |       |   |-- harness_directives
+|   |       |   |-- harness_failure
+|   |       |   |-- psql.bat
+|   |       |   |-- source
+|   |       |   |-- source.1
+|   |       |   |-- source_args.sh
+|   |       |   |-- source.bat
+|   |       |   |-- source.pl
+|   |       |   |-- source.sh
+|   |       |   |-- source.t
+|   |       |   `-- source.tap
+|   |       |-- spool.t
+|   |       |-- state_results.t
+|   |       |-- state.t
+|   |       |-- streams.t
+|   |       |-- subclass_tests
+|   |       |   |-- non_perl_source
+|   |       |   `-- perl_source
+|   |       |-- taint.t
+|   |       |-- testargs.t
+|   |       |-- unicode.t
+|   |       |-- utils.t
+|   |       |-- yamlish-output.t
+|   |       |-- yamlish.t
+|   |       `-- yamlish-writer.t
+|   |-- Test-Simple
+|   |   |-- Changes
+|   |   |-- examples
+|   |   |   |-- indent.pl
+|   |   |   `-- subtest.t
+|   |   |-- lib
+|   |   |   `-- Test
+|   |   |       |-- Builder
+|   |   |       |   |-- Module.pm
+|   |   |       |   |-- Tester
+|   |   |       |   |   `-- Color.pm
+|   |   |       |   `-- Tester.pm
+|   |   |       |-- Builder.pm
+|   |   |       |-- More.pm
+|   |   |       |-- Simple.pm
+|   |   |       `-- Tutorial.pod
+|   |   |-- README
+|   |   |-- t
+|   |   |   |-- 00test_harness_check.t
+|   |   |   |-- bad_plan.t
+|   |   |   |-- bail_out.t
+|   |   |   |-- BEGIN_require_ok.t
+|   |   |   |-- BEGIN_use_ok.t
+|   |   |   |-- buffer.t
+|   |   |   |-- Builder
+|   |   |   |   |-- Builder.t
+|   |   |   |   |-- carp.t
+|   |   |   |   |-- create.t
+|   |   |   |   |-- current_test.t
+|   |   |   |   |-- current_test_without_plan.t
+|   |   |   |   |-- details.t
+|   |   |   |   |-- done_testing_double.t
+|   |   |   |   |-- done_testing_plan_mismatch.t
+|   |   |   |   |-- done_testing.t
+|   |   |   |   |-- done_testing_with_no_plan.t
+|   |   |   |   |-- done_testing_with_number.t
+|   |   |   |   |-- done_testing_with_plan.t
+|   |   |   |   |-- fork_with_new_stdout.t
+|   |   |   |   |-- has_plan2.t
+|   |   |   |   |-- has_plan.t
+|   |   |   |   |-- is_fh.t
+|   |   |   |   |-- is_passing.t
+|   |   |   |   |-- maybe_regex.t
+|   |   |   |   |-- no_diag.t
+|   |   |   |   |-- no_ending.t
+|   |   |   |   |-- no_header.t
+|   |   |   |   |-- no_plan_at_all.t
+|   |   |   |   |-- ok_obj.t
+|   |   |   |   |-- output.t
+|   |   |   |   |-- reset.t
+|   |   |   |   `-- try.t
+|   |   |   |-- c_flag.t
+|   |   |   |-- circular_data.t
+|   |   |   |-- cmp_ok.t
+|   |   |   |-- dependents.t
+|   |   |   |-- diag.t
+|   |   |   |-- died.t
+|   |   |   |-- dont_overwrite_die_handler.t
+|   |   |   |-- eq_set.t
+|   |   |   |-- exit.t
+|   |   |   |-- explain.t
+|   |   |   |-- extra_one.t
+|   |   |   |-- extra.t
+|   |   |   |-- fail-like.t
+|   |   |   |-- fail-more.t
+|   |   |   |-- fail_one.t
+|   |   |   |-- fail.t
+|   |   |   |-- filehandles.t
+|   |   |   |-- fork.t
+|   |   |   |-- harness_active.t
+|   |   |   |-- import.t
+|   |   |   |-- is_deeply_dne_bug.t
+|   |   |   |-- is_deeply_fail.t
+|   |   |   |-- is_deeply_with_threads.t
+|   |   |   |-- lib
+|   |   |   |   |-- Dev
+|   |   |   |   |   `-- Null.pm
+|   |   |   |   |-- Dummy.pm
+|   |   |   |   |-- MyOverload.pm
+|   |   |   |   |-- NoExporter.pm
+|   |   |   |   |-- SigDie.pm
+|   |   |   |   |-- Test
+|   |   |   |   |   |-- Builder
+|   |   |   |   |   |   `-- NoOutput.pm
+|   |   |   |   |   `-- Simple
+|   |   |   |   |       |-- Catch.pm
+|   |   |   |   |       `-- sample_tests
+|   |   |   |   |           |-- death_in_eval.plx
+|   |   |   |   |           |-- death.plx
+|   |   |   |   |           |-- death_with_handler.plx
+|   |   |   |   |           |-- exit.plx
+|   |   |   |   |           |-- extras.plx
+|   |   |   |   |           |-- five_fail.plx
+|   |   |   |   |           |-- last_minute_death.plx
+|   |   |   |   |           |-- one_fail.plx
+|   |   |   |   |           |-- pre_plan_death.plx
+|   |   |   |   |           |-- require.plx
+|   |   |   |   |           |-- success.plx
+|   |   |   |   |           |-- too_few_fail.plx
+|   |   |   |   |           |-- too_few.plx
+|   |   |   |   |           `-- two_fail.plx
+|   |   |   |   `-- TieOut.pm
+|   |   |   |-- missing.t
+|   |   |   |-- More.t
+|   |   |   |-- new_ok.t
+|   |   |   |-- no_plan.t
+|   |   |   |-- no_tests.t
+|   |   |   |-- note.t
+|   |   |   |-- overload.t
+|   |   |   |-- overload_threads.t
+|   |   |   |-- plan_bad.t
+|   |   |   |-- plan_is_noplan.t
+|   |   |   |-- plan_no_plan.t
+|   |   |   |-- plan_shouldnt_import.t
+|   |   |   |-- plan_skip_all.t
+|   |   |   |-- plan.t
+|   |   |   |-- require_ok.t
+|   |   |   |-- Simple
+|   |   |   |   `-- load.t
+|   |   |   |-- simple.t
+|   |   |   |-- skipall.t
+|   |   |   |-- skip.t
+|   |   |   |-- subtest
+|   |   |   |   |-- args.t
+|   |   |   |   |-- basic.t
+|   |   |   |   |-- die.t
+|   |   |   |   |-- do.t
+|   |   |   |   |-- exceptions.t
+|   |   |   |   |-- for_do_t.test
+|   |   |   |   |-- fork.t
+|   |   |   |   |-- implicit_done.t
+|   |   |   |   |-- line_numbers.t
+|   |   |   |   |-- plan.t
+|   |   |   |   |-- predicate.t
+|   |   |   |   |-- singleton.t
+|   |   |   |   |-- todo.t
+|   |   |   |   `-- wstat.t
+|   |   |   |-- tbm_doesnt_set_exported_to.t
+|   |   |   |-- Tester
+|   |   |   |   |-- tbt_01basic.t
+|   |   |   |   |-- tbt_02fhrestore.t
+|   |   |   |   |-- tbt_03die.t
+|   |   |   |   |-- tbt_04line_num.t
+|   |   |   |   |-- tbt_05faildiag.t
+|   |   |   |   |-- tbt_06errormess.t
+|   |   |   |   `-- tbt_07args.t
+|   |   |   |-- threads.t
+|   |   |   |-- thread_taint.t
+|   |   |   |-- todo.t
+|   |   |   |-- undef.t
+|   |   |   |-- useing.t
+|   |   |   |-- use_ok.t
+|   |   |   |-- utf8.t
+|   |   |   `-- versions.t
+|   |   `-- TODO
+|   |-- Text-Balanced
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   `-- Text
+|   |   |       `-- Balanced.pm
+|   |   |-- README
+|   |   `-- t
+|   |       |-- 01_compile.t
+|   |       |-- 02_extbrk.t
+|   |       |-- 03_extcbk.t
+|   |       |-- 04_extdel.t
+|   |       |-- 05_extmul.t
+|   |       |-- 06_extqlk.t
+|   |       |-- 07_exttag.t
+|   |       |-- 08_extvar.t
+|   |       `-- 09_gentag.t
+|   |-- Text-ParseWords
+|   |   |-- lib
+|   |   |   `-- Text
+|   |   |       `-- ParseWords.pm
+|   |   `-- t
+|   |       |-- ParseWords.t
+|   |       `-- taint.t
+|   |-- Text-Soundex
+|   |   |-- Changes
+|   |   |-- README
+|   |   |-- Soundex.pm
+|   |   |-- Soundex.xs
+|   |   `-- t
+|   |       `-- Soundex.t
+|   |-- Text-Tabs
+|   |   |-- CHANGELOG
+|   |   |-- lib
+|   |   |   `-- Text
+|   |   |       |-- Tabs.pm
+|   |   |       `-- Wrap.pm
+|   |   `-- t
+|   |       |-- 37000.t
+|   |       |-- 39548.t
+|   |       |-- belg4mit.t
+|   |       |-- dandv.t
+|   |       |-- fill.t
+|   |       |-- Jacobson2.t
+|   |       |-- Jacobson.t
+|   |       |-- Jochen.t
+|   |       |-- sep2.t
+|   |       |-- sep.t
+|   |       |-- tabs.t
+|   |       |-- wrap_separator2.t
+|   |       `-- wrap.t
+|   |-- Tie-RefHash
+|   |   |-- lib
+|   |   |   `-- Tie
+|   |   |       `-- RefHash.pm
+|   |   `-- t
+|   |       |-- rebless.t
+|   |       |-- refhash.t
+|   |       |-- storable.t
+|   |       `-- threaded.t
+|   |-- Time-HiRes
+|   |   |-- Changes
+|   |   |-- fallback
+|   |   |   |-- const-c.inc
+|   |   |   `-- const-xs.inc
+|   |   |-- hints
+|   |   |   |-- aix.pl
+|   |   |   |-- dec_osf.pl
+|   |   |   |-- dynixptx.pl
+|   |   |   |-- irix.pl
+|   |   |   |-- linux.pl
+|   |   |   |-- sco.pl
+|   |   |   |-- solaris.pl
+|   |   |   `-- svr4.pl
+|   |   |-- HiRes.pm
+|   |   |-- HiRes.xs
+|   |   |-- Makefile.PL
+|   |   |-- t
+|   |   |   |-- alarm.t
+|   |   |   |-- clock.t
+|   |   |   |-- gettimeofday.t
+|   |   |   |-- itimer.t
+|   |   |   |-- nanosleep.t
+|   |   |   |-- sleep.t
+|   |   |   |-- stat.t
+|   |   |   |-- time.t
+|   |   |   |-- tv_interval.t
+|   |   |   |-- ualarm.t
+|   |   |   |-- usleep.t
+|   |   |   `-- Watchdog.pm
+|   |   `-- typemap
+|   |-- Time-Local
+|   |   |-- lib
+|   |   |   `-- Time
+|   |   |       `-- Local.pm
+|   |   `-- t
+|   |       `-- Local.t
+|   |-- Time-Piece
+|   |   |-- Changes
+|   |   |-- Makefile.PL
+|   |   |-- Piece.pm
+|   |   |-- Piece.xs
+|   |   |-- README
+|   |   |-- Seconds.pm
+|   |   `-- t
+|   |       |-- 01base.t
+|   |       |-- 02core.t
+|   |       |-- 03compare.t
+|   |       |-- 04mjd.t
+|   |       |-- 05overload.t
+|   |       |-- 06subclass.t
+|   |       `-- 07arith.t
+|   |-- Unicode-Collate
+|   |   |-- Changes
+|   |   |-- Collate
+|   |   |   |-- allkeys.txt
+|   |   |   |-- CJK
+|   |   |   |   |-- Big5.pm
+|   |   |   |   |-- GB2312.pm
+|   |   |   |   |-- JISX0208.pm
+|   |   |   |   |-- Korean.pm
+|   |   |   |   |-- Pinyin.pm
+|   |   |   |   `-- Stroke.pm
+|   |   |   |-- keys.txt
+|   |   |   |-- Locale
+|   |   |   |   |-- af.pl
+|   |   |   |   |-- ar.pl
+|   |   |   |   |-- as.pl
+|   |   |   |   |-- az.pl
+|   |   |   |   |-- be.pl
+|   |   |   |   |-- bg.pl
+|   |   |   |   |-- bn.pl
+|   |   |   |   |-- ca.pl
+|   |   |   |   |-- cs.pl
+|   |   |   |   |-- cy.pl
+|   |   |   |   |-- da.pl
+|   |   |   |   |-- de_phone.pl
+|   |   |   |   |-- eo.pl
+|   |   |   |   |-- es.pl
+|   |   |   |   |-- es_trad.pl
+|   |   |   |   |-- et.pl
+|   |   |   |   |-- fa.pl
+|   |   |   |   |-- fil.pl
+|   |   |   |   |-- fi_phone.pl
+|   |   |   |   |-- fi.pl
+|   |   |   |   |-- fo.pl
+|   |   |   |   |-- fr.pl
+|   |   |   |   |-- gu.pl
+|   |   |   |   |-- ha.pl
+|   |   |   |   |-- haw.pl
+|   |   |   |   |-- hi.pl
+|   |   |   |   |-- hr.pl
+|   |   |   |   |-- hu.pl
+|   |   |   |   |-- hy.pl
+|   |   |   |   |-- ig.pl
+|   |   |   |   |-- is.pl
+|   |   |   |   |-- ja.pl
+|   |   |   |   |-- kk.pl
+|   |   |   |   |-- kl.pl
+|   |   |   |   |-- kn.pl
+|   |   |   |   |-- kok.pl
+|   |   |   |   |-- ko.pl
+|   |   |   |   |-- ln.pl
+|   |   |   |   |-- lt.pl
+|   |   |   |   |-- lv.pl
+|   |   |   |   |-- mk.pl
+|   |   |   |   |-- ml.pl
+|   |   |   |   |-- mr.pl
+|   |   |   |   |-- mt.pl
+|   |   |   |   |-- nb.pl
+|   |   |   |   |-- nn.pl
+|   |   |   |   |-- nso.pl
+|   |   |   |   |-- om.pl
+|   |   |   |   |-- or.pl
+|   |   |   |   |-- pa.pl
+|   |   |   |   |-- pl.pl
+|   |   |   |   |-- ro.pl
+|   |   |   |   |-- ru.pl
+|   |   |   |   |-- sa.pl
+|   |   |   |   |-- se.pl
+|   |   |   |   |-- si_dict.pl
+|   |   |   |   |-- si.pl
+|   |   |   |   |-- sk.pl
+|   |   |   |   |-- sl.pl
+|   |   |   |   |-- sq.pl
+|   |   |   |   |-- sr.pl
+|   |   |   |   |-- sv.pl
+|   |   |   |   |-- sv_refo.pl
+|   |   |   |   |-- ta.pl
+|   |   |   |   |-- te.pl
+|   |   |   |   |-- th.pl
+|   |   |   |   |-- tn.pl
+|   |   |   |   |-- to.pl
+|   |   |   |   |-- tr.pl
+|   |   |   |   |-- uk.pl
+|   |   |   |   |-- ur.pl
+|   |   |   |   |-- vi.pl
+|   |   |   |   |-- wae.pl
+|   |   |   |   |-- wo.pl
+|   |   |   |   |-- yo.pl
+|   |   |   |   |-- zh_big5.pl
+|   |   |   |   |-- zh_gb.pl
+|   |   |   |   |-- zh_pin.pl
+|   |   |   |   |-- zh.pl
+|   |   |   |   `-- zh_strk.pl
+|   |   |   `-- Locale.pm
+|   |   |-- Collate.pm
+|   |   |-- Collate.xs
+|   |   |-- Makefile.PL
+|   |   |-- mkheader
+|   |   |-- README
+|   |   `-- t
+|   |       |-- altern.t
+|   |       |-- backwds.t
+|   |       |-- cjk_b5.t
+|   |       |-- cjk_gb.t
+|   |       |-- cjk_ja.t
+|   |       |-- cjk_ko.t
+|   |       |-- cjk_py.t
+|   |       |-- cjkrange.t
+|   |       |-- cjk_st.t
+|   |       |-- compatui.t
+|   |       |-- contract.t
+|   |       |-- default.t
+|   |       |-- hangtype.t
+|   |       |-- hangul.t
+|   |       |-- iglevel2.t
+|   |       |-- ignor.t
+|   |       |-- illegalp.t
+|   |       |-- illegal.t
+|   |       |-- index.t
+|   |       |-- loc_af.t
+|   |       |-- loc_ar.t
+|   |       |-- loc_as.t
+|   |       |-- loc_az.t
+|   |       |-- loc_be.t
+|   |       |-- loc_bg.t
+|   |       |-- loc_bn.t
+|   |       |-- loc_bs.t
+|   |       |-- loc_ca.t
+|   |       |-- loc_cjkc.t
+|   |       |-- loc_cjk.t
+|   |       |-- loc_cs.t
+|   |       |-- loc_cyrl.t
+|   |       |-- loc_cy.t
+|   |       |-- loc_da.t
+|   |       |-- loc_deph.t
+|   |       |-- loc_de.t
+|   |       |-- loc_eo.t
+|   |       |-- loc_es.t
+|   |       |-- loc_estr.t
+|   |       |-- loc_et.t
+|   |       |-- loc_fa.t
+|   |       |-- loc_fil.t
+|   |       |-- loc_fiph.t
+|   |       |-- loc_fi.t
+|   |       |-- loc_fo.t
+|   |       |-- loc_fr.t
+|   |       |-- loc_gu.t
+|   |       |-- loc_ha.t
+|   |       |-- loc_haw.t
+|   |       |-- loc_hi.t
+|   |       |-- loc_hr.t
+|   |       |-- loc_hu.t
+|   |       |-- loc_hy.t
+|   |       |-- loc_ig.t
+|   |       |-- loc_is.t
+|   |       |-- loc_jait.t
+|   |       |-- loc_japr.t
+|   |       |-- loc_ja.t
+|   |       |-- loc_kk.t
+|   |       |-- loc_kl.t
+|   |       |-- loc_kn.t
+|   |       |-- loc_kok.t
+|   |       |-- loc_ko.t
+|   |       |-- loc_ln.t
+|   |       |-- loc_lt.t
+|   |       |-- loc_lv.t
+|   |       |-- loc_mk.t
+|   |       |-- loc_ml.t
+|   |       |-- loc_mr.t
+|   |       |-- loc_mt.t
+|   |       |-- loc_nb.t
+|   |       |-- loc_nn.t
+|   |       |-- loc_nso.t
+|   |       |-- loc_om.t
+|   |       |-- loc_or.t
+|   |       |-- loc_pa.t
+|   |       |-- loc_pl.t
+|   |       |-- loc_ro.t
+|   |       |-- loc_ru.t
+|   |       |-- loc_sa.t
+|   |       |-- loc_se.t
+|   |       |-- loc_sidt.t
+|   |       |-- loc_si.t
+|   |       |-- loc_sk.t
+|   |       |-- loc_sl.t
+|   |       |-- loc_sq.t
+|   |       |-- loc_srla.t
+|   |       |-- loc_sr.t
+|   |       |-- loc_svrf.t
+|   |       |-- loc_sv.t
+|   |       |-- loc_sw.t
+|   |       |-- loc_ta.t
+|   |       |-- loc_test.t
+|   |       |-- loc_te.t
+|   |       |-- loc_th.t
+|   |       |-- loc_tn.t
+|   |       |-- loc_to.t
+|   |       |-- loc_tr.t
+|   |       |-- loc_uk.t
+|   |       |-- loc_ur.t
+|   |       |-- loc_vi.t
+|   |       |-- loc_wae.t
+|   |       |-- loc_wo.t
+|   |       |-- loc_yo.t
+|   |       |-- loc_zhb5.t
+|   |       |-- loc_zhgb.t
+|   |       |-- loc_zhpy.t
+|   |       |-- loc_zhst.t
+|   |       |-- loc_zh.t
+|   |       |-- nonchar.t
+|   |       |-- normal.t
+|   |       |-- overcjk0.t
+|   |       |-- overcjk1.t
+|   |       |-- override.t
+|   |       |-- rearrang.t
+|   |       |-- rewrite.t
+|   |       |-- test.t
+|   |       |-- trailwt.t
+|   |       |-- variable.t
+|   |       |-- version.t
+|   |       `-- view.t
+|   |-- Unicode-Normalize
+|   |   |-- Changes
+|   |   |-- Makefile.PL
+|   |   |-- mkheader
+|   |   |-- Normalize.pm
+|   |   |-- Normalize.xs
+|   |   |-- README
+|   |   `-- t
+|   |       |-- fcdc.t
+|   |       |-- form.t
+|   |       |-- func.t
+|   |       |-- illegal.t
+|   |       |-- norm.t
+|   |       |-- null.t
+|   |       |-- partial1.t
+|   |       |-- partial2.t
+|   |       |-- proto.t
+|   |       |-- split.t
+|   |       |-- test.t
+|   |       `-- tie.t
+|   |-- Version-Requirements
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   `-- Version
+|   |   |       `-- Requirements.pm
+|   |   `-- t
+|   |       |-- accepts.t
+|   |       |-- basic.t
+|   |       |-- finalize.t
+|   |       |-- from-hash.t
+|   |       `-- merge.t
+|   |-- Win32
+|   |   |-- Changes
+|   |   |-- longpath.inc
+|   |   |-- Makefile.PL
+|   |   |-- t
+|   |   |   |-- CreateFile.t
+|   |   |   |-- ExpandEnvironmentStrings.t
+|   |   |   |-- GetCurrentThreadId.t
+|   |   |   |-- GetFileVersion.t
+|   |   |   |-- GetFolderPath.t
+|   |   |   |-- GetFullPathName.t
+|   |   |   |-- GetLongPathName.t
+|   |   |   |-- GetOSName.t
+|   |   |   |-- GetOSVersion.t
+|   |   |   |-- GetShortPathName.t
+|   |   |   |-- GuidGen.t
+|   |   |   |-- Names.t
+|   |   |   `-- Unicode.t
+|   |   |-- Win32.pm
+|   |   `-- Win32.xs
+|   `-- Win32API-File
+|       |-- buffers.h
+|       |-- cFile.h
+|       |-- cFile.pc
+|       |-- Changes
+|       |-- const2perl.h
+|       |-- ExtUtils
+|       |   `-- Myconst2perl.pm
+|       |-- File.pm
+|       |-- File.xs
+|       |-- Makefile.PL
+|       |-- README
+|       |-- t
+|       |   |-- file.t
+|       |   `-- tie.t
+|       `-- typemap
+|-- Cross
+|   |-- build-arm-n770-sh
+|   |-- cflags-cross-arm
+|   |-- config
+|   |-- config.sh-arm-linux
+|   |-- config.sh-arm-linux-n770
+|   |-- generate_config_sh
+|   |-- installperl.patch
+|   |-- Makefile
+|   |-- Makefile-cross-SH
+|   |-- Makefile.SH.patch
+|   |-- README
+|   |-- README.new
+|   |-- TODO
+|   `-- warp
+|-- cv.h
+|-- cygwin
+|   `-- cygwin.c
+|-- deb.c
+|-- dist
+|   |-- Attribute-Handlers
+|   |   |-- Changes
+|   |   |-- demo
+|   |   |   |-- demo2.pl
+|   |   |   |-- demo3.pl
+|   |   |   |-- demo4.pl
+|   |   |   |-- demo_call.pl
+|   |   |   |-- demo_chain.pl
+|   |   |   |-- demo_cycle.pl
+|   |   |   |-- demo_hashdir.pl
+|   |   |   |-- demo_phases.pl
+|   |   |   |-- demo.pl
+|   |   |   |-- Demo.pm
+|   |   |   |-- demo_range.pl
+|   |   |   |-- demo_rawdata.pl
+|   |   |   |-- Descriptions.pm
+|   |   |   `-- MyClass.pm
+|   |   |-- lib
+|   |   |   `-- Attribute
+|   |   |       `-- Handlers.pm
+|   |   `-- t
+|   |       |-- constants.t
+|   |       |-- data_convert.t
+|   |       |-- linerep.t
+|   |       `-- multi.t
+|   |-- autouse
+|   |   |-- lib
+|   |   |   `-- autouse.pm
+|   |   `-- t
+|   |       |-- autouse.t
+|   |       `-- lib
+|   |           |-- MyTestModule2.pm
+|   |           `-- MyTestModule.pm
+|   |-- base
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   |-- base.pm
+|   |   |   `-- fields.pm
+|   |   |-- MANIFEST
+|   |   |-- META.yml
+|   |   `-- t
+|   |       |-- base.t
+|   |       |-- compile-time.t
+|   |       |-- fields-5_6_0.t
+|   |       |-- fields-5_8_0.t
+|   |       |-- fields-base.t
+|   |       |-- fields.t
+|   |       |-- isa.t
+|   |       |-- lib
+|   |       |   |-- Dummy.pm
+|   |       |   `-- HasSigDie.pm
+|   |       |-- sigdie.t
+|   |       |-- version.t
+|   |       `-- warnings.t
+|   |-- B-Deparse
+|   |   |-- Deparse.pm
+|   |   `-- t
+|   |       |-- core.t
+|   |       `-- deparse.t
+|   |-- bignum
+|   |   |-- lib
+|   |   |   |-- bigint.pm
+|   |   |   |-- bignum.pm
+|   |   |   |-- bigrat.pm
+|   |   |   `-- Math
+|   |   |       |-- BigFloat
+|   |   |       |   `-- Trace.pm
+|   |   |       `-- BigInt
+|   |   |           `-- Trace.pm
+|   |   `-- t
+|   |       |-- big_e_pi.t
+|   |       |-- bigexp.t
+|   |       |-- bigint.t
+|   |       |-- bignum.t
+|   |       |-- bigrat.t
+|   |       |-- bii_e_pi.t
+|   |       |-- biinfnan.t
+|   |       |-- bir_e_pi.t
+|   |       |-- bninfnan.t
+|   |       |-- bn_lite.t
+|   |       |-- brinfnan.t
+|   |       |-- br_lite.t
+|   |       |-- in_effect.t
+|   |       |-- infnan.inc
+|   |       |-- option_a.t
+|   |       |-- option_l.t
+|   |       |-- option_p.t
+|   |       |-- ratopt_a.t
+|   |       |-- scope_f.t
+|   |       |-- scope_i.t
+|   |       `-- scope_r.t
+|   |-- B-Lint
+|   |   |-- lib
+|   |   |   `-- B
+|   |   |       |-- Lint
+|   |   |       |   `-- Debug.pm
+|   |   |       `-- Lint.pm
+|   |   `-- t
+|   |       |-- lint.t
+|   |       `-- pluglib
+|   |           `-- B
+|   |               `-- Lint
+|   |                   `-- Plugin
+|   |                       `-- Test.pm
+|   |-- Carp
+|   |   |-- lib
+|   |   |   |-- Carp
+|   |   |   |   `-- Heavy.pm
+|   |   |   `-- Carp.pm
+|   |   |-- Makefile.PL
+|   |   `-- t
+|   |       |-- Carp.t
+|   |       |-- heavy.t
+|   |       |-- swash.t
+|   |       |-- vivify_gv.t
+|   |       |-- vivify_stash.t
+|   |       `-- with_warnings.t
+|   |-- constant
+|   |   |-- lib
+|   |   |   `-- constant.pm
+|   |   `-- t
+|   |       |-- constant.t
+|   |       `-- utf8.t
+|   |-- Cwd
+|   |   |-- Cwd.pm
+|   |   |-- Cwd.xs
+|   |   |-- lib
+|   |   |   `-- File
+|   |   |       |-- Spec
+|   |   |       |   |-- Cygwin.pm
+|   |   |       |   |-- Epoc.pm
+|   |   |       |   |-- Functions.pm
+|   |   |       |   |-- Mac.pm
+|   |   |       |   |-- OS2.pm
+|   |   |       |   |-- Unix.pm
+|   |   |       |   |-- VMS.pm
+|   |   |       |   `-- Win32.pm
+|   |   |       `-- Spec.pm
+|   |   `-- t
+|   |       |-- crossplatform.t
+|   |       |-- cwd.t
+|   |       |-- Functions.t
+|   |       |-- rel2abs2rel.t
+|   |       |-- Spec.t
+|   |       |-- Spec-taint.t
+|   |       |-- taint.t
+|   |       |-- tmpdir.t
+|   |       `-- win32.t
+|   |-- Data-Dumper
+|   |   |-- Changes
+|   |   |-- Dumper.pm
+|   |   |-- Dumper.xs
+|   |   |-- t
+|   |   |   |-- bless.t
+|   |   |   |-- bugs.t
+|   |   |   |-- dumper.t
+|   |   |   |-- freezer.t
+|   |   |   |-- overload.t
+|   |   |   |-- pair.t
+|   |   |   |-- perl-74170.t
+|   |   |   |-- qr.t
+|   |   |   `-- terse.t
+|   |   `-- Todo
+|   |-- Devel-SelfStubber
+|   |   |-- lib
+|   |   |   `-- Devel
+|   |   |       `-- SelfStubber.pm
+|   |   `-- t
+|   |       `-- Devel-SelfStubber.t
+|   |-- Dumpvalue
+|   |   |-- lib
+|   |   |   `-- Dumpvalue.pm
+|   |   `-- t
+|   |       `-- Dumpvalue.t
+|   |-- Env
+|   |   |-- lib
+|   |   |   `-- Env.pm
+|   |   `-- t
+|   |       |-- array.t
+|   |       `-- env.t
+|   |-- ExtUtils-CBuilder
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   `-- ExtUtils
+|   |   |       |-- CBuilder
+|   |   |       |   |-- Base.pm
+|   |   |       |   `-- Platform
+|   |   |       |       |-- aix.pm
+|   |   |       |       |-- cygwin.pm
+|   |   |       |       |-- darwin.pm
+|   |   |       |       |-- dec_osf.pm
+|   |   |       |       |-- os2.pm
+|   |   |       |       |-- Unix.pm
+|   |   |       |       |-- VMS.pm
+|   |   |       |       |-- Windows
+|   |   |       |       |   |-- BCC.pm
+|   |   |       |       |   |-- GCC.pm
+|   |   |       |       |   `-- MSVC.pm
+|   |   |       |       `-- Windows.pm
+|   |   |       `-- CBuilder.pm
+|   |   |-- LICENSE
+|   |   |-- Makefile.PL
+|   |   |-- README.patching
+|   |   |-- README.release
+|   |   `-- t
+|   |       |-- 00-have-compiler.t
+|   |       |-- 01-basic.t
+|   |       |-- 02-link.t
+|   |       |-- 03-cplusplus.t
+|   |       `-- 04-base.t
+|   |-- ExtUtils-Command
+|   |   |-- lib
+|   |   |   `-- ExtUtils
+|   |   |       `-- Command.pm
+|   |   `-- t
+|   |       |-- cp.t
+|   |       |-- eu_command.t
+|   |       `-- lib
+|   |           `-- TieOut.pm
+|   |-- ExtUtils-Install
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   `-- ExtUtils
+|   |   |       |-- Installed.pm
+|   |   |       |-- Install.pm
+|   |   |       `-- Packlist.pm
+|   |   `-- t
+|   |       |-- can_write_dir.t
+|   |       |-- Installapi2.t
+|   |       |-- Installed.t
+|   |       |-- Install.t
+|   |       |-- InstallWithMM.t
+|   |       |-- lib
+|   |       |   |-- MakeMaker
+|   |       |   |   `-- Test
+|   |       |   |       |-- Setup
+|   |       |   |       |   `-- BFD.pm
+|   |       |   |       `-- Utils.pm
+|   |       |   `-- TieOut.pm
+|   |       `-- Packlist.t
+|   |-- ExtUtils-Manifest
+|   |   |-- lib
+|   |   |   `-- ExtUtils
+|   |   |       |-- Manifest.pm
+|   |   |       `-- MANIFEST.SKIP
+|   |   `-- t
+|   |       `-- Manifest.t
+|   |-- ExtUtils-ParseXS
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   |-- ExtUtils
+|   |   |   |   |-- ParseXS
+|   |   |   |   |   |-- Constants.pm
+|   |   |   |   |   |-- CountLines.pm
+|   |   |   |   |   `-- Utilities.pm
+|   |   |   |   |-- ParseXS.pm
+|   |   |   |   |-- ParseXS.pod
+|   |   |   |   |-- Typemaps
+|   |   |   |   |   |-- Cmd.pm
+|   |   |   |   |   |-- InputMap.pm
+|   |   |   |   |   |-- OutputMap.pm
+|   |   |   |   |   `-- Type.pm
+|   |   |   |   |-- Typemaps.pm
+|   |   |   |   `-- xsubpp
+|   |   |   |-- perlxs.pod
+|   |   |   |-- perlxstut.pod
+|   |   |   `-- perlxstypemap.pod
+|   |   `-- t
+|   |       |-- 001-basic.t
+|   |       |-- 002-more.t
+|   |       |-- 003-usage.t
+|   |       |-- 004-nolinenumbers.t
+|   |       |-- 101-standard_typemap_locations.t
+|   |       |-- 102-trim_whitespace.t
+|   |       |-- 103-tidy_type.t
+|   |       |-- 104-map_type.t
+|   |       |-- 105-valid_proto_string.t
+|   |       |-- 106-process_typemaps.t
+|   |       |-- 107-make_targetable.t
+|   |       |-- 108-map_type.t
+|   |       |-- 109-standard_XS_defs.t
+|   |       |-- 110-assign_func_args.t
+|   |       |-- 111-analyze_preprocessor_statements.t
+|   |       |-- 112-set_cond.t
+|   |       |-- 113-check_cond_preproc_statements.t
+|   |       |-- 114-blurt_death_Warn.t
+|   |       |-- 501-t-compile.t
+|   |       |-- 510-t-bare.t
+|   |       |-- 511-t-whitespace.t
+|   |       |-- 512-t-file.t
+|   |       |-- 513-t-merge.t
+|   |       |-- 514-t-embed.t
+|   |       |-- 515-t-cmd.t
+|   |       |-- 600-t-compat.t
+|   |       |-- data
+|   |       |   |-- b.typemap
+|   |       |   |-- combined.typemap
+|   |       |   |-- conflicting.typemap
+|   |       |   |-- confl_repl.typemap
+|   |       |   |-- confl_skip.typemap
+|   |       |   |-- other.typemap
+|   |       |   |-- perl.typemap
+|   |       |   `-- simple.typemap
+|   |       |-- lib
+|   |       |   |-- ExtUtils
+|   |       |   |   `-- Typemaps
+|   |       |   |       `-- Test.pm
+|   |       |   |-- IncludeTester.pm
+|   |       |   |-- PrimitiveCapture.pm
+|   |       |   `-- TypemapTest
+|   |       |       `-- Foo.pm
+|   |       |-- pseudotypemap1
+|   |       |-- typemap
+|   |       |-- XSInclude.xsh
+|   |       |-- XSMore.xs
+|   |       |-- XSTest.pm
+|   |       |-- XSTest.xs
+|   |       |-- XSUsage.pm
+|   |       `-- XSUsage.xs
+|   |-- File-CheckTree
+|   |   |-- lib
+|   |   |   `-- File
+|   |   |       `-- CheckTree.pm
+|   |   `-- t
+|   |       `-- CheckTree.t
+|   |-- Filter-Simple
+|   |   |-- lib
+|   |   |   `-- Filter
+|   |   |       `-- Simple.pm
+|   |   `-- t
+|   |       |-- code_no_comments.t
+|   |       |-- data.t
+|   |       |-- export.t
+|   |       |-- filter_only.t
+|   |       |-- filter.t
+|   |       |-- import.t
+|   |       `-- lib
+|   |           `-- Filter
+|   |               `-- Simple
+|   |                   |-- CodeNoComments.pm
+|   |                   |-- ExportTest.pm
+|   |                   |-- FilterOnlyTest.pm
+|   |                   |-- FilterTest.pm
+|   |                   `-- ImportTest.pm
+|   |-- I18N-Collate
+|   |   |-- lib
+|   |   |   `-- I18N
+|   |   |       `-- Collate.pm
+|   |   `-- t
+|   |       `-- I18N-Collate.t
+|   |-- I18N-LangTags
+|   |   |-- ChangeLog
+|   |   |-- lib
+|   |   |   `-- I18N
+|   |   |       |-- LangTags
+|   |   |       |   |-- Detect.pm
+|   |   |       |   `-- List.pm
+|   |   |       `-- LangTags.pm
+|   |   |-- README
+|   |   `-- t
+|   |       |-- 01_about_verbose.t
+|   |       |-- 05_main.t
+|   |       |-- 07_listy.t
+|   |       |-- 10_http.t
+|   |       |-- 20_locales.t
+|   |       |-- 50_super.t
+|   |       |-- 55_supers_strict.t
+|   |       `-- 80_all_env.t
+|   |-- if
+|   |   |-- if.pm
+|   |   `-- t
+|   |       `-- if.t
+|   |-- IO
+|   |   |-- ChangeLog
+|   |   |-- hints
+|   |   |   `-- sco.pl
+|   |   |-- IO.pm
+|   |   |-- IO.xs
+|   |   |-- lib
+|   |   |   `-- IO
+|   |   |       |-- Dir.pm
+|   |   |       |-- File.pm
+|   |   |       |-- Handle.pm
+|   |   |       |-- Pipe.pm
+|   |   |       |-- Poll.pm
+|   |   |       |-- Seekable.pm
+|   |   |       |-- Select.pm
+|   |   |       |-- Socket
+|   |   |       |   |-- INET.pm
+|   |   |       |   `-- UNIX.pm
+|   |   |       `-- Socket.pm
+|   |   |-- Makefile.PL
+|   |   |-- poll.c
+|   |   |-- poll.h
+|   |   |-- README
+|   |   `-- t
+|   |       |-- io_const.t
+|   |       |-- io_dir.t
+|   |       |-- io_dup.t
+|   |       |-- io_file_export.t
+|   |       |-- io_file.t
+|   |       |-- io_linenum.t
+|   |       |-- io_multihomed.t
+|   |       |-- io_pipe.t
+|   |       |-- io_poll.t
+|   |       |-- io_sel.t
+|   |       |-- io_sock.t
+|   |       |-- IO.t
+|   |       |-- io_taint.t
+|   |       |-- io_tell.t
+|   |       |-- io_udp.t
+|   |       |-- io_unix.t
+|   |       |-- io_utf8argv.t
+|   |       |-- io_utf8.t
+|   |       `-- io_xs.t
+|   |-- lib
+|   |   |-- lib_pm.PL
+|   |   |-- Makefile.PL
+|   |   `-- t
+|   |       `-- 01lib.t
+|   |-- Locale-Maketext
+|   |   |-- ChangeLog
+|   |   |-- lib
+|   |   |   `-- Locale
+|   |   |       |-- Maketext
+|   |   |       |   |-- Cookbook.pod
+|   |   |       |   |-- GutsLoader.pm
+|   |   |       |   |-- Guts.pm
+|   |   |       |   `-- TPJ13.pod
+|   |   |       |-- Maketext.pm
+|   |   |       `-- Maketext.pod
+|   |   |-- README
+|   |   `-- t
+|   |       |-- 01_about_verbose.t
+|   |       |-- 04_use_external_lex_cache.t
+|   |       |-- 09_compile.t
+|   |       |-- 10_make.t
+|   |       |-- 20_get.t
+|   |       |-- 30_eval_dollar_at.t
+|   |       |-- 40_super.t
+|   |       |-- 50_super.t
+|   |       |-- 60_super.t
+|   |       |-- 70_fail_auto.t
+|   |       `-- 90_utf8.t
+|   |-- Math-BigInt
+|   |   |-- lib
+|   |   |   `-- Math
+|   |   |       |-- BigFloat.pm
+|   |   |       |-- BigInt
+|   |   |       |   |-- CalcEmu.pm
+|   |   |       |   `-- Calc.pm
+|   |   |       `-- BigInt.pm
+|   |   `-- t
+|   |       |-- alias.inc
+|   |       |-- bare_mbf.t
+|   |       |-- bare_mbi.t
+|   |       |-- bare_mif.t
+|   |       |-- bigfltpm.inc
+|   |       |-- bigfltpm.t
+|   |       |-- bigintc.t
+|   |       |-- bigintpm.inc
+|   |       |-- bigintpm.t
+|   |       |-- bigints.t
+|   |       |-- biglog.t
+|   |       |-- big_pi_e.t
+|   |       |-- bigroot.t
+|   |       |-- calling.t
+|   |       |-- config.t
+|   |       |-- constant.t
+|   |       |-- const_mbf.t
+|   |       |-- downgrade.t
+|   |       |-- _e_math.t
+|   |       |-- inf_nan.t
+|   |       |-- isa.t
+|   |       |-- lib_load.t
+|   |       |-- Math
+|   |       |   |-- BigFloat
+|   |       |   |   `-- Subclass.pm
+|   |       |   `-- BigInt
+|   |       |       |-- BareCalc.pm
+|   |       |       |-- Scalar.pm
+|   |       |       `-- Subclass.pm
+|   |       |-- mbf_ali.t
+|   |       |-- mbi_ali.t
+|   |       |-- mbimbf.inc
+|   |       |-- mbimbf.t
+|   |       |-- mbi_rand.t
+|   |       |-- nan_cmp.t
+|   |       |-- new_overloaded.t
+|   |       |-- req_mbf0.t
+|   |       |-- req_mbf1.t
+|   |       |-- req_mbfa.t
+|   |       |-- req_mbfi.t
+|   |       |-- req_mbfn.t
+|   |       |-- req_mbfw.t
+|   |       |-- require.t
+|   |       |-- round.t
+|   |       |-- rt-16221.t
+|   |       |-- sub_ali.t
+|   |       |-- sub_mbf.t
+|   |       |-- sub_mbi.t
+|   |       |-- sub_mif.t
+|   |       |-- trap.t
+|   |       |-- upgrade2.t
+|   |       |-- upgradef.t
+|   |       |-- upgrade.inc
+|   |       |-- upgrade.t
+|   |       |-- use_lib1.t
+|   |       |-- use_lib2.t
+|   |       |-- use_lib3.t
+|   |       |-- use_lib4.t
+|   |       |-- use_mbfw.t
+|   |       |-- use.t
+|   |       `-- with_sub.t
+|   |-- Math-BigInt-FastCalc
+|   |   |-- FastCalc.xs
+|   |   |-- lib
+|   |   |   `-- Math
+|   |   |       `-- BigInt
+|   |   |           `-- FastCalc.pm
+|   |   `-- t
+|   |       |-- bigintfc.t
+|   |       |-- bootstrap.t
+|   |       |-- leak.t
+|   |       `-- mbi_rand.t
+|   |-- Math-BigRat
+|   |   |-- lib
+|   |   |   `-- Math
+|   |   |       `-- BigRat.pm
+|   |   `-- t
+|   |       |-- big_ap.t
+|   |       |-- bigfltpm.inc
+|   |       |-- bigfltrt.t
+|   |       |-- biglog.t
+|   |       |-- bigratpm.inc
+|   |       |-- bigratpm.t
+|   |       |-- bigrat.t
+|   |       |-- bigratup.t
+|   |       |-- bigroot.t
+|   |       |-- bitwise.t
+|   |       |-- hang.t
+|   |       |-- Math
+|   |       |   `-- BigRat
+|   |       |       `-- Test.pm
+|   |       |-- requirer.t
+|   |       `-- trap.t
+|   |-- Module-CoreList
+|   |   |-- Changes
+|   |   |-- corelist
+|   |   |-- identify-dependencies
+|   |   |-- lib
+|   |   |   `-- Module
+|   |   |       |-- CoreList.pm
+|   |   |       `-- CoreList.pod
+|   |   |-- Makefile.PL
+|   |   |-- MANIFEST
+|   |   |-- README
+|   |   `-- t
+|   |       |-- corelist.t
+|   |       |-- deprecated.t
+|   |       |-- find_modules.t
+|   |       `-- pod.t
+|   |-- Net-Ping
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   `-- Net
+|   |   |       `-- Ping.pm
+|   |   `-- t
+|   |       |-- 100_load.t
+|   |       |-- 110_icmp_inst.t
+|   |       |-- 120_udp_inst.t
+|   |       |-- 130_tcp_inst.t
+|   |       |-- 140_stream_inst.t
+|   |       |-- 150_syn_inst.t
+|   |       |-- 190_alarm.t
+|   |       |-- 200_ping_tcp.t
+|   |       |-- 250_ping_hires.t
+|   |       |-- 300_ping_stream.t
+|   |       |-- 400_ping_syn.t
+|   |       |-- 410_syn_host.t
+|   |       |-- 450_service.t
+|   |       |-- 500_ping_icmp.t
+|   |       `-- 510_ping_udp.t
+|   |-- Safe
+|   |   |-- Changes
+|   |   |-- Makefile.PL
+|   |   |-- MANIFEST
+|   |   |-- META.yml
+|   |   |-- README
+|   |   |-- Safe.pm
+|   |   `-- t
+|   |       |-- safe1.t
+|   |       |-- safe2.t
+|   |       |-- safe3.t
+|   |       |-- safeload.t
+|   |       |-- safenamedcap.t
+|   |       |-- safeops.t
+|   |       |-- safesort.t
+|   |       |-- safeuniversal.t
+|   |       |-- safeutf8.t
+|   |       `-- safewrap.t
+|   |-- Search-Dict
+|   |   |-- lib
+|   |   |   `-- Search
+|   |   |       `-- Dict.pm
+|   |   `-- t
+|   |       `-- Dict.t
+|   |-- SelfLoader
+|   |   |-- lib
+|   |   |   `-- SelfLoader.pm
+|   |   `-- t
+|   |       |-- 01SelfLoader.t
+|   |       |-- 02SelfLoader-buggy.t
+|   |       `-- 03taint.t
+|   |-- Storable
+|   |   |-- ChangeLog
+|   |   |-- hints
+|   |   |   |-- gnukfreebsd.pl
+|   |   |   |-- gnuknetbsd.pl
+|   |   |   |-- hpux.pl
+|   |   |   `-- linux.pl
+|   |   |-- Makefile.PL
+|   |   |-- README
+|   |   |-- Storable.pm
+|   |   |-- Storable.xs
+|   |   `-- t
+|   |       |-- attach_errors.t
+|   |       |-- attach_singleton.t
+|   |       |-- blessed.t
+|   |       |-- canonical.t
+|   |       |-- circular_hook.t
+|   |       |-- code.t
+|   |       |-- compat01.t
+|   |       |-- compat06.t
+|   |       |-- croak.t
+|   |       |-- dclone.t
+|   |       |-- downgrade.t
+|   |       |-- file_magic.t
+|   |       |-- forgive.t
+|   |       |-- freeze.t
+|   |       |-- HAS_ATTACH.pm
+|   |       |-- HAS_HOOK.pm
+|   |       |-- HAS_OVERLOAD.pm
+|   |       |-- integer.t
+|   |       |-- interwork56.t
+|   |       |-- just_plain_nasty.t
+|   |       |-- lock.t
+|   |       |-- make_56_interwork.pl
+|   |       |-- make_downgrade.pl
+|   |       |-- make_overload.pl
+|   |       |-- malice.t
+|   |       |-- overload.t
+|   |       |-- recurse.t
+|   |       |-- restrict.t
+|   |       |-- retrieve.t
+|   |       |-- robust.t
+|   |       |-- sig_die.t
+|   |       |-- st-dump.pl
+|   |       |-- store.t
+|   |       |-- testlib.pl
+|   |       |-- threads.t
+|   |       |-- tied_hook.t
+|   |       |-- tied_items.t
+|   |       |-- tied.t
+|   |       |-- utf8hash.t
+|   |       |-- utf8.t
+|   |       `-- weak.t
+|   |-- Term-Complete
+|   |   |-- lib
+|   |   |   `-- Term
+|   |   |       `-- Complete.pm
+|   |   `-- t
+|   |       `-- Complete.t
+|   |-- Term-ReadLine
+|   |   |-- lib
+|   |   |   `-- Term
+|   |   |       `-- ReadLine.pm
+|   |   `-- t
+|   |       |-- AE.t
+|   |       |-- AETk.t
+|   |       |-- ReadLine.t
+|   |       `-- Tk.t
+|   |-- Text-Abbrev
+|   |   |-- lib
+|   |   |   `-- Text
+|   |   |       `-- Abbrev.pm
+|   |   `-- t
+|   |       `-- Abbrev.t
+|   |-- Thread-Queue
+|   |   |-- lib
+|   |   |   `-- Thread
+|   |   |       `-- Queue.pm
+|   |   `-- t
+|   |       |-- 01_basic.t
+|   |       |-- 02_refs.t
+|   |       |-- 03_peek.t
+|   |       |-- 04_errs.t
+|   |       |-- 05_extract.t
+|   |       |-- 06_insert.t
+|   |       |-- 07_lock.t
+|   |       `-- 08_nothreads.t
+|   |-- threads
+|   |   |-- hints
+|   |   |   |-- hpux.pl
+|   |   |   `-- linux.pl
+|   |   |-- lib
+|   |   |   `-- threads.pm
+|   |   |-- t
+|   |   |   |-- basic.t
+|   |   |   |-- blocks.t
+|   |   |   |-- context.t
+|   |   |   |-- end.t
+|   |   |   |-- err.t
+|   |   |   |-- exit.t
+|   |   |   |-- free2.t
+|   |   |   |-- free.t
+|   |   |   |-- join.t
+|   |   |   |-- kill2.t
+|   |   |   |-- kill.t
+|   |   |   |-- libc.t
+|   |   |   |-- list.t
+|   |   |   |-- no_threads.t
+|   |   |   |-- problems.t
+|   |   |   |-- stack_env.t
+|   |   |   |-- stack.t
+|   |   |   |-- state.t
+|   |   |   |-- stress_cv.t
+|   |   |   |-- stress_re.t
+|   |   |   |-- stress_string.t
+|   |   |   `-- thread.t
+|   |   `-- threads.xs
+|   |-- Thread-Semaphore
+|   |   |-- lib
+|   |   |   `-- Thread
+|   |   |       `-- Semaphore.pm
+|   |   `-- t
+|   |       |-- 01_basic.t
+|   |       |-- 02_errs.t
+|   |       |-- 03_nothreads.t
+|   |       |-- 04_nonblocking.t
+|   |       `-- 05_force.t
+|   |-- threads-shared
+|   |   |-- hints
+|   |   |   `-- linux.pl
+|   |   |-- lib
+|   |   |   `-- threads
+|   |   |       `-- shared.pm
+|   |   |-- shared.xs
+|   |   `-- t
+|   |       |-- 0nothread.t
+|   |       |-- av_refs.t
+|   |       |-- av_simple.t
+|   |       |-- blessed.t
+|   |       |-- clone.t
+|   |       |-- cond.t
+|   |       |-- disabled.t
+|   |       |-- hv_refs.t
+|   |       |-- hv_simple.t
+|   |       |-- no_share.t
+|   |       |-- object2.t
+|   |       |-- object.t
+|   |       |-- shared_attr.t
+|   |       |-- stress.t
+|   |       |-- sv_refs.t
+|   |       |-- sv_simple.t
+|   |       |-- utf8.t
+|   |       |-- waithires.t
+|   |       `-- wait.t
+|   |-- Tie-File
+|   |   |-- lib
+|   |   |   `-- Tie
+|   |   |       `-- File.pm
+|   |   `-- t
+|   |       |-- 00_version.t
+|   |       |-- 01_gen.t
+|   |       |-- 02_fetchsize.t
+|   |       |-- 03_longfetch.t
+|   |       |-- 04_splice.t
+|   |       |-- 05_size.t
+|   |       |-- 06_fixrec.t
+|   |       |-- 07_rv_splice.t
+|   |       |-- 08_ro.t
+|   |       |-- 09_gen_rs.t
+|   |       |-- 10_splice_rs.t
+|   |       |-- 11_rv_splice_rs.t
+|   |       |-- 12_longfetch_rs.t
+|   |       |-- 13_size_rs.t
+|   |       |-- 14_lock.t
+|   |       |-- 15_pushpop.t
+|   |       |-- 16_handle.t
+|   |       |-- 17_misc_meth.t
+|   |       |-- 18_rs_fixrec.t
+|   |       |-- 19_cache.t
+|   |       |-- 20_cache_full.t
+|   |       |-- 21_win32.t
+|   |       |-- 22_autochomp.t
+|   |       |-- 23_rv_ac_splice.t
+|   |       |-- 24_cache_loop.t
+|   |       |-- 25_gen_nocache.t
+|   |       |-- 26_twrite.t
+|   |       |-- 27_iwrite.t
+|   |       |-- 28_mtwrite.t
+|   |       |-- 29a_upcopy.t
+|   |       |-- 29_downcopy.t
+|   |       |-- 30_defer.t
+|   |       |-- 31_autodefer.t
+|   |       |-- 32_defer_misc.t
+|   |       |-- 33_defer_vs.t
+|   |       |-- 40_abs_cache.t
+|   |       |-- 41_heap.t
+|   |       `-- 42_offset.t
+|   `-- XSLoader
+|       |-- Makefile.PL
+|       |-- t
+|       |   `-- XSLoader.t
+|       `-- XSLoader_pm.PL
+|-- djgpp
+|   |-- config.over
+|   |-- configure.bat
+|   |-- djgpp.c
+|   |-- djgpp.h
+|   |-- djgppsed.sh
+|   `-- fixpmain
+|-- doio.c
+|-- doop.c
+|-- dosish.h
+|-- dquote_static.c
+|-- dump.c
+|-- embed.fnc
+|-- embed.h
+|-- embedvar.h
+|-- epoc
+|   |-- config.sh
+|   |-- createpkg.pl
+|   |-- epoc.c
+|   |-- epocish.c
+|   |-- epocish.h
+|   |-- epoc_stubs.c
+|   `-- link.pl
+|-- ext
+|   |-- arybase
+|   |   |-- arybase.pm
+|   |   |-- arybase.xs
+|   |   |-- ptable.h
+|   |   `-- t
+|   |       |-- aeach.t
+|   |       |-- aelem.t
+|   |       |-- akeys.t
+|   |       |-- arybase.t
+|   |       |-- aslice.t
+|   |       |-- av2arylen.t
+|   |       |-- index.t
+|   |       |-- lslice.t
+|   |       |-- pos.t
+|   |       |-- scope_0.pm
+|   |       |-- scope.t
+|   |       |-- splice.t
+|   |       `-- substr.t
+|   |-- attributes
+|   |   |-- attributes.pm
+|   |   `-- attributes.xs
+|   |-- B
+|   |   |-- B
+|   |   |   |-- Concise.pm
+|   |   |   |-- Showlex.pm
+|   |   |   |-- Terse.pm
+|   |   |   `-- Xref.pm
+|   |   |-- B.pm
+|   |   |-- B.xs
+|   |   |-- hints
+|   |   |   |-- darwin.pl
+|   |   |   `-- openbsd.pl
+|   |   |-- Makefile.PL
+|   |   |-- O.pm
+|   |   |-- t
+|   |   |   |-- b.t
+|   |   |   |-- concise.t
+|   |   |   |-- concise-xs.t
+|   |   |   |-- f_map
+|   |   |   |-- f_map.t
+|   |   |   |-- f_sort
+|   |   |   |-- f_sort.t
+|   |   |   |-- OptreeCheck.pm
+|   |   |   |-- optree_check.t
+|   |   |   |-- optree_concise.t
+|   |   |   |-- optree_constants.t
+|   |   |   |-- optree_misc.t
+|   |   |   |-- optree_samples.t
+|   |   |   |-- optree_sort.t
+|   |   |   |-- optree_specials.t
+|   |   |   |-- optree_varinit.t
+|   |   |   |-- o.t
+|   |   |   |-- pragma.t
+|   |   |   |-- showlex.t
+|   |   |   |-- terse.t
+|   |   |   |-- walkoptree.t
+|   |   |   `-- xref.t
+|   |   `-- typemap
+|   |-- Devel-Peek
+|   |   |-- Changes
+|   |   |-- Makefile.PL
+|   |   |-- Peek.pm
+|   |   |-- Peek.xs
+|   |   `-- t
+|   |       `-- Peek.t
+|   |-- DynaLoader
+|   |   |-- dl_aix.xs
+|   |   |-- dl_beos.xs
+|   |   |-- dl_dld.xs
+|   |   |-- dl_dllload.xs
+|   |   |-- dl_dlopen.xs
+|   |   |-- dl_dyld.xs
+|   |   |-- dl_hpux.xs
+|   |   |-- dl_mpeix.xs
+|   |   |-- dl_next.xs
+|   |   |-- dl_none.xs
+|   |   |-- dl_symbian.xs
+|   |   |-- dlutils.c
+|   |   |-- dl_vmesa.xs
+|   |   |-- dl_vms.xs
+|   |   |-- dl_win32.xs
+|   |   |-- DynaLoader_pm.PL
+|   |   |-- hints
+|   |   |   |-- aix.pl
+|   |   |   |-- gnukfreebsd.pl
+|   |   |   |-- gnuknetbsd.pl
+|   |   |   |-- linux.pl
+|   |   |   |-- netbsd.pl
+|   |   |   `-- openbsd.pl
+|   |   |-- Makefile.PL
+|   |   |-- README
+|   |   `-- t
+|   |       `-- DynaLoader.t
+|   |-- Errno
+|   |   |-- ChangeLog
+|   |   |-- Errno_pm.PL
+|   |   |-- Makefile.PL
+|   |   `-- t
+|   |       `-- Errno.t
+|   |-- Fcntl
+|   |   |-- Fcntl.pm
+|   |   |-- Fcntl.xs
+|   |   |-- Makefile.PL
+|   |   `-- t
+|   |       |-- autoload.t
+|   |       |-- fcntl.t
+|   |       |-- mode.t
+|   |       `-- syslfs.t
+|   |-- FileCache
+|   |   |-- lib
+|   |   |   `-- FileCache.pm
+|   |   `-- t
+|   |       |-- 01open.t
+|   |       |-- 02maxopen.t
+|   |       |-- 03append.t
+|   |       |-- 04twoarg.t
+|   |       |-- 05override.t
+|   |       |-- 06export.t
+|   |       `-- 07noimport.t
+|   |-- File-Glob
+|   |   |-- bsd_glob.c
+|   |   |-- bsd_glob.h
+|   |   |-- Changes
+|   |   |-- Glob.pm
+|   |   |-- Glob.xs
+|   |   |-- Makefile.PL
+|   |   |-- t
+|   |   |   |-- basic.t
+|   |   |   |-- case.t
+|   |   |   |-- global.t
+|   |   |   `-- taint.t
+|   |   `-- TODO
+|   |-- GDBM_File
+|   |   |-- GDBM_File.pm
+|   |   |-- GDBM_File.xs
+|   |   |-- hints
+|   |   |   `-- sco.pl
+|   |   |-- Makefile.PL
+|   |   |-- t
+|   |   |   `-- gdbm.t
+|   |   `-- typemap
+|   |-- Hash-Util
+|   |   |-- Changes
+|   |   |-- lib
+|   |   |   `-- Hash
+|   |   |       `-- Util.pm
+|   |   |-- Makefile.PL
+|   |   |-- t
+|   |   |   `-- Util.t
+|   |   `-- Util.xs
+|   |-- Hash-Util-FieldHash
+|   |   |-- Changes
+|   |   |-- FieldHash.xs
+|   |   |-- lib
+|   |   |   `-- Hash
+|   |   |       `-- Util
+|   |   |           `-- FieldHash.pm
+|   |   `-- t
+|   |       |-- 01_load.t
+|   |       |-- 02_function.t
+|   |       |-- 03_class.t
+|   |       |-- 04_thread.t
+|   |       |-- 05_perlhook.t
+|   |       |-- 10_hash.t
+|   |       |-- 11_hashassign.t
+|   |       `-- 12_hashwarn.t
+|   |-- I18N-Langinfo
+|   |   |-- Langinfo.pm
+|   |   |-- Langinfo.xs
+|   |   |-- Makefile.PL
+|   |   `-- t
+|   |       `-- Langinfo.t
+|   |-- IPC-Open3
+|   |   |-- lib
+|   |   |   `-- IPC
+|   |   |       |-- Open2.pm
+|   |   |       `-- Open3.pm
+|   |   `-- t
+|   |       |-- fd.t
+|   |       |-- IPC-Open2.t
+|   |       `-- IPC-Open3.t
+|   |-- mro
+|   |   |-- Changes
+|   |   |-- mro.pm
+|   |   `-- mro.xs
+|   |-- NDBM_File
+|   |   |-- hints
+|   |   |   |-- cygwin.pl
+|   |   |   |-- dec_osf.pl
+|   |   |   |-- dynixptx.pl
+|   |   |   |-- gnukfreebsd.pl
+|   |   |   |-- gnuknetbsd.pl
+|   |   |   |-- gnu.pl
+|   |   |   |-- linux.pl
+|   |   |   |-- sco.pl
+|   |   |   |-- solaris.pl
+|   |   |   `-- svr4.pl
+|   |   |-- Makefile.PL
+|   |   |-- NDBM_File.pm
+|   |   |-- NDBM_File.xs
+|   |   |-- t
+|   |   |   `-- ndbm.t
+|   |   `-- typemap
+|   |-- ODBM_File
+|   |   |-- hints
+|   |   |   |-- cygwin.pl
+|   |   |   |-- dec_osf.pl
+|   |   |   |-- gnukfreebsd.pl
+|   |   |   |-- gnuknetbsd.pl
+|   |   |   |-- gnu.pl
+|   |   |   |-- hpux.pl
+|   |   |   |-- linux.pl
+|   |   |   |-- sco.pl
+|   |   |   |-- solaris.pl
+|   |   |   |-- svr4.pl
+|   |   |   `-- ultrix.pl
+|   |   |-- Makefile.PL
+|   |   |-- ODBM_File.pm
+|   |   |-- ODBM_File.xs
+|   |   |-- t
+|   |   |   `-- odbm.t
+|   |   `-- typemap
+|   |-- Opcode
+|   |   |-- Opcode.pm
+|   |   |-- Opcode.xs
+|   |   |-- ops.pm
+|   |   `-- t
+|   |       |-- Opcode.t
+|   |       `-- ops.t
+|   |-- PerlIO-encoding
+|   |   |-- encoding.pm
+|   |   |-- encoding.xs
+|   |   |-- MANIFEST
+|   |   `-- t
+|   |       |-- encoding.t
+|   |       |-- fallback.t
+|   |       `-- nolooping.t
+|   |-- PerlIO-mmap
+|   |   |-- mmap.pm
+|   |   `-- mmap.xs
+|   |-- PerlIO-scalar
+|   |   |-- scalar.pm
+|   |   |-- scalar.xs
+|   |   `-- t
+|   |       |-- scalar.t
+|   |       `-- scalar_ungetc.t
+|   |-- PerlIO-via
+|   |   |-- hints
+|   |   |   `-- aix.pl
+|   |   |-- t
+|   |   |   `-- via.t
+|   |   |-- via.pm
+|   |   `-- via.xs
+|   |-- Pod-Functions
+|   |   |-- Functions_pm.PL
+|   |   |-- Makefile.PL
+|   |   `-- t
+|   |       `-- Functions.t
+|   |-- Pod-Html
+|   |   |-- bin
+|   |   |   `-- pod2html
+|   |   |-- lib
+|   |   |   `-- Pod
+|   |   |       `-- Html.pm
+|   |   |-- t
+|   |   |   |-- cache.pod
+|   |   |   |-- cache.t
+|   |   |   |-- crossref2.t
+|   |   |   |-- crossref3.t
+|   |   |   |-- crossref.pod
+|   |   |   |-- crossref.t
+|   |   |   |-- eol.t
+|   |   |   |-- feature2.pod
+|   |   |   |-- feature2.t
+|   |   |   |-- feature.pod
+|   |   |   |-- feature.t
+|   |   |   |-- htmldir1.pod
+|   |   |   |-- htmldir1.t
+|   |   |   |-- htmldir2.pod
+|   |   |   |-- htmldir2.t
+|   |   |   |-- htmldir3.pod
+|   |   |   |-- htmldir3.t
+|   |   |   |-- htmldir4.pod
+|   |   |   |-- htmldir4.t
+|   |   |   |-- htmldir5.pod
+|   |   |   |-- htmldir5.t
+|   |   |   |-- htmlescp.pod
+|   |   |   |-- htmlescp.t
+|   |   |   |-- htmllink.pod
+|   |   |   |-- htmllink.t
+|   |   |   |-- htmlview.pod
+|   |   |   |-- htmlview.t
+|   |   |   |-- pod2html-lib.pl
+|   |   |   |-- poderr.pod
+|   |   |   |-- poderr.t
+|   |   |   |-- podnoerr.pod
+|   |   |   `-- podnoerr.t
+|   |   `-- testdir
+|   |       |-- perlpodspec-copy.pod
+|   |       `-- perlvar-copy.pod
+|   |-- POSIX
+|   |   |-- hints
+|   |   |   |-- bsdos.pl
+|   |   |   |-- dynixptx.pl
+|   |   |   |-- freebsd.pl
+|   |   |   |-- gnukfreebsd.pl
+|   |   |   |-- gnuknetbsd.pl
+|   |   |   |-- linux.pl
+|   |   |   |-- mint.pl
+|   |   |   |-- netbsd.pl
+|   |   |   |-- next_3.pl
+|   |   |   |-- openbsd.pl
+|   |   |   |-- sunos_4.pl
+|   |   |   |-- svr4.pl
+|   |   |   `-- uts.pl
+|   |   |-- lib
+|   |   |   |-- POSIX.pm
+|   |   |   `-- POSIX.pod
+|   |   |-- Makefile.PL
+|   |   |-- POSIX.xs
+|   |   |-- t
+|   |   |   |-- export.t
+|   |   |   |-- is.t
+|   |   |   |-- math.t
+|   |   |   |-- posix.t
+|   |   |   |-- sigaction.t
+|   |   |   |-- sigset.t
+|   |   |   |-- sysconf.t
+|   |   |   |-- taint.t
+|   |   |   |-- termios.t
+|   |   |   |-- time.t
+|   |   |   |-- unimplemented.t
+|   |   |   |-- usage.t
+|   |   |   |-- waitpid.t
+|   |   |   `-- wrappers.t
+|   |   `-- typemap
+|   |-- re
+|   |   |-- hints
+|   |   |   `-- mpeix.pl
+|   |   |-- Makefile.PL
+|   |   |-- re_comp.h
+|   |   |-- re.pm
+|   |   |-- re_top.h
+|   |   |-- re.xs
+|   |   `-- t
+|   |       |-- lexical_debug.pl
+|   |       |-- lexical_debug.t
+|   |       |-- qr.t
+|   |       |-- reflags.t
+|   |       |-- re_funcs.t
+|   |       |-- re_funcs_u.t
+|   |       |-- regop.pl
+|   |       |-- regop.t
+|   |       `-- re.t
+|   |-- SDBM_File
+|   |   |-- Makefile.PL
+|   |   |-- sdbm
+|   |   |   |-- biblio
+|   |   |   |-- CHANGES
+|   |   |   |-- COMPARE
+|   |   |   |-- dba.c
+|   |   |   |-- dbd.c
+|   |   |   |-- dbe.1
+|   |   |   |-- dbe.c
+|   |   |   |-- dbu.c
+|   |   |   |-- grind
+|   |   |   |-- hash.c
+|   |   |   |-- linux.patches
+|   |   |   |-- Makefile.PL
+|   |   |   |-- makefile.sdbm
+|   |   |   |-- pair.c
+|   |   |   |-- pair.h
+|   |   |   |-- README
+|   |   |   |-- readme.ms
+|   |   |   |-- README.too
+|   |   |   |-- sdbm.3
+|   |   |   |-- sdbm.c
+|   |   |   |-- sdbm.h
+|   |   |   |-- tune.h
+|   |   |   `-- util.c
+|   |   |-- SDBM_File.pm
+|   |   |-- SDBM_File.xs
+|   |   |-- t
+|   |   |   `-- sdbm.t
+|   |   `-- typemap
+|   |-- Sys-Hostname
+|   |   |-- Hostname.pm
+|   |   |-- Hostname.xs
+|   |   `-- t
+|   |       `-- Hostname.t
+|   |-- Tie-Hash-NamedCapture
+|   |   |-- NamedCapture.pm
+|   |   |-- NamedCapture.xs
+|   |   `-- t
+|   |       `-- tiehash.t
+|   |-- Tie-Memoize
+|   |   |-- lib
+|   |   |   `-- Tie
+|   |   |       `-- Memoize.pm
+|   |   `-- t
+|   |       `-- Tie-Memoize.t
+|   |-- VMS-DCLsym
+|   |   |-- 0README.txt
+|   |   |-- DCLsym.pm
+|   |   |-- DCLsym.xs
+|   |   |-- Makefile.PL
+|   |   `-- t
+|   |       `-- vms_dclsym.t
+|   |-- VMS-Stdio
+|   |   |-- 0README.txt
+|   |   |-- Makefile.PL
+|   |   |-- Stdio.pm
+|   |   |-- Stdio.xs
+|   |   `-- t
+|   |       `-- vms_stdio.t
+|   |-- Win32CORE
+|   |   |-- Makefile.PL
+|   |   |-- t
+|   |   |   `-- win32core.t
+|   |   |-- Win32CORE.c
+|   |   `-- Win32CORE.pm
+|   |-- XS-APItest
+|   |   |-- APItest.pm
+|   |   |-- APItest.xs
+|   |   |-- core.c
+|   |   |-- core_or_not.inc
+|   |   |-- exception.c
+|   |   |-- Makefile.PL
+|   |   |-- MANIFEST
+|   |   |-- notcore.c
+|   |   |-- numeric.xs
+|   |   |-- README
+|   |   |-- t
+|   |   |   |-- addissub.t
+|   |   |   |-- arrayexpr.t
+|   |   |   |-- autoload.t
+|   |   |   |-- BHK.pm
+|   |   |   |-- blockasexpr.t
+|   |   |   |-- blockhooks-csc.t
+|   |   |   |-- blockhooks.t
+|   |   |   |-- Block.pm
+|   |   |   |-- call_checker.t
+|   |   |   |-- caller.t
+|   |   |   |-- call.t
+|   |   |   |-- check_warnings.t
+|   |   |   |-- cleanup.t
+|   |   |   |-- clone-with-stack.t
+|   |   |   |-- cophh.t
+|   |   |   |-- coplabel.t
+|   |   |   |-- copyhints.t
+|   |   |   |-- customop.t
+|   |   |   |-- eval-filter.t
+|   |   |   |-- exception.t
+|   |   |   |-- fetch_pad_names.t
+|   |   |   |-- gotosub.t
+|   |   |   |-- grok.t
+|   |   |   |-- gv_autoload4.t
+|   |   |   |-- gv_fetchmeth_autoload.t
+|   |   |   |-- gv_fetchmethod_flags.t
+|   |   |   |-- gv_fetchmeth.t
+|   |   |   |-- gv_init.t
+|   |   |   |-- hash.t
+|   |   |   |-- keyword_multiline.t
+|   |   |   |-- keyword_plugin.t
+|   |   |   |-- labelconst.aux
+|   |   |   |-- labelconst.t
+|   |   |   |-- labelconst_utf8.aux
+|   |   |   |-- loopblock.t
+|   |   |   |-- looprest.t
+|   |   |   |-- lvalue.t
+|   |   |   |-- magic_chain.t
+|   |   |   |-- magic.t
+|   |   |   |-- Markers.pm
+|   |   |   |-- mro.t
+|   |   |   |-- multicall.t
+|   |   |   |-- my_cxt.t
+|   |   |   |-- my_exit.t
+|   |   |   |-- newCONSTSUB.t
+|   |   |   |-- Null.pm
+|   |   |   |-- op_contextualize.t
+|   |   |   |-- op_list.t
+|   |   |   |-- op.t
+|   |   |   |-- overload.t
+|   |   |   |-- pad_scalar.t
+|   |   |   |-- peep.t
+|   |   |   |-- pmflag.t
+|   |   |   |-- postinc.t
+|   |   |   |-- printf.t
+|   |   |   |-- ptr_table.t
+|   |   |   |-- push.t
+|   |   |   |-- refs.t
+|   |   |   |-- rmagical.t
+|   |   |   |-- rv2cv_op_cv.t
+|   |   |   |-- savehints.t
+|   |   |   |-- scopelessblock.t
+|   |   |   |-- sort.t
+|   |   |   |-- stmtasexpr.t
+|   |   |   |-- stmtsasexpr.t
+|   |   |   |-- stuff_modify_bug.t
+|   |   |   |-- stuff_svcur_bug.t
+|   |   |   |-- sviscow.t
+|   |   |   |-- svpeek.t
+|   |   |   |-- svpv_magic.t
+|   |   |   |-- svpv.t
+|   |   |   |-- svsetsv.t
+|   |   |   |-- swaplabel.t
+|   |   |   |-- swaptwostmts.t
+|   |   |   |-- temp_lv_sub.t
+|   |   |   |-- underscore_length.t
+|   |   |   |-- utf16_to_utf8.t
+|   |   |   |-- utf8.t
+|   |   |   |-- whichsig.t
+|   |   |   |-- xs_special_subs_require.t
+|   |   |   |-- xs_special_subs.t
+|   |   |   `-- xsub_h.t
+|   |   |-- typemap
+|   |   |-- XSUB-redefined-macros.xs
+|   |   `-- XSUB-undef-XS_VERSION.xs
+|   `-- XS-Typemap
+|       |-- Makefile.PL
+|       |-- README
+|       |-- stdio.c
+|       |-- t
+|       |   `-- Typemap.t
+|       |-- Typemap.pm
+|       `-- Typemap.xs
+|-- EXTERN.h
+|-- fakesdio.h
+|-- fakethr.h
+|-- feature.h
+|-- form.h
+|-- generate_uudmap.c
+|-- genpacksizetables.pl
+|-- globals.c
+|-- globvar.sym
+|-- gv.c
+|-- gv.h
+|-- h2pl
+|   |-- cbreak2.pl
+|   |-- cbreak.pl
+|   |-- eg
+|   |   |-- sizeof.ph
+|   |   |-- sys
+|   |   |   |-- errno.pl
+|   |   |   `-- ioctl.pl
+|   |   `-- sysexits.pl
+|   |-- getioctlsizes
+|   |-- mksizes
+|   |-- mkvars
+|   |-- README
+|   |-- tcbreak
+|   `-- tcbreak2
+|-- haiku
+|   |-- Haiku
+|   |   |-- Haiku.pm
+|   |   |-- Haiku.xs
+|   |   `-- Makefile.PL
+|   `-- haikuish.h
+|-- handy.h
+|-- hints
+|   |-- 3b1cc
+|   |-- 3b1.sh
+|   |-- aix_3.sh
+|   |-- aix_4.sh
+|   |-- aix.sh
+|   |-- altos486.sh
+|   |-- amigaos.sh
+|   |-- atheos.sh
+|   |-- aux_3.sh
+|   |-- beos.sh
+|   |-- broken-db.msg
+|   |-- bsdos.sh
+|   |-- catamount.sh
+|   |-- convexos.sh
+|   |-- cxux.sh
+|   |-- cygwin.sh
+|   |-- darwin.sh
+|   |-- dcosx.sh
+|   |-- dec_osf.sh
+|   |-- dgux.sh
+|   |-- dos_djgpp.sh
+|   |-- dragonfly.sh
+|   |-- dynixptx.sh
+|   |-- dynix.sh
+|   |-- epix.sh
+|   |-- esix4.sh
+|   |-- fps.sh
+|   |-- freebsd.sh
+|   |-- genix.sh
+|   |-- gnukfreebsd.sh
+|   |-- gnuknetbsd.sh
+|   |-- gnu.sh
+|   |-- greenhills.sh
+|   |-- haiku.sh
+|   |-- hpux.sh
+|   |-- i386.sh
+|   |-- interix.sh
+|   |-- irix_4.sh
+|   |-- irix_5.sh
+|   |-- irix_6_0.sh
+|   |-- irix_6_1.sh
+|   |-- irix_6.sh
+|   |-- isc_2.sh
+|   |-- isc.sh
+|   |-- linux.sh
+|   |-- lynxos.sh
+|   |-- midnightbsd.sh
+|   |-- mips.sh
+|   |-- mirbsd.sh
+|   |-- mpc.sh
+|   |-- mpeix.sh
+|   |-- ncr_tower.sh
+|   |-- netbsd.sh
+|   |-- newsos4.sh
+|   |-- next_3_0.sh
+|   |-- next_3.sh
+|   |-- next_4.sh
+|   |-- nonstopux.sh
+|   |-- openbsd.sh
+|   |-- opus.sh
+|   |-- os2.sh
+|   |-- os390.sh
+|   |-- os400.sh
+|   |-- posix-bc.sh
+|   |-- powerux.sh
+|   |-- qnx.sh
+|   |-- README.hints
+|   |-- rhapsody.sh
+|   |-- riscos.sh
+|   |-- sco_2_3_0.sh
+|   |-- sco_2_3_1.sh
+|   |-- sco_2_3_2.sh
+|   |-- sco_2_3_3.sh
+|   |-- sco_2_3_4.sh
+|   |-- sco.sh
+|   |-- solaris_2.sh
+|   |-- stellar.sh
+|   |-- sunos_4_0.sh
+|   |-- sunos_4_1.sh
+|   |-- super-ux.sh
+|   |-- svr4.sh
+|   |-- svr5.sh
+|   |-- t001.c
+|   |-- ti1500.sh
+|   |-- titanos.sh
+|   |-- ultrix_4.sh
+|   |-- umips.sh
+|   |-- unicosmk.sh
+|   |-- unicos.sh
+|   |-- unisysdynix.sh
+|   |-- utekv.sh
+|   |-- uts.sh
+|   |-- uwin.sh
+|   |-- vmesa.sh
+|   `-- vos.sh
+|-- hv.c
+|-- hv.h
+|-- INSTALL
+|-- installhtml
+|-- install_lib.pl
+|-- installman
+|-- installperl
+|-- INTERN.h
+|-- intrpvar.h
+|-- iperlsys.h
+|-- keywords.c
+|-- keywords.h
+|-- l1_char_class_tab.h
+|-- lib
+|   |-- AnyDBM_File.pm
+|   |-- AnyDBM_File.t
+|   |-- Benchmark.pm
+|   |-- Benchmark.t
+|   |-- blib.pm
+|   |-- blib.t
+|   |-- bytes_heavy.pl
+|   |-- bytes.pm
+|   |-- bytes.t
+|   |-- _charnames.pm
+|   |-- charnames.pm
+|   |-- charnames.t
+|   |-- Class
+|   |   |-- Struct.pm
+|   |   `-- Struct.t
+|   |-- Config
+|   |   |-- Extensions.pm
+|   |   `-- Extensions.t
+|   |-- Config.t
+|   |-- CORE.pod
+|   |-- DBM_Filter
+|   |   |-- Changes
+|   |   |-- compress.pm
+|   |   |-- encode.pm
+|   |   |-- int32.pm
+|   |   |-- null.pm
+|   |   |-- t
+|   |   |   |-- 01error.t
+|   |   |   |-- 02core.t
+|   |   |   |-- compress.t
+|   |   |   |-- encode.t
+|   |   |   |-- int32.t
+|   |   |   |-- null.t
+|   |   |   `-- utf8.t
+|   |   `-- utf8.pm
+|   |-- DBM_Filter.pm
+|   |-- dbm_filter_util.pl
+|   |-- DB.pm
+|   |-- DB.t
+|   |-- deprecate.pm
+|   |-- diagnostics.pm
+|   |-- diagnostics.t
+|   |-- DirHandle.pm
+|   |-- DirHandle.t
+|   |-- dumpvar.pl
+|   |-- dumpvar.t
+|   |-- English.pm
+|   |-- English.t
+|   |-- Exporter
+|   |   `-- Heavy.pm
+|   |-- Exporter.pm
+|   |-- Exporter.t
+|   |-- ExtUtils
+|   |   |-- Embed.pm
+|   |   |-- t
+|   |   |   `-- Embed.t
+|   |   |-- typemap
+|   |   `-- XSSymSet.pm
+|   |-- feature
+|   |   `-- unicode_strings.t
+|   |-- feature.pm
+|   |-- feature.t
+|   |-- File
+|   |   |-- Basename.pm
+|   |   |-- Basename.t
+|   |   |-- Compare.pm
+|   |   |-- Compare.t
+|   |   |-- Copy.pm
+|   |   |-- Copy.t
+|   |   |-- DosGlob.pm
+|   |   |-- DosGlob.t
+|   |   |-- Find
+|   |   |   `-- t
+|   |   |       |-- find.t
+|   |   |       `-- taint.t
+|   |   |-- Find.pm
+|   |   |-- stat.pm
+|   |   `-- stat.t
+|   |-- FileHandle.pm
+|   |-- FileHandle.t
+|   |-- filetest.pm
+|   |-- filetest.t
+|   |-- FindBin.pm
+|   |-- FindBin.t
+|   |-- Getopt
+|   |   |-- Std.pm
+|   |   `-- Std.t
+|   |-- h2ph.t
+|   |-- h2xs.t
+|   |-- integer.pm
+|   |-- integer.t
+|   |-- Internals.t
+|   |-- less.pm
+|   |-- less.t
+|   |-- locale.pm
+|   |-- locale.t
+|   |-- Net
+|   |   |-- hostent.pm
+|   |   |-- hostent.t
+|   |   |-- netent.pm
+|   |   |-- netent.t
+|   |   |-- protoent.pm
+|   |   |-- protoent.t
+|   |   |-- servent.pm
+|   |   `-- servent.t
+|   |-- open.pm
+|   |-- open.t
+|   |-- overload
+|   |   `-- numbers.pm
+|   |-- overload64.t
+|   |-- overloading.pm
+|   |-- overloading.t
+|   |-- overload.pm
+|   |-- overload.t
+|   |-- perl5db
+|   |   `-- t
+|   |       |-- break-on-dot
+|   |       |-- breakpoint-bug
+|   |       |-- disable-breakpoints-1
+|   |       |-- disable-breakpoints-2
+|   |       |-- disable-breakpoints-3
+|   |       |-- EnableModule.pm
+|   |       |-- eval-line-bug
+|   |       |-- filename-line-breakpoint
+|   |       |-- lvalue-bug
+|   |       |-- MyModule.pm
+|   |       |-- proxy-constants
+|   |       |-- rt-104168
+|   |       |-- rt-61222
+|   |       |-- rt-66110
+|   |       |-- symbol-table-bug
+|   |       |-- taint
+|   |       |-- uncalled-subroutine
+|   |       `-- with-subroutine
+|   |-- perl5db.pl
+|   |-- perl5db.t
+|   |-- PerlIO.pm
+|   |-- Pod
+|   |   `-- t
+|   |       |-- InputObjects.t
+|   |       |-- Select.t
+|   |       |-- Usage.t
+|   |       `-- utils.t
+|   |-- SelectSaver.pm
+|   |-- SelectSaver.t
+|   |-- sigtrap.pm
+|   |-- sigtrap.t
+|   |-- sort.pm
+|   |-- sort.t
+|   |-- strict.pm
+|   |-- strict.t
+|   |-- subs.pm
+|   |-- subs.t
+|   |-- Symbol.pm
+|   |-- Symbol.t
+|   |-- Thread.pm
+|   |-- Thread.t
+|   |-- Tie
+|   |   |-- Array
+|   |   |   |-- push.t
+|   |   |   |-- splice.t
+|   |   |   |-- stdpush.t
+|   |   |   `-- std.t
+|   |   |-- Array.pm
+|   |   |-- ExtraHash.t
+|   |   |-- Handle
+|   |   |   |-- stdhandle_from_handle.t
+|   |   |   `-- stdhandle.t
+|   |   |-- Handle.pm
+|   |   |-- Hash.pm
+|   |   |-- Hash.t
+|   |   |-- Scalar.pm
+|   |   |-- Scalar.t
+|   |   |-- StdHandle.pm
+|   |   |-- SubstrHash.pm
+|   |   `-- SubstrHash.t
+|   |-- Time
+|   |   |-- gmtime.pm
+|   |   |-- gmtime.t
+|   |   |-- localtime.pm
+|   |   |-- localtime.t
+|   |   `-- tm.pm
+|   |-- Unicode
+|   |   |-- README
+|   |   |-- UCD.pm
+|   |   `-- UCD.t
+|   |-- unicore
+|   |   |-- ArabicShaping.txt
+|   |   |-- auxiliary
+|   |   |   |-- GCBTest.txt
+|   |   |   |-- GraphemeBreakProperty.txt
+|   |   |   |-- SentenceBreakProperty.txt
+|   |   |   `-- WordBreakProperty.txt
+|   |   |-- BidiMirroring.txt
+|   |   |-- Blocks.txt
+|   |   |-- CaseFolding.txt
+|   |   |-- CJKRadicals.txt
+|   |   |-- CompositionExclusions.txt
+|   |   |-- DAge.txt
+|   |   |-- DCoreProperties.txt
+|   |   |-- DNormalizationProps.txt
+|   |   |-- EastAsianWidth.txt
+|   |   |-- EmojiSources.txt
+|   |   |-- extracted
+|   |   |   |-- DBidiClass.txt
+|   |   |   |-- DBinaryProperties.txt
+|   |   |   |-- DCombiningClass.txt
+|   |   |   |-- DDecompositionType.txt
+|   |   |   |-- DEastAsianWidth.txt
+|   |   |   |-- DGeneralCategory.txt
+|   |   |   |-- DJoinGroup.txt
+|   |   |   |-- DJoinType.txt
+|   |   |   |-- DLineBreak.txt
+|   |   |   |-- DNumType.txt
+|   |   |   `-- DNumValues.txt
+|   |   |-- HangulSyllableType.txt
+|   |   |-- Index.txt
+|   |   |-- IndicMatraCategory.txt
+|   |   |-- IndicSyllabicCategory.txt
+|   |   |-- Jamo.txt
+|   |   |-- LineBreak.txt
+|   |   |-- Makefile
+|   |   |-- mktables
+|   |   |-- NameAliases.txt
+|   |   |-- NamedSequences.txt
+|   |   |-- NamedSqProv.txt
+|   |   |-- NamesList.txt
+|   |   |-- NormalizationCorrections.txt
+|   |   |-- PropertyAliases.txt
+|   |   |-- PropList.txt
+|   |   |-- PropValueAliases.txt
+|   |   |-- README.perl
+|   |   |-- ReadMe.txt
+|   |   |-- ScriptExtensions.txt
+|   |   |-- Scripts.txt
+|   |   |-- SpecialCasing.txt
+|   |   |-- StandardizedVariants.txt
+|   |   |-- UnicodeData.txt
+|   |   `-- version
+|   |-- UNIVERSAL.pm
+|   |-- User
+|   |   |-- grent.pm
+|   |   |-- grent.t
+|   |   |-- pwent.pm
+|   |   `-- pwent.t
+|   |-- utf8_heavy.pl
+|   |-- utf8.pm
+|   |-- utf8.t
+|   |-- vars_carp.t
+|   |-- vars.pm
+|   |-- vars.t
+|   |-- version
+|   |   |-- Internals.pod
+|   |   `-- t
+|   |       |-- 01base.t
+|   |       |-- 02derived.t
+|   |       |-- 03require.t
+|   |       |-- 04strict_lax.t
+|   |       |-- 05sigdie.t
+|   |       |-- 06noop.t
+|   |       |-- 07locale.t
+|   |       `-- coretests.pm
+|   |-- version.pm
+|   |-- version.pod
+|   |-- vmsish.pm
+|   |-- vmsish.t
+|   |-- warnings
+|   |   `-- register.pm
+|   |-- warnings.pm
+|   `-- warnings.t
+|-- locale.c
+|-- mad
+|   |-- Nomad.pm
+|   |-- p55
+|   |-- P5AST.pm
+|   |-- P5re.pm
+|   |-- PLXML.pm
+|   `-- t
+|       `-- p55.t
+|-- madly.c
+|-- makedef.pl
+|-- makedepend.SH
+|-- make_ext.pl
+|-- Makefile.micro
+|-- Makefile.SH
+|-- make_patchnum.pl
+|-- malloc.c
+|-- malloc_ctl.h
+|-- MANIFEST
+|-- mathoms.c
+|-- metaconfig.h
+|-- metaconfig.SH
+|-- META.yml
+|-- mg.c
+|-- mg.h
+|-- mg_names.c
+|-- mg_raw.h
+|-- mg_vtable.h
+|-- minimod.pl
+|-- miniperlmain.c
+|-- mkppport
+|-- mkppport.lst
+|-- mpeix
+|   |-- mpeix.c
+|   |-- mpeixish.h
+|   |-- mpeix_setjmp.c
+|   |-- nm
+|   `-- relink
+|-- mro.c
+|-- myconfig.SH
+|-- mydtrace.h
+|-- NetWare
+|   |-- bat
+|   |   |-- Buildtype.bat
+|   |   |-- SetCodeWar.bat
+|   |   |-- Setnlmsdk.bat
+|   |   |-- SetNWBld.bat
+|   |   `-- ToggleD2.bat
+|   |-- CLIBsdio.h
+|   |-- CLIBstr.h
+|   |-- CLIBstuf.c
+|   |-- CLIBstuf.h
+|   |-- config_h.PL
+|   |-- config_H.wc
+|   |-- config_sh.PL
+|   |-- config.wc
+|   |-- deb.h
+|   |-- dl_netware.xs
+|   |-- intdef.h
+|   |-- interface.c
+|   |-- interface.cpp
+|   |-- interface.h
+|   |-- iperlhost.h
+|   |-- Main.c
+|   |-- Makefile
+|   |-- MP.imp
+|   |-- netware.h
+|   |-- nw5.c
+|   |-- nw5iop.h
+|   |-- nw5sck.c
+|   |-- nw5sck.h
+|   |-- nw5thread.c
+|   |-- nw5thread.h
+|   |-- nwhashcls.cpp
+|   |-- nwhashcls.h
+|   |-- Nwmain.c
+|   |-- nwperlhost.h
+|   |-- nwperlsys.c
+|   |-- nwperlsys.h
+|   |-- Nwpipe.c
+|   |-- nwpipe.h
+|   |-- nwplglob.c
+|   |-- nwplglob.h
+|   |-- nwstdio.h
+|   |-- NWTInfo.c
+|   |-- nwtinfo.h
+|   |-- NWUtil.c
+|   |-- nwutil.h
+|   |-- nwvmem.h
+|   |-- perllib.cpp
+|   |-- splittree.pl
+|   |-- sv_nw.c
+|   |-- t
+|   |   |-- NWModify.pl
+|   |   |-- NWScripts.pl
+|   |   `-- Readme.txt
+|   |-- testnlm
+|   |   |-- echo
+|   |   |   `-- echo.c
+|   |   `-- type
+|   |       `-- type.c
+|   `-- win32ish.h
+|-- nostdio.h
+|-- numeric.c
+|-- op.c
+|-- opcode.h
+|-- op.h
+|-- opnames.h
+|-- op_reg_common.h
+|-- os2
+|   |-- Changes
+|   |-- diff.configure
+|   |-- dlfcn.h
+|   |-- dl_os2.c
+|   |-- Makefile.SHs
+|   |-- OS2
+|   |   |-- OS2-ExtAttr
+|   |   |   |-- Changes
+|   |   |   |-- ExtAttr.pm
+|   |   |   |-- ExtAttr.xs
+|   |   |   |-- Makefile.PL
+|   |   |   |-- MANIFEST
+|   |   |   |-- myea.h
+|   |   |   |-- t
+|   |   |   |   `-- os2_ea.t
+|   |   |   `-- typemap
+|   |   |-- OS2-PrfDB
+|   |   |   |-- Changes
+|   |   |   |-- Makefile.PL
+|   |   |   |-- MANIFEST
+|   |   |   |-- PrfDB.pm
+|   |   |   |-- PrfDB.xs
+|   |   |   `-- t
+|   |   |       `-- os2_prfdb.t
+|   |   |-- OS2-Process
+|   |   |   |-- Makefile.PL
+|   |   |   |-- MANIFEST
+|   |   |   |-- Process.pm
+|   |   |   |-- Process.xs
+|   |   |   `-- t
+|   |   |       |-- os2_atoms.t
+|   |   |       |-- os2_clipboard.t
+|   |   |       |-- os2_process_kid.t
+|   |   |       |-- os2_process.t
+|   |   |       `-- os2_process_text.t
+|   |   |-- OS2-REXX
+|   |   |   |-- Changes
+|   |   |   |-- DLL
+|   |   |   |   |-- Changes
+|   |   |   |   |-- DLL.pm
+|   |   |   |   |-- DLL.xs
+|   |   |   |   |-- Makefile.PL
+|   |   |   |   `-- MANIFEST
+|   |   |   |-- Makefile.PL
+|   |   |   |-- MANIFEST
+|   |   |   |-- REXX.pm
+|   |   |   |-- REXX.xs
+|   |   |   `-- t
+|   |   |       |-- rx_cmprt.t
+|   |   |       |-- rx_dllld.t
+|   |   |       |-- rx_emxrv.t
+|   |   |       |-- rx_objcall.t
+|   |   |       |-- rx_sql.test
+|   |   |       |-- rx_tiesql.test
+|   |   |       |-- rx_tievar.t
+|   |   |       |-- rx_tieydb.t
+|   |   |       |-- rx_varset.t
+|   |   |       `-- rx_vrexx.t
+|   |   `-- typemap
+|   |-- os2add.sym
+|   |-- os2_base.t
+|   |-- os2.c
+|   |-- os2ish.h
+|   |-- os2_pipe.t
+|   |-- os2.sym
+|   |-- os2thread.h
+|   |-- perl2cmd.pl
+|   |-- perlrexx.c
+|   `-- perlrexx.cmd
+|-- overload.c
+|-- overload.h
+|-- pad.c
+|-- pad.h
+|-- parser.h
+|-- patchlevel.h
+|-- perlapi.c
+|-- perlapi.h
+|-- perl.c
+|-- perldtrace.d
+|-- perl.h
+|-- perlio.c
+|-- perlio.h
+|-- perliol.h
+|-- perlio.sym
+|-- perlsdio.h
+|-- perlsfio.h
+|-- perlsh
+|-- perl.tree
+|-- perlvars.h
+|-- perly.act
+|-- perly.c
+|-- perly.h
+|-- perly.tab
+|-- perly.y
+|-- plan9
+|   |-- aperl
+|   |-- arpa
+|   |   `-- inet.h
+|   |-- buildinfo
+|   |-- config_h.sample
+|   |-- config.plan9
+|   |-- config_sh.sample
+|   |-- exclude
+|   |-- fndvers
+|   |-- genconfig.pl
+|   |-- mkfile
+|   |-- myconfig.plan9
+|   |-- plan9.c
+|   |-- plan9ish.h
+|   |-- setup.rc
+|   `-- versnum
+|-- pod
+|   |-- buildtoc
+|   |-- Makefile.SH
+|   |-- perl5004delta.pod
+|   |-- perl5005delta.pod
+|   |-- perl5100delta.pod
+|   |-- perl5101delta.pod
+|   |-- perl5120delta.pod
+|   |-- perl5121delta.pod
+|   |-- perl5122delta.pod
+|   |-- perl5123delta.pod
+|   |-- perl5124delta.pod
+|   |-- perl5140delta.pod
+|   |-- perl5141delta.pod
+|   |-- perl5142delta.pod
+|   |-- perl5160delta.pod
+|   |-- perl561delta.pod
+|   |-- perl56delta.pod
+|   |-- perl581delta.pod
+|   |-- perl582delta.pod
+|   |-- perl583delta.pod
+|   |-- perl584delta.pod
+|   |-- perl585delta.pod
+|   |-- perl586delta.pod
+|   |-- perl587delta.pod
+|   |-- perl588delta.pod
+|   |-- perl589delta.pod
+|   |-- perl58delta.pod
+|   |-- perlapio.pod
+|   |-- perlartistic.pod
+|   |-- perlbook.pod
+|   |-- perlboot.pod
+|   |-- perlbot.pod
+|   |-- perlcall.pod
+|   |-- perlcheat.pod
+|   |-- perlclib.pod
+|   |-- perlcommunity.pod
+|   |-- perldata.pod
+|   |-- perldbmfilter.pod
+|   |-- perldebguts.pod
+|   |-- perldebtut.pod
+|   |-- perldebug.pod
+|   |-- perldelta.pod
+|   |-- perldiag.pod
+|   |-- perldsc.pod
+|   |-- perldtrace.pod
+|   |-- perlebcdic.pod
+|   |-- perlembed.pod
+|   |-- perlexperiment.pod
+|   |-- perlfilter.pod
+|   |-- perlfork.pod
+|   |-- perlform.pod
+|   |-- perlfunc.pod
+|   |-- perlgit.pod
+|   |-- perlgpl.pod
+|   |-- perlguts.pod
+|   |-- perlhack.pod
+|   |-- perlhacktips.pod
+|   |-- perlhacktut.pod
+|   |-- perlhist.pod
+|   |-- perlinterp.pod
+|   |-- perlintro.pod
+|   |-- perliol.pod
+|   |-- perlipc.pod
+|   |-- perllexwarn.pod
+|   |-- perllocale.pod
+|   |-- perllol.pod
+|   |-- perlmodinstall.pod
+|   |-- perlmodlib.PL
+|   |-- perlmod.pod
+|   |-- perlmodstyle.pod
+|   |-- perlmroapi.pod
+|   |-- perlnewmod.pod
+|   |-- perlnumber.pod
+|   |-- perlobj.pod
+|   |-- perlootut.pod
+|   |-- perlopentut.pod
+|   |-- perlop.pod
+|   |-- perlpacktut.pod
+|   |-- perlperf.pod
+|   |-- perl.pod
+|   |-- perlpod.pod
+|   |-- perlpodspec.pod
+|   |-- perlpodstyle.pod
+|   |-- perlpolicy.pod
+|   |-- perlport.pod
+|   |-- perlpragma.pod
+|   |-- perlreapi.pod
+|   |-- perlrebackslash.pod
+|   |-- perlrecharclass.pod
+|   |-- perlref.pod
+|   |-- perlreftut.pod
+|   |-- perlreguts.pod
+|   |-- perlre.pod
+|   |-- perlrequick.pod
+|   |-- perlreref.pod
+|   |-- perlretut.pod
+|   |-- perlrun.pod
+|   |-- perlsec.pod
+|   |-- perlsource.pod
+|   |-- perlstyle.pod
+|   |-- perlsub.pod
+|   |-- perlsyn.pod
+|   |-- perlthrtut.pod
+|   |-- perltie.pod
+|   |-- perltodo.pod
+|   |-- perltooc.pod
+|   |-- perltoot.pod
+|   |-- perltrap.pod
+|   |-- perlunicode.pod
+|   |-- perlunifaq.pod
+|   |-- perluniintro.pod
+|   |-- perlunitut.pod
+|   |-- perlutil.pod
+|   |-- perlvar.pod
+|   |-- perlvms.pod
+|   |-- rofftoc
+|   |-- splitman
+|   `-- splitpod
+|-- Policy_sh.SH
+|-- Porting
+|   |-- acknowledgements.pl
+|   |-- add-package.pl
+|   |-- bisect-example.sh
+|   |-- bisect.pl
+|   |-- bisect-runner.pl
+|   |-- bump-perl-version
+|   |-- check83.pl
+|   |-- checkansi.pl
+|   |-- checkAUTHORS.pl
+|   |-- checkcfgvar.pl
+|   |-- check-cpan-pollution
+|   |-- checkpodencoding.pl
+|   |-- checkURL.pl
+|   |-- checkVERSION.pl
+|   |-- cherrymaint
+|   |-- cmpVERSION.pl
+|   |-- config_H
+|   |-- config_h.pl
+|   |-- config.sh
+|   |-- core-cpan-diff
+|   |-- corecpan.pl
+|   |-- corelist-diff
+|   |-- corelist-perldelta.pl
+|   |-- corelist.pl
+|   |-- curliff.pl
+|   |-- epigraphs.pod
+|   |-- exec-bit.txt
+|   |-- exercise_makedef.pl
+|   |-- expand-macro.pl
+|   |-- findrfuncs
+|   |-- git-deltatool
+|   |-- git-find-p4-change
+|   |-- git-make-p4-refs
+|   |-- GitUtils.pm
+|   |-- Glossary
+|   |-- how_to_write_a_perldelta.pod
+|   |-- Maintainers
+|   |-- Maintainers.pl
+|   |-- Maintainers.pm
+|   |-- make_dot_patch.pl
+|   |-- makemeta
+|   |-- make_modlib_cpan.pl
+|   |-- makerel
+|   |-- make-rmg-checklist
+|   |-- make_snapshot.pl
+|   |-- manicheck
+|   |-- manisort
+|   |-- new-perldelta.pl
+|   |-- newtests-perldelta.pl
+|   |-- perldelta_template.pod
+|   |-- perlhist_calculate.pl
+|   |-- pod_lib.pl
+|   |-- pod_rules.pl
+|   |-- podtidy
+|   |-- pumpkin.pod
+|   |-- README.y2038
+|   |-- release_announcement_template.txt
+|   |-- release_managers_guide.pod
+|   |-- release_schedule.pod
+|   |-- rt_list_patches
+|   |-- sort_perldiag.pl
+|   |-- sync-with-cpan
+|   |-- testall.atom
+|   |-- thirdclean
+|   |-- timecheck2.c
+|   |-- timecheck.c
+|   |-- todo.pod
+|   `-- valgrindpp.pl
+|-- pp.c
+|-- pp_ctl.c
+|-- pp.h
+|-- pp_hot.c
+|-- pp_pack.c
+|-- pp_proto.h
+|-- pp_sort.c
+|-- pp_sys.c
+|-- proto.h
+|-- qnx
+|   |-- ar
+|   |-- cpp
+|   `-- qnx.c
+|-- README
+|-- README.aix
+|-- README.amiga
+|-- README.beos
+|-- README.bs2000
+|-- README.ce
+|-- README.cn
+|-- README.cygwin
+|-- README.dgux
+|-- README.dos
+|-- README.epoc
+|-- README.freebsd
+|-- README.haiku
+|-- README.hpux
+|-- README.hurd
+|-- README.irix
+|-- README.jp
+|-- README.ko
+|-- README.linux
+|-- README.macos
+|-- README.macosx
+|-- README.micro
+|-- README.mpeix
+|-- README.netware
+|-- README.openbsd
+|-- README.os2
+|-- README.os390
+|-- README.os400
+|-- README.plan9
+|-- README.qnx
+|-- README.riscos
+|-- README.solaris
+|-- README.symbian
+|-- README.tru64
+|-- README.tw
+|-- README.uts
+|-- README.vmesa
+|-- README.vms
+|-- README.vos
+|-- README.win32
+|-- reentr.c
+|-- reentr.h
+|-- regcharclass.h
+|-- regcomp.c
+|-- regcomp.h
+|-- regcomp.sym
+|-- regen
+|   |-- embed_lib.pl
+|   |-- embed.pl
+|   |-- feature.pl
+|   |-- keywords.pl
+|   |-- mg_vtable.pl
+|   |-- mk_invlists.pl
+|   |-- mk_PL_charclass.pl
+|   |-- opcode.pl
+|   |-- opcodes
+|   |-- overload.pl
+|   |-- reentr.pl
+|   |-- regcharclass.pl
+|   |-- regcomp.pl
+|   |-- regen_lib.pl
+|   |-- uconfig_h.pl
+|   `-- warnings.pl
+|-- regen_perly.pl
+|-- regen.pl
+|-- regexec.c
+|-- regexp.h
+|-- regnodes.h
+|-- run.c
+|-- runtests.SH
+|-- scope.c
+|-- scope.h
+|-- sv.c
+|-- sv.h
+|-- symbian
+|   |-- bld.inf
+|   |-- config.pl
+|   |-- config.sh
+|   |-- cwd.pl
+|   |-- demo_pl
+|   |-- ext
+|   |   `-- Moped
+|   |       `-- Msg
+|   |           |-- bld.inf
+|   |           |-- location.pl
+|   |           |-- Msg.mmp
+|   |           |-- Msg.pkg
+|   |           |-- Msg.pm
+|   |           |-- Msg.xs
+|   |           `-- README
+|   |-- find_writeable_data.pl
+|   |-- hexdump.pl
+|   |-- install.cfg
+|   |-- makesis.pl
+|   |-- PerlAppAif.rss
+|   |-- PerlApp.cpp
+|   |-- PerlApp.h
+|   |-- PerlApp.hrh
+|   |-- PerlBase.cpp
+|   |-- PerlBase.h
+|   |-- PerlBase.pod
+|   |-- PerlRecog.cpp
+|   |-- PerlRecog.mmp
+|   |-- PerlUi.cpp
+|   |-- PerlUi.h
+|   |-- PerlUi.hrh
+|   |-- PerlUiS60.rss
+|   |-- PerlUiS80.rss
+|   |-- PerlUiS90.rss
+|   |-- PerlUiUIQ.rss
+|   |-- PerlUtil.cpp
+|   |-- PerlUtil.h
+|   |-- PerlUtil.pod
+|   |-- port.pl
+|   |-- README
+|   |-- sanity.pl
+|   |-- sdk.pl
+|   |-- sisify.pl
+|   |-- symbian_dll.cpp
+|   |-- symbianish.h
+|   |-- symbian_proto.h
+|   |-- symbian_stubs.c
+|   |-- symbian_stubs.h
+|   |-- symbian_utils.cpp
+|   |-- TODO
+|   |-- uid.pl
+|   |-- version.pl
+|   `-- xsbuild.pl
+|-- t
+|   |-- base
+|   |   |-- cond.t
+|   |   |-- if.t
+|   |   |-- lex.t
+|   |   |-- num.t
+|   |   |-- pat.t
+|   |   |-- rs.t
+|   |   |-- term.t
+|   |   `-- while.t
+|   |-- benchmark
+|   |   `-- rt26188-speed-up-keys-on-empty-hash.t
+|   |-- cmd
+|   |   |-- elsif.t
+|   |   |-- for.t
+|   |   |-- mod.t
+|   |   |-- subval.t
+|   |   |-- switch.t
+|   |   `-- while.t
+|   |-- comp
+|   |   |-- bproto.t
+|   |   |-- cmdopt.t
+|   |   |-- colon.t
+|   |   |-- decl.t
+|   |   |-- final_line_num.t
+|   |   |-- fold.t
+|   |   |-- form_scope.t
+|   |   |-- hints.aux
+|   |   |-- hints.t
+|   |   |-- line_debug_0.aux
+|   |   |-- line_debug.t
+|   |   |-- multiline.t
+|   |   |-- opsubs.t
+|   |   |-- our.t
+|   |   |-- package_block.t
+|   |   |-- package.t
+|   |   |-- parser.t
+|   |   |-- proto.t
+|   |   |-- redef.t
+|   |   |-- require.t
+|   |   |-- retainedlines.t
+|   |   |-- term.t
+|   |   |-- uproto.t
+|   |   |-- use.t
+|   |   `-- utf.t
+|   |-- harness
+|   |-- io
+|   |   |-- argv.t
+|   |   |-- binmode.t
+|   |   |-- bom.t
+|   |   |-- crlf.t
+|   |   |-- crlf_through.t
+|   |   |-- data.t
+|   |   |-- defout.t
+|   |   |-- dup.t
+|   |   |-- eintr.t
+|   |   |-- errnosig.t
+|   |   |-- errno.t
+|   |   |-- fflush.t
+|   |   |-- fs.t
+|   |   |-- inplace.t
+|   |   |-- iofile.t
+|   |   |-- iprefix.t
+|   |   |-- layers.t
+|   |   |-- nargv.t
+|   |   |-- openpid.t
+|   |   |-- open.t
+|   |   |-- perlio_fail.t
+|   |   |-- perlio_leaks.t
+|   |   |-- perlio_open.t
+|   |   |-- perlio.t
+|   |   |-- pipe.t
+|   |   |-- print.t
+|   |   |-- pvbm.t
+|   |   |-- read.t
+|   |   |-- say.t
+|   |   |-- shm.t
+|   |   |-- tell.t
+|   |   |-- through.t
+|   |   `-- utf8.t
+|   |-- japh
+|   |   `-- abigail.t
+|   |-- lib
+|   |   |-- 1_compile.t
+|   |   |-- charnames
+|   |   |   `-- alias
+|   |   |-- Cname.pm
+|   |   |-- common.pl
+|   |   |-- commonsense.t
+|   |   |-- compmod.pl
+|   |   |-- croak
+|   |   |   |-- mg
+|   |   |   |-- op
+|   |   |   `-- pp_ctl
+|   |   |-- croak.t
+|   |   |-- cygwin.t
+|   |   |-- dbmt_common.pl
+|   |   |-- deprecate
+|   |   |   |-- Deprecated.pm
+|   |   |   `-- Optionally.pm
+|   |   |-- deprecate.t
+|   |   |-- Devel
+|   |   |   |-- switchd_empty.pm
+|   |   |   `-- switchd.pm
+|   |   |-- feature
+|   |   |   |-- bundle
+|   |   |   |-- implicit
+|   |   |   |-- nonesuch
+|   |   |   |-- say
+|   |   |   `-- switch
+|   |   |-- h2ph.h
+|   |   |-- h2ph.pht
+|   |   |-- locale
+|   |   |   |-- latin1
+|   |   |   `-- utf8
+|   |   |-- mypragma.pm
+|   |   |-- mypragma.t
+|   |   |-- no_load.t
+|   |   |-- overload_fallback.t
+|   |   |-- overload_nomethod.t
+|   |   |-- proxy_constant_subs.t
+|   |   |-- Sans_mypragma.pm
+|   |   |-- strict
+|   |   |   |-- refs
+|   |   |   |-- subs
+|   |   |   `-- vars
+|   |   |-- subs
+|   |   |   `-- subs
+|   |   |-- test_use_14937.pm
+|   |   |-- test_use.pm
+|   |   |-- universal.t
+|   |   `-- warnings
+|   |       |-- 1global
+|   |       |-- 2use
+|   |       |-- 3both
+|   |       |-- 4lint
+|   |       |-- 5nolint
+|   |       |-- 6default
+|   |       |-- 7fatal
+|   |       |-- 8signal
+|   |       |-- 9enabled
+|   |       |-- 9uninit
+|   |       |-- av
+|   |       |-- doio
+|   |       |-- doop
+|   |       |-- gv
+|   |       |-- hv
+|   |       |-- malloc
+|   |       |-- mg
+|   |       |-- op
+|   |       |-- pad
+|   |       |-- perl
+|   |       |-- perlio
+|   |       |-- perly
+|   |       |-- pp
+|   |       |-- pp_ctl
+|   |       |-- pp_hot
+|   |       |-- pp_pack
+|   |       |-- pp_sys
+|   |       |-- regcomp
+|   |       |-- regexec
+|   |       |-- run
+|   |       |-- sv
+|   |       |-- taint
+|   |       |-- toke
+|   |       |-- universal
+|   |       |-- utf8
+|   |       `-- util
+|   |-- mro
+|   |   |-- basic_01_c3.t
+|   |   |-- basic_01_c3_utf8.t
+|   |   |-- basic_01_dfs.t
+|   |   |-- basic_01_dfs_utf8.t
+|   |   |-- basic_02_c3.t
+|   |   |-- basic_02_c3_utf8.t
+|   |   |-- basic_02_dfs.t
+|   |   |-- basic_02_dfs_utf8.t
+|   |   |-- basic_03_c3.t
+|   |   |-- basic_03_c3_utf8.t
+|   |   |-- basic_03_dfs.t
+|   |   |-- basic_03_dfs_utf8.t
+|   |   |-- basic_04_c3.t
+|   |   |-- basic_04_c3_utf8.t
+|   |   |-- basic_04_dfs.t
+|   |   |-- basic_04_dfs_utf8.t
+|   |   |-- basic_05_c3.t
+|   |   |-- basic_05_c3_utf8.t
+|   |   |-- basic_05_dfs.t
+|   |   |-- basic_05_dfs_utf8.t
+|   |   |-- basic.t
+|   |   |-- basic_utf8.t
+|   |   |-- c3_with_overload.t
+|   |   |-- c3_with_overload_utf8.t
+|   |   |-- complex_c3.t
+|   |   |-- complex_c3_utf8.t
+|   |   |-- complex_dfs.t
+|   |   |-- complex_dfs_utf8.t
+|   |   |-- dbic_c3.t
+|   |   |-- dbic_c3_utf8.t
+|   |   |-- dbic_dfs.t
+|   |   |-- dbic_dfs_utf8.t
+|   |   |-- inconsistent_c3.t
+|   |   |-- inconsistent_c3_utf8.t
+|   |   |-- isa_aliases.t
+|   |   |-- isa_aliases_utf8.t
+|   |   |-- isa_c3.t
+|   |   |-- isa_c3_utf8.t
+|   |   |-- isa_dfs.t
+|   |   |-- isa_dfs_utf8.t
+|   |   |-- isarev.t
+|   |   |-- isarev_utf8.t
+|   |   |-- method_caching.t
+|   |   |-- method_caching_utf8.t
+|   |   |-- next_edgecases.t
+|   |   |-- next_edgecases_utf8.t
+|   |   |-- next_goto.t
+|   |   |-- next_goto_utf8.t
+|   |   |-- next_inanon.t
+|   |   |-- next_inanon_utf8.t
+|   |   |-- next_ineval.t
+|   |   |-- next_ineval_utf8.t
+|   |   |-- next_method.t
+|   |   |-- next_method_utf8.t
+|   |   |-- next_NEXT.t
+|   |   |-- next_NEXT_utf8.t
+|   |   |-- next_skip.t
+|   |   |-- next_skip_utf8.t
+|   |   |-- overload_c3.t
+|   |   |-- overload_c3_utf8.t
+|   |   |-- overload_dfs.t
+|   |   |-- package_aliases.t
+|   |   |-- package_aliases_utf8.t
+|   |   |-- pkg_gen.t
+|   |   |-- pkg_gen_utf8.t
+|   |   |-- recursion_c3.t
+|   |   |-- recursion_c3_utf8.t
+|   |   |-- recursion_dfs.t
+|   |   |-- recursion_dfs_utf8.t
+|   |   |-- vulcan_c3.t
+|   |   |-- vulcan_c3_utf8.t
+|   |   |-- vulcan_dfs.t
+|   |   `-- vulcan_dfs_utf8.t
+|   |-- op
+|   |   |-- 64bitint.t
+|   |   |-- alarm.t
+|   |   |-- anonsub.t
+|   |   |-- append.t
+|   |   |-- args.t
+|   |   |-- arith.t
+|   |   |-- array_base.t
+|   |   |-- array.t
+|   |   |-- assignwarn.t
+|   |   |-- attrhand.t
+|   |   |-- attrs.t
+|   |   |-- auto.t
+|   |   |-- avhv.t
+|   |   |-- bless.t
+|   |   |-- blocks.t
+|   |   |-- bop.t
+|   |   |-- caller.pl
+|   |   |-- caller.t
+|   |   |-- chars.t
+|   |   |-- chdir.t
+|   |   |-- chop.t
+|   |   |-- chr.t
+|   |   |-- closure.t
+|   |   |-- cmp.t
+|   |   |-- concat2.t
+|   |   |-- concat.t
+|   |   |-- cond.t
+|   |   |-- context.t
+|   |   |-- coreamp.t
+|   |   |-- coresubs.t
+|   |   |-- cproto.t
+|   |   |-- crypt.t
+|   |   |-- current_sub.t
+|   |   |-- dbm.t
+|   |   |-- defins.t
+|   |   |-- delete.t
+|   |   |-- die_except.t
+|   |   |-- die_exit.t
+|   |   |-- die_keeperr.t
+|   |   |-- die.t
+|   |   |-- die_unwind.t
+|   |   |-- dor.t
+|   |   |-- do.t
+|   |   |-- each_array.t
+|   |   |-- each.t
+|   |   |-- evalbytes.t
+|   |   |-- eval.t
+|   |   |-- exec.t
+|   |   |-- exists_sub.t
+|   |   |-- exp.t
+|   |   |-- fh.t
+|   |   |-- filehandle.t
+|   |   |-- filetest_stack_ok.t
+|   |   |-- filetest.t
+|   |   |-- filetest_t.t
+|   |   |-- flip.t
+|   |   |-- fork.t
+|   |   |-- fresh_perl_utf8.t
+|   |   |-- getpid.t
+|   |   |-- getppid.t
+|   |   |-- glob.t
+|   |   |-- gmagic.t
+|   |   |-- goto.t
+|   |   |-- goto_xs.t
+|   |   |-- grent.t
+|   |   |-- grep.t
+|   |   |-- groups.t
+|   |   |-- gv.t
+|   |   |-- hashassign.t
+|   |   |-- hash-rt85026.t
+|   |   |-- hash.t
+|   |   |-- hashwarn.t
+|   |   |-- inccode.t
+|   |   |-- inccode-tie.t
+|   |   |-- incfilter.t
+|   |   |-- inc.t
+|   |   |-- index.t
+|   |   |-- index_thr.t
+|   |   |-- int.t
+|   |   |-- join.t
+|   |   |-- kill0.t
+|   |   |-- lc.t
+|   |   |-- leaky-magic.t
+|   |   |-- length.t
+|   |   |-- lex_assign.t
+|   |   |-- lex.t
+|   |   |-- lfs.t
+|   |   |-- list.t
+|   |   |-- localref.t
+|   |   |-- local.t
+|   |   |-- lock.t
+|   |   |-- loopctl.t
+|   |   |-- lop.t
+|   |   |-- magic-27839.t
+|   |   |-- magic_phase.t
+|   |   |-- magic.t
+|   |   |-- method.t
+|   |   |-- mkdir.t
+|   |   |-- mydef.t
+|   |   |-- my_stash.t
+|   |   |-- my.t
+|   |   |-- negate.t
+|   |   |-- not.t
+|   |   |-- numconvert.t
+|   |   |-- oct.t
+|   |   |-- ord.t
+|   |   |-- or.t
+|   |   |-- overload_integer.t
+|   |   |-- override.t
+|   |   |-- packagev.t
+|   |   |-- pack.t
+|   |   |-- pos.t
+|   |   |-- pow.t
+|   |   |-- print.t
+|   |   |-- protowarn.t
+|   |   |-- push.t
+|   |   |-- pwent.t
+|   |   |-- qq.t
+|   |   |-- qr.t
+|   |   |-- quotemeta.t
+|   |   |-- rand.t
+|   |   |-- range.t
+|   |   |-- readdir.t
+|   |   |-- readline.t
+|   |   |-- read.t
+|   |   |-- recurse.t
+|   |   |-- ref.t
+|   |   |-- repeat.t
+|   |   |-- require_37033.t
+|   |   |-- require_errors.t
+|   |   |-- reset.t
+|   |   |-- reverse.t
+|   |   |-- runlevel.t
+|   |   |-- select.t
+|   |   |-- setpgrpstack.t
+|   |   |-- sigdispatch.t
+|   |   |-- sigsystem.t
+|   |   |-- sleep.t
+|   |   |-- smartkve.t
+|   |   |-- smartmatch.t
+|   |   |-- sort.t
+|   |   |-- splice.t
+|   |   |-- split.t
+|   |   |-- split_unicode.t
+|   |   |-- sprintf2.t
+|   |   |-- sprintf.t
+|   |   |-- srand.t
+|   |   |-- sselect.t
+|   |   |-- stash.t
+|   |   |-- state.t
+|   |   |-- stat.t
+|   |   |-- study.t
+|   |   |-- studytied.t
+|   |   |-- sub_lval.t
+|   |   |-- substr.t
+|   |   |-- substr_thr.t
+|   |   |-- sub.t
+|   |   |-- svleak.t
+|   |   |-- switch.t
+|   |   |-- symbolcache.t
+|   |   |-- sysio.t
+|   |   |-- taint.t
+|   |   |-- threads_create.pl
+|   |   |-- threads-dirh.t
+|   |   |-- threads.t
+|   |   |-- tiearray.t
+|   |   |-- tie_fetch_count.t
+|   |   |-- tiehandle.t
+|   |   |-- tie.t
+|   |   |-- time_loop.t
+|   |   |-- time.t
+|   |   |-- tr.t
+|   |   |-- undef.t
+|   |   |-- universal.t
+|   |   |-- unlink.t
+|   |   |-- unshift.t
+|   |   |-- upgrade.t
+|   |   |-- utf8cache.t
+|   |   |-- utf8decode.t
+|   |   |-- utf8magic.t
+|   |   |-- utfhash.t
+|   |   |-- utftaint.t
+|   |   |-- vec.t
+|   |   |-- ver.t
+|   |   |-- wantarray.t
+|   |   |-- warn.t
+|   |   |-- while_readdir.t
+|   |   |-- write.t
+|   |   `-- yadayada.t
+|   |-- perl.supp
+|   |-- porting
+|   |   |-- args_assert.t
+|   |   |-- authors.t
+|   |   |-- bincompat.t
+|   |   |-- checkcase.t
+|   |   |-- checkcfgvar.t
+|   |   |-- cmp_version.t
+|   |   |-- customized.dat
+|   |   |-- customized.t
+|   |   |-- diag.t
+|   |   |-- dual-life.t
+|   |   |-- exec-bit.t
+|   |   |-- filenames.t
+|   |   |-- FindExt.t
+|   |   |-- globvar.t
+|   |   |-- known_pod_issues.dat
+|   |   |-- maintainers.t
+|   |   |-- manifest.t
+|   |   |-- pending-author.t
+|   |   |-- perlfunc.t
+|   |   |-- podcheck.t
+|   |   |-- pod_rules.t
+|   |   |-- regen.t
+|   |   |-- test_bootstrap.t
+|   |   `-- utils.t
+|   |-- re
+|   |   |-- charset.t
+|   |   |-- fold_grind.t
+|   |   |-- no_utf8_pm.t
+|   |   |-- overload.t
+|   |   |-- pat_advanced.t
+|   |   |-- pat_advanced_thr.t
+|   |   |-- pat_psycho.t
+|   |   |-- pat_psycho_thr.t
+|   |   |-- pat_re_eval.t
+|   |   |-- pat_re_eval_thr.t
+|   |   |-- pat_rt_report.t
+|   |   |-- pat_rt_report_thr.t
+|   |   |-- pat_special_cc.t
+|   |   |-- pat_special_cc_thr.t
+|   |   |-- pat.t
+|   |   |-- pat_thr.t
+|   |   |-- qr-72922.t
+|   |   |-- qr_gc.t
+|   |   |-- qrstack.t
+|   |   |-- qr.t
+|   |   |-- reg_60508.t
+|   |   |-- reg_email.t
+|   |   |-- reg_email_thr.t
+|   |   |-- reg_eval_scope.t
+|   |   |-- reg_eval.t
+|   |   |-- regexp_noamp.t
+|   |   |-- regexp_notrie.t
+|   |   |-- regexp_qr_embed.t
+|   |   |-- regexp_qr_embed_thr.t
+|   |   |-- regexp_qr.t
+|   |   |-- regexp.t
+|   |   |-- regexp_trielist.t
+|   |   |-- regexp_unicode_prop.t
+|   |   |-- regexp_unicode_prop_thr.t
+|   |   |-- reg_fold.t
+|   |   |-- reg_mesg.t
+|   |   |-- reg_namedcapture.t
+|   |   |-- reg_nc_tie.t
+|   |   |-- reg_pmod.t
+|   |   |-- reg_posixcc.t
+|   |   |-- re_tests
+|   |   |-- rxcode.t
+|   |   |-- subst_amp.t
+|   |   |-- subst.t
+|   |   |-- substT.t
+|   |   |-- subst_wamp.t
+|   |   `-- uniprops.t
+|   |-- README
+|   |-- run
+|   |   |-- cloexec.t
+|   |   |-- dtrace.t
+|   |   |-- exit.t
+|   |   |-- fresh_perl.t
+|   |   |-- locale.t
+|   |   |-- noswitch.t
+|   |   |-- runenv.t
+|   |   |-- script.t
+|   |   |-- switch0.t
+|   |   |-- switcha.t
+|   |   |-- switchC.t
+|   |   |-- switchd-78586.t
+|   |   |-- switchd.t
+|   |   |-- switches.t
+|   |   |-- switchF1.t
+|   |   |-- switchF.t
+|   |   |-- switchI.t
+|   |   |-- switchn.t
+|   |   |-- switchp.t
+|   |   |-- switcht.t
+|   |   |-- switchx2.aux
+|   |   |-- switchx3.aux
+|   |   |-- switchx.aux
+|   |   `-- switchx.t
+|   |-- TEST
+|   |-- test_pl
+|   |   `-- can_isa_ok.t
+|   |-- test.pl
+|   |-- thread_it.pl
+|   |-- uni
+|   |   |-- attrs.t
+|   |   |-- bless.t
+|   |   |-- cache.t
+|   |   |-- caller.t
+|   |   |-- case.pl
+|   |   |-- chomp.t
+|   |   |-- chr.t
+|   |   |-- class.t
+|   |   |-- eval.t
+|   |   |-- fold.t
+|   |   |-- goto.t
+|   |   |-- greek.t
+|   |   |-- gv.t
+|   |   |-- labels.t
+|   |   |-- latin2.t
+|   |   |-- lex_utf8.t
+|   |   |-- lower.t
+|   |   |-- method.t
+|   |   |-- opcroak.t
+|   |   |-- overload.t
+|   |   |-- package.t
+|   |   |-- parser.t
+|   |   |-- readline.t
+|   |   |-- select.t
+|   |   |-- sprintf.t
+|   |   |-- stash.t
+|   |   |-- tie.t
+|   |   |-- title.t
+|   |   |-- tr_7jis.t
+|   |   |-- tr_eucjp.t
+|   |   |-- tr_sjis.t
+|   |   |-- tr_utf8.t
+|   |   |-- universal.t
+|   |   |-- upper.t
+|   |   `-- write.t
+|   |-- win32
+|   |   |-- runenv.t
+|   |   |-- system.t
+|   |   `-- system_tests
+|   `-- x2p
+|       `-- s2p.t
+|-- taint.c
+|-- TestInit.pm
+|-- thread.h
+|-- time64.c
+|-- time64_config.h
+|-- time64.h
+|-- toke.c
+|-- uconfig64.sh
+|-- uconfig.h
+|-- uconfig.sh
+|-- universal.c
+|-- unixish.h
+|-- utf8.c
+|-- utf8.h
+|-- utfebcdic.h
+|-- util.c
+|-- util.h
+|-- utils
+|   |-- c2ph.PL
+|   |-- config_data.PL
+|   |-- corelist.PL
+|   |-- cpan2dist.PL
+|   |-- cpan.PL
+|   |-- cpanp.PL
+|   |-- cpanp-run-perl.PL
+|   |-- enc2xs.PL
+|   |-- h2ph.PL
+|   |-- h2xs.PL
+|   |-- instmodsh.PL
+|   |-- json_pp.PL
+|   |-- libnetcfg.PL
+|   |-- Makefile
+|   |-- Makefile.SH
+|   |-- perlbug.PL
+|   |-- perldoc.PL
+|   |-- perlivp.PL
+|   |-- piconv.PL
+|   |-- pl2pm.PL
+|   |-- pod2html.PL
+|   |-- prove.PL
+|   |-- ptardiff.PL
+|   |-- ptargrep.PL
+|   |-- ptar.PL
+|   |-- shasum.PL
+|   |-- splain.PL
+|   |-- xsubpp.PL
+|   `-- zipdetails.PL
+|-- utils.lst
+|-- uts
+|   |-- sprintf_wrap.c
+|   `-- strtol_wrap.c
+|-- vmesa
+|   |-- Makefile
+|   |-- vmesa.c
+|   `-- vmesaish.h
+|-- vms
+|   |-- descrip_mms.template
+|   |-- ext
+|   |   |-- Filespec.pm
+|   |   `-- filespec.t
+|   |-- genopt.com
+|   |-- gen_shrfls.pl
+|   |-- make_command.com
+|   |-- mms2make.pl
+|   |-- munchconfig.c
+|   |-- myconfig.com
+|   |-- test.com
+|   |-- vms.c
+|   |-- vmsish.h
+|   `-- vmspipe.com
+|-- vos
+|   |-- Changes
+|   |-- compile_full_perl.cm
+|   |-- configure_full_perl.sh
+|   |-- make_full_perl.sh
+|   |-- vos.c
+|   `-- vosish.h
+|-- warnings.h
+|-- win32
+|   |-- bin
+|   |   |-- exetype.pl
+|   |   |-- perlglob.pl
+|   |   |-- pl2bat.pl
+|   |   |-- runperl.pl
+|   |   `-- search.pl
+|   |-- ce-helpers
+|   |   |-- cecopy-lib.pl
+|   |   |-- compile-all.bat
+|   |   |-- compile.bat
+|   |   |-- comp.pl
+|   |   |-- makedist.pl
+|   |   `-- registry.bat
+|   |-- config.ce
+|   |-- config.gc
+|   |-- config.gc64
+|   |-- config.gc64nox
+|   |-- config_H.ce
+|   |-- config_H.gc
+|   |-- config_H.gc64
+|   |-- config_H.gc64nox
+|   |-- config_h.PL
+|   |-- config_H.vc
+|   |-- config_H.vc64
+|   |-- config_sh.PL
+|   |-- config.vc
+|   |-- config.vc64
+|   |-- create_perllibst_h.pl
+|   |-- distclean.bat
+|   |-- fcrypt.c
+|   |-- FindExt.pm
+|   |-- include
+|   |   |-- arpa
+|   |   |   `-- inet.h
+|   |   |-- dirent.h
+|   |   |-- netdb.h
+|   |   `-- sys
+|   |       `-- socket.h
+|   |-- list_static_libs.pl
+|   |-- Makefile
+|   |-- Makefile.ce
+|   |-- makefile.mk
+|   |-- perlexe.ico
+|   |-- perlexe.manifest
+|   |-- perlexe.rc
+|   |-- perlglob.c
+|   |-- perlhost.h
+|   |-- perllib.c
+|   |-- perlmaince.c
+|   |-- perl.rc
+|   |-- pod.mak
+|   |-- runperl.c
+|   |-- vdir.h
+|   |-- vmem.h
+|   |-- win32.c
+|   |-- win32ceio.c
+|   |-- win32.h
+|   |-- win32io.c
+|   |-- win32iop.h
+|   |-- win32iop-o.h
+|   |-- win32sck.c
+|   |-- win32thread.c
+|   |-- win32thread.h
+|   |-- wince.c
+|   |-- wince.h
+|   `-- wincesck.c
+|-- write_buildcustomize.pl
+|-- x2p
+|   |-- a2p.c
+|   |-- a2p.h
+|   |-- a2p.pod
+|   |-- a2p.y
+|   |-- a2py.c
+|   |-- cflags.SH
+|   |-- EXTERN.h
+|   |-- find2perl.PL
+|   |-- hash.c
+|   |-- hash.h
+|   |-- INTERN.h
+|   |-- Makefile.SH
+|   |-- s2p.PL
+|   |-- str.c
+|   |-- str.h
+|   |-- util.c
+|   |-- util.h
+|   `-- walk.c
+`-- XSUB.h
+
+987 directories, 5637 files

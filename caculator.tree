@@ -1,0 +1,222 @@
+.
+|-- AndroidManifest.xml
+|-- Android.mk
+|-- arity-2.1.2.jar
+|-- caculator.tree
+|-- CleanSpec.mk
+|-- MODULE_LICENSE_APACHE2
+|-- NOTICE
+|-- res
+|   |-- drawable
+|   |   |-- btn_digit.xml
+|   |   |-- btn_function.xml
+|   |   |-- btn_land_delete.xml
+|   |   `-- btn_port_delete.xml
+|   |-- drawable-hdpi
+|   |   |-- advanced.png
+|   |   |-- btn_keyboard_key_dark_normal_holo.9.png
+|   |   |-- btn_keyboard_key_dark_pressed_holo.9.png
+|   |   |-- btn_keyboard_key_light_normal_holo.9.png
+|   |   |-- btn_keyboard_key_light_pressed_holo.9.png
+|   |   |-- btn_land_delete_normal.png
+|   |   |-- btn_land_delete_pressed.png
+|   |   |-- btn_port_delete_normal.png
+|   |   |-- btn_port_delete_pressed.png
+|   |   |-- calculator_input_field.9.png
+|   |   |-- clear_history.png
+|   |   |-- ic_menu_overflow.png
+|   |   `-- simple.png
+|   |-- drawable-mdpi
+|   |   |-- advanced.png
+|   |   |-- btn_keyboard_key_dark_normal_holo.9.png
+|   |   |-- btn_keyboard_key_dark_pressed_holo.9.png
+|   |   |-- btn_keyboard_key_light_normal_holo.9.png
+|   |   |-- btn_keyboard_key_light_pressed_holo.9.png
+|   |   |-- calc_clear_symbol.png
+|   |   |-- calculator_input_field.9.png
+|   |   |-- clear_history.png
+|   |   |-- ic_menu_overflow.png
+|   |   `-- simple.png
+|   |-- drawable-sw600dp-hdpi
+|   |   |-- calc_clear_symbol.png
+|   |   `-- calculator_input_field.9.png
+|   |-- drawable-sw600dp-mdpi
+|   |   |-- calc_clear_symbol.png
+|   |   `-- calculator_input_field.9.png
+|   |-- drawable-xhdpi
+|   |   |-- btn_keyboard_key_dark_normal_holo.9.png
+|   |   |-- btn_keyboard_key_dark_pressed_holo.9.png
+|   |   |-- btn_keyboard_key_light_normal_holo.9.png
+|   |   |-- btn_keyboard_key_light_pressed_holo.9.png
+|   |   |-- calc_clear_symbol.png
+|   |   |-- calculator_input_field.9.png
+|   |   `-- ic_menu_overflow.png
+|   |-- layout-land
+|   |   |-- advanced_pad.xml
+|   |   |-- history_item.xml
+|   |   |-- main.xml
+|   |   `-- simple_pad.xml
+|   |-- layout-port
+|   |   |-- advanced_pad.xml
+|   |   |-- history_item.xml
+|   |   |-- main.xml
+|   |   `-- simple_pad.xml
+|   |-- layout-sw600dp
+|   |   `-- main.xml
+|   |-- layout-sw600dp-land
+|   |   `-- main.xml
+|   |-- menu
+|   |   `-- menu.xml
+|   |-- mipmap-hdpi
+|   |   `-- ic_launcher_calculator.png
+|   |-- mipmap-mdpi
+|   |   `-- ic_launcher_calculator.png
+|   |-- mipmap-xhdpi
+|   |   `-- ic_launcher_calculator.png
+|   |-- values
+|   |   |-- colors.xml
+|   |   |-- config.xml
+|   |   |-- constants.xml
+|   |   |-- strings.xml
+|   |   `-- styles.xml
+|   |-- values-af
+|   |   `-- strings.xml
+|   |-- values-am
+|   |   `-- strings.xml
+|   |-- values-ar
+|   |   `-- strings.xml
+|   |-- values-be
+|   |   `-- strings.xml
+|   |-- values-bg
+|   |   `-- strings.xml
+|   |-- values-bn
+|   |   `-- strings.xml
+|   |-- values-ca
+|   |   `-- strings.xml
+|   |-- values-cs
+|   |   `-- strings.xml
+|   |-- values-da
+|   |   `-- strings.xml
+|   |-- values-de
+|   |   `-- strings.xml
+|   |-- values-el
+|   |   `-- strings.xml
+|   |-- values-en-rGB
+|   |   `-- strings.xml
+|   |-- values-es
+|   |   `-- strings.xml
+|   |-- values-es-rUS
+|   |   `-- strings.xml
+|   |-- values-et
+|   |   `-- strings.xml
+|   |-- values-fa
+|   |   `-- strings.xml
+|   |-- values-fi
+|   |   `-- strings.xml
+|   |-- values-fr
+|   |   `-- strings.xml
+|   |-- values-hi
+|   |   `-- strings.xml
+|   |-- values-hr
+|   |   `-- strings.xml
+|   |-- values-hu
+|   |   `-- strings.xml
+|   |-- values-in
+|   |   `-- strings.xml
+|   |-- values-it
+|   |   `-- strings.xml
+|   |-- values-iw
+|   |   `-- strings.xml
+|   |-- values-ja
+|   |   `-- strings.xml
+|   |-- values-ko
+|   |   `-- strings.xml
+|   |-- values-land
+|   |   `-- arrays.xml
+|   |-- values-lt
+|   |   `-- strings.xml
+|   |-- values-lv
+|   |   `-- strings.xml
+|   |-- values-ms
+|   |   `-- strings.xml
+|   |-- values-nb
+|   |   `-- strings.xml
+|   |-- values-nl
+|   |   `-- strings.xml
+|   |-- values-pl
+|   |   `-- strings.xml
+|   |-- values-port
+|   |   `-- arrays.xml
+|   |-- values-pt
+|   |   `-- strings.xml
+|   |-- values-pt-rPT
+|   |   `-- strings.xml
+|   |-- values-rm
+|   |   `-- strings.xml
+|   |-- values-ro
+|   |   `-- strings.xml
+|   |-- values-ru
+|   |   `-- strings.xml
+|   |-- values-sk
+|   |   `-- strings.xml
+|   |-- values-sl
+|   |   `-- strings.xml
+|   |-- values-sr
+|   |   `-- strings.xml
+|   |-- values-sv
+|   |   `-- strings.xml
+|   |-- values-sw
+|   |   `-- strings.xml
+|   |-- values-sw600dp
+|   |   |-- arrays.xml
+|   |   |-- config.xml
+|   |   `-- styles.xml
+|   |-- values-sw600dp-port
+|   |   |-- config.xml
+|   |   `-- styles.xml
+|   |-- values-sw800dp
+|   |   |-- config.xml
+|   |   `-- styles.xml
+|   |-- values-sw800dp-land
+|   |   |-- config.xml
+|   |   `-- styles.xml
+|   |-- values-sw800dp-port
+|   |   |-- config.xml
+|   |   `-- styles.xml
+|   |-- values-th
+|   |   `-- strings.xml
+|   |-- values-tl
+|   |   `-- strings.xml
+|   |-- values-tr
+|   |   `-- strings.xml
+|   |-- values-uk
+|   |   `-- strings.xml
+|   |-- values-ur
+|   |   `-- strings.xml
+|   |-- values-vi
+|   |   `-- strings.xml
+|   |-- values-zh-rCN
+|   |   `-- strings.xml
+|   |-- values-zh-rTW
+|   |   `-- strings.xml
+|   `-- values-zu
+|       `-- strings.xml
+`-- src
+    `-- com
+        `-- android
+            `-- calculator2
+                |-- CalculatorDisplay.java
+                |-- CalculatorEditable.java
+                |-- CalculatorEditText.java
+                |-- Calculator.java
+                |-- CalculatorViewPager.java
+                |-- ColorButton.java
+                |-- EventListener.java
+                |-- HistoryAdapter.java
+                |-- HistoryEntry.java
+                |-- History.java
+                |-- Logic.java
+                |-- PanelSwitcher.java
+                `-- Persist.java
+
+78 directories, 141 files
