@@ -1,0 +1,36 @@
+"opera->tool->advanced->network profile->always ask"
+ need to open the  __MMI_CBM_ALWAYS_ASK__
+ 
+ 
+ 2.飞行模式的开关的位置
+ 在setting下面的地方在VappFlightModeSettingCell
+ 在wiget下面的地方在 VappWidgetQuickSwitch
+可以在：srv_mode_switch_switch_flight_mode 下断点调试
+
+
+3.其他开关的位置在：VappWidgetQuickSwitch：：
+private:
+    void onWifiBtnClicked(
+        VfxObject *sender,
+        VfxId id
+    );
+
+    void onBtBtnClicked(
+        VfxObject *sender,
+        VfxId id
+    );
+
+    void onSilentBtnClicked(
+        VfxObject *sender,
+        VfxId id
+    );
+
+    void onFlightBtnClicked(
+        VfxObject *sender,
+        VfxId id
+    );
+
+    void onBrightnessBtnClicked(
+        VfxObject *sender,
+        VfxId id
+    );
