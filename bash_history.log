@@ -1,0 +1,1740 @@
+sudo apt-get install openssh-server
+ifconfig
+ls
+mkdir work
+ls
+cd work/
+ls
+sudo apt-get update
+cd /usr/bin/
+ls gcc
+ll gcc
+sudo rm -fr gcc
+sudo rm -fr x86_64-linux-gnu-gcc
+sudo ln -s ./gcc-4.1 ./gcc
+sudo ln -s ./x86_64-linux-gnu-gcc-4.1 ./x86_64-linux-gnu-gcc
+ll gcc
+ll /bin/sh
+sudo rm /bin/sh
+sudo ln -s /bin/bash /bin/sh
+ll /bin/sh
+sudo apt-get install gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev ia32-libs x11proto-core-dev libx11-dev lib32readline5-dev lib32z-dev
+cd /home/
+ls
+cd ckt/
+ls
+cd work/
+ls
+mkdir env
+ls
+vi /etc/profile
+sudo apt-get stall vim
+sudo apt-get install vim
+sudo vi /etc/profile
+vi /home/ckt/work/env/android.conf
+cd work
+ls
+cd env/
+ls
+chmod 777 jdk-6u24-linux-x64.bin 
+./jdk-6u24-linux-x64.bin 
+ls
+ls jdk1.6.0_24/
+ls
+vi ./android.conf 
+sudo apt-get install svn
+svn
+sudo apt-get install subversion
+vi work/env/android.conf 
+which java
+free
+vim /etc/apt/sources.list
+sudo vim /etc/apt/sources.list
+sudo apt-get install git-core
+sudo apt-get update
+sudo apt-get install git-core
+sudo apt-cache search mingw
+sudo apt-cache search wine
+sudo apt-get install wine1.2
+sudo apt-get install mingw32
+exit
+eclipse
+sudo apt-get install eclipse
+java
+java -version
+ls
+cd '/home/ckt/Desktop/Test.java' 
+javac Test.java
+java Test.java
+vim Test.java
+mkdir vimfile
+ls
+rm vimfile/
+rmdir vimfile/
+mkdir sharefile
+sudo mount -t vboxsf vmfile sharefile/
+sudo mount -t vboxsf vmfile /home/ckt/sharefile/
+sudo mount -t vboxsf vmfile /home/ckt/sharefile
+sudo mount -t vboxsf vmfile /home/ckt/sharefile/
+dir
+ls
+cd /
+ls
+cd ~
+ls
+pwd
+mkdir shared
+ls
+sudo mount -t vboxsf share shared
+ls
+cd share
+cd shared
+ls
+sudo umount
+sudo umount /media/VBOXADDITIONS_4.0.12_72916/
+ls
+cd work/
+ls
+ll
+cd env/
+ls
+cd ..
+ls
+mkdir test_git
+ls
+cd test_git/
+git init
+touch a
+ls
+vim a
+git add a
+git status 
+ifconfig
+cd ../../
+ls
+ping www.baidu.com
+cd work/
+config
+ls
+ifconfig
+cd work/test_git/
+ls
+git clone gif://gif.kernel.org/pub/scm/git/git.git
+git -config
+git config --list
+git config --giobal user.name="Yadong Huang"
+git config --global user.name="Yadong Huang"
+git config --global user.email="yadong.huang@ck-telecom.com"
+git config --listy
+git config --list
+git config user.name
+git help\
+get help
+git help config
+git config user.name "Yadong Huang"
+git config --global user.name "Yadong Huang"
+git config --global user.email "yadong.huang@ck-telecom.com"
+git config --list
+git init
+ls
+rmdir sharefile
+ls
+git init
+cd
+cd .git
+ls
+cd..
+cd ..
+ls
+remove Test.java
+ls
+rm Test.java
+ls
+git add *.c
+git add readme
+git add README
+ls
+cd .git
+ls
+git add *.c
+cd ..
+ls
+git add 
+git clone git://github.com/schacon/grit.git
+cd .git\
+ls
+git status
+cd ..
+git status
+ls -a
+vim readme
+man 1 ls
+man 4 exec
+man 3 exec
+git status
+git config --list
+git status
+mkdir mygit
+cd mygit
+git init
+git status
+vim readme
+git status
+ifconfig
+cd ..
+ls
+cd /etc/network/
+ls
+sudo vim interfaces 
+ifconfig
+ping www.baidu.com
+ifconfig
+ping www.baidu.com
+git config --list
+vim /home/ckt/.git
+vim /home/ckt/.gitconfig 
+git config
+git config --list
+whereis gcc
+cd /usr/bin/gcc
+cd ..
+ls
+cd usr/bin/gcc
+cd usr/bin/
+ls
+ll 
+ll gcc.*
+ls gcc
+ll gcc
+sudo ln -s gcc-4.4 gcc
+ll gcc
+sudo rm gcc
+sudo ln -s gcc-4.4 gcc
+ll
+ll gcc
+git config --list
+cd 
+git config --list
+git
+cd ~
+ls
+cd Desktop/
+ls
+cd vmware-tools-distrib/
+ls
+./vmware-install.pl 
+sudo ./vmware-install.pl 
+ls
+cd work/
+ls
+tar zxvf src.tar.gz 
+ls
+clear
+ls
+cd src/
+ls
+ls -l
+cd abi/
+ls
+cd cpp/
+ls
+cd src/
+ls
+clear
+cd ../../
+ls
+cd ../
+ls
+cd build/
+ls
+cd core/
+ls
+vi root.mk 
+vi java.mk 
+vi help.mk 
+make help
+clear
+make clean
+ls
+cd ..
+make help
+make out
+clear
+cd build/core/
+ls 
+vi envsetup.mk 
+vi build_id.mk 
+vi cleanbuild.mk 
+clear
+cd ../../
+ls
+cd bootable/
+ls
+cd bootloader/
+ls
+cd legacy/
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+clear
+ls
+cd dev
+cd development/
+ls
+cd apps/
+ls
+cd ..
+ls
+clear
+ls
+cd ..
+ls
+cd libcore/
+ls
+cd json/
+ls
+cd src/
+ls
+cd main/
+ls
+cd java/
+ls
+cd org/
+ls
+cd json/
+ls
+vi JSON.java 
+clear
+ls
+cd ..
+cd ../../../
+ls
+cd ../../../
+ls
+cd packages/
+cd apps/
+ls
+cd Launcher2/
+ls
+vi AndroidManifest.xml 
+clear
+ls
+vi print_db.py 
+clear
+ls
+vi Android
+ls
+rm -f Android
+ls
+vi Android.mk 
+clear
+ls
+cd src/
+;s
+ls
+cd com/android/
+ls
+cd launcher2/
+ls
+clear
+ls launch*.java -l
+ls launch*.java 
+ls -l | grep 'launch.*\.java'
+ls -l | grep 'L.*\.java'
+vi AllAppsList.java 
+clear
+ls -l | grep 'L.*\.java'
+clear
+cd ../../
+cd ../../../
+cd ../../
+ls
+cd external/
+ls
+cd sqlite/
+ls
+cd android/
+ls
+ls -lA
+vi sqlite3_android.cpp 
+clear
+cls
+cl
+clear
+vi .bashrc
+rm -f .bahsrc
+cd ~
+vi .bashrc
+cls
+vi .bashrc
+exit
+vi .bashrc
+cls
+exit
+cls
+vi .bashrc
+clear
+exity
+exit
+python
+clear
+ls
+cls
+clear
+python3
+python
+clear
+git clone  https://github.com/CPAN-API/cpan-api.git
+ls
+cd cpan-api/
+;s
+ls
+more README.md 
+clear
+ls
+cd bin/
+ls
+cd ..
+cd etc/
+ls
+cd ..
+cd lib/
+ls
+cd Archive/
+ls
+cd Any/
+ls
+cd Plugin/
+ls
+cd ../../../
+clear
+ls
+cd MetaCPAN/
+ls
+cd Document/
+ls
+cd ../
+ls
+cd ../
+ls
+tree
+sudo apt-get install tree
+test 
+test --help
+man test
+clear
+ls
+cd cpan-api/
+ls
+ls -l
+cd bin/
+ls -l
+cd ../
+ls
+ls -l
+cd lib/
+ls
+ls -l
+cd ../
+ls
+ll
+cd ~
+vi .bashrc
+ll
+exit
+ll
+clear
+cd cpan-api/
+ll
+cd lib/
+cd ~
+vi .bashrc
+exit
+ll
+cd ~
+vi .bashrc
+exit
+ll
+cd cpan-api/
+ll
+cd t/
+ll
+cd document/
+ll
+cd ../release/
+ll
+cd ../../
+ls
+ll
+sudo ./app.psgi 
+ll
+clear
+cd var/
+ll
+exit
+ls
+ll
+vi .bashrc
+ll
+exit
+ll
+pwd
+clear
+pwd
+cd /
+ll
+history
+exit
+pwd
+ls
+perl --verson
+perl -version
+ls
+mkdir perl_learn
+cd perl_learn/
+touch timesrc.pl
+vi timesrc.pl 
+chmod 755 timesrc.pl 
+./timesrc.pl 
+which perl
+vi timesrc.pl 
+./timesrc.pl 
+vi timesrc.pl 
+./timesrc.pl 
+date
+vi timesrc.pl 
+./timesrc.pl 
+vi timesrc.pl 
+./timesrc.pl 
+vi timesrc.pl 
+./timesrc.pl 
+vi timesrc.pl 
+./timesrc.pl 
+clear
+vi timesrc.pl 
+./timesrc.pl 
+vi timesrc.pl 
+./timesrc.pl 
+clear
+vi timesrc.pl 
+./timesrc.pl 
+clear
+vi timesrc.pl 
+./timesrc.pl 
+vi timesrc.pl 
+./timesrc.pl 
+vi timesrc.pl 
+./timesrc.pl 
+clear
+vi timesrc.pl 
+./timesrc.pl 
+vi timesrc.pl 
+./timesrc.pl 
+vi timesrc.pl 
+./timesrc.pl 
+clear
+pwd
+echo $path
+echo $PATH
+export
+set $PATH = $PATH:`pwd`
+echo $PATH
+set
+clear
+echo $PATH
+export PATH = $PATH:`pwd`
+cd ~
+ll
+vi .config
+cd .config
+ls
+cd ..
+ll
+vi .profile
+exit
+echo $PATH
+pwd
+cd perl_learn/
+echo $PATH
+pwd
+vi ~.profile
+cd ~
+vi .profile
+echo $PATH
+cd perl_learn/
+echo $PATH
+clear
+cd ~
+ll
+vi .bash_profile
+rm .bash_profile
+ll
+cd /etc
+ll profile
+su -
+sudo vi profile
+exit
+echo $PATH
+pwd
+cd perl_learn/
+echo $PATH
+clear
+sudo vi /etc/profile
+echo $PATH
+vi .bashrc
+ll
+clear
+vi .config
+ll
+vi .profile 
+sudo vi /etc/profile
+sudo reboot
+echo $PATH
+EXIT
+exit
+find /home/ckt/work/src/  *.pl 
+find /home/ckt/work/src/  *.pl &
+nohup find /home/ckt/work/src -name=*.pl &
+nohup
+find --help
+nohup find /home/ckt/work/src *.pl &
+nohup
+
+find /home/ckt/work/src/ *.pl
+cd work/src/
+ls
+cd abi/
+find *.pl
+find . *.pl
+cd ../
+ls
+cd build/
+find . *.pl
+clear
+ls
+cd ../
+ls
+cd bootable/
+ls
+cd bootloader/
+ls
+cd legacy/
+ls
+cd ../../
+cd ..
+ls
+cd development/
+ls
+cd apps/
+ls
+cd FontLab/
+ls
+cd src/
+;s
+ls
+cd com/android/fontlab/
+ls
+vi FontLab.java 
+clear
+ls
+cd ../
+ls
+cd ../../../
+cd ..
+ls
+cd CustomLocale/
+ls
+cd src/com/android/customlocale2/
+ls
+cd ..
+ls
+cd customlocale2/
+ls
+clear
+ls
+clear
+ls
+vi ChangeLocale.java 
+ls
+clear
+ls
+vi CustomLocaleActivity.java 
+vi CustomLocaleReceiver.java 
+vi NewLocaleDialog.java 
+clear
+cd ../../../
+ls
+cd ../../
+ls
+cd SdkSetup/
+ls
+cd src/com/android/sdksetup/
+ls
+cd ../
+ls
+cd sdksetup/
+ls
+vi DefaultActivity.java 
+clear
+ls
+cd ../../../
+ls
+cd --help
+man cd
+man 1 cd
+dir
+clear
+cd 
+ls
+cd work/src/
+cd --help
+cd -h
+cd /?
+cd /h
+clear
+cd development/
+ls
+cd apps/
+ls
+cd NinePatchLab/
+cd src/com/android/ninepatch/
+cd --help
+cd -L 3
+cd -L3
+dir
+cd -L
+cd ~/work/src/development/apps/NinePatchLab/src/com/android/ninepatch
+clear
+cd -L 3  ~/work/src/development/apps/NinePatchLab/src/com/android/ninepatch
+dir 
+dir --help
+which dir
+ls -l /bin/dir
+which cd
+where cd
+which ls
+ls -l /bin/ls
+find / cd
+clear
+which ls
+which dir
+ls -l /bin/ls
+ls -l /bin/dir
+which cd
+where cd
+cd bin
+cd /bin
+ls -l | more
+cd ~
+vi .bashrc
+dir
+exit
+dir
+which cd
+cd /bin
+ls -l cd*
+cd /sbin
+ls -l cd*
+cd /usr/bin
+ls -l cd*
+cd /
+ls
+cd cdrom/
+ls
+cd ../
+ls
+cd lib
+ls
+cd ../
+ls
+clear
+ls
+cd var/
+ls
+cd ../
+ls
+clear
+exit
+ls
+ll
+clear
+pwd
+cd /bin
+ll
+find / cd
+clear
+cd /mnt/
+ls
+cd hgfs/
+ls
+cd ..
+fdisk -l
+fdisk 
+fdisk  -l sda1
+fdisk  -l sda
+fdisk  -l hda
+fdisk  -l 
+fdisk
+fdisk  -l hda1
+fdisk  -l hda2
+fdisk  -l /
+su -
+clear
+su 
+su
+su root
+clear
+sudo passwd root
+su -
+clear
+cd /etc
+ls rc[0-6].d
+clear
+cd ~
+vi .bashrc
+cd /etc
+vi rc.local 
+cd work/src/
+cd build/core/
+ls
+vi config.mk 
+ll
+vi root.mk 
+vi process_wrapper_gdb.cmds 
+vi copy_headers.mk 
+ls --help
+ll -S 
+vi raw_static_library.mk 
+vi phony_package.mk 
+vi host_native_test.mk 
+ll -S *.mk
+ll -S *.mk | wc -l
+vi device.mk 
+vi definitions.mk 
+vi binary.mk 
+vi java.mk 
+cat java.mk |wc "include"
+cat java.mk |grep 'include'|wc
+cat java.mk |grep 'include'
+cat java.mk |grep 'include.*\.mk$'
+ls
+ll -S *.mk |
+cat definitions.mk |grep 'include.*\.mk$'
+cat definitions.mk |grep '.*include.*\.mk$'
+vi definitions.mk 
+cat *.mk | grep 'include.*\.mk$'
+cat config.mk | grep 'include.*\.mk$'
+cat config.mk | grep 'include.*\.mk'
+cat config.mk | grep '.*\.mk'
+clear
+ll *.mk -s
+ll *.mk -S
+ll *.mk -S |sort
+ll *.mk -S |sort -z
+ll *.mk -S |sort -Z
+ls --help
+clear
+cde
+which cd
+where cd
+man cd
+info cd
+clear
+ls
+cd combo/
+ls
+vi javac.mk 
+vi select.mk 
+env
+LANG 
+locale
+LANG =
+echo LANG
+echo $LANG
+LANG = zh_CN.utf8
+export LANG = zh_CN.utf8
+clear
+env
+set LANG=zh_CN.utf8
+env
+sudo set LANG=zh_CN.utf8
+sudo export  LANG=zh_CN.utf8
+sl
+clear
+us
+clear
+c
+clear
+a
+cd ~
+ls
+cd work/
+ll
+cd src/
+ll
+cd ../
+ls
+cd ..
+ls
+cd work/
+su
+tree
+clear
+sl
+cd work/
+ls
+cd ..
+vi .bashrc
+exit
+ls
+cd work/
+ls
+mkdir wu
+cd wu/
+git clone https://github.com/mirrors/perl.git
+ls
+cd perl/
+ls
+git branch
+git branch -r
+cd ..
+ls
+tar -cf perl.tar perl
+ls
+ll
+cd perl/
+ls
+vi README.cn
+cd ..
+ls
+git clone https://github.com/chromatic/modern_perl_book.git
+perl -version
+ls
+tar -cf modern_perl_book.tar modern_perl_book
+ls
+cd modern_perl_book/
+ls
+perl build/tools/build_pdf.pl
+cd work/src/
+cd build/core/
+ls *.mk
+history
+clear
+history
+ls *.mk
+cd ../
+ls
+cd ../
+ls
+cd bootable/
+ls
+cd bootloader/
+ls
+cd legacy/
+ls
+clear
+cd ../../
+cd ../
+ls
+cd cts/
+ls
+cd apps/
+ls
+cd ../development/
+ls
+cd ide/
+ls
+cd eclipse/
+ls
+vi genclasspath.sh 
+clear
+cd ../
+ls
+cd ../../
+ls
+cd device/
+cd ../dalvik/
+ls
+cd ../
+cd device/
+ls
+cd ti/
+ls
+cd panda/
+ls
+cd ../
+cd ../../
+clear
+ls
+history
+clear
+history
+clear
+ls
+cd prebuilt/
+ls
+cd android-
+cd android-sh/
+ls
+cd kernel/
+ls
+vi LINUX_KERNEL_COPYING 
+cd ../..
+cd android-arm/
+cd cd kernel/
+ls
+cd kernel/
+ls
+cd ../
+ls
+vi Android.mk 
+clear
+ls
+cd common/
+ls
+cd eclipse/
+ls
+ll
+clear
+cd ..
+ls
+cd ant/
+ls
+tar zxvf ant.jar
+clear
+ls
+cd ../
+ls
+cd asm/
+ls
+cd ../
+cd ddmlib/
+ls
+cd ../http-client/
+ls
+cd ../jarjar/
+ls
+cd ../tools-common/
+ls
+cd ../../
+clear
+ls
+cd ndk/
+ls
+cd android-ndk-r6
+ls
+cd sources/
+ls
+cd cxx-stl/
+ls
+cd system/
+ls
+clear
+cd ../../../
+cd ../../
+ls
+cd ..
+ls
+cd packages/
+;s
+ls
+cd ../sdk/
+ls
+cd build/
+ls
+cd ../
+cd icons/
+ls
+cd ../../
+ls
+clear
+ls
+cd out/
+ls
+cd target/
+ls
+cd product/
+ls
+cd generic/
+ls
+cd ../../../
+cd ..
+ls
+cd external/
+ls
+cd ping
+ls
+vi ping.c
+clear
+cd ../..
+ls
+cd ~
+cd work/
+cd wu/
+cd perl/
+ls
+sh Configure -de
+make test
+su
+ls
+cd work/
+ls
+cd wu/
+ls
+cd /usr/
+ls local*
+cd w
+cd ~
+ls
+cd ~
+cd /root/
+ls
+su
+clear
+exit
+cls
+exit
+cd work/src/
+cd packages/apps/Launcher2/
+ls
+vi AndroidManifest.xml 
+cd res/
+ls
+cd anim/
+ls
+cd ../layout
+ls
+cd ../xml
+ls
+cd ../
+cd ..
+ls
+cd tests/
+ls
+cd stress/
+ls
+cd src/
+ls
+cd com/android/launcher2/stress/
+ls
+cd ..
+ls
+cd stress/
+vi LauncherRotationStressTest.java 
+clear
+cd ../../../../../
+cd ../../
+cd src/
+ls
+cd com/android/launcher2/
+ls
+vi Alarm.java 
+vi AllAppsView.java 
+vi AllAppsList.java 
+vi ApplicationInfo.java 
+vi FolderEditText.java 
+vi FolderIcon.java 
+vi FolderInfo.java 
+vi Folder.java 
+vi ItemInfo.java 
+vi AddAdapter.java
+vi BubbleTextView.java 
+clear
+cd ../../../../
+apt-get install eclipse
+sudo apt-get install eclipse
+clear
+ls
+vi Android.mk 
+vi fill_screens.py 
+vi print_db.py 
+cd src/
+ls
+cd com/android/launcher2/
+ls
+cd ../../../
+cd ..
+ls
+cd BasicSmsReceiver/
+cd src/com/android/basicsmsreceiver/
+ls
+cd ..
+ls
+cd basicsmsreceiver/
+vi SmsMessageReceiver.java 
+vi BasicSmsReceiverApp.java 
+vi DialogSmsDisplay.java 
+cd ..
+cd ../../
+cd ..
+ls
+cd res/
+ls
+cd values-zh-rCN/
+ls
+vi strings.xml 
+clear
+cd ../../..
+ls
+cd Bluetooth/
+cd src/
+ls
+cd com/android/bluetooth/
+ls
+cd opp/
+ls
+vi BluetoothOppBatch.java 
+vi BluetoothOppBtEnableActivity.java 
+vi BluetoothOppBtEnablingActivity.java 
+vi BluetoothOppManager.java 
+vi BluetoothOppService.java 
+clear
+history
+clear
+ls ~/.bashrc -l | wc
+ls ~/.bashrc -l | wc -line
+ls ~/.bashrc -l | wc -l
+cd ~
+vi .bashrc 
+vi .bash_history 
+cp .bash_history /mnt/hgfs/bash_history.txt
+sudo cp .bash_history /mnt/hgfs/bash_history.txt
+cd /mnt/hgfs/
+ls
+git config --global user.email "yankun.wu@ck-telecom.com"
+git config --global user.name "yankun.wu"
+git config --global help
+git config --global 
+git config --global --list
+git config --global --get-all
+git config --get-all
+clear
+cd /root/
+ls
+cd /
+ls
+ls -l
+cd tmp/
+ls
+ll
+cd vmware-root/
+cd /bin
+ls -l su
+ll
+ls
+cd /sbin
+ll
+cd /usr/bin
+ll
+clear
+ll | more
+more --help
+more -h
+man more
+clear
+pwd
+cd work/src/
+cd ..
+ls
+cd wu/
+ls
+cd ../src/
+cd packages/apps/
+ls
+cd Calculator/src/com/android/calculator2/
+ls
+vi History.java 
+vi HistoryEntry.java 
+vi HistoryAdapter.java 
+vi ColorButton.java 
+vi Calculator.java 
+vi CalculatorEditText.java 
+clear
+cd 
+ls
+pwd
+`pwd`
+chkconfig
+chkconfig --list
+chkconfig --list | grep '5:on'
+sudo chkconfig bluetooth off
+clear
+chkconfig --list | grep '5:on'
+ls /etc/rc[0-6].d
+clear
+chkconfig --list | grep '5:on'
+chkconfig smba on
+chkconfig smbad on
+chkconfig --list | grep '5:off'
+chkconfig smbd on
+su -
+clear
+ll /etc/smb*
+ll /etc/s*
+which smba
+cd /etc/smb
+which samba
+cd /etc/samba
+ls
+ll
+vi gdbcommands 
+su -
+cd 
+pwd
+ll
+ls
+chmod 7777 work
+ll
+chmod 6777 work
+ll
+chmod 5777 work
+ll
+chmod 4777 work
+ll
+chmod 4776 work
+ll
+chmod 4755 work
+ll
+chmod a-s a+x work
+chmod a-s,a+x work
+ll
+chmod a+w,a+t work
+ll
+cd work/
+ls
+ll
+cd src/
+ll
+cd ..
+du
+du -s
+du -s -h
+clear
+cd src/
+du -sh
+ls
+cd system/
+ls
+cd bluetooth/
+ls
+cd tools/
+ls
+cd ../.../
+cd ../../
+ls
+cd core/
+ls
+cd sdcard/
+ls
+vi sdcard.c 
+cd ././
+cd ../..
+ls
+cd ..
+ls
+cd device/
+ls
+cd google/
+ls
+cd accessory/
+ls
+cd ../
+ls
+cd ..
+cd common/
+ls
+cd gps/
+ls
+cd ../../
+ls
+cd generic/
+ls
+cd goldfish/
+ls
+cd audio/
+ls
+cd ../../..
+cd moto/
+ls
+cd ../samsung/
+ls
+cd ../sample/
+ls
+cd apps/
+ls
+cd ../../samsung/tuna/
+ls
+cd ../../../
+ls
+cd packages/apps/
+ls
+sl
+cd Settings/
+ls
+cd src/
+ls
+cd com/android/settings/
+ls
+clear
+ls
+ls -t
+ls -m
+vi AirplaneModeEnabler.java 
+clear
+cd 
+echo $PS1
+export $PS1 = \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$
+export PS1 = \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$
+vi .bashrc
+exit
+ls /etc/debian_version 
+clear
+cat /etc/debian_chroot
+echo $color_prompt
+env
+test
+man test
+ls
+cd work/src/packages/apps/
+ls
+cd DeskClock/
+cd src/com/android/
+clear
+exit
+pwd
+cd work/2.3.7.src/
+tar zxvf android2.3.7z
+which 7z
+which rar
+which zip
+which tar
+which gzip
+which unzip
+which ungizp
+which untar
+zip --help
+zip -x android2.3.7z 
+ls
+clear
+which rar
+which zip
+which tar
+which gizp
+which gzip
+which 7z
+sudo apt-get install rar
+nohup sudo apt-get install rar &
+clear
+ls
+exit
+cd work/2.3.7.src/
+ls
+7z --help
+ls
+7z x android2.3.7z 
+ls
+cd android2.3/
+ls
+ll
+cd build/core/
+ls
+cd ..
+ls
+cd packages/apps/
+ls
+cd Mms/
+ls
+cd src/
+cd com/android/mms/
+ls
+cd dom/
+ls
+cd smil/
+ls
+cd parser/
+ls
+vi SmilContentHandler.java 
+vi SmilXmlParser.java 
+vi SmilXmlSerializer.java 
+clear
+cd ../../
+cd ../../../
+cd ../
+cd apps/
+ls
+cd Music/
+ls
+cd src/com/android/music/
+ls
+cd 
+vi .bashrc
+exit
+ls
+cd work/2.3.7.src/
+cd android2.3/
+ls
+cd packages/apps/
+ls
+cd Phone/
+ls
+cd src/
+cd com/android/phone/
+ls
+cd ../../../../../
+clear
+history
+clear
+ls
+cd S
+cd St
+cd Stk/
+clear
+ls
+cd src/
+ls
+cd com/
+;s
+ls
+clear
+cd android/stk/
+ls
+vi StkLauncherActivity.java 
+clear
+cd ../
+ls
+cd ../../../
+ls
+cd ../
+ls
+cd ..
+ls
+clear
+su -
+eclipse
+eclipse &
+exit
+su
+cd /mnt/
+ls
+cd /
+ls
+cd media/
+lws
+ls
+cd ..
+cd cdrom/
+ls
+cd ../
+exit
+ls
+cd work
+cd env/
+ls
+tar zxvf unix2dos-4.1.2.tar.gz 
+ls
+cd unix2dos-4.1.2/
+ls
+make
+make install
+sudo make install
+make clean
+clear
+ls
+make
+sudo make
+sudo make install
+cd `
+exit
+quit
+cd 
+cd work
+ls
+mkdir src_tuna
+ls
+cd src_tuna/
+ls
+clear
+ls
+git --global config
+git config --global
+git config --global username
+ls
+ls -al
+git init
+ls
+ls -al
+cd .git/
+ls
+ls -al
+vi config 
+cd ..
+ls
+git clone mingxing.zeng@10.240.3.250:/home/ckt/work/gitsz/tuna
+ls
+cd tuna/
+ls
+./mk
+./mk lisp
+./mk listp
+./mk ckt75_cu_ics new
+
+cd out/
+cd target/product/
+ls
+vi ckt75_cu_ics_kernel.log
+cd ..
+cd..
+cd ../..
+cd /mediatek/platform/mt6575/kernel/core/
+cd mediatek/platform/mt6575/kernel/core/
+ls
+vi mt6575_isp.c 
+cd work/4.0.src/
+ls
+find . .*adapter.java
+find . Adapter.java
+eclipse ^
+eclipse &
+ls
+cd ..
+ls
+cd src_tuna/
+ls
+cd tuna/
+git branch -a
+git checkout tuna_cu_ics_v1_szbase
+git status
+git checkout -f tuna_cu_ics_v1_szbase
+git branch -a
+
+./mk listp
+./mk ckt75_cu_ics  new
+git status
+ifconfig
+git status
+./mk ckt75_cu_ics  new
+git clean
+git clean -f
+ifconfig
+cd work
+cd src_tuna/
+cd cd tuna/
+ls
+cd tuna/
+ls
+./mk listp
+./mk ckt75_cu_ics new
+./mk ckt75_cu_ics remake
+ls
+cd out/
+ls
+cd target/
+ls
+cd product/
+ls
+cd ckt75_cu_ics
+ls
+clear
+ls
+cd ../../
+ls
+ll
+cd aa
+ls
+cd ../
+ls
+cd ckt/
+ls
+cd COMMON/
+ls
+cd system/
+ls
+cd app/
+ls
+ls *.apk
+cd ..
+cd etc/
+ls
+cd permissions/
+ls
+cd ../../
+cd framework/
+ls
+cd ../lib/
+ls
+cd ../
+ls
+cd vendor/
+ls
+cd pittpatt/
+ls
+cd models/
+ls
+cd recognition/
+ls
+cd face.face.y0-y0-22-b-N/
+ls
+cd ../
+cd .
+cd ..
+ls
+cd detection/
+ls
+cd multi_pose_face_landmark_detectors.3/
+ls
+cd ../../../../
+ls
+cd development/
+ls
+sl
+cd apps/
+;s
+ls
+cd ../../
+ls
+git log >>~/work/wu/git.log
+./mk 
+./mk sdk new
+ls
+cd sdk/
+ls
+cd ../out/
+ls
+cd target/
+ls
+cd product/
+ls
+cd mediatek/
+ls
+cd source/
+;s
+ls
+cd frameworks/
+ls
+cd base/
+ls
+cd core/
+ls
+cd ../media/
+ls
+cd /home/ckt/work
+cd src_tuna/tuna/
+ls
+cd sdk/
+ls
+cd ddms/
+ls
+cd app/
+ls
+cd src/
+ls
+./mk win_sdk new
+cd ../../
+./mk win_sdk new
+./mk win_sdk remake
+eclipse &
+ifconfig

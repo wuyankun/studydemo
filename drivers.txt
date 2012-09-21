@@ -1,0 +1,53 @@
+/home/ckt/work/tuna/bootable/bootloader/uboot/drivers
+
+bios_emulator  fpga   i2c    mmc  pci     qe      spi       video
+block          gpio   input  mtd  pcmcia  rtc     twserial  watchdog
+dma            hwmon  misc   net  power   serial  usb
+/home/ckt/work/tuna/mediatek/source/kernel/drivers
+aee         ccci   gps     leds      modules.builtin  usb20       wdk
+bthid       ccmni  hdmitx  m4u       modules.order    video       xlog
+built-in.o  combo  hwmon   Makefile  net              videocodec
+/home/ckt/work/tuna/mediatek/custom/common/kernel
+accelerometer  camera      fm         jogball  magnetometer  sound
+alsps          ccci        gyroscope  lcm      Makefile      touchpanel
+barometer      eeprom      hdmi       leds     matv          usb
+btwlanem       flashlight  imgsensor  lens     ofn           wifi
+/home/ckt/work/tuna/mediatek/custom/common/hal
+ant           bluetooth  combo    eeprom      imgsensor  lens  vt
+audioflinger  camera     display  flashlight  inc        matv
+/home/ckt/work/tuna/mediatek/custom/ckt75_cu_ics/kernel
+accelerometer  camera  gyroscope  leds          rtc
+alsps          core    headset    magnetometer  touchpanel
+battery        dct     kpd        ofn           vibrator
+/home/ckt/work/tuna/mediatek/custom/ckt75_cu_ics/hal
+audioflinger  camera  inc  matv  sensors
+/home/ckt/work/tuna/mediatek/platform/mt6575/kernel/drivers
+accdet      g2d     m4u              modules.order    rtc         uart
+built-in.o  gpu     Makefile         mouse            sound       usb20
+ccci        i2c     mau              nand             spc         vibrator
+cmmbdrv     jpeg    mmc-host         power            spi         video
+dum-char    keypad  modules.builtin  power-loss-test  touchpanel  videocodec
+/home/ckt/work/tuna/mediatek/platform/mt6575/uboot
+addr_trans.c     mt6575_bat_fan5405.c        mt6575_logo.c
+bmt.c            mt6575_bat_tbl.c            mt6575_meta.c
+boot_mode.c      mt6575_board.c              mt6575_nand.c
+config.mk        mt6575.c                    mt6575_pll.c
+fan5405.c        mt6575_disp_assert_layer.c  mt6575_pmic6329.c
+fan5405.h        mt6575_disp_drv.c           mt6575_pmic6329_tbl.c
+inc              mt6575_disp_drv_dbi.c       mt6575_pwm.c
+irq.c            mt6575_disp_drv_dpi.c       mt6575_recovery.c
+libmt6575.a      mt6575_disp_drv_dsi.c       mt6575_rtc.c
+load_image.c     mt6575_dpi_drv.c            mt6575_sleep.c
+lowlevel_init.S  mt6575_dsi_drv.c            mt65xx_leds.c
+Makefile         mt6575_factory.c            mtk_serial.c
+mmc_core.c       mt6575_gpio.c               mtk_timer.c
+mmc_test.c       mt6575_gpio_init.c          mtk_wdt.c
+msdc.c           mt6575_i2c0.c               ncp1851.c
+msdc_utils.c     mt6575_i2c.c                ncp1851.h
+mt6575_auxadc.c  mt6575_key.c                partition_mt.c
+mt6575_bat.c     mt6575_lcd_drv.c
+/home/ckt/work/tuna/device
+common  generic  google  sample  samsung  ti
+
+
+

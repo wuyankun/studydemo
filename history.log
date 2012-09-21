@@ -1,0 +1,2016 @@
+    1  sudo apt-get install openssh-server
+    2  ifconfig
+    3  ls
+    4  mkdir work
+    5  ls
+    6  cd work/
+    7  ls
+    8  sudo apt-get update
+    9  cd /usr/bin/
+   10  ls gcc
+   11  ll gcc
+   12  sudo rm -fr gcc
+   13  sudo rm -fr x86_64-linux-gnu-gcc
+   14  sudo ln -s ./gcc-4.1 ./gcc
+   15  sudo ln -s ./x86_64-linux-gnu-gcc-4.1 ./x86_64-linux-gnu-gcc
+   16  ll gcc
+   17  ll /bin/sh
+   18  sudo rm /bin/sh
+   19  sudo ln -s /bin/bash /bin/sh
+   20  ll /bin/sh
+   21  sudo apt-get install gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev ia32-libs x11proto-core-dev libx11-dev lib32readline5-dev lib32z-dev
+   22  cd /home/
+   23  ls
+   24  cd ckt/
+   25  ls
+   26  cd work/
+   27  ls
+   28  mkdir env
+   29  ls
+   30  vi /etc/profile
+   31  sudo apt-get stall vim
+   32  sudo apt-get install vim
+   33  sudo vi /etc/profile
+   34  vi /home/ckt/work/env/android.conf
+   35  cd work
+   36  ls
+   37  cd env/
+   38  ls
+   39  chmod 777 jdk-6u24-linux-x64.bin 
+   40  ./jdk-6u24-linux-x64.bin 
+   41  ls
+   42  ls jdk1.6.0_24/
+   43  ls
+   44  vi ./android.conf 
+   45  sudo apt-get install svn
+   46  svn
+   47  sudo apt-get install subversion
+   48  vi work/env/android.conf 
+   49  which java
+   50  free
+   51  vim /etc/apt/sources.list
+   52  sudo vim /etc/apt/sources.list
+   53  sudo apt-get install git-core
+   54  sudo apt-get update
+   55  sudo apt-get install git-core
+   56  sudo apt-cache search mingw
+   57  sudo apt-cache search wine
+   58  sudo apt-get install wine1.2
+   59  sudo apt-get install mingw32
+   60  exit
+   61  eclipse
+   62  sudo apt-get install eclipse
+   63  java
+   64  java -version
+   65  ls
+   66  cd '/home/ckt/Desktop/Test.java' 
+   67  javac Test.java
+   68  java Test.java
+   69  vim Test.java
+   70  mkdir vimfile
+   71  ls
+   72  rm vimfile/
+   73  rmdir vimfile/
+   74  mkdir sharefile
+   75  sudo mount -t vboxsf vmfile sharefile/
+   76  sudo mount -t vboxsf vmfile /home/ckt/sharefile/
+   77  sudo mount -t vboxsf vmfile /home/ckt/sharefile
+   78  sudo mount -t vboxsf vmfile /home/ckt/sharefile/
+   79  dir
+   80  ls
+   81  cd /
+   82  ls
+   83  cd ~
+   84  ls
+   85  pwd
+   86  mkdir shared
+   87  ls
+   88  sudo mount -t vboxsf share shared
+   89  ls
+   90  cd share
+   91  cd shared
+   92  ls
+   93  sudo umount
+   94  sudo umount /media/VBOXADDITIONS_4.0.12_72916/
+   95  ls
+   96  cd work/
+   97  ls
+   98  ll
+   99  cd env/
+  100  ls
+  101  cd ..
+  102  ls
+  103  mkdir test_git
+  104  ls
+  105  cd test_git/
+  106  git init
+  107  touch a
+  108  ls
+  109  vim a
+  110  git add a
+  111  git status 
+  112  ifconfig
+  113  cd ../../
+  114  ls
+  115  ping www.baidu.com
+  116  cd work/
+  117  config
+  118  ls
+  119  ifconfig
+  120  cd work/test_git/
+  121  ls
+  122  git clone gif://gif.kernel.org/pub/scm/git/git.git
+  123  git -config
+  124  git config --list
+  125  git config --giobal user.name="Yadong Huang"
+  126  git config --global user.name="Yadong Huang"
+  127  git config --global user.email="yadong.huang@ck-telecom.com"
+  128  git config --listy
+  129  git config --list
+  130  git config user.name
+  131  git help\
+  132  get help
+  133  git help config
+  134  git config user.name "Yadong Huang"
+  135  git config --global user.name "Yadong Huang"
+  136  git config --global user.email "yadong.huang@ck-telecom.com"
+  137  git config --list
+  138  git init
+  139  ls
+  140  rmdir sharefile
+  141  ls
+  142  git init
+  143  cd
+  144  cd .git
+  145  ls
+  146  cd..
+  147  cd ..
+  148  ls
+  149  remove Test.java
+  150  ls
+  151  rm Test.java
+  152  ls
+  153  git add *.c
+  154  git add readme
+  155  git add README
+  156  ls
+  157  cd .git
+  158  ls
+  159  git add *.c
+  160  cd ..
+  161  ls
+  162  git add 
+  163  git clone git://github.com/schacon/grit.git
+  164  cd .git\
+  165  ls
+  166  git status
+  167  cd ..
+  168  git status
+  169  ls -a
+  170  vim readme
+  171  man 1 ls
+  172  man 4 exec
+  173  man 3 exec
+  174  git status
+  175  git config --list
+  176  git status
+  177  mkdir mygit
+  178  cd mygit
+  179  git init
+  180  git status
+  181  vim readme
+  182  git status
+  183  ifconfig
+  184  cd ..
+  185  ls
+  186  cd /etc/network/
+  187  ls
+  188  sudo vim interfaces 
+  189  ifconfig
+  190  ping www.baidu.com
+  191  ifconfig
+  192  ping www.baidu.com
+  193  git config --list
+  194  vim /home/ckt/.git
+  195  vim /home/ckt/.gitconfig 
+  196  git config
+  197  git config --list
+  198  whereis gcc
+  199  cd /usr/bin/gcc
+  200  cd ..
+  201  ls
+  202  cd usr/bin/gcc
+  203  cd usr/bin/
+  204  ls
+  205  ll 
+  206  ll gcc.*
+  207  ls gcc
+  208  ll gcc
+  209  sudo ln -s gcc-4.4 gcc
+  210  ll gcc
+  211  sudo rm gcc
+  212  sudo ln -s gcc-4.4 gcc
+  213  ll
+  214  ll gcc
+  215  git config --list
+  216  cd 
+  217  git config --list
+  218  git
+  219  cd ~
+  220  ls
+  221  cd Desktop/
+  222  ls
+  223  cd vmware-tools-distrib/
+  224  ls
+  225  ./vmware-install.pl 
+  226  sudo ./vmware-install.pl 
+  227  ls
+  228  cd work/
+  229  ls
+  230  tar zxvf src.tar.gz 
+  231  ls
+  232  clear
+  233  ls
+  234  cd src/
+  235  ls
+  236  ls -l
+  237  cd abi/
+  238  ls
+  239  cd cpp/
+  240  ls
+  241  cd src/
+  242  ls
+  243  clear
+  244  cd ../../
+  245  ls
+  246  cd ../
+  247  ls
+  248  cd build/
+  249  ls
+  250  cd core/
+  251  ls
+  252  vi root.mk 
+  253  vi java.mk 
+  254  vi help.mk 
+  255  make help
+  256  clear
+  257  make clean
+  258  ls
+  259  cd ..
+  260  make help
+  261  make out
+  262  clear
+  263  cd build/core/
+  264  ls 
+  265  vi envsetup.mk 
+  266  vi build_id.mk 
+  267  vi cleanbuild.mk 
+  268  clear
+  269  cd ../../
+  270  ls
+  271  cd bootable/
+  272  ls
+  273  cd bootloader/
+  274  ls
+  275  cd legacy/
+  276  ls
+  277  cd ..
+  278  ls
+  279  cd ..
+  280  ls
+  281  cd ..
+  282  ls
+  283  clear
+  284  ls
+  285  cd dev
+  286  cd development/
+  287  ls
+  288  cd apps/
+  289  ls
+  290  cd ..
+  291  ls
+  292  clear
+  293  ls
+  294  cd ..
+  295  ls
+  296  cd libcore/
+  297  ls
+  298  cd json/
+  299  ls
+  300  cd src/
+  301  ls
+  302  cd main/
+  303  ls
+  304  cd java/
+  305  ls
+  306  cd org/
+  307  ls
+  308  cd json/
+  309  ls
+  310  vi JSON.java 
+  311  clear
+  312  ls
+  313  cd ..
+  314  cd ../../../
+  315  ls
+  316  cd ../../../
+  317  ls
+  318  cd packages/
+  319  cd apps/
+  320  ls
+  321  cd Launcher2/
+  322  ls
+  323  vi AndroidManifest.xml 
+  324  clear
+  325  ls
+  326  vi print_db.py 
+  327  clear
+  328  ls
+  329  vi Android
+  330  ls
+  331  rm -f Android
+  332  ls
+  333  vi Android.mk 
+  334  clear
+  335  ls
+  336  cd src/
+  337  ;s
+  338  ls
+  339  cd com/android/
+  340  ls
+  341  cd launcher2/
+  342  ls
+  343  clear
+  344  ls launch*.java -l
+  345  ls launch*.java 
+  346  ls -l | grep 'launch.*\.java'
+  347  ls -l | grep 'L.*\.java'
+  348  vi AllAppsList.java 
+  349  clear
+  350  ls -l | grep 'L.*\.java'
+  351  clear
+  352  cd ../../
+  353  cd ../../../
+  354  cd ../../
+  355  ls
+  356  cd external/
+  357  ls
+  358  cd sqlite/
+  359  ls
+  360  cd android/
+  361  ls
+  362  ls -lA
+  363  vi sqlite3_android.cpp 
+  364  clear
+  365  cls
+  366  cl
+  367  clear
+  368  vi .bashrc
+  369  rm -f .bahsrc
+  370  cd ~
+  371  vi .bashrc
+  372  cls
+  373  vi .bashrc
+  374  exit
+  375  vi .bashrc
+  376  cls
+  377  exit
+  378  cls
+  379  vi .bashrc
+  380  clear
+  381  exity
+  382  exit
+  383  python
+  384  clear
+  385  ls
+  386  cls
+  387  clear
+  388  python3
+  389  python
+  390  clear
+  391  git clone  https://github.com/CPAN-API/cpan-api.git
+  392  ls
+  393  cd cpan-api/
+  394  ;s
+  395  ls
+  396  more README.md 
+  397  clear
+  398  ls
+  399  cd bin/
+  400  ls
+  401  cd ..
+  402  cd etc/
+  403  ls
+  404  cd ..
+  405  cd lib/
+  406  ls
+  407  cd Archive/
+  408  ls
+  409  cd Any/
+  410  ls
+  411  cd Plugin/
+  412  ls
+  413  cd ../../../
+  414  clear
+  415  ls
+  416  cd MetaCPAN/
+  417  ls
+  418  cd Document/
+  419  ls
+  420  cd ../
+  421  ls
+  422  cd ../
+  423  ls
+  424  tree
+  425  sudo apt-get install tree
+  426  test 
+  427  test --help
+  428  man test
+  429  clear
+  430  ls
+  431  cd cpan-api/
+  432  ls
+  433  ls -l
+  434  cd bin/
+  435  ls -l
+  436  cd ../
+  437  ls
+  438  ls -l
+  439  cd lib/
+  440  ls
+  441  ls -l
+  442  cd ../
+  443  ls
+  444  ll
+  445  cd ~
+  446  vi .bashrc
+  447  ll
+  448  exit
+  449  ll
+  450  clear
+  451  cd cpan-api/
+  452  ll
+  453  cd lib/
+  454  cd ~
+  455  vi .bashrc
+  456  exit
+  457  ll
+  458  cd ~
+  459  vi .bashrc
+  460  exit
+  461  ll
+  462  cd cpan-api/
+  463  ll
+  464  cd t/
+  465  ll
+  466  cd document/
+  467  ll
+  468  cd ../release/
+  469  ll
+  470  cd ../../
+  471  ls
+  472  ll
+  473  sudo ./app.psgi 
+  474  ll
+  475  clear
+  476  cd var/
+  477  ll
+  478  exit
+  479  ls
+  480  ll
+  481  vi .bashrc
+  482  ll
+  483  exit
+  484  ll
+  485  pwd
+  486  clear
+  487  pwd
+  488  cd /
+  489  ll
+  490  history
+  491  exit
+  492  pwd
+  493  ls
+  494  perl --verson
+  495  perl -version
+  496  ls
+  497  mkdir perl_learn
+  498  cd perl_learn/
+  499  touch timesrc.pl
+  500  vi timesrc.pl 
+  501  chmod 755 timesrc.pl 
+  502  ./timesrc.pl 
+  503  which perl
+  504  vi timesrc.pl 
+  505  ./timesrc.pl 
+  506  vi timesrc.pl 
+  507  ./timesrc.pl 
+  508  date
+  509  vi timesrc.pl 
+  510  ./timesrc.pl 
+  511  vi timesrc.pl 
+  512  ./timesrc.pl 
+  513  vi timesrc.pl 
+  514  ./timesrc.pl 
+  515  vi timesrc.pl 
+  516  ./timesrc.pl 
+  517  clear
+  518  vi timesrc.pl 
+  519  ./timesrc.pl 
+  520  vi timesrc.pl 
+  521  ./timesrc.pl 
+  522  clear
+  523  vi timesrc.pl 
+  524  ./timesrc.pl 
+  525  clear
+  526  vi timesrc.pl 
+  527  ./timesrc.pl 
+  528  vi timesrc.pl 
+  529  ./timesrc.pl 
+  530  vi timesrc.pl 
+  531  ./timesrc.pl 
+  532  clear
+  533  vi timesrc.pl 
+  534  ./timesrc.pl 
+  535  vi timesrc.pl 
+  536  ./timesrc.pl 
+  537  vi timesrc.pl 
+  538  ./timesrc.pl 
+  539  clear
+  540  pwd
+  541  echo $path
+  542  echo $PATH
+  543  export
+  544  set $PATH = $PATH:`pwd`
+  545  echo $PATH
+  546  set
+  547  clear
+  548  echo $PATH
+  549  export PATH = $PATH:`pwd`
+  550  cd ~
+  551  ll
+  552  vi .config
+  553  cd .config
+  554  ls
+  555  cd ..
+  556  ll
+  557  vi .profile
+  558  exit
+  559  echo $PATH
+  560  pwd
+  561  cd perl_learn/
+  562  echo $PATH
+  563  pwd
+  564  vi ~.profile
+  565  cd ~
+  566  vi .profile
+  567  echo $PATH
+  568  cd perl_learn/
+  569  echo $PATH
+  570  clear
+  571  cd ~
+  572  ll
+  573  vi .bash_profile
+  574  rm .bash_profile
+  575  ll
+  576  cd /etc
+  577  ll profile
+  578  su -
+  579  sudo vi profile
+  580  exit
+  581  echo $PATH
+  582  pwd
+  583  cd perl_learn/
+  584  echo $PATH
+  585  clear
+  586  sudo vi /etc/profile
+  587  echo $PATH
+  588  vi .bashrc
+  589  ll
+  590  clear
+  591  vi .config
+  592  ll
+  593  vi .profile 
+  594  sudo vi /etc/profile
+  595  sudo reboot
+  596  echo $PATH
+  597  EXIT
+  598  exit
+  599  find /home/ckt/work/src/  *.pl 
+  600  find /home/ckt/work/src/  *.pl &
+  601  nohup find /home/ckt/work/src -name=*.pl &
+  602  nohup
+  603  find --help
+  604  nohup find /home/ckt/work/src *.pl &
+  605  nohup
+  606  find /home/ckt/work/src/ *.pl
+  607  cd work/src/
+  608  ls
+  609  cd abi/
+  610  find *.pl
+  611  find . *.pl
+  612  cd ../
+  613  ls
+  614  cd build/
+  615  find . *.pl
+  616  clear
+  617  ls
+  618  cd ../
+  619  ls
+  620  cd bootable/
+  621  ls
+  622  cd bootloader/
+  623  ls
+  624  cd legacy/
+  625  ls
+  626  cd ../../
+  627  cd ..
+  628  ls
+  629  cd development/
+  630  ls
+  631  cd apps/
+  632  ls
+  633  cd FontLab/
+  634  ls
+  635  cd src/
+  636  ;s
+  637  ls
+  638  cd com/android/fontlab/
+  639  ls
+  640  vi FontLab.java 
+  641  clear
+  642  ls
+  643  cd ../
+  644  ls
+  645  cd ../../../
+  646  cd ..
+  647  ls
+  648  cd CustomLocale/
+  649  ls
+  650  cd src/com/android/customlocale2/
+  651  ls
+  652  cd ..
+  653  ls
+  654  cd customlocale2/
+  655  ls
+  656  clear
+  657  ls
+  658  clear
+  659  ls
+  660  vi ChangeLocale.java 
+  661  ls
+  662  clear
+  663  ls
+  664  vi CustomLocaleActivity.java 
+  665  vi CustomLocaleReceiver.java 
+  666  vi NewLocaleDialog.java 
+  667  clear
+  668  cd ../../../
+  669  ls
+  670  cd ../../
+  671  ls
+  672  cd SdkSetup/
+  673  ls
+  674  cd src/com/android/sdksetup/
+  675  ls
+  676  cd ../
+  677  ls
+  678  cd sdksetup/
+  679  ls
+  680  vi DefaultActivity.java 
+  681  clear
+  682  ls
+  683  cd ../../../
+  684  ls
+  685  cd --help
+  686  man cd
+  687  man 1 cd
+  688  dir
+  689  clear
+  690  cd 
+  691  ls
+  692  cd work/src/
+  693  cd --help
+  694  cd -h
+  695  cd /?
+  696  cd /h
+  697  clear
+  698  cd development/
+  699  ls
+  700  cd apps/
+  701  ls
+  702  cd NinePatchLab/
+  703  cd src/com/android/ninepatch/
+  704  cd --help
+  705  cd -L 3
+  706  cd -L3
+  707  dir
+  708  cd -L
+  709  cd ~/work/src/development/apps/NinePatchLab/src/com/android/ninepatch
+  710  clear
+  711  cd -L 3  ~/work/src/development/apps/NinePatchLab/src/com/android/ninepatch
+  712  dir 
+  713  dir --help
+  714  which dir
+  715  ls -l /bin/dir
+  716  which cd
+  717  where cd
+  718  which ls
+  719  ls -l /bin/ls
+  720  find / cd
+  721  clear
+  722  which ls
+  723  which dir
+  724  ls -l /bin/ls
+  725  ls -l /bin/dir
+  726  which cd
+  727  where cd
+  728  cd bin
+  729  cd /bin
+  730  ls -l | more
+  731  cd ~
+  732  vi .bashrc
+  733  dir
+  734  exit
+  735  dir
+  736  which cd
+  737  cd /bin
+  738  ls -l cd*
+  739  cd /sbin
+  740  ls -l cd*
+  741  cd /usr/bin
+  742  ls -l cd*
+  743  cd /
+  744  ls
+  745  cd cdrom/
+  746  ls
+  747  cd ../
+  748  ls
+  749  cd lib
+  750  ls
+  751  cd ../
+  752  ls
+  753  clear
+  754  ls
+  755  cd var/
+  756  ls
+  757  cd ../
+  758  ls
+  759  clear
+  760  exit
+  761  ls
+  762  ll
+  763  clear
+  764  pwd
+  765  cd /bin
+  766  ll
+  767  find / cd
+  768  clear
+  769  cd /mnt/
+  770  ls
+  771  cd hgfs/
+  772  ls
+  773  cd ..
+  774  fdisk -l
+  775  fdisk 
+  776  fdisk  -l sda1
+  777  fdisk  -l sda
+  778  fdisk  -l hda
+  779  fdisk  -l 
+  780  fdisk
+  781  fdisk  -l hda1
+  782  fdisk  -l hda2
+  783  fdisk  -l /
+  784  su -
+  785  clear
+  786  su 
+  787  su
+  788  su root
+  789  clear
+  790  sudo passwd root
+  791  su -
+  792  clear
+  793  cd /etc
+  794  ls rc[0-6].d
+  795  clear
+  796  cd ~
+  797  vi .bashrc
+  798  cd /etc
+  799  vi rc.local 
+  800  cd work/src/
+  801  cd build/core/
+  802  ls
+  803  vi config.mk 
+  804  ll
+  805  vi root.mk 
+  806  vi process_wrapper_gdb.cmds 
+  807  vi copy_headers.mk 
+  808  ls --help
+  809  ll -S 
+  810  vi raw_static_library.mk 
+  811  vi phony_package.mk 
+  812  vi host_native_test.mk 
+  813  ll -S *.mk
+  814  ll -S *.mk | wc -l
+  815  vi device.mk 
+  816  vi definitions.mk 
+  817  vi binary.mk 
+  818  vi java.mk 
+  819  cat java.mk |wc "include"
+  820  cat java.mk |grep 'include'|wc
+  821  cat java.mk |grep 'include'
+  822  cat java.mk |grep 'include.*\.mk$'
+  823  ls
+  824  ll -S *.mk |
+  825  cat definitions.mk |grep 'include.*\.mk$'
+  826  cat definitions.mk |grep '.*include.*\.mk$'
+  827  vi definitions.mk 
+  828  cat *.mk | grep 'include.*\.mk$'
+  829  cat config.mk | grep 'include.*\.mk$'
+  830  cat config.mk | grep 'include.*\.mk'
+  831  cat config.mk | grep '.*\.mk'
+  832  clear
+  833  ll *.mk -s
+  834  ll *.mk -S
+  835  ll *.mk -S |sort
+  836  ll *.mk -S |sort -z
+  837  ll *.mk -S |sort -Z
+  838  ls --help
+  839  clear
+  840  cde
+  841  which cd
+  842  where cd
+  843  man cd
+  844  info cd
+  845  clear
+  846  ls
+  847  cd combo/
+  848  ls
+  849  vi javac.mk 
+  850  vi select.mk 
+  851  env
+  852  LANG 
+  853  locale
+  854  LANG =
+  855  echo LANG
+  856  echo $LANG
+  857  LANG = zh_CN.utf8
+  858  export LANG = zh_CN.utf8
+  859  clear
+  860  env
+  861  set LANG=zh_CN.utf8
+  862  env
+  863  sudo set LANG=zh_CN.utf8
+  864  sudo export  LANG=zh_CN.utf8
+  865  sl
+  866  clear
+  867  us
+  868  clear
+  869  c
+  870  clear
+  871  a
+  872  cd ~
+  873  ls
+  874  cd work/
+  875  ll
+  876  cd src/
+  877  ll
+  878  cd ../
+  879  ls
+  880  cd ..
+  881  ls
+  882  cd work/
+  883  su
+  884  tree
+  885  clear
+  886  sl
+  887  cd work/
+  888  ls
+  889  cd ..
+  890  vi .bashrc
+  891  exit
+  892  ls
+  893  cd work/
+  894  ls
+  895  mkdir wu
+  896  cd wu/
+  897  git clone https://github.com/mirrors/perl.git
+  898  ls
+  899  cd perl/
+  900  ls
+  901  git branch
+  902  git branch -r
+  903  cd ..
+  904  ls
+  905  tar -cf perl.tar perl
+  906  ls
+  907  ll
+  908  cd perl/
+  909  ls
+  910  vi README.cn
+  911  cd ..
+  912  ls
+  913  git clone https://github.com/chromatic/modern_perl_book.git
+  914  perl -version
+  915  ls
+  916  tar -cf modern_perl_book.tar modern_perl_book
+  917  ls
+  918  cd modern_perl_book/
+  919  ls
+  920  perl build/tools/build_pdf.pl
+  921  cd work/src/
+  922  cd build/core/
+  923  ls *.mk
+  924  history
+  925  clear
+  926  history
+  927  ls *.mk
+  928  cd ../
+  929  ls
+  930  cd ../
+  931  ls
+  932  cd bootable/
+  933  ls
+  934  cd bootloader/
+  935  ls
+  936  cd legacy/
+  937  ls
+  938  clear
+  939  cd ../../
+  940  cd ../
+  941  ls
+  942  cd cts/
+  943  ls
+  944  cd apps/
+  945  ls
+  946  cd ../development/
+  947  ls
+  948  cd ide/
+  949  ls
+  950  cd eclipse/
+  951  ls
+  952  vi genclasspath.sh 
+  953  clear
+  954  cd ../
+  955  ls
+  956  cd ../../
+  957  ls
+  958  cd device/
+  959  cd ../dalvik/
+  960  ls
+  961  cd ../
+  962  cd device/
+  963  ls
+  964  cd ti/
+  965  ls
+  966  cd panda/
+  967  ls
+  968  cd ../
+  969  cd ../../
+  970  clear
+  971  ls
+  972  history
+  973  clear
+  974  history
+  975  clear
+  976  ls
+  977  cd prebuilt/
+  978  ls
+  979  cd android-
+  980  cd android-sh/
+  981  ls
+  982  cd kernel/
+  983  ls
+  984  vi LINUX_KERNEL_COPYING 
+  985  cd ../..
+  986  cd android-arm/
+  987  cd cd kernel/
+  988  ls
+  989  cd kernel/
+  990  ls
+  991  cd ../
+  992  ls
+  993  vi Android.mk 
+  994  clear
+  995  ls
+  996  cd common/
+  997  ls
+  998  cd eclipse/
+  999  ls
+ 1000  ll
+ 1001  clear
+ 1002  cd ..
+ 1003  ls
+ 1004  cd ant/
+ 1005  ls
+ 1006  tar zxvf ant.jar
+ 1007  clear
+ 1008  ls
+ 1009  cd ../
+ 1010  ls
+ 1011  cd asm/
+ 1012  ls
+ 1013  cd ../
+ 1014  cd ddmlib/
+ 1015  ls
+ 1016  cd ../http-client/
+ 1017  ls
+ 1018  cd ../jarjar/
+ 1019  ls
+ 1020  cd ../tools-common/
+ 1021  ls
+ 1022  cd ../../
+ 1023  clear
+ 1024  ls
+ 1025  cd ndk/
+ 1026  ls
+ 1027  cd android-ndk-r6
+ 1028  ls
+ 1029  cd sources/
+ 1030  ls
+ 1031  cd cxx-stl/
+ 1032  ls
+ 1033  cd system/
+ 1034  ls
+ 1035  clear
+ 1036  cd ../../../
+ 1037  cd ../../
+ 1038  ls
+ 1039  cd ..
+ 1040  ls
+ 1041  cd packages/
+ 1042  ;s
+ 1043  ls
+ 1044  cd ../sdk/
+ 1045  ls
+ 1046  cd build/
+ 1047  ls
+ 1048  cd ../
+ 1049  cd icons/
+ 1050  ls
+ 1051  cd ../../
+ 1052  ls
+ 1053  clear
+ 1054  ls
+ 1055  cd out/
+ 1056  ls
+ 1057  cd target/
+ 1058  ls
+ 1059  cd product/
+ 1060  ls
+ 1061  cd generic/
+ 1062  ls
+ 1063  cd ../../../
+ 1064  cd ..
+ 1065  ls
+ 1066  cd external/
+ 1067  ls
+ 1068  cd ping
+ 1069  ls
+ 1070  vi ping.c
+ 1071  clear
+ 1072  cd ../..
+ 1073  ls
+ 1074  cd ~
+ 1075  cd work/
+ 1076  cd wu/
+ 1077  cd perl/
+ 1078  ls
+ 1079  sh Configure -de
+ 1080  make test
+ 1081  su
+ 1082  ls
+ 1083  cd work/
+ 1084  ls
+ 1085  cd wu/
+ 1086  ls
+ 1087  cd /usr/
+ 1088  ls local*
+ 1089  cd w
+ 1090  cd ~
+ 1091  ls
+ 1092  cd ~
+ 1093  cd /root/
+ 1094  ls
+ 1095  su
+ 1096  clear
+ 1097  exit
+ 1098  cls
+ 1099  exit
+ 1100  cd work/src/
+ 1101  cd packages/apps/Launcher2/
+ 1102  ls
+ 1103  vi AndroidManifest.xml 
+ 1104  cd res/
+ 1105  ls
+ 1106  cd anim/
+ 1107  ls
+ 1108  cd ../layout
+ 1109  ls
+ 1110  cd ../xml
+ 1111  ls
+ 1112  cd ../
+ 1113  cd ..
+ 1114  ls
+ 1115  cd tests/
+ 1116  ls
+ 1117  cd stress/
+ 1118  ls
+ 1119  cd src/
+ 1120  ls
+ 1121  cd com/android/launcher2/stress/
+ 1122  ls
+ 1123  cd ..
+ 1124  ls
+ 1125  cd stress/
+ 1126  vi LauncherRotationStressTest.java 
+ 1127  clear
+ 1128  cd ../../../../../
+ 1129  cd ../../
+ 1130  cd src/
+ 1131  ls
+ 1132  cd com/android/launcher2/
+ 1133  ls
+ 1134  vi Alarm.java 
+ 1135  vi AllAppsView.java 
+ 1136  vi AllAppsList.java 
+ 1137  vi ApplicationInfo.java 
+ 1138  vi FolderEditText.java 
+ 1139  vi FolderIcon.java 
+ 1140  vi FolderInfo.java 
+ 1141  vi Folder.java 
+ 1142  vi ItemInfo.java 
+ 1143  vi AddAdapter.java
+ 1144  vi BubbleTextView.java 
+ 1145  clear
+ 1146  cd ../../../../
+ 1147  apt-get install eclipse
+ 1148  sudo apt-get install eclipse
+ 1149  clear
+ 1150  ls
+ 1151  vi Android.mk 
+ 1152  vi fill_screens.py 
+ 1153  vi print_db.py 
+ 1154  cd src/
+ 1155  ls
+ 1156  cd com/android/launcher2/
+ 1157  ls
+ 1158  cd ../../../
+ 1159  cd ..
+ 1160  ls
+ 1161  cd BasicSmsReceiver/
+ 1162  cd src/com/android/basicsmsreceiver/
+ 1163  ls
+ 1164  cd ..
+ 1165  ls
+ 1166  cd basicsmsreceiver/
+ 1167  vi SmsMessageReceiver.java 
+ 1168  vi BasicSmsReceiverApp.java 
+ 1169  vi DialogSmsDisplay.java 
+ 1170  cd ..
+ 1171  cd ../../
+ 1172  cd ..
+ 1173  ls
+ 1174  cd res/
+ 1175  ls
+ 1176  cd values-zh-rCN/
+ 1177  ls
+ 1178  vi strings.xml 
+ 1179  clear
+ 1180  cd ../../..
+ 1181  ls
+ 1182  cd Bluetooth/
+ 1183  cd src/
+ 1184  ls
+ 1185  cd com/android/bluetooth/
+ 1186  ls
+ 1187  cd opp/
+ 1188  ls
+ 1189  vi BluetoothOppBatch.java 
+ 1190  vi BluetoothOppBtEnableActivity.java 
+ 1191  vi BluetoothOppBtEnablingActivity.java 
+ 1192  vi BluetoothOppManager.java 
+ 1193  vi BluetoothOppService.java 
+ 1194  clear
+ 1195  history
+ 1196  clear
+ 1197  ls ~/.bashrc -l | wc
+ 1198  ls ~/.bashrc -l | wc -line
+ 1199  ls ~/.bashrc -l | wc -l
+ 1200  cd ~
+ 1201  vi .bashrc 
+ 1202  vi .bash_history 
+ 1203  cp .bash_history /mnt/hgfs/bash_history.txt
+ 1204  sudo cp .bash_history /mnt/hgfs/bash_history.txt
+ 1205  cd /mnt/hgfs/
+ 1206  ls
+ 1207  git config --global user.email "yankun.wu@ck-telecom.com"
+ 1208  git config --global user.name "yankun.wu"
+ 1209  git config --global help
+ 1210  git config --global 
+ 1211  git config --global --list
+ 1212  git config --global --get-all
+ 1213  git config --get-all
+ 1214  clear
+ 1215  cd /root/
+ 1216  ls
+ 1217  cd /
+ 1218  ls
+ 1219  ls -l
+ 1220  cd tmp/
+ 1221  ls
+ 1222  ll
+ 1223  cd vmware-root/
+ 1224  cd /bin
+ 1225  ls -l su
+ 1226  ll
+ 1227  ls
+ 1228  cd /sbin
+ 1229  ll
+ 1230  cd /usr/bin
+ 1231  ll
+ 1232  clear
+ 1233  ll | more
+ 1234  more --help
+ 1235  more -h
+ 1236  man more
+ 1237  clear
+ 1238  pwd
+ 1239  cd work/src/
+ 1240  cd ..
+ 1241  ls
+ 1242  cd wu/
+ 1243  ls
+ 1244  cd ../src/
+ 1245  cd packages/apps/
+ 1246  ls
+ 1247  cd Calculator/src/com/android/calculator2/
+ 1248  ls
+ 1249  vi History.java 
+ 1250  vi HistoryEntry.java 
+ 1251  vi HistoryAdapter.java 
+ 1252  vi ColorButton.java 
+ 1253  vi Calculator.java 
+ 1254  vi CalculatorEditText.java 
+ 1255  clear
+ 1256  cd 
+ 1257  ls
+ 1258  pwd
+ 1259  `pwd`
+ 1260  chkconfig
+ 1261  chkconfig --list
+ 1262  chkconfig --list | grep '5:on'
+ 1263  sudo chkconfig bluetooth off
+ 1264  clear
+ 1265  chkconfig --list | grep '5:on'
+ 1266  ls /etc/rc[0-6].d
+ 1267  clear
+ 1268  chkconfig --list | grep '5:on'
+ 1269  chkconfig smba on
+ 1270  chkconfig smbad on
+ 1271  chkconfig --list | grep '5:off'
+ 1272  chkconfig smbd on
+ 1273  su -
+ 1274  clear
+ 1275  ll /etc/smb*
+ 1276  ll /etc/s*
+ 1277  which smba
+ 1278  cd /etc/smb
+ 1279  which samba
+ 1280  cd /etc/samba
+ 1281  ls
+ 1282  ll
+ 1283  vi gdbcommands 
+ 1284  su -
+ 1285  cd 
+ 1286  pwd
+ 1287  ll
+ 1288  ls
+ 1289  chmod 7777 work
+ 1290  ll
+ 1291  chmod 6777 work
+ 1292  ll
+ 1293  chmod 5777 work
+ 1294  ll
+ 1295  chmod 4777 work
+ 1296  ll
+ 1297  chmod 4776 work
+ 1298  ll
+ 1299  chmod 4755 work
+ 1300  ll
+ 1301  chmod a-s a+x work
+ 1302  chmod a-s,a+x work
+ 1303  ll
+ 1304  chmod a+w,a+t work
+ 1305  ll
+ 1306  cd work/
+ 1307  ls
+ 1308  ll
+ 1309  cd src/
+ 1310  ll
+ 1311  cd ..
+ 1312  du
+ 1313  du -s
+ 1314  du -s -h
+ 1315  clear
+ 1316  cd src/
+ 1317  du -sh
+ 1318  ls
+ 1319  cd system/
+ 1320  ls
+ 1321  cd bluetooth/
+ 1322  ls
+ 1323  cd tools/
+ 1324  ls
+ 1325  cd ../.../
+ 1326  cd ../../
+ 1327  ls
+ 1328  cd core/
+ 1329  ls
+ 1330  cd sdcard/
+ 1331  ls
+ 1332  vi sdcard.c 
+ 1333  cd ././
+ 1334  cd ../..
+ 1335  ls
+ 1336  cd ..
+ 1337  ls
+ 1338  cd device/
+ 1339  ls
+ 1340  cd google/
+ 1341  ls
+ 1342  cd accessory/
+ 1343  ls
+ 1344  cd ../
+ 1345  ls
+ 1346  cd ..
+ 1347  cd common/
+ 1348  ls
+ 1349  cd gps/
+ 1350  ls
+ 1351  cd ../../
+ 1352  ls
+ 1353  cd generic/
+ 1354  ls
+ 1355  cd goldfish/
+ 1356  ls
+ 1357  cd audio/
+ 1358  ls
+ 1359  cd ../../..
+ 1360  cd moto/
+ 1361  ls
+ 1362  cd ../samsung/
+ 1363  ls
+ 1364  cd ../sample/
+ 1365  ls
+ 1366  cd apps/
+ 1367  ls
+ 1368  cd ../../samsung/tuna/
+ 1369  ls
+ 1370  cd ../../../
+ 1371  ls
+ 1372  cd packages/apps/
+ 1373  ls
+ 1374  sl
+ 1375  cd Settings/
+ 1376  ls
+ 1377  cd src/
+ 1378  ls
+ 1379  cd com/android/settings/
+ 1380  ls
+ 1381  clear
+ 1382  ls
+ 1383  ls -t
+ 1384  ls -m
+ 1385  vi AirplaneModeEnabler.java 
+ 1386  clear
+ 1387  cd 
+ 1388  echo $PS1
+ 1389  export $PS1 = \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$
+ 1390  export PS1 = \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$
+ 1391  vi .bashrc
+ 1392  exit
+ 1393  ls /etc/debian_version 
+ 1394  clear
+ 1395  cat /etc/debian_chroot
+ 1396  echo $color_prompt
+ 1397  env
+ 1398  test
+ 1399  man test
+ 1400  ls
+ 1401  cd work/src/packages/apps/
+ 1402  ls
+ 1403  cd DeskClock/
+ 1404  cd src/com/android/
+ 1405  clear
+ 1406  exit
+ 1407  pwd
+ 1408  cd work/2.3.7.src/
+ 1409  tar zxvf android2.3.7z
+ 1410  which 7z
+ 1411  which rar
+ 1412  which zip
+ 1413  which tar
+ 1414  which gzip
+ 1415  which unzip
+ 1416  which ungizp
+ 1417  which untar
+ 1418  zip --help
+ 1419  zip -x android2.3.7z 
+ 1420  ls
+ 1421  clear
+ 1422  which rar
+ 1423  which zip
+ 1424  which tar
+ 1425  which gizp
+ 1426  which gzip
+ 1427  which 7z
+ 1428  sudo apt-get install rar
+ 1429  nohup sudo apt-get install rar &
+ 1430  clear
+ 1431  ls
+ 1432  exit
+ 1433  cd work/2.3.7.src/
+ 1434  ls
+ 1435  7z --help
+ 1436  ls
+ 1437  7z x android2.3.7z 
+ 1438  ls
+ 1439  cd android2.3/
+ 1440  ls
+ 1441  ll
+ 1442  cd build/core/
+ 1443  ls
+ 1444  cd ..
+ 1445  ls
+ 1446  cd packages/apps/
+ 1447  ls
+ 1448  cd Mms/
+ 1449  ls
+ 1450  cd src/
+ 1451  cd com/android/mms/
+ 1452  ls
+ 1453  cd dom/
+ 1454  ls
+ 1455  cd smil/
+ 1456  ls
+ 1457  cd parser/
+ 1458  ls
+ 1459  vi SmilContentHandler.java 
+ 1460  vi SmilXmlParser.java 
+ 1461  vi SmilXmlSerializer.java 
+ 1462  clear
+ 1463  cd ../../
+ 1464  cd ../../../
+ 1465  cd ../
+ 1466  cd apps/
+ 1467  ls
+ 1468  cd Music/
+ 1469  ls
+ 1470  cd src/com/android/music/
+ 1471  ls
+ 1472  cd 
+ 1473  vi .bashrc
+ 1474  exit
+ 1475  ls
+ 1476  cd work/2.3.7.src/
+ 1477  cd android2.3/
+ 1478  ls
+ 1479  cd packages/apps/
+ 1480  ls
+ 1481  cd Phone/
+ 1482  ls
+ 1483  cd src/
+ 1484  cd com/android/phone/
+ 1485  ls
+ 1486  cd ../../../../../
+ 1487  clear
+ 1488  history
+ 1489  clear
+ 1490  ls
+ 1491  cd S
+ 1492  cd St
+ 1493  cd Stk/
+ 1494  clear
+ 1495  ls
+ 1496  cd src/
+ 1497  ls
+ 1498  cd com/
+ 1499  ;s
+ 1500  ls
+ 1501  clear
+ 1502  cd android/stk/
+ 1503  ls
+ 1504  vi StkLauncherActivity.java 
+ 1505  clear
+ 1506  cd ../
+ 1507  ls
+ 1508  cd ../../../
+ 1509  ls
+ 1510  cd ../
+ 1511  ls
+ 1512  cd ..
+ 1513  ls
+ 1514  clear
+ 1515  su -
+ 1516  eclipse
+ 1517  eclipse &
+ 1518  exit
+ 1519  su
+ 1520  cd /mnt/
+ 1521  ls
+ 1522  cd /
+ 1523  ls
+ 1524  cd media/
+ 1525  lws
+ 1526  ls
+ 1527  cd ..
+ 1528  cd cdrom/
+ 1529  ls
+ 1530  cd ../
+ 1531  exit
+ 1532  ls
+ 1533  cd work
+ 1534  cd env/
+ 1535  ls
+ 1536  tar zxvf unix2dos-4.1.2.tar.gz 
+ 1537  ls
+ 1538  cd unix2dos-4.1.2/
+ 1539  ls
+ 1540  make
+ 1541  make install
+ 1542  sudo make install
+ 1543  make clean
+ 1544  clear
+ 1545  ls
+ 1546  make
+ 1547  sudo make
+ 1548  sudo make install
+ 1549  cd `
+ 1550  exit
+ 1551  quit
+ 1552  cd 
+ 1553  cd work
+ 1554  ls
+ 1555  mkdir src_tuna
+ 1556  ls
+ 1557  cd src_tuna/
+ 1558  ls
+ 1559  clear
+ 1560  ls
+ 1561  git --global config
+ 1562  git config --global
+ 1563  git config --global username
+ 1564  ls
+ 1565  ls -al
+ 1566  git init
+ 1567  ls
+ 1568  ls -al
+ 1569  cd .git/
+ 1570  ls
+ 1571  ls -al
+ 1572  vi config 
+ 1573  cd ..
+ 1574  ls
+ 1575  git clone mingxing.zeng@10.240.3.250:/home/ckt/work/gitsz/tuna
+ 1576  ls
+ 1577  cd tuna/
+ 1578  ls
+ 1579  ./mk
+ 1580  ./mk lisp
+ 1581  ./mk listp
+ 1582  ./mk ckt75_cu_ics new
+ 1583  cd out/
+ 1584  cd target/product/
+ 1585  ls
+ 1586  vi ckt75_cu_ics_kernel.log
+ 1587  cd ..
+ 1588  cd..
+ 1589  cd ../..
+ 1590  cd /mediatek/platform/mt6575/kernel/core/
+ 1591  cd mediatek/platform/mt6575/kernel/core/
+ 1592  ls
+ 1593  vi mt6575_isp.c 
+ 1594  cd work/4.0.src/
+ 1595  ls
+ 1596  find . .*adapter.java
+ 1597  find . Adapter.java
+ 1598  eclipse ^
+ 1599  eclipse &
+ 1600  ls
+ 1601  cd ..
+ 1602  ls
+ 1603  cd src_tuna/
+ 1604  ls
+ 1605  cd tuna/
+ 1606  git branch -a
+ 1607  git checkout tuna_cu_ics_v1_szbase
+ 1608  git status
+ 1609  git checkout -f tuna_cu_ics_v1_szbase
+ 1610  git branch -a
+ 1611  ./mk listp
+ 1612  ./mk ckt75_cu_ics  new
+ 1613  git status
+ 1614  ifconfig
+ 1615  git status
+ 1616  ./mk ckt75_cu_ics  new
+ 1617  git clean
+ 1618  git clean -f
+ 1619  ifconfig
+ 1620  cd work
+ 1621  cd src_tuna/
+ 1622  cd cd tuna/
+ 1623  ls
+ 1624  cd tuna/
+ 1625  ls
+ 1626  ./mk listp
+ 1627  ./mk ckt75_cu_ics new
+ 1628  ./mk ckt75_cu_ics remake
+ 1629  ls
+ 1630  cd out/
+ 1631  ls
+ 1632  cd target/
+ 1633  ls
+ 1634  cd product/
+ 1635  ls
+ 1636  cd ckt75_cu_ics
+ 1637  ls
+ 1638  clear
+ 1639  ls
+ 1640  cd ../../
+ 1641  ls
+ 1642  ll
+ 1643  cd aa
+ 1644  ls
+ 1645  cd ../
+ 1646  ls
+ 1647  cd ckt/
+ 1648  ls
+ 1649  cd COMMON/
+ 1650  ls
+ 1651  cd system/
+ 1652  ls
+ 1653  cd app/
+ 1654  ls
+ 1655  ls *.apk
+ 1656  cd ..
+ 1657  cd etc/
+ 1658  ls
+ 1659  cd permissions/
+ 1660  ls
+ 1661  cd ../../
+ 1662  cd framework/
+ 1663  ls
+ 1664  cd ../lib/
+ 1665  ls
+ 1666  cd ../
+ 1667  ls
+ 1668  cd vendor/
+ 1669  ls
+ 1670  cd pittpatt/
+ 1671  ls
+ 1672  cd models/
+ 1673  ls
+ 1674  cd recognition/
+ 1675  ls
+ 1676  cd face.face.y0-y0-22-b-N/
+ 1677  ls
+ 1678  cd ../
+ 1679  cd .
+ 1680  cd ..
+ 1681  ls
+ 1682  cd detection/
+ 1683  ls
+ 1684  cd multi_pose_face_landmark_detectors.3/
+ 1685  ls
+ 1686  cd ../../../../
+ 1687  ls
+ 1688  cd development/
+ 1689  ls
+ 1690  sl
+ 1691  cd apps/
+ 1692  ;s
+ 1693  ls
+ 1694  cd ../../
+ 1695  ls
+ 1696  git log >>~/work/wu/git.log
+ 1697  ./mk 
+ 1698  ./mk sdk new
+ 1699  ls
+ 1700  cd sdk/
+ 1701  ls
+ 1702  cd ../out/
+ 1703  ls
+ 1704  cd target/
+ 1705  ls
+ 1706  cd product/
+ 1707  ls
+ 1708  cd mediatek/
+ 1709  ls
+ 1710  cd source/
+ 1711  ;s
+ 1712  ls
+ 1713  cd frameworks/
+ 1714  ls
+ 1715  cd base/
+ 1716  ls
+ 1717  cd core/
+ 1718  ls
+ 1719  cd ../media/
+ 1720  ls
+ 1721  cd /home/ckt/work
+ 1722  cd src_tuna/tuna/
+ 1723  ls
+ 1724  cd sdk/
+ 1725  ls
+ 1726  cd ddms/
+ 1727  ls
+ 1728  cd app/
+ 1729  ls
+ 1730  cd src/
+ 1731  ls
+ 1732  ./mk win_sdk new
+ 1733  cd ../../
+ 1734  ./mk win_sdk new
+ 1735  ./mk win_sdk remake
+ 1736  eclipse &
+ 1737  ifconfig
+ 1738  cd work/src_tuna/tuna/
+ 1739  ls
+ 1740  cd out/
+ 1741  ls
+ 1742  cd Download/
+ 1743  ls
+ 1744  tree 
+ 1745  cd sdcard/
+ 1746  ls
+ 1747  cd ..
+ 1748  cd ../
+ 1749  cd host/
+ 1750  ls
+ 1751  cd common/
+ 1752  tree
+ 1753  clear
+ 1754  ls
+ 1755  cd obj/
+ 1756  ls
+ 1757  cd JAVA_LIBRARIES/
+ 1758  ls | wc
+ 1759  ls |more
+ 1760  clear
+ 1761  ls
+ 1762  cd tools-common-prebuilt_intermediates/
+ 1763  ls
+ 1764  clear
+ 1765  cd ../../
+ 1766  ls
+ 1767  cd linux-x86/
+ 1768  ls
+ 1769  cd bin/
+ 1770  ls
+ 1771  ls -al
+ 1772  ./android
+ 1773  clear
+ 1774  ls
+ 1775  ./adb
+ 1776  ./adb shell
+ 1777  clear
+ 1778  ls
+ 1779  ./sqlite3 
+ 1780  man sqlite3
+ 1781  clear
+ 1782  ls
+ 1783  cd ../
+ 1784  ls
+ 1785  cd cts
+ 1786  ls
+ 1787  cd dxconverter/
+ 1788  ls
+ 1789  cd ../
+ 1790  ls
+ 1791  cd ../
+ 1792  ls
+ 1793  cd framework/
+ 1794  ls
+ 1795  clear
+ 1796  cd ..
+ 1797  ls
+ 1798  cd lib/
+ 1799  ls
+ 1800  cd ../usr/
+ 1801  ls
+ 1802  cd share/
+ 1803  ls
+ 1804  cd zoneinfo/
+ 1805  ls
+ 1806  cd ../
+ 1807  ls
+ 1808  cd ..
+ 1809  cd icu/
+ 1810  ls
+ 1811  cd ../../
+ 1812  ls
+ 1813  clear
+ 1814  ls
+ 1815  cd ..
+ 1816  ls
+ 1817  cd windows-x86/
+ 1818  ls
+ 1819  cd bin/
+ 1820  ls
+ 1821  cd ../obj/
+ 1822  ls
+ 1823  cd STATIC_LIBRARIES/
+ 1824  ls
+ 1825  cd AdbWinApi_intermediates/
+ 1826  ls
+ 1827  clear
+ 1828  cd ../
+ 1829  ls
+ 1830  cd ..
+ 1831  ls
+ 1832  cd include/
+ 1833  ls
+ 1834  cd libexpat/
+ 1835  ls
+ 1836  cd ../../..
+ 1837  ls
+ 1838  cd ..
+ 1839  ls
+ 1840  cd ..
+ 1841  ./mk win_sdk new
+ 1842  cd out/target/product/
+ 1843  ls
+ 1844  vi ckt75_cu_ics_win_sdk.log
+ 1845  cd ../../
+ 1846  cd host/
+ 1847  cd windows-x86/
+ 1848  ls
+ 1849  cd obj/
+ 1850  ls
+ 1851  cd EXECUTABLES/
+ 1852  ls
+ 1853  cd adb_intermediates/
+ 1854  ls
+ 1855  cd ../etc1tool_intermediates/
+ 1856  ls
+ 1857  clear
+ 1858  ls
+ 1859  ls -l
+ 1860  ll
+ 1861  cd ../../../
+ 1862  cd ../../
+ 1863  cd target/product/
+ 1864  ls
+ 1865  cd ckt75_cu_ics
+ 1866  ls
+ 1867  cd sdk/
+ 1868  ls
+ 1869  cd ..
+ 1870  ls
+ 1871  cd data/
+ 1872  ls
+ 1873  cd ../
+ 1874  ls
+ 1875  cd ..
+ 1876  ls
+ 1877  cd ..
+ 1878  ls
+ 1879  cd ..
+ 1880  ls
+ 1881  cd ../
+ 1882  ls
+ 1883  clear
+ 1884  ls
+ 1885  cd kernel/
+ 1886  ls
+ 1887  cd Do
+ 1888  cd Download
+ 1889  ls
+ 1890  cd ../arch
+ 1891  ls
+ 1892  cd m32r/
+ 1893  ls
+ 1894  cd platforms/
+ 1895  ;s
+ 1896  ls
+ 1897  cd ../../../
+ 1898  ls
+ 1899  cd ../
+ 1900  ls
+ 1901  clear
+ 1902  histry
+ 1903  history
+ 1904  clear
+ 1905  cd 
+ 1906  vi .bash_history
+ 1907  cd work/src_tuna/tuna/
+ 1908  ;s
+ 1909  ls
+ 1910  ll
+ 1911  cd packages/apps/
+ 1912  ls
+ 1913  ll
+ 1914  cd Mms/
+ 1915  ls
+ 1916  cd src/
+ 1917  ls
+ 1918  cd com/mediatek/
+ 1919  ls
+ 1920  cd wappush/
+ 1921  ls
+ 1922  ll
+ 1923  clear
+ 1924  ll
+ 1925  vi WapPushManager.java 
+ 1926  vi CoManager.java 
+ 1927  vi SiExpiredCheck.java 
+ 1928  clear
+ 1929  ls
+ 1930  ll
+ 1931  ls -color
+ 1932  vi SiManager.java 
+ 1933  clear
+ 1934  cd ../../../
+ 1935  cd ../../
+ 1936  cd ..
+ 1937  cd mediatek/
+ 1938  ls
+ 1939  cd binary/
+ 1940  ls
+ 1941  tree
+ 1942  cd 3rd-party/free/NetQin/
+ 1943  cd ../../
+ 1944  cd build/
+ 1945  ls
+ 1946  tree
+ 1947  ls
+ 1948  cd addon/
+ 1949  l;s
+ 1950  ls
+ 1951  cd core/
+ 1952  ls
+ 1953  ll
+ 1954  tree
+ 1955  vi android_defs.mak 
+ 1956  vi android_defs.mak |wc
+ 1957  cat android_defs.mak |wc -l
+ 1958  cat android_defs.mak 
+ 1959  cd ..
+ 1960  cd core/
+ 1961  ls
+ 1962  vi config.mak 
+ 1963  vi Makefile 
+ 1964  vi uboot_defs.mak 
+ 1965  ll
+ 1966  vi README 
+ 1967  cd ..
+ 1968  ls
+ 1969  cd ..
+ 1970  ls
+ 1971  cd android/
+ 1972  ls
+ 1973  ll
+ 1974  cd tools/
+ 1975  ;s
+ 1976  ls
+ 1977  tree
+ 1978  cd ../
+ 1979  ls
+ 1980  cd ../
+ 1981  ls
+ 1982  cd android/
+ 1983  tree
+ 1984  cd ./
+ 1985  ls
+ 1986  pwd
+ 1987  cd full/
+ 1988  ls
+ 1989  vi config.mk 
+ 1990  cd ..
+ 1991  ls
+ 1992  cd kernel/
+ 1993  ls
+ 1994  cd ../
+ 1995  ls
+ 1996  clear
+ 1997  ls
+ 1998  cd config/
+ 1999  ls
+ 2000  cd ckt75_cu_ics/
+ 2001  ls
+ 2002  ll
+ 2003  vi android.hardware.bluetooth.xml 
+ 2004  ls android.hardware.*
+ 2005  ls android.hardware.* -l
+ 2006  vi android.hardware.camera.xml 
+ 2007  vi android.hardware.faketouch.xml 
+ 2008  vi android.hardware.location.gps.xml 
+ 2009  ls android.hardware.*
+ 2010  ls android.hardware.* -l
+ 2011  ls android.hardware.* -l -h
+ 2012  cp ~.bash_history /home/ckt/work/wu/bash_history.log
+ 2013  cp ~/.bash_history /home/ckt/work/wu/bash_history.log
+ 2014  vi ~/.bash_history
+ 2015  history
+ 2016  history >~/work/wu/history.log
