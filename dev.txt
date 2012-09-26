@@ -1,0 +1,198 @@
+total 0
+crw-rw----+ 1 root audio    14,  12 2012-09-10 19:47 adsp
+crw-------  1 root video    10, 175 2012-09-10 19:47 agpgart
+crw-rw----+ 1 root audio    14,   4 2012-09-10 19:47 audio
+drwxr-xr-x  2 root root         640 2012-09-10 19:47 block
+drwxr-xr-x  2 root root          80 2012-09-10 19:47 bsg
+drwxr-xr-x  3 root root          60 2012-09-10 19:47 bus
+lrwxrwxrwx  1 root root           3 2012-09-10 19:47 cdrom -> sr0
+drwxr-xr-x  2 root root        3000 2012-09-10 19:47 char
+crw-------  1 root root      5,   1 2012-09-10 19:47 console
+lrwxrwxrwx  1 root root          11 2012-09-10 19:47 core -> /proc/kcore
+crw-rw----  1 root root     10,  58 2012-09-10 19:47 cpu_dma_latency
+drwxr-xr-x  4 root root          80 2012-09-10 19:47 disk
+crw-rw----+ 1 root audio    14,   9 2012-09-10 19:47 dmmidi
+crw-rw----+ 1 root audio    14,   3 2012-09-10 19:47 dsp
+lrwxrwxrwx  1 root root           3 2012-09-10 19:47 dvd -> sr0
+crw-rw----  1 root root     10,  61 2012-09-10 19:47 ecryptfs
+crw-rw----  1 root video    29,   0 2012-09-10 19:47 fb0
+lrwxrwxrwx  1 root root          13 2012-09-10 19:47 fd -> /proc/self/fd
+brw-rw----  1 root floppy    2,   0 2012-09-10 19:47 fd0
+brw-rw----  1 root floppy    2,  84 2012-09-10 19:47 fd0u1040
+brw-rw----  1 root floppy    2,  88 2012-09-10 19:47 fd0u1120
+brw-rw----  1 root floppy    2,  28 2012-09-10 19:47 fd0u1440
+brw-rw----  1 root floppy    2, 124 2012-09-10 19:47 fd0u1600
+brw-rw----  1 root floppy    2,  44 2012-09-10 19:47 fd0u1680
+brw-rw----  1 root floppy    2,  60 2012-09-10 19:47 fd0u1722
+brw-rw----  1 root floppy    2,  76 2012-09-10 19:47 fd0u1743
+brw-rw----  1 root floppy    2,  96 2012-09-10 19:47 fd0u1760
+brw-rw----  1 root floppy    2, 116 2012-09-10 19:47 fd0u1840
+brw-rw----  1 root floppy    2, 100 2012-09-10 19:47 fd0u1920
+brw-rw----  1 root floppy    2,  12 2012-09-10 19:47 fd0u360
+brw-rw----  1 root floppy    2,  16 2012-09-10 19:47 fd0u720
+brw-rw----  1 root floppy    2, 120 2012-09-10 19:47 fd0u800
+brw-rw----  1 root floppy    2,  52 2012-09-10 19:47 fd0u820
+brw-rw----  1 root floppy    2,  68 2012-09-10 19:47 fd0u830
+crw-rw-rw-  1 root root      1,   7 2012-09-10 19:47 full
+crw-rw-rw-  1 root fuse     10, 229 2012-09-10 19:47 fuse
+crw-rw----  1 root root     10, 228 2012-09-10 19:47 hpet
+drwxr-xr-x  3 root root         200 2012-09-10 19:47 input
+crw-rw----  1 root root      1,  11 2012-09-10 19:47 kmsg
+srw-rw-rw-  1 root root           0 2012-09-10 19:47 log
+brw-rw----  1 root disk      7,   0 2012-09-10 19:47 loop0
+brw-rw----  1 root disk      7,   1 2012-09-10 19:47 loop1
+brw-rw----  1 root disk      7,   2 2012-09-10 19:47 loop2
+brw-rw----  1 root disk      7,   3 2012-09-10 19:47 loop3
+brw-rw----  1 root disk      7,   4 2012-09-10 19:47 loop4
+brw-rw----  1 root disk      7,   5 2012-09-10 19:47 loop5
+brw-rw----  1 root disk      7,   6 2012-09-10 19:47 loop6
+brw-rw----  1 root disk      7,   7 2012-09-10 19:47 loop7
+crw-rw----  1 root lp        6,   0 2012-09-10 19:47 lp0
+drwxr-xr-x  2 root root          60 2012-09-10 19:47 mapper
+crw-rw----  1 root root     10, 227 2012-09-10 19:47 mcelog
+crw-r-----  1 root kmem      1,   1 2012-09-10 19:47 mem
+crw-rw----+ 1 root audio    14,   2 2012-09-10 19:47 midi
+crw-rw----+ 1 root audio    14,   0 2012-09-10 19:47 mixer
+drwxr-xr-x  2 root root          60 2011-02-11 23:02 net
+crw-rw----  1 root root     10,  57 2012-09-10 19:47 network_latency
+crw-rw----  1 root root     10,  56 2012-09-10 19:47 network_throughput
+crw-rw-rw-  1 root root      1,   3 2012-09-10 19:47 null
+crw-rw----  1 root root      1,  12 2012-09-10 19:47 oldmem
+crw-rw----  1 root lp       99,   0 2012-09-10 19:47 parport0
+drwxr-xr-x  2 root root          60 2012-09-10 19:47 pktcdvd
+crw-r-----  1 root kmem      1,   4 2012-09-10 19:47 port
+crw-------  1 root root    108,   0 2012-09-10 19:47 ppp
+crw-rw----  1 root root     10,   1 2012-09-10 19:47 psaux
+crw-rw-rw-  1 root tty       5,   2 2012-09-10 19:52 ptmx
+drwxr-xr-x  2 root root           0 2010-04-19 17:30 pts
+brw-rw----  1 root disk      1,   0 2012-09-10 19:47 ram0
+brw-rw----  1 root disk      1,   1 2012-09-10 19:47 ram1
+brw-rw----  1 root disk      1,  10 2012-09-10 19:47 ram10
+brw-rw----  1 root disk      1,  11 2012-09-10 19:47 ram11
+brw-rw----  1 root disk      1,  12 2012-09-10 19:47 ram12
+brw-rw----  1 root disk      1,  13 2012-09-10 19:47 ram13
+brw-rw----  1 root disk      1,  14 2012-09-10 19:47 ram14
+brw-rw----  1 root disk      1,  15 2012-09-10 19:47 ram15
+brw-rw----  1 root disk      1,   2 2012-09-10 19:47 ram2
+brw-rw----  1 root disk      1,   3 2012-09-10 19:47 ram3
+brw-rw----  1 root disk      1,   4 2012-09-10 19:47 ram4
+brw-rw----  1 root disk      1,   5 2012-09-10 19:47 ram5
+brw-rw----  1 root disk      1,   6 2012-09-10 19:47 ram6
+brw-rw----  1 root disk      1,   7 2012-09-10 19:47 ram7
+brw-rw----  1 root disk      1,   8 2012-09-10 19:47 ram8
+brw-rw----  1 root disk      1,   9 2012-09-10 19:47 ram9
+crw-rw-rw-  1 root root      1,   8 2012-09-10 19:47 random
+crw-rw-r--+ 1 root root     10,  62 2012-09-10 19:47 rfkill
+lrwxrwxrwx  1 root root           4 2012-09-10 19:47 root -> sda1
+lrwxrwxrwx  1 root root           4 2012-09-10 19:47 rtc -> rtc0
+crw-rw----  1 root root    254,   0 2012-09-10 19:47 rtc0
+lrwxrwxrwx  1 root root           3 2012-09-10 19:47 scd0 -> sr0
+brw-rw----  1 root disk      8,   0 2012-09-10 19:47 sda
+brw-rw----  1 root disk      8,   1 2012-09-10 19:47 sda1
+brw-rw----  1 root disk      8,   2 2012-09-10 19:47 sda2
+brw-rw----  1 root disk      8,   5 2012-09-10 19:47 sda5
+crw-rw----+ 1 root audio    14,   1 2012-09-10 19:47 sequencer
+crw-rw----+ 1 root audio    14,   8 2012-09-10 19:47 sequencer2
+crw-rw----  1 root cdrom    21,   0 2012-09-10 19:47 sg0
+crw-rw----  1 root disk     21,   1 2012-09-10 19:47 sg1
+drwxrwxrwt  2 root root         140 2012-09-10 19:52 shm
+crw-rw----  1 root root     10, 231 2012-09-10 19:47 snapshot
+drwxr-xr-x  3 root root         200 2012-09-10 19:47 snd
+lrwxrwxrwx  1 root root          24 2012-09-10 19:47 sndstat -> /proc/asound/oss/sndstat
+brw-rw----+ 1 root cdrom    11,   0 2012-09-10 19:47 sr0
+lrwxrwxrwx  1 root root          15 2012-09-10 19:47 stderr -> /proc/self/fd/2
+lrwxrwxrwx  1 root root          15 2012-09-10 19:47 stdin -> /proc/self/fd/0
+lrwxrwxrwx  1 root root          15 2012-09-10 19:47 stdout -> /proc/self/fd/1
+crw-rw-rw-  1 root tty       5,   0 2012-09-10 19:47 tty
+crw--w----  1 root root      4,   0 2012-09-10 19:47 tty0
+crw-------  1 root root      4,   1 2012-09-10 19:47 tty1
+crw--w----  1 root tty       4,  10 2012-09-10 19:47 tty10
+crw--w----  1 root tty       4,  11 2012-09-10 19:47 tty11
+crw--w----  1 root tty       4,  12 2012-09-10 19:47 tty12
+crw--w----  1 root tty       4,  13 2012-09-10 19:47 tty13
+crw--w----  1 root tty       4,  14 2012-09-10 19:47 tty14
+crw--w----  1 root tty       4,  15 2012-09-10 19:47 tty15
+crw--w----  1 root tty       4,  16 2012-09-10 19:47 tty16
+crw--w----  1 root tty       4,  17 2012-09-10 19:47 tty17
+crw--w----  1 root tty       4,  18 2012-09-10 19:47 tty18
+crw--w----  1 root tty       4,  19 2012-09-10 19:47 tty19
+crw-------  1 root root      4,   2 2012-09-10 19:47 tty2
+crw--w----  1 root tty       4,  20 2012-09-10 19:47 tty20
+crw--w----  1 root tty       4,  21 2012-09-10 19:47 tty21
+crw--w----  1 root tty       4,  22 2012-09-10 19:47 tty22
+crw--w----  1 root tty       4,  23 2012-09-10 19:47 tty23
+crw--w----  1 root tty       4,  24 2012-09-10 19:47 tty24
+crw--w----  1 root tty       4,  25 2012-09-10 19:47 tty25
+crw--w----  1 root tty       4,  26 2012-09-10 19:47 tty26
+crw--w----  1 root tty       4,  27 2012-09-10 19:47 tty27
+crw--w----  1 root tty       4,  28 2012-09-10 19:47 tty28
+crw--w----  1 root tty       4,  29 2012-09-10 19:47 tty29
+crw-------  1 root root      4,   3 2012-09-10 19:47 tty3
+crw--w----  1 root tty       4,  30 2012-09-10 19:47 tty30
+crw--w----  1 root tty       4,  31 2012-09-10 19:47 tty31
+crw--w----  1 root tty       4,  32 2012-09-10 19:47 tty32
+crw--w----  1 root tty       4,  33 2012-09-10 19:47 tty33
+crw--w----  1 root tty       4,  34 2012-09-10 19:47 tty34
+crw--w----  1 root tty       4,  35 2012-09-10 19:47 tty35
+crw--w----  1 root tty       4,  36 2012-09-10 19:47 tty36
+crw--w----  1 root tty       4,  37 2012-09-10 19:47 tty37
+crw--w----  1 root tty       4,  38 2012-09-10 19:47 tty38
+crw--w----  1 root tty       4,  39 2012-09-10 19:47 tty39
+crw-------  1 root root      4,   4 2012-09-10 19:47 tty4
+crw--w----  1 root tty       4,  40 2012-09-10 19:47 tty40
+crw--w----  1 root tty       4,  41 2012-09-10 19:47 tty41
+crw--w----  1 root tty       4,  42 2012-09-10 19:47 tty42
+crw--w----  1 root tty       4,  43 2012-09-10 19:47 tty43
+crw--w----  1 root tty       4,  44 2012-09-10 19:47 tty44
+crw--w----  1 root tty       4,  45 2012-09-10 19:47 tty45
+crw--w----  1 root tty       4,  46 2012-09-10 19:47 tty46
+crw--w----  1 root tty       4,  47 2012-09-10 19:47 tty47
+crw--w----  1 root tty       4,  48 2012-09-10 19:47 tty48
+crw--w----  1 root tty       4,  49 2012-09-10 19:47 tty49
+crw-------  1 root root      4,   5 2012-09-10 19:47 tty5
+crw--w----  1 root tty       4,  50 2012-09-10 19:47 tty50
+crw--w----  1 root tty       4,  51 2012-09-10 19:47 tty51
+crw--w----  1 root tty       4,  52 2012-09-10 19:47 tty52
+crw--w----  1 root tty       4,  53 2012-09-10 19:47 tty53
+crw--w----  1 root tty       4,  54 2012-09-10 19:47 tty54
+crw--w----  1 root tty       4,  55 2012-09-10 19:47 tty55
+crw--w----  1 root tty       4,  56 2012-09-10 19:47 tty56
+crw--w----  1 root tty       4,  57 2012-09-10 19:47 tty57
+crw--w----  1 root tty       4,  58 2012-09-10 19:47 tty58
+crw--w----  1 root tty       4,  59 2012-09-10 19:47 tty59
+crw-------  1 root root      4,   6 2012-09-10 19:47 tty6
+crw--w----  1 root tty       4,  60 2012-09-10 19:47 tty60
+crw--w----  1 root tty       4,  61 2012-09-10 19:47 tty61
+crw--w----  1 root tty       4,  62 2012-09-10 19:47 tty62
+crw--w----  1 root tty       4,  63 2012-09-10 19:47 tty63
+crw--w----  1 root root      4,   7 2012-09-10 19:47 tty7
+crw--w----  1 root tty       4,   8 2012-09-10 19:47 tty8
+crw--w----  1 root tty       4,   9 2012-09-10 19:47 tty9
+crw-rw----  1 root dialout   4,  64 2012-09-10 19:51 ttyS0
+crw-rw----  1 root dialout   4,  65 2012-09-10 19:47 ttyS1
+crw-rw----  1 root dialout   4,  66 2012-09-10 19:47 ttyS2
+crw-rw----  1 root dialout   4,  67 2012-09-10 19:47 ttyS3
+crw-rw-rw-  1 root root      1,   9 2012-09-10 19:47 urandom
+crw-rw----  1 root root    252,   0 2012-09-10 19:47 usbmon0
+crw-rw----  1 root root    252,   1 2012-09-10 19:47 usbmon1
+crw-rw----  1 root root    252,   2 2012-09-10 19:47 usbmon2
+crw-rw----  1 root tty       7,   0 2012-09-10 19:47 vcs
+crw-rw----  1 root tty       7,   1 2012-09-10 19:47 vcs1
+crw-rw----  1 root tty       7,   2 2012-09-10 19:47 vcs2
+crw-rw----  1 root tty       7,   3 2012-09-10 19:47 vcs3
+crw-rw----  1 root tty       7,   4 2012-09-10 19:47 vcs4
+crw-rw----  1 root tty       7,   5 2012-09-10 19:47 vcs5
+crw-rw----  1 root tty       7,   6 2012-09-10 19:47 vcs6
+crw-rw----  1 root tty       7,   7 2012-09-10 19:47 vcs7
+crw-rw----  1 root tty       7, 128 2012-09-10 19:47 vcsa
+crw-rw----  1 root tty       7, 129 2012-09-10 19:47 vcsa1
+crw-rw----  1 root tty       7, 130 2012-09-10 19:47 vcsa2
+crw-rw----  1 root tty       7, 131 2012-09-10 19:47 vcsa3
+crw-rw----  1 root tty       7, 132 2012-09-10 19:47 vcsa4
+crw-rw----  1 root tty       7, 133 2012-09-10 19:47 vcsa5
+crw-rw----  1 root tty       7, 134 2012-09-10 19:47 vcsa6
+crw-rw----  1 root tty       7, 135 2012-09-10 19:47 vcsa7
+crw-rw----  1 root root     10,  63 2012-09-10 19:47 vga_arbiter
+crw-------  1 root root    251,   0 2012-09-10 19:47 vmci
+crw-rw-rw-  1 root root     10,  55 2012-09-10 19:47 vsock
+crw-rw-rw-  1 root root      1,   5 2012-09-10 19:47 zero

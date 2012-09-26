@@ -1,0 +1,6143 @@
+commit f3f6220eb98d17510dd4eeb7d4e2b29a4fba6881
+Merge: d5cebf2 b7e5d11
+Author: yong.su@sw8 <yong.su@ck-telecom.com>
+Date:   Mon Aug 27 09:01:39 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' into tuna_cu_ics_v1_szbase
+
+commit d5cebf2c2b24d050cb22eeb8f6b76b15a5052f7f
+Author: wei.fang <wei.fang@ck-telecom.com>
+Date:   Fri Aug 24 17:31:02 2012 +0800
+
+    power funcion hint and FM warning zh_tw String
+
+commit b7e5d112d14b302c96af7815f946b56e9d15988d
+Author: Fang <fang@fang-VirtualBox.(none)>
+Date:   Tue Aug 21 16:13:28 2012 +0800
+
+    [mandatory Description]
+    Try to resolve the bug that camera would occasionally appear to be black and then green.
+    [TYPE]
+    BUG
+    [Products]
+    TUNA_ICS_V1
+    [Solution Description]
+    mediatek/platform/mt6575/kernel/core/mt6575_isp.c
+    [Other info]
+    N/A
+
+commit 3a9cf4aeaf40da65805a1015c7442bd6eab4c1fd
+Author: yang.zhang <yang.zhang@ck-telecom.com>
+Date:   Tue Aug 14 13:50:06 2012 +0800
+
+    Fix the translation for Dutch (language)
+
+commit 413a3885075e39506537ac6bf005ee4ff4dfdf30
+Author: Fang <fang@fang-VirtualBox.(none)>
+Date:   Fri Aug 17 11:04:36 2012 +0800
+
+    [mandatory Description]
+    Enable update feature by opening GoogleOta switch
+    [TYPE]
+    FEATURE
+    [Products]
+    TUNA
+    [Solution Description]
+    mediatek/config/ckt75_cu_ics/ProjectConfig.mk
+    mediatek/source/packages/GoogleOta/res/values/address.xml
+    [Other info]
+    N/A
+
+commit cede1248ef859521fcb3f193c889679f7c3f7f55
+Merge: b0e2ed8 1cdb9a0
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Tue Aug 14 11:52:23 2012 +0800
+
+    Merge remote-tracking branch 'origin/tuna_cu_ics_v1_szbase' into tuna_cu_ics_v1_szbase
+
+commit b0e2ed84cf335e5929188bce896b7da6bc07779d
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Tue Aug 14 11:49:34 2012 +0800
+
+    add checksum
+    增加checksum的直接产生
+
+commit 1cdb9a04815995c378743e19c3d7879c97da5ab5
+Merge: 0d9a7ef eaaec6d
+Author: yong.su@sw8 <yong.su@ck-telecom.com>
+Date:   Tue Aug 14 09:09:01 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' into tuna_cu_ics_v1_szbase
+
+commit 0d9a7efbe0432b7c5ee3555a9956eb28045d90fc
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Mon Aug 13 14:30:56 2012 +0800
+
+    add batnew
+
+commit eaaec6d2966a5429fab3d47f369a8280187f4bbc
+Author: RenJian <jian.ren@ck-telecom.com>
+Date:   Fri Aug 10 09:23:42 2012 +0800
+
+    [Fix Bug]Bug 13157 - [S00A][Call][CKT-new]The alarm sound and in coming call ringtone paly in the same tim
+    
+    [TYPE]
+    Bug Fix
+    
+    [Bug ID]
+    Bug 13157
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    packages/apps/DeskClock/src/com/android/deskclock/AlarmKlaxon.java
+    
+    [Other info]
+    N/A
+
+commit 7e1e63154bfbeaa908f1ef51e0bcae9227f3c388
+Author: RenJian <jian.ren@ck-telecom.com>
+Date:   Wed Aug 8 12:48:40 2012 +0800
+
+    [Fix Bug]Bug 12912 - [S02A][MUSIC][CKT-NEW]Cann't delete music from Music app if not inserting SDCARD2
+    
+    [TYPE]
+    Bug Fix
+    
+    [Bug ID]
+    Bug 12912
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   packages/apps/Music/src/com/android/music/MusicUtils.java
+    
+    [Other info]
+    N/A
+
+commit 31f29acbb728485663838d0da80fa666f4e313b3
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Wed Aug 8 10:48:29 2012 +0800
+
+    Revert "temp change mirror of gc0309"
+    
+    This reverts commit db0d8bd3c850b41860fd50b120c5370f4ace70eb.
+
+commit ad8eb8b3419ed7a6a4ff281aaf6dd3d0ace264e2
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Tue Jul 31 19:04:27 2012 +0800
+
+    [Fixbug] When play FM,alarm goes off,the FM will be shut down.
+    
+    [TYPE]
+    BUG12514
+    
+    [Products]
+    TUNA_v2
+    
+    [Solution Description]
+    modified:   mediatek/source/packages/FMRadio/src/com/mediatek/FMRadio/FMRadioService.java
+    
+    [Other info]
+    N/A
+
+commit 88622a537c68b047b270bfbb5c03a7b855facd9a
+Author: RenJian <jian.ren@ck-telecom.com>
+Date:   Tue Aug 7 16:47:02 2012 +0800
+
+    [Fix Bug]Bug 12907 - [S00A][Screenshot][CKT-NEW]Cannot display screenshots in Gallery when there is no sdcard in the phone
+             Bug 12897 - [S00A][Screenshot][CKT-NEW] Cannot view the next screenshots image via sliding the screen when viewing screenshots image in Filemanager
+    
+    [Bug ID]
+    Bug 12907
+    Bug 12897
+    
+    [Products]
+    TUNA_M4TEL
+    
+    [Modified files]
+    frameworks/base/packages/SystemUI/src/com/android/systemui/screenshot/GlobalScreenshot.java
+    
+    [Other info]
+    N/A
+
+commit 6bc9f0f6b9f8f9a46757aeb31a52042afc5ad3b8
+Merge: 670c9ef 04c40bd
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Mon Aug 6 09:08:15 2012 +0800
+
+    Merge remote-tracking branch 'origin/tuna_cu_ics_v1_szbase' into tuna_cu_ics_v1_szbase
+
+commit 670c9ef9907c594454c478382b5e1beb89db50b4
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Mon Aug 6 09:01:55 2012 +0800
+
+    modified .gitignore
+    修改.gitignore
+
+commit 04c40bd7c76d7266c302ab457af26f7f30b6d1a2
+Author: ZhangYang <yang.zhang@ck-telecom.com>
+Date:   Fri Jul 27 11:51:31 2012 +0800
+
+    add facelock feature
+
+commit cbea2c13039eea68bd3c79695598a5177f924432
+Author: kui.hu <kui.hu@ck-telecom.com>
+Date:   Wed Aug 1 18:21:05 2012 +0800
+
+    add .so file for google GMS
+
+commit 05f9fe5f663f699d35b66cec555c6975c1b8f597
+Merge: 2833da9 afb022a
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Fri Aug 3 12:54:53 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 2833da95e8d7332b3860b98d2abb7e1b59aa54a9
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Fri Aug 3 12:52:08 2012 +0800
+
+        Fix WeiXin shake not respone issue
+    
+        [Type]
+           BUG(no bugid)
+        [Product]
+            TUNA
+        [Solution Description]
+        file change:
+         mediatek/custom/ckt75_cu_ics/kernel/accelerometer/mc3210/cust_acc.c
+        solution:
+         modify the filter frome 10 to 0
+        [Other Info]
+            N/A
+
+commit afb022a81dc63fa0881452f4bf5578a42e833cdf
+Author: RenJian <jian.ren@ck-telecom.com>
+Date:   Fri Aug 3 11:19:37 2012 +0800
+
+    [Fix Bug]Bug 12070 - [S0A][Audio Recorder][CKT-C1963]The Audio Recorder file list refresh takes too much time.
+    
+        [Bug ID]
+        Bug 12070
+    
+        [Products]
+        TUNA
+    
+        [Modified files]
+        packages/apps/SoundRecorder/src/com/android/soundrecorder/RecordingFileList.java
+    
+        [Other info]
+        N/A
+
+commit 0d6898ae4aca2c07f03cb27ec2b0dfa64ba427b4
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Thu Aug 2 17:50:15 2012 +0800
+
+        Revert commit 80c6a7ec69ec0aecf37a73e751e4f237f5cad13f for the change may cause some phone restart
+    
+        [Type]
+           BUG(no bugid)
+        [Product]
+            TUNA
+        [Solution Description]
+        file change:
+        kernel/include/linux/cpufreq.h
+        solution:
+         change the dvfs GOV back to Performance as default
+        [Other Info]
+            N/A
+
+commit 17d29465bcb759c8c434a21417d8d666d5d931be
+Merge: db0dd34 e46e690
+Author: jun.peng <ckt@pengjun-ckt-desktop.(none)>
+Date:   Thu Aug 2 11:10:05 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1_szbase' of 10.240.3.250:/home/ckt/work/gitsz/tuna into tuna_cu_ics_v1_szbase
+
+commit db0dd3427da8380ee0627b7bd2aa3011da9dd56b
+Author: jun.peng <ckt@pengjun-ckt-desktop.(none)>
+Date:   Thu Aug 2 10:55:53 2012 +0800
+
+    Revert "Revert "[Type]""
+    修复一个Revert错误
+    This reverts commit 287abb4a44d3a6d2340f9df688392d0afb68add1.
+
+commit 287abb4a44d3a6d2340f9df688392d0afb68add1
+Author: jun.peng <ckt@pengjun-ckt-desktop.(none)>
+Date:   Thu Aug 2 10:33:16 2012 +0800
+
+    Revert "[Type]"
+    
+    This reverts commit a5262b432b17a75da62b791431abe7fe0a1dc899.
+
+commit 89c7406e280a7bbde64c7bd1ac4d52b4e93ebc89
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Thu Aug 2 10:21:34 2012 +0800
+
+    Change RSSI for FM software scan, Note:just for 6620 chip, mt6620_patch_e3_hdr.bin from Patch ALPS00319491.
+
+commit e46e69096824e709ab12d53df957b515cefc13d1
+Merge: b25bb2c 2923a40
+Author: yong.su@sw8 <yong.su@ck-telecom.com>
+Date:   Thu Aug 2 10:14:55 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' into tuna_cu_ics_v1_szbase
+
+commit 2923a405e32cc3febe39d1d3f5144060d3a2a974
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Wed Aug 1 19:07:48 2012 +0800
+
+    Fix the bug the dialog cannot be dismiss when one call hang up.
+    
+    [TYPE]
+    BUG
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    Fix the bug the dialog cannot be dismiss when one call hang up.
+    
+    [Solution Description]
+    modified:   packages/apps/Phone/src/com/android/phone/InCallTouchUi.java
+    
+    [Other Info]
+
+commit af58278350731c47f6544b06f3ebd1c037e6ec66
+Merge: c3e2d0a 3e59980
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Wed Aug 1 13:37:12 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit c3e2d0a6ff097c8f279d711dc7259097b1a9f2dd
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Wed Aug 1 13:35:12 2012 +0800
+
+    Bug 12099 - [CKT-C479][Bluetooth]Tuna without SD Card can't receive all type of picture from other Tuna by BT.
+    
+    [TYPE]
+    BUG
+    12099
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    Tuna without SD Card can't receive all type of picture from other Tuna by BT.
+    
+    [Solution Description]
+    modified:   mediatek/source/packages/Bluetooth/profiles/bip/src/com/mediatek/bluetooth/bip/BipService.java
+    
+    [Other Info]
+
+commit 3e59980a55d24ca71f513e2710f12f80b197ba3c
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Wed Aug 1 10:36:14 2012 +0800
+
+    [BUG] sub camera hi704 set mirror ->0
+    
+    [TYPE]
+    
+    BUG
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    
+    change file list
+    modified:   mediatek/custom/common/kernel/imgsensor/hi704_yuv/hi704yuv_Sensor.c
+    
+    [Other info]
+    
+    N/A
+
+commit 424c0513622890df9d60e8ebd146f54c614fe433
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Wed Aug 1 09:43:20 2012 +0800
+
+    Bug 12554 - [S00A][BlueTooth]Can't check the device details when sharing file cia bluetooth.
+    
+    [TYPE]
+    BUG
+    12554
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    Can't check the device details when sharing file cia bluetooth.
+    
+    [Solution Description]
+    modified:   packages/apps/Settings/src/com/android/settings/bluetoothangel/DeviceListPreferenceFragment.java
+    modified:   packages/apps/Settings/src/com/android/settings/bluetoothangel/DevicePickerActivity.java
+    
+    [Other Info]
+
+commit a4445b272bc2963e91e1aba7439eebae093dc34a
+Author: RenJian <jian.ren@ck-telecom.com>
+Date:   Tue Jul 31 13:40:06 2012 +0800
+
+    [Fix Bug]Bug 11574 - [S02A][Message][CKT-Parent-11698]Can not Export/Import SMS from phone to SD card when the SDcard2 is inexistence
+    
+    [TYPE]
+    Bug Fix
+    
+    [Bug ID]
+    Bug 11574
+    
+    [Products]
+    TUNA V1 BaseLine
+    
+    [Solution Description]
+    
+    [Other info]
+    N/A
+
+commit 9b885d854997c952b55d7491d6c1420838f7ba4c
+Author: RenJian <jian.ren@ck-telecom.com>
+Date:   Tue Jul 31 12:36:05 2012 +0800
+
+    [Fix Bug]Bug 11699 - [S02A][Message][CKT-Parent-11698]Can not Export/Import SMS from phone to SD card when the SDcard2 is inexistence
+    
+    [TYPE]
+    Bug Fix
+    
+    [Bug ID]
+    Bug 11699
+    
+    [Products]
+    TUNA_M4TEL
+    
+    [Solution Description]
+    
+    [Other info]
+    N/A
+
+commit 1b37347374bac35cdfecbfff6f85557072c5e80c
+Author: RenJian <jian.ren@ck-telecom.com>
+Date:   Thu Jul 26 18:07:15 2012 +0800
+
+        [Fix Bug]Bug 11438 - [S02A][Message][CKT-NEW]popup up 'please insert SD card' after adding audio to MMS
+    
+        [TYPE]
+        Bug Fix
+    
+        [Bug ID]
+        Bug 11438
+    
+        [Products]
+        TUNA_M4TEL
+    
+        [Solution Description]
+        packages/apps/Mms/src/com/android/mms/ui/SlideEditorActivity.java
+        packages/apps/Mms/src/com/android/mms/ui/ComposeMessageActivity.java
+    
+        [Other info]
+        N/A
+
+commit b25bb2ca98788aa3fd1b8afece784791c6aedc49
+Merge: 8044879 d8caa7b
+Author: yong.su@sw8 <yong.su@ck-telecom.com>
+Date:   Thu Jul 26 09:14:05 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' into tuna_cu_ics_v1_szbase
+
+commit 80448790f090f04a5d5505ccbd887500f8d517b2
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Wed Jul 25 20:35:55 2012 +0800
+
+    improve Image Encoding Quality
+    提高照片的缺省编码质量,现在设置到了100,
+    这东东会在updateCameraParametersPreference的时候被读取
+    CameraProfile.getJpegEncodingQualityParameter
+
+commit 021f2fc047201522a94fb592f63c926cb6b6a38f
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Wed Jul 25 18:44:12 2012 +0800
+
+    change ccache size to 20G
+
+commit d87e45b70240c2c9e09fdc02d606b28e670ab303
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Wed Jul 25 16:57:15 2012 +0800
+
+    [FEATURE]we should make the all sub sensor(hi253 and others) keep 0 degree
+    
+    [TYPE]
+    
+    FEATURE
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    
+    change file list
+    modified:   mediatek/custom/ckt75_cu_ics/hal/camera/camera/cfg_tuning_mt6575.h
+    modified:   mediatek/custom/common/kernel/imgsensor/hi253_yuv/hi253yuv_Sensor.c
+    modified:   mediatek/custom/common/kernel/imgsensor/src/kd_sensorlist.c
+    
+    [Other info]
+    
+    N/A
+
+commit db0d8bd3c850b41860fd50b120c5370f4ace70eb
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Wed Jul 25 12:00:09 2012 +0800
+
+    temp change mirror of gc0309
+    临时修改gc0309的反转/镜像
+    gc0309总是调用GC0309Control中的MSDK_SCENARIO_ID_ENUM=3,根本没有调用preview
+    也导致GC0309_Set_Mirror_Flip没有调用,也就是修改了GC0309_Set_Mirror_Flip没有用
+    只好在初始化的时候直接写死了
+
+commit 9c87973c95de5e9d3cee9680b153cdf31997cac1
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Wed Jul 25 11:32:06 2012 +0800
+
+    add some file into .gitignore. change package ckt release from tar,gz to
+    zip and add comment
+    
+    增加忽略的文件,把打包由tar.gz修改为了zip,同时在包中增加了注释,包括了hash/版本号
+
+commit 2558e9421ca9d9082feada5dffb0e633d008e171
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed Jul 25 10:18:18 2012 +0800
+
+    Add 8M support for YUV sensors
+    
+    [TYPE]
+    FEATURE
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    	new file:   cfg_ftbl_custom_yuv_main.h
+    
+    [Other info]
+
+commit 1e1feba647b9356bef81e938fc887c70b6d00624
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Tue Jul 24 16:01:52 2012 +0800
+
+    enable ccache
+    打开ccache
+
+commit 8973eae464762e9121f87e94e55c0d842b371419
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Tue Jul 24 11:39:48 2012 +0800
+
+    update ccache and use ccache in uboot kernel and preloader
+    升级ccache应用,并在uboot,kernel和preloader中使用ccache
+
+commit d8caa7b03a570c70294345ff12af7ff523f246b5
+Author: RenJian <jian.ren@ck-telecom.com>
+Date:   Tue Jul 24 09:40:22 2012 +0800
+
+    [Fix Bug]Bug 11309 - [S01A][Gallery][CKT-NEW]The photos can't be deleted from gallery successfully
+    
+    [Bug ID]
+    Bug 11309
+    
+    [Products]
+    TUNA_M4TEL
+    
+    [Modified files]
+    
+    [Other info]
+    N/A
+
+commit c3143cdf1edc84bda424d5fb916e617181555922
+Author: RenJian <jian.ren@ck-telecom.com>
+Date:   Tue Jul 24 09:39:24 2012 +0800
+
+    [Fix Bug]Bug 12145 - [S0A][Camera][CKT-New]The cannot find the gallery mini icon in the Camera previewer
+    
+    [Bug ID]
+    Bug 12145
+    
+    [Products]
+    TUNA_M4TEL
+    
+    [Modified files]
+    packages/providers/MediaProvider/src/com/android/providers/media/MediaProvider.java
+    
+    [Other info]
+    N/A
+
+commit 20534768c50eefe2f2960b4878b35e2b0818ba68
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Mon Jul 23 15:26:21 2012 +0800
+
+    Fix the Bug that int the Third call, miss the button of answer and reject.
+    
+    [TYPE]
+    BUG
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    
+    [Solution Description]
+    modified:   packages/apps/Phone/src/com/android/phone/InCallScreen.java
+    
+    [Other Info]
+
+commit 13913c074b60e45ced8616d0a29a67c27018c0cd
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri Jul 20 17:51:13 2012 +0800
+
+    add test IOException log
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    
+    [Other info]
+    MTK patch or other info
+
+commit a4acd9147274980a39a8759c51c75154a9f19867
+Merge: c6a12ec ba2bb04
+Author: yong.su@sw8 <yong.su@ck-telecom.com>
+Date:   Fri Jul 20 15:18:59 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' into tuna_cu_ics_v1_szbase
+
+commit c6a12ec50e8cd5e154877aade94bac9138890866
+Author: Tyrael <yuan.tian@ck-telecom.com>
+Date:   Fri Jul 20 14:52:34 2012 +0800
+
+    complate the feature of using .bmp to show battery capability when power off
+
+commit a5262b432b17a75da62b791431abe7fe0a1dc899
+Author: fang <fangming.yang@ck-telecom.com>
+Date:   Fri Jul 20 14:44:56 2012 +0800
+
+    [Type]
+    BUG
+    [Product]
+    TUNA
+    [Requirement]
+    Increase the suspend and resume waiting time to 120 ms to make it works normal.
+    [Solution Description]
+    mediatek/custom/common/kernel/lcm/hsd8009/hsd8009.c
+    [Design Document]
+    N/A
+    [Other Info]
+    N/A
+
+commit 37f8422a093d74c4c8c1b25282dd17c43988eb1f
+Author: Tyrael <yuan.tian@ck-telecom.com>
+Date:   Tue Jul 17 09:29:17 2012 +0800
+
+    add feature of using .bmp to show battery capability when power off charging
+
+commit ba2bb048a4cdbbb063761511bf318a1847cfd031
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Fri Jul 20 13:41:36 2012 +0800
+
+    Merge lcd repair solution into baseline, which effect when DISABLE_RGB_DE_MODE is turned on. Note: all branch need this commit.
+
+commit 28f7ad55716a80b3d252ec22fd13a080650b4f8a
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Fri Jul 20 13:24:06 2012 +0800
+
+        enable CPU DVFS function for power consumption
+    
+        [Type]
+           Feature
+        [Product]
+            TUNA
+        [Solution Description]
+        file change:
+        kernel/include/linux/cpufreq.h
+        solution:
+        Set the ONDEMAND governor as the governor
+        [Other Info]
+            N/A
+
+commit b40bf06480f82fba53602ff2b325d679479b8cb6
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Thu Jul 19 15:38:16 2012 +0800
+
+    The vCard export notification cannot be removed from the notification bar after
+    
+    [TYPE]
+    BUG
+    11074
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    The vCard export notification cannot be removed from the notification bar after
+    
+    [Solution Description]
+    modified:   packages/apps/Contacts/src/com/android/contacts/vcard/VCardService.java
+    
+    [Other Info]
+
+commit 3097b8811b6daea809cc364f6844e84f9d2f4db9
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed Jul 18 10:38:54 2012 +0800
+
+    add fix Bug 11698 - [Message][CKT-New]Can not Export/Import SMS from phone to SD card when the SDcard2 is inexistence
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    
+    [Other info]
+    MTK patch or other info
+
+commit 3b949e6f75bf70c10b2685635d29988425871001
+Merge: 605834b adf18f6
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Wed Jul 18 10:18:00 2012 +0800
+
+    Merge remote-tracking branch 'origin/tuna_cu_ics_v1_szbase' into tuna_cu_ics_v1_szbase
+
+commit 605834bd5fd6470b7fd8a5cc086e664081084331
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Wed Jul 18 10:13:44 2012 +0800
+
+    Revert 3 commits,those commit isn't suitable on szbase barnch
+    
+    取回3的版本,这3个版本不太合适在szbase分支
+    ec7b14f94a9b78ededb2f2004fc5cd20d27d8b8a
+    265985bd7933e132f82408dbb7546219daaaff72
+    cb98bd57f3f720786b097d0e627d6913f0259013.
+
+commit 5066e182852ed7eb166a90bf293aea28d298055f
+Author: fang <fangming.yang@ck-telecom.com>
+Date:   Tue Jul 17 17:02:40 2012 +0800
+
+    [Type]
+    BUG
+    [Product]
+    TUNA_V1
+    [Requirement]
+    Optimize the performance of mt9d113 senwor and reslove the bug of 1% case during the period of power on without charger.
+    [Solution Description]
+    mediatek/platform/mt6575/kernel/drivers/power/mt6575_battery.c
+    [Design Document]
+    N/A
+    [Other Info]
+    N/A
+
+commit 5635e1c3fbfa6c7a3e9771af2cfc83c1d03208ba
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Tue Jul 17 14:28:39 2012 +0800
+
+    add fix message no sdcard pop-up please insert sdcard
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    
+    [Other info]
+    MTK patch or other info
+
+commit adf18f62b6ee3665818cbfb4f8fb93f8fd98ce5b
+Merge: d4b512f a957df3
+Author: Administrator <ckt@ubuntu.ubuntu-domain>
+Date:   Mon Jul 16 17:25:37 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' into tuna_cu_ics_v1_szbase
+
+commit a957df3ad005e932fbc95a177348225081eaba8f
+Merge: 8e777e4 5eb9178
+Author: Administrator <ckt@ubuntu.ubuntu-domain>
+Date:   Mon Jul 16 17:23:11 2012 +0800
+
+    Merge commit 'origin/tuna_cu_ics_v1' into tuna_cu_ics_v1
+
+commit f0f268a9965c56dbcd11bf571d6f5d52163953f9
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Mon Jul 16 17:15:12 2012 +0800
+
+        Update tmd2771 driver again
+    
+        [Type]
+           BUG
+        [Product]
+            TUNA
+        [Solution Description]
+        file change:
+         mediatek/custom/common/kernel/alsps/tmd2771/tmd2771.c
+        [Other Info]
+            N/A
+
+commit f2528261a29d810d6ff8c70e1681518880c2d707
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Mon Jul 16 16:56:03 2012 +0800
+
+        Update tmd2771 driver
+    
+        [Type]
+           BUG(no bugid)
+        [Product]
+            TUNA
+        [Solution Description]
+        file change:
+        mediatek/custom/common/kernel/alsps/tmd2771/tmd2771.c
+        [Other Info]
+            N/A
+
+commit 6391739a2d74dad17e8f6206f755da688c879220
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Mon Jul 16 16:15:39 2012 +0800
+
+        Let the CPU enter the suspend status while the phone in dialing mode
+    
+        [Type]
+           Feature
+        [Product]
+           TUNA
+        [Solution Description]
+        file change:
+         mediatek/custom/ckt75_cu_ics/kernel/dct/dct/codegen.dws
+         mediatek/custom/common/kernel/alsps/tmd2771/tmd2771.c
+         mediatek/platform/mt6575/kernel/core/mt6575_sc.c
+        solution:
+        Let the CPU enter supsend for power consumption
+        [Other Info]
+            N/A
+
+commit 74f29b03e78764df4df8c898add83cb66498874a
+Author: fang <fangming.yang@ck-telecom.com>
+Date:   Mon Jul 16 15:34:33 2012 +0800
+
+    [Type]
+    BUG
+    [Product]
+    TUNA_ICS_V1
+    [Requirement]
+    Problem in building compatiable material of hsd8009 lcd.
+    [Solution Description]
+    mediatek/custom/common/kernel/lcm/hsd8009/hsd8009.c
+    [Design Document]
+    N/A
+    [Other Info]
+    N/A
+
+commit d4b512f6674b9dfdbc3626042d7a95bed3b23aae
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Fri Jul 13 09:10:45 2012 +0800
+
+     fix "merge error" 2
+     继续修正上面的合并错误
+
+commit 8de3080cb3acac3009fa8bc1bba029f29bd4913e
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Thu Jul 12 18:23:22 2012 +0800
+
+    fix "merge error"
+    修正上面的合并错误
+
+commit 5eb9178e73441bfe10f8b232cc6935ac6d41ce3b
+Merge: 8b954d6 ac37f42
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Thu Jul 12 18:02:02 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 8b954d60fe562b86a5677e0b6b6661fc10796b10
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Thu Jul 12 17:58:49 2012 +0800
+
+    Commit audio para. from Hardware Team,Note:all branch need this change.
+
+commit e9da3195fbd8b48323e6c968e9dc84947f538a13
+Merge: df4b6be 8e777e4
+Author: Administrator <ckt@ubuntu.ubuntu-domain>
+Date:   Thu Jul 12 14:18:01 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' into tuna_cu_ics_v1_szbase
+    
+    Conflicts:
+    	mediatek/config/ckt75_cu_ics/ProjectConfig.mk
+    	mediatek/custom/ckt75_cu_ics/hal/camera/camera/cfg_ftbl_custom_raw_main.h
+    	mediatek/custom/ckt75_cu_ics/kernel/camera/camera/kd_camera_hw.c
+    	mediatek/custom/common/hal/imgsensor/ov8825_mipi_raw/camera_tuning_para_ov8825_mt6575.cpp
+    	mediatek/custom/common/hal/imgsensor/src/sensorlist.cpp
+    	mediatek/custom/common/hal/inc/camera_custom_lens.h
+    	mediatek/custom/common/kernel/imgsensor/inc/kd_imgsensor.h
+    	mediatek/custom/common/kernel/imgsensor/ov8825_mipi_raw/ov8825mipiraw_Sensor.c
+    	mediatek/custom/common/kernel/imgsensor/src/kd_sensorlist.h
+    	mediatek/custom/common/kernel/lens/ov8825af/OV8825AF.c
+
+commit ac37f42b9deda83a476a9e0717120d7ab85bf680
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Thu Jul 12 13:51:49 2012 +0800
+
+    Apply the ALPS00300678(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P41)  to solve the feature fo touching the foucs
+    [TYPE]
+    
+    BUG
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    
+    change file list
+    new file:   mediatek/custom/common/hal/camera/camera/camera_custom_af.cpp
+    modified:   mediatek/custom/common/hal/camera/camera/config.cpp
+    modified:   mediatek/custom/common/hal/inc/aaa/mt6575/param/af_param_mt6575.h
+    modified:   mediatek/custom/common/hal/inc/aaa/mt6575/tuning_custom/af_tuning_custom_mt6575.h
+    new file:   mediatek/custom/common/hal/inc/camera_custom_af.h
+    modified:   mediatek/custom/common/kernel/lens/fm50af/FM50AF.c
+    modified:   mediatek/protect/mhal/src/lib/lib3a/mt6575/inc/App3A.h
+    modified:   mediatek/protect/mhal/src/lib/lib3a/mt6575/inc/AppAF.h
+    modified:   mediatek/source/external/mhal/src/core/algorithm/lib3a/inc/6575/MTK3A.h
+    modified:   mediatek/source/external/mhal/src/core/algorithm/lib3a/inc/6575/MTKAF.h
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/lib3a_intermediates/lib3a.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libfd_intermediates/libfd.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhaldrv_comm_intermediates/libmhaldrv_comm.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhaldrv_plat_intermediates/libmhaldrv_plat.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalpipe_comm_intermediates/libmhalpipe_comm.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalpipe_isp_tuning_intermediates/libmhalpipe_isp_tuning.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalpipe_plat_intermediates/libmhalpipe_plat.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_asd_intermediates/libmhalscenario_plat_asd.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_autorama_intermediates/libmhalscenario_plat_autorama.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_cam3dlib_intermediates/libmhalscenario_plat_cam3dlib.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_cam3dshot_intermediates/libmhalscenario_plat_cam3dshot.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_cam_intermediates/libmhalscenario_plat_cam.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_camexif_intermediates/libmhalscenario_plat_camexif.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_fb_intermediates/libmhalscenario_plat_fb.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_flickerservice_intermediates/libmhalscenario_plat_flickerservice.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_hdr_intermediates/libmhalscenario_plat_hdr.a
+    copied:     vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_cam_intermediates/libmhalscenario_plat_cam.a -> vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_intermediates/libmhalscenario_plat.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_shot_intermediates/libmhalscenario_plat_shot.a
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libacdk.so
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libcamalgo.so
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libeis.so
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libmhaldrv.so
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libmhalpipe.so
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libmhalscenario.so
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/system/lib/libacdk.so
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/system/lib/libcamalgo.so
+    copied:     vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libeis.so -> vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/system/lib/libeis.so
+    copied:     vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libmhaldrv.so -> vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/system/lib/libmhaldrv.so
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/system/lib/libmhalpipe.so
+    modified:   vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/system/lib/libmhalscenario.so
+    
+    [Other info]
+    
+    MTK patch or other info
+    ALPS00300678(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P41)
+
+commit 8e777e4d98b0e18269e6e4650a12c7bcad7d4518
+Merge: d6ef3d3 51553a2
+Author: Administrator <ckt@ubuntu.ubuntu-domain>
+Date:   Thu Jul 12 13:39:48 2012 +0800
+
+    Merge commit 'origin/tuna_cu_ics_v1' into tuna_cu_ics_v1
+
+commit 51553a2e7df33b25dd8e955aaeee12b54d674391
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Tue Jul 10 17:17:18 2012 +0800
+
+    [Fixbug] set a superior limit for add a site navigation's title.
+    
+    [TYPE]
+    BUG
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   packages/apps/Browser/src/com/android/browser/sitenavigation/SiteNavigationAddDialog.java
+    
+    [Other info]
+    N/A
+
+commit 01c65e47109a2223675aab0e3475544ea701c8bb
+Author: fang <fangming.yang@ck-telecom.com>
+Date:   Tue Jul 10 16:52:25 2012 +0800
+
+    [Type]
+    BUG
+    [Product]
+    TUNA
+    [Requirement]
+    Fix the bug of TE line.
+    [Solution Description]
+    mediatek/custom/common/kernel/lcm/hsd8009/hsd8009.c
+    [Design Document]
+    N/A
+    [Other Info]
+    N/A
+
+commit 718fe81467645d660808d1b656d75b2b53c157d2
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Tue Jul 10 16:28:06 2012 +0800
+
+    answer/refuser funcition's icon is missing for 1min if pressing BACK KEY in the third calling view.
+    
+    [TYPE]
+    BUG
+    10809
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    The answer/refuser funcition's icon is missing for 1min if pressing BACK KEY in the third calling view.
+    
+    [Solution Description]
+    modified:   packages/apps/Phone/src/com/android/phone/InCallTouchUi.java
+    modified:   packages/apps/Phone/src/com/android/phone/PhoneUtils.java
+    
+    [Other Info]
+
+commit 8966da8df98ec93b71f4ff3694171c7017d5a7c2
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Mon Jul 9 19:12:54 2012 +0800
+
+    [BUG] the camera doesn't work when come into camera and come out camera quickly most times
+    
+    [TYPE]
+    
+    BUG
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    
+    change file list
+    modified:   mediatek/custom/common/kernel/imgsensor/ov5647_mipi_raw/ov5647mipi_Sensor.c
+    
+    [Other info]
+    
+    N/A
+
+commit 4c23288051c65505c77a1ea2965309e2b9e9cb41
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Mon Jul 9 16:16:05 2012 +0800
+
+    [BUG]the patch ALPS00310743(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P40) solves the issue that can't connect to camera.
+    
+    [TYPE]
+    
+    BUG
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    
+    change file list
+    external/skia/src/images/SkImageDecoder.cpp
+    kernel/mm/mlock.c
+    kernel/mm/page_alloc.c
+    mediatek/platform/mt6575/kernel/core/include/mach/mt6575_m4u.h
+    mediatek/platform/mt6575/kernel/core/include/mach/mt6575_mdp.h
+    mediatek/platform/mt6575/kernel/core/mt6575_mdp.c
+    mediatek/source/external/mhal/src/core/drv/6575/inc/m4u_lib.h
+    mediatek/source/external/mhal/src/core/drv/6575/mdp/mdp_drv.h
+    mediatek/source/external/mhal/src/core/drv/6575/mdp/mdp_element.h
+    mediatek/source/external/mhal/src/core/pipe/6575/cameraio/CameraIO75.h
+    mediatek/source/external/mhal/src/core/pipe/6575/inc/ICameraIO.h
+    mediatek/source/external/mhal/src/core/pipe/6575/inc/mdp_hal.h
+    mediatek/source/external/mhal/src/core/pipe/6575/inc/mdp_path.h
+    mediatek/source/external/mhal/src/core/pipe/6575/inc/mdp_pipe.h
+    mediatek/source/kernel/drivers/m4u/m4u_kernel.c
+    packages/apps/Gallery2/src/com/android/gallery3d/app/CropImage.java
+    packages/apps/Gallery2/src/com/android/gallery3d/app/PhotoDataAdapter.java
+    packages/apps/Gallery2/src/com/android/gallery3d/data/LocalImage.java
+    packages/apps/Gallery2/src/com/android/gallery3d/data/MediaItem.java
+    packages/apps/Gallery2/src/com/android/gallery3d/data/UriImage.java
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libfd_intermediates/libfd.a
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhaldrv_plat_intermediates/libmhaldrv_plat.a
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhaldrvmdp_plat_intermediates/libmhaldrvmdp_plat.a
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhaljpeg_pipe_intermediates/libmhaljpeg_pipe.a
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhaljpeg_scenario_intermediates/libmhaljpeg_scenario.a
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalpipe_plat_intermediates/libmhalpipe_plat.a
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalpipemdp_plat_intermediates/libmhalpipemdp_plat.a
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_autorama_intermediates/libmhalscenario_plat_autorama.a
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_cam3dlib_intermediates/libmhalscenario_plat_cam3dlib.a
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_cam3dshot_intermediates/libmhalscenario_plat_cam3dshot.a
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_intermediates/libmhalscenario_plat.a -> vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_cam_intermediates/libmhalscenario_plat_cam.a
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_fb_intermediates/libmhalscenario_plat_fb.a
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_hdr_intermediates/libmhalscenario_plat_hdr.a
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_intermediates/libmhalscenario_plat.a
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/STATIC_LIBRARIES/libmhalscenario_plat_shot_intermediates/libmhalscenario_plat_shot.a
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/system/lib/libacdk.so -> vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libacdk.so
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libmhaldrv.so
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libmhalmdp.so
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libmhalpipe.so
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libmhalscenario.so
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/system/lib/libacdk.so
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libmhaldrv.so -> vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/system/lib/libmhaldrv.so
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/system/lib/libmhalmdp.so
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/system/lib/libmhalpipe.so
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/system/lib/libmhalscenario.so
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/system/lib/modules/mt6575_m4u.ko
+    
+    [Other info]
+    
+    MTK patch or other info
+    ALPS00310743(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P40)
+
+commit 72dbb52cd2dc20588946cad10652ad4052eec228
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Sat Jul 7 18:52:31 2012 +0800
+
+    we should keep the front camera as 180 degree
+    
+    [TYPE]
+    We merged from PM10A to add new sensors, but
+    we should keep the front camera as 180 degree
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    
+    [Other info]
+    N/A
+
+commit 2808cec1a98822ae2ba397eef6d0cc1b7a46d2dc
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Sat Jul 7 18:34:58 2012 +0800
+
+    Add more supported camera sensor into TUNA software
+    (OV5640, OV5647, OV8825, HI253, GC0309)
+    
+    [TYPE]
+    FEATURE
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    
+    [Other info]
+    N/A
+
+commit df4b6be9ba4c4185c79e7e98b1ef03d9a8255006
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Fri Jul 6 09:08:00 2012 +0800
+
+    fix bug images sensor ov5640&ov5647 can't be read id
+    修改摄像头ov5640和ov5647无法读取id的问题
+
+commit 9b068ca29bb92e0482fc899685ce49c1e26376fa
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Thu Jul 5 16:47:44 2012 +0800
+
+    Revert some change of "add ckt standard about version system"
+    
+    This reverts commit bb93e59933ff07231a7431851837a53637da8e22.
+    回复了部分"加入ckt标准",主要是把些不该去除的回复了,同时错误的修改mtk的原始版本
+    还原了,同时还修改了在设置关于手机中的自定义版本出错的问题
+
+commit 770fe7213acd0c715dfce2c6aa44c7086e6d6ccd
+Merge: 5d722e5 cedb5b9
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Thu Jul 5 17:05:59 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit cedb5b93c0f2bba09e7d7a2ab5de429b00c77d73
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Thu Jul 5 10:45:44 2012 +0800
+
+    RE-FIX Can't again export contacts to SDcard after press "cancel" button
+    
+    [TYPE]
+    BUG
+    bug
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   packages/apps/Contacts/src/com/android/contacts/vcard/ExportVCardActivity.java
+    modified:   packages/apps/Contacts/src/com/mediatek/contacts/list/ContactListMultiChoiceActivity.java
+    modified:   packages/apps/Contacts/src/com/mediatek/contacts/list/MultiContactsDuplicationFragment.java
+    
+    [Other info]
+    N/A
+
+commit 5d722e53a83353e14a3bf45dfb2ed6c5eeba1739
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Thu Jul 5 17:02:36 2012 +0800
+
+    resolved PS issue related with TP(with blue hole). Note: all branch need this change.
+
+commit d4f2242dac265f0d75f186947de0db3b487542a0
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Thu Jul 5 10:15:57 2012 +0800
+
+    [CKT-New]The Word spelling is wrong when deleting playlist.
+    
+    [TYPE]
+    BUG
+    10955
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    The Word spelling is wrong when deleting playlist.
+    
+    [Solution Description]
+    modified:   packages/apps/Music/res/values/strings.xml
+    
+    [Other Info]
+
+commit d424eaba66b9fe945152b5579e0fa660ccb6ecb2
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Wed Jul 4 15:21:21 2012 +0800
+
+    turn off MTK_TVOUT_SUPPORT in makefile of surfaceflinger,this may speed
+    up display if no tv out
+    
+    关闭MTK_TVOUT_SUPPORT,即使需要打开,也在主makefile中打开,而不应该单独在此
+    打开,关闭后会加快显示.比如横竖屏的切换等.
+    修改DisplayHardware.cpp,是因为编译的问题
+
+commit ae2bd2146e5860e4ef782c7cdf5765c4212f7591
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Tue Jul 3 17:15:03 2012 +0800
+
+    add update Sometimes mobile phone can't screen shot
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    
+    [Other info]
+    MTK patch or other info
+
+commit 7dab69d3a293c4e30afb9460303d71e099213c07
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Tue Jul 3 14:35:22 2012 +0800
+
+    add comment, if use 8M sensor ,you should set CKT_INTERPOLATION = yes
+
+commit 9389e25eff6c51723a8f022d124675c0665a784b
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Tue Jul 3 14:24:16 2012 +0800
+
+    add imgsensor ov8825
+    虽然加入了驱动,但是在mediatek/config/ckt75_cu_ics/ProjectConfig.mk并没有修改,有需要的注意
+    
+    mtk重新给了驱动代码,使用后摄像头可以点亮
+    [Issue ID]: ALPS00308166
+    [Project]: CKT75_CU_ICS
+    [Title]: [TUNA]OV8825, 进入Camera后黑屏
+    [Description]:
+    您好，我们在使用贵司释放的OV8825的代码进行调试，但是发现无论如何进入camera后都是黑屏。
+    我附上了我们的代码，以及抓到的log，还请帮忙看看，谢谢！
+    
+    ==================
+    mtk发布的ov8825的驱动,请参考
+    [Issue ID]: ALPS00289862
+    [Project]: CKT75_CU_ICS
+    [Title]: OV8825 camera驱动申请
+    [Description]:
+
+commit 37813359d3211392d5748a8e79dab64e85f6b0b2
+Merge: 654c878 d6ef3d3
+Author: Administrator <ckt@ubuntu.ubuntu-domain>
+Date:   Mon Jul 2 15:46:03 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' into tuna_cu_ics_v1_szbase
+    
+    Conflicts:
+    	.gitignore
+
+commit d6ef3d32627aecb584e7b5b77fa2d75683c7af0d
+Merge: f09d8af 7b244a9
+Author: Administrator <ckt@ubuntu.ubuntu-domain>
+Date:   Mon Jul 2 15:36:27 2012 +0800
+
+    Merge commit 'origin/tuna_cu_ics_v1' into tuna_cu_ics_v1
+
+commit 7b244a9693de5d9778b8e89989cd00353f0d3457
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Mon Jul 2 14:34:12 2012 +0800
+
+    [Fixbug]Data connection can't work
+    
+    [TYPE]
+    BUG
+    bug7435
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   frameworks/base/services/java/com/android/server/ConnectivityService.java
+    modified:   frameworks/base/telephony/java/com/android/internal/telephony/gsm/GsmDataConnectionTracker.java
+    
+    [Other info]
+    N/A
+
+commit b21e96eafaa8f940da33e921d359a4290caec7fd
+Merge: 789b0f1 5b38a28
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Mon Jul 2 13:54:18 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 789b0f1910a2717c2daf39d9e2166f3335ed1f07
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Mon Jul 2 13:52:41 2012 +0800
+
+    add fix No T card can't download mp3
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    
+    [Other info]
+    MTK patch or other info
+
+commit 5b38a28082770f15854ada92f7a783a36a024d45
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Mon Jul 2 13:01:14 2012 +0800
+
+    commit the audio para. change from hardware team, note:all branch need this commit.
+
+commit a93db521a777821dd6529b4ef4d2496be1cf748d
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Mon Jul 2 10:20:28 2012 +0800
+
+    [FEATURE]add the LCM compatibility between the hsd8009 and rm68120
+    
+    [TYPE]
+    
+    FEATURE
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    
+    change file list
+    modified:   mediatek/config/ckt75_cu_ics/ProjectConfig.mk
+    modified:   mediatek/custom/common/kernel/lcm/hsd8009/hsd8009.c
+    modified:   mediatek/custom/common/kernel/lcm/rm68120/rm68120.c
+    modified:   mediatek/platform/mt6575/uboot/mt6575_auxadc.c
+    
+    [Other info]
+    
+    N/A
+
+commit 654c878a6393edf9094ab02ee6cab127bdbf92be
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Sat Jun 30 18:15:23 2012 +0800
+
+    set CKT_INTERPOLATION default to no
+    把CKT_INTERPOLATION缺省设置关闭
+
+commit f9c7b28ed565f8e55ff285cf2b7ee808acda890f
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Fri Jun 29 11:55:53 2012 +0800
+
+    add option CKT_INTERPOLATION
+    增加选项CKT_INTERPOLATION,用于摄像头的插值
+
+commit ab9575de8ef7e57f5a9d6dbff0a4e4699ab9e179
+Author: wanshan.fang <wanshan.fang@10.100.1.119>
+Date:   Fri Jun 29 13:18:02 2012 +0800
+
+    For a search exception in move-group-members.
+    [TYPE]
+    
+    Inprovement
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    
+    modified:   packages/apps/Contacts/src/com/mediatek/contacts/list/ContactsGroupMultiPickerAdapter.java
+    
+    [Other info]
+    
+    [Code Reviewer]
+    xiaoping.chen
+
+commit 59531b17f65470659d3e158ef039e4c1a859391b
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Fri Jun 15 09:14:08 2012 +0800
+
+    对前摄像头hi704的yuv模式增加100w和130w两种分辨率模式,也就是插值
+
+commit f69df49644ff763891d89c23b6458fb823ccee1b
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Thu May 17 15:16:43 2012 +0800
+
+    摄像头增加到/插值到800w/8M
+
+commit f67b2051c478877dd24d55797f9a504fb51bd1c2
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Fri Jun 29 10:23:29 2012 +0800
+
+    fix vibrator too weak to be acceptable
+    在打开震动的情况下,触摸手机软键盘,或者拨号界面震动几乎没有的问题.
+    
+    主要问题是,之前成都的同事把mtk原始的防止震动过小的代码给删除了,这次回复了
+    目前震动最小的时间是50,如果不加入这段代码,上层传过来的时间是开始10,停止20,然后在30
+    由于10和30都太小,使得根本无法感知
+    
+    当然也可以直接修改xml文件,使得震动加大,修改的xml文件位置是
+    frameworks/base/core/res/res/values/config.xml
+    <!-- Vibrator pattern for feedback about touching a virtual key -->
+    	 <integer-array name="config_virtualKeyVibePattern">
+    
+    系统加载震动反馈时间的代码是在packages/apps/Phone/src/com/android/phone/HapticFeedback.java
+    如果没有上面的xml文件中的设置,系统会直接加载
+    private static final long DURATION = 10;  // millisec.
+    的设置
+
+commit b48ccd2f702f8afa9ead2ae135568e7442903975
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Thu Jun 28 13:30:01 2012 +0800
+
+        update alsps tmd2711 driver
+    
+        [Type]
+           BUG(no bugid)
+        [Product]
+            TUNA
+        [Solution Description]
+        file change:
+          mediatek/custom/common/kernel/alsps/tmd2771/tmd2771.c
+          mediatek/custom/common/kernel/alsps/tmd2771/tmd2771.h
+          mediatek/custom/ckt75_cu_ics/kernel/alsps/tmd2771/cust_alsps.c
+        solution:
+        [Other Info]
+            N/A
+
+commit bcab40e5263d40129579280529baba201dccb2c2
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Thu Jun 28 10:01:43 2012 +0800
+
+    add update sdcard code
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    
+    [Other info]
+    MTK patch or other info
+
+commit dd35281123c927aeb761707b0aefb203eb910a35
+Merge: d9e5707 aef119a
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Thu Jun 28 09:02:26 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit aef119ab6cbe67eb2257136174a237ef5f31d4a0
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Wed Jun 27 18:39:00 2012 +0800
+
+    Fix the comment in Settings Manifest.
+    
+    [TYPE]
+    bug
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   packages/apps/Settings/AndroidManifest.xml
+    
+    [Other info]
+    N/A
+
+commit 17c54dc27d2c698c9d35c1ed7fcb31b2234dfd60
+Author: RenJian <jian.ren@ck-telecom.com>
+Date:   Wed Jun 27 17:15:01 2012 +0800
+
+    [Bug Fix]Bug 10952 - [S01A][Contact][CKT-NEW]Can't save the phonebook picture when phone without SD card.
+    
+    [TYPE]
+    Bug Fix
+    
+    [Bug ID]
+    Bug 10952
+    
+    [Products]
+    TUNA_M4TEL
+    
+    [Description]
+    Add a judgement whether the external storage exist, otherwise use the emmc storage
+    [Solution Description]
+    modified:   packages/apps/Contacts/src/com/android/contacts/editor/ContactEditorFragment.java
+    
+    [Other info]
+    N/A
+
+commit d9e57078488cf3dd3c8806e8a7d2b17ea7d2356a
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed Jun 27 16:02:18 2012 +0800
+
+    add fix No sdcard can't screenshots
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    
+    [Other info]
+    MTK patch or other info
+
+commit 12b1ec98951d21ef2692fc63e5283c7be11e97ef
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Wed Jun 27 15:15:39 2012 +0800
+
+    The alarm time is display inconsistently after changing the 'use 24-hour format'.
+    
+    [TYPE]
+    BUG
+    bug10569
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   packages/apps/DeskClock/src/com/android/deskclock/Alarms.java
+    
+    [Other info]
+    N/A
+
+commit 71c54300af95baa728bbc8e1349d353afaf55559
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Wed Jun 27 13:13:25 2012 +0800
+
+        add more ps get value print log
+    
+        [Type]
+           Feature
+        [Product]
+            TUNA
+        [Solution Description]
+        file change
+        mediatek/custom/common/kernel/alsps/tmd2771/tmd2771.c
+        [Other Info]
+            N/A
+
+commit f602eec46ce705168f8c334165fd08174910aff1
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Wed Jun 27 10:51:38 2012 +0800
+
+    [Fixbug]bug10366 The cursor should position on the end off the word.
+    
+    [TYPE]
+    BUG
+    bug10366
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   packages/apps/Settings/src/com/android/settings/UserDictionarySettings.java
+    
+    [Other info]
+    N/A
+
+commit 9f8f93bdcebf5280ca7aec541404652f7c6cdffc
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Tue Jun 26 16:26:30 2012 +0800
+
+    The alarm is still ring after pressing the power key
+    
+    [TYPE]
+    BUG
+    9335
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    add to close alarm when only back out the screen but shut down.
+    
+    [Solution Description]
+    modified:   packages/apps/DeskClock/src/com/android/deskclock/AlarmAlert.java
+    
+    [Other Info]
+    relate to commit f9d87623aa908b721ea0c09026cdd075755c0248
+
+commit b5ead076633f6a16eb34e2008a9791b1f0694e82
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Tue Jun 26 16:23:50 2012 +0800
+
+    Revert "The alarm is still ring after pressing the power key"
+    
+    This reverts commit 823cc95a68f2cb23661d3e16563dc740c9bd4187.
+
+commit 823cc95a68f2cb23661d3e16563dc740c9bd4187
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Tue Jun 26 14:35:57 2012 +0800
+
+    The alarm is still ring after pressing the power key
+    
+    [TYPE]
+    BUG
+    9335
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    add to close alarm when only back out the screen but shut down.
+    
+    [Solution Description]
+    modified:   packages/apps/DeskClock/src/com/android/deskclock/AlarmAlert.java
+    
+    [Other Info]
+    relate to commit f9d87623aa908b721ea0c09026cdd075755c0248
+
+commit ef109e8bfea2eb4c65c4393cb2bf4a7cce4f2b41
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Tue Jun 26 13:36:41 2012 +0800
+
+    [FixBug]bug9355 Auto add Wifi shortcut after reseting the Tuna.
+    
+    [TYPE]
+    BUG
+    bug9355
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   packages/apps/Settings/AndroidManifest.xml
+    
+    [Other info]
+    N/A
+
+commit f5feb5fa964ff6cfb26d185a8a57976886bb816b
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Mon Jun 25 16:37:01 2012 +0800
+
+    The answer/refuser funcition's icon is missing for 1min if pressing BACK KEY in the third calling view.
+    
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    10809
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    The answer/refuser funcition's icon is missing for 1min if pressing BACK KEY in the third calling view.
+    
+    [Solution Description]
+    modified:   packages/apps/Phone/src/com/android/phone/InCallTouchUi.java
+    
+    [Other Info]
+
+commit fc6583f8c63b3e3e0d5ccf6de8d0bf706685ad65
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Mon Jun 25 11:20:14 2012 +0800
+
+    The music player is still working while the alarm expires.
+    
+    [TYPE]
+    BUG
+    
+    [Product]
+    TUNA
+    9207
+    
+    [Description]
+    The music player is still working while the alarm expires.
+    
+    [Solution Description]
+    modified:   packages/apps/DeskClock/src/com/android/deskclock/AlarmAlertFullScreen.java
+    modified:   packages/apps/DeskClock/src/com/android/deskclock/AlarmKlaxon.java
+    
+    [Other Info]
+
+commit d5de2e55b207e453f1e440abe01942546ca419d7
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Fri Jun 22 09:57:24 2012 +0800
+
+    deleted:    mediatek/custom/common/kernel/imgsensor/gc0309_yuv/gc0309yuv_Sensor.c.bak
+
+commit e356c109c9b1b975c634ba6aef39d667712bfb55
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Fri Jun 22 09:46:33 2012 +0800
+
+    [FEATURE] add the sub sensor backup gc0309
+    
+    [TYPE]
+    
+    FEATURE
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    
+    change file list
+    modified:   mediatek/config/ckt75_cu_ics/ProjectConfig.mk
+    modified:   mediatek/custom/ckt75_cu_ics/kernel/camera/camera/kd_camera_hw.c
+    modified:   mediatek/custom/common/hal/imgsensor/gc0309_yuv/camera_info_gc0309_yuv.cpp
+    modified:   mediatek/custom/common/hal/imgsensor/gc0309_yuv/camera_info_gc0309_yuv.h
+    modified:   mediatek/custom/common/hal/imgsensor/gc0309_yuv/camera_sensor_para_gc0309_yuv.h
+    modified:   mediatek/custom/common/hal/imgsensor/gc0309_yuv/camera_tuning_para_gc0309_yuv.cpp
+    modified:   mediatek/custom/common/hal/imgsensor/gc0309_yuv/cfg_ftbl_gc0309_yuv.h
+    modified:   mediatek/custom/common/hal/imgsensor/src/sensorlist.cpp
+    modified:   mediatek/custom/common/kernel/imgsensor/gc0309_yuv/gc0309yuv_CameraCustomized.h
+    modified:   mediatek/custom/common/kernel/imgsensor/gc0309_yuv/gc0309yuv_Sensor.c
+    new file:   mediatek/custom/common/kernel/imgsensor/gc0309_yuv/gc0309yuv_Sensor.c.bak
+    modified:   mediatek/custom/common/kernel/imgsensor/gc0309_yuv/gc0309yuv_Sensor.h
+    modified:   mediatek/custom/common/kernel/imgsensor/src/kd_sensorlist.h
+    
+    [Other info]
+    
+    N/A
+
+commit baa46c162f3559500532febfe49ede4a9025c5f5
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Thu Jun 21 15:03:18 2012 +0800
+
+    The cursor does not stay in the subject line after pressing power key.
+    
+    [TYPE]
+    BUG
+    10531
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    The cursor does not stay in the subject line after pressing power key.
+    
+    [Solution Description]
+    modified:   packages/apps/Mms/src/com/android/mms/ui/ComposeMessageActivity.java
+    
+    [Other Info]
+
+commit 62fe282904fa92cf5e0a7123ba0cdc490f027bb3
+Merge: a1bffb3 ce259df
+Author: jun.peng <jun.peng@ck-telecom.com>
+Date:   Thu Jun 21 14:38:32 2012 +0800
+
+    Merge remote branch 'remotes/origin/tuna_cu_ics_v1_szbase' into tuna_cu_ics_v1_utl
+
+commit f09d8af6de491e230dae03f86507fd41fb451c3c
+Author: jun.peng <jun.peng@ck-telecom.com>
+Date:   Thu Jun 21 14:30:47 2012 +0800
+
+    change ignore which compiled
+
+commit a1bffb30ae7ae74fb30e8a38f6e4220b2f89b464
+Merge: cb98bd5 64f0144
+Author: Huojun.liu <huojun.liu@ck-telecom.com>
+Date:   Thu Jun 21 14:25:30 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1_utl' of 10.240.3.76:/home/ckt/work/gitsz/tuna into tuna_cu_ics_v1_utl
+
+commit cb98bd57f3f720786b097d0e627d6913f0259013
+Author: ckt <ckt@ckt-android.(none)>
+Date:   Thu Jun 21 14:19:00 2012 +0800
+
+    Add some apks getting from customer
+
+commit 64f0144721f3a29ebb7c42a3a87a8c0aae50941a
+Merge: 1d52215 d21f5a4
+Author: jun.peng <jun.peng@ck-telecom.com>
+Date:   Thu Jun 21 14:10:45 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1_utl' of 10.240.3.76:/home/ckt/work/gitsz/tuna into tuna_cu_ics_v1_utl
+
+commit ce259dfb923d1d23fa66c592cd72c0c03392220d
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Thu Jun 21 13:54:22 2012 +0800
+
+    use hash from git as ver
+    使用git的hash作为版本号
+
+commit f9d87623aa908b721ea0c09026cdd075755c0248
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Thu Jun 21 11:01:26 2012 +0800
+
+    The alarm is still ring after pressing the power key
+    
+    [TYPE]
+    BUG
+    9335
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    The alarm is still ring after pressing the power key
+    
+    [Solution Description]
+    modified:   packages/apps/DeskClock/src/com/android/deskclock/AlarmAlert.java
+    modified:   packages/apps/DeskClock/src/com/android/deskclock/AlarmAlertFullScreen.java
+    
+    [Other Info]
+
+commit 1d52215025a3bb774fa00a982deceacdebfd9163
+Author: jun.peng <jun.peng@ck-telecom.com>
+Date:   Thu Jun 21 09:39:11 2012 +0800
+
+    add MakeModule.sh
+
+commit 8ad06d3e3b5a8626266c0e7fbd3fe36345242c44
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Wed Jun 20 20:11:57 2012 +0800
+
+         Add ps tmd2771 get value log
+    
+        [Type]
+           Feature
+        [Product]
+            TUNA
+        [Solution Description]
+        file change:
+        mediatek/custom/common/kernel/alsps/tmd2771/tmd2771.c
+        solution:
+        add log in tmd2771_get_ps_value function
+        [Other Info]
+            N/A
+
+commit 5f0e422b4b75cb8212ed1e2f4399f8f0c549f9bf
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Wed Jun 20 19:50:50 2012 +0800
+
+    fix the problem that Phone reboot when we turn on USB storage if any application installed on USB storage is running
+    
+    [TYPE]
+    BUG
+    [Products]
+    	TUNA
+    
+    [Solution Description]
+    
+    	modified: frameworks/base/services/java/com/android/server/MountService.java                                                                             s.xml
+    
+    [Other info]
+    [N/A]
+
+commit d21f5a4f2080705ae7471da8e7eb356c8e25b483
+Author: Tyrael <yuan.tian@ck-telecom.com>
+Date:   Tue Jun 19 17:33:51 2012 +0800
+
+    add the last tuning of 0v5640 for capture issues
+    tuning ov5640 拍照效果
+
+commit 533a8bacea77a34d33f3edc84c7b9679eed00804
+Author: Tyrael <yuan.tian@ck-telecom.com>
+Date:   Tue Jun 19 17:33:51 2012 +0800
+
+    add the last tuning of 0v5640 for capture issues
+    tuning ov5640 拍照效果
+
+commit 7546ed85a5030d12fde142cd79bdc717ee04eba4
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Wed Jun 20 09:13:28 2012 +0800
+
+        Fix the bug that LCD IO current signal cause the FM poor effect
+    
+        [Type]
+           BUG(no bugid)
+        [Product]
+            TUNA
+        [Solution Description]
+        file change:
+        mediatek/custom/common/kernel/lcm/rm68120/rm68120.c
+        solution:
+        modify the parameter io_driving_current to LCM_DRIVING_CURRENT_6575_4MA
+        [Other Info]
+            N/A
+
+commit bc114742b7c905eb1d7baaa9545e4334b34ef323
+Merge: f61572a cf3d13c
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Tue Jun 19 17:08:05 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1_szbase' into tuna_cu_ics_v1_utl
+
+commit cf3d13c63e30c132d4b3203dce40ae8bf9ca8d7b
+Merge: b1e011a 8ef63b7
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Tue Jun 19 17:05:18 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' into tuna_cu_ics_v1_szbase
+
+commit 24fd0f961f4e28a2bb4075b8f42e63aa7b8d2870
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Tue Jun 19 15:26:43 2012 +0800
+
+    The smiley is always added to the end of the text in the message.
+    
+    [TYPE]
+    BUG
+    10673
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    The smiley is always added to the end of the text in the message.
+    
+    [Solution Description]
+    modified:   packages/apps/Mms/src/com/android/mms/ui/ComposeMessageActivity.java
+    
+    [Other Info]
+
+commit 8ef63b7271b0bc6d1942df546325a68990697494
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Mon Jun 18 13:18:32 2012 +0800
+
+    The music is not stop in time after rebooting the phone.
+    
+    [TYPE]
+    BUG
+    10415
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    The music is not stop in time after rebooting the phone.
+    
+    [Solution Description]
+    modified:   packages/apps/Music/src/com/android/music/AudioPreview.java
+    
+    [Other Info]
+
+commit 8d0e75e77ea896eb659ba7659d0f3b7309b37dc5
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Mon Jun 18 12:18:15 2012 +0800
+
+    add fix string name for sdcard storage
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    
+    [Other info]
+    MTK patch or other info
+
+commit 3a607556d3ed166b9d53ede50d4081b1d4c8cc36
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Fri Jun 15 23:03:15 2012 +0800
+
+        recommit "enable that Application could be installed on external SD card"
+    
+        [TYPE]
+        Feature
+        [Products]
+            TUNA
+    
+        [Solution Description]
+    
+            modified: frameworks/base/core/java/android/os/Environment.java
+            modified: frameworks/base/packages/SystemUI/src/com/android/systemui/usb/StorageNotification.java
+            modified: frameworks/base/services/java/com/android/server/MountService.java
+            modified: mediatek/config/mt6575/init.rc
+            modified: mediatek/source/packages/FMRadio/src/com/mediatek/FMRadio/FMRadioActivity.java
+            modified: mediatek/source/packages/FMRadio/src/com/mediatek/FMRadio/FMRecorder.java
+            modified: mediatek/source/packages/FMRadio/src/com/mediatek/FMRadio/FMRecorderDialog.java
+            modified: packages/apps/Settings/res/values-zh-rCN/strings.xml
+            modified: packages/apps/Settings/res/values-zh-rTW/strings.xml
+            modified: packages/apps/Settings/res/values/strings.xml
+            modified: packages/apps/SoundRecorder/src/com/android/soundrecorder/SoundRecorder.java
+    
+        [Other info]
+        [N/A]
+
+commit 27f6fd244b4d20c2b154ae9a72ef6f581d8c8e16
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Fri Jun 15 22:56:49 2012 +0800
+
+    Revert "enable that Application could be installed on external SD card"
+    
+    This reverts commit 12b03ffa786b373d2c800dc3de620c72178d460c.
+
+commit 9aba80dc54a4de779fcf25cc673b031452868e4e
+Merge: a5cfabe 12b03ff
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Fri Jun 15 22:03:47 2012 +0800
+
+    Merge branch 'robin' into tuna_cu_ics_v1
+
+commit 12b03ffa786b373d2c800dc3de620c72178d460c
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Fri Jun 15 21:58:19 2012 +0800
+
+    enable that Application could be installed on external SD card
+    
+    [TYPE]
+    Feature
+    [Products]
+    	TUNA
+    
+    [Solution Description]
+    
+    	modified: frameworks/base/core/java/android/os/Environment.java
+    	modified: frameworks/base/packages/SystemUI/src/com/android/systemui/usb/StorageNotification.java
+    	modified: mediatek/config/mt6575/init.rc
+    	modified: mediatek/source/packages/FMRadio/src/com/mediatek/FMRadio/FMRadioActivity.java
+    	modified: mediatek/source/packages/FMRadio/src/com/mediatek/FMRadio/FMRecorder.java
+    	modified: mediatek/source/packages/FMRadio/src/com/mediatek/FMRadio/FMRecorderDialog.java
+    	modified: packages/apps/Settings/res/values-zh-rCN/arrays.xml
+    	modified: packages/apps/Settings/res/values-zh-rTW/arrays.xml
+    	modified: packages/apps/Settings/res/values/arrays.xml
+    	modified: packages/apps/SoundRecorder/src/com/android/soundrecorder/SoundRecorder.java
+    
+    [Other info]
+    [N/A]
+
+commit a5cfabeb0d700c3c25c2587a21573e0b5e207d70
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Fri Jun 15 21:05:35 2012 +0800
+
+    commit Sun Qidong's solution according to MTK suggestion for black screen issue when calling.
+
+commit 5e94bb62438d953c5bb14ab59971ffab19c78234
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Fri Jun 15 18:36:06 2012 +0800
+
+    update audio_acf_defalt.h from Hardware Team, should apply it to all branch.
+
+commit 37878fe3bc526ddb5e8208c66dff8abb2f738054
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Fri Jun 15 17:26:30 2012 +0800
+
+    update the string .
+
+commit 55ba906a2843f08ba03c554e009872ca31bc0673
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri Jun 15 16:40:55 2012 +0800
+
+    update  string
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    
+    [Other info]
+    MTK patch or other info
+
+commit 7992c2c53124a8f3d7e30a3d5fa34fffd8f63e15
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri Jun 15 16:30:51 2012 +0800
+
+    add modified string about 3G Connection services
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    
+    [Other info]
+    MTK patch or other info
+
+commit 5eea053456e70a936c86feefb85cd37f69d7ecd6
+Merge: 1593999 eb2c582
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri Jun 15 10:28:36 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 159399953cde21ce81a35dfa463f507697f37d6b
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri Jun 15 10:25:38 2012 +0800
+
+    add update storage ui
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    
+    [Other info]
+    MTK patch or other info
+
+commit eb2c5820a8ed52471a799c936128edb891fd4f74
+Merge: 17ecf82 8f60b78
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Fri Jun 15 09:47:33 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 17ecf82e6e341acb810e390c0d2462315d44e3ca
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Fri Jun 15 09:39:33 2012 +0800
+
+        Fix issue that some broken SD card cause system bootup failed
+    
+        [Type]
+           BUG(no bugid)
+        [Product]
+            TUNA
+        [Solution Description]
+        file change:
+           mediatek/platform/mt6575/kernel/drivers/mmc-host/mt6575_sd.h
+           mediatek/platform/mt6575/kernel/drivers/mmc-host/sd.c
+        solution:
+           PATCH ALPS00300611 from MTK
+        [Other Info]
+            N/A
+
+commit 8f60b786d3acf3e2c586f4373734bb702201c8fb
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Thu Jun 14 10:53:12 2012 +0800
+
+    fix the issue that the storage information for Application is confused
+    
+    [TYPE]
+    other
+    [Products]
+    	TUNA
+    
+    [Solution Description]
+    
+    	modified: packages/apps/Settings/res/values-zh-rCN/strings.xml
+    	modified: packages/apps/Settings/res/values-zh-rTW/strings.xml
+    	modified: packages/apps/Settings/res/values/strings.xml
+    
+    [Other info]
+    [N/A]
+
+commit f61572ae13fc5923140251fb98766486e3f54b04
+Merge: 265985b b1e011a
+Author: jun.peng <jun.peng@ck-telecom.com>
+Date:   Wed Jun 13 15:38:08 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1_utl' of 10.240.3.76:/home/ckt/work/gitsz/tuna into tuna_cu_ics_v1_utl
+
+commit 265985bd7933e132f82408dbb7546219daaaff72
+Author: jun.peng <jun.peng@ck-telecom.com>
+Date:   Wed Jun 13 15:37:26 2012 +0800
+
+    modify modem.img to GSM:900/1800 WCDMS:2100
+
+commit bd11303e766436f18ea97213a7f80591e71535d7
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Fri May 11 11:43:24 2012 +0800
+
+    + package apks which are in ckt directory into system image and auto
+    output release file
+    增加自动的apk打包到system/app下的机制,编译完成自动打包
+
+commit c9560b081092405880e3aec75cfcff00beeefe8d
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Wed Jun 6 13:38:48 2012 +0800
+
+    add ignore list and del some unnecessary file form repo
+    修改忽略列表 删除不必要的文件
+
+commit d452ddabcb194d54d44f5feabaeb421df1867f60
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed Jun 13 09:29:08 2012 +0800
+
+    Rename ov5647mpi_Sensor.c to ov5647mipi_Sensor.c, and enlarge the delay time
+    from 5 to 20, to solve the issue that the camera become back screen after multiple
+    entering camera app.
+    
+    [TYPE]
+    BUG8963
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    	renamed:    mediatek/custom/common/kernel/imgsensor/ov5647_mipi_raw/ov5647mpi_Sensor.c -> mediatek/custom/common/kernel/imgsensor/ov5647_mipi_raw/ov5647mipi_Sensor.c
+    
+    [Other info]
+    N/A
+
+commit 22bfabf3383a168f9b4c93b2ba66c693cccc1550
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Mon Jun 11 15:14:27 2012 +0800
+
+    [FIX BUG] about capture 50 times ,the ov5647 sensor will be crash
+    
+    [TYPE]
+    
+    BUG
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    
+    change file list
+    modified:   mediatek/custom/common/kernel/imgsensor/ov5647_mipi_raw/ov5647mpi_Sensor.c
+    
+    [Other info]
+    
+    N/A
+
+commit e1e0ff039687f0af8632e575c597554fd67d69b5
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Mon Jun 11 15:08:50 2012 +0800
+
+    turn off Dual Mic function .
+
+commit ebbb0ee0873559b688b3c7bc60ae5d0a0d8d5171
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Fri Jun 8 18:52:55 2012 +0800
+
+    change for flashlight tuning
+
+commit 3bafd6662eaad21b8a861b5c8c3f334ba9026004
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Fri Jun 8 16:36:09 2012 +0800
+
+    fix the issue that the screen become black after dialing side hang up the call.
+    
+    [TYPE]
+    bug
+    [Products]
+    	TUNA
+    
+    [Solution Description]
+    
+        modified: packages/apps/Phone/src/com/android/phone/PhoneApp.java
+    
+    [Other info]
+    sung qi dong has already fixed this problem by  ProximitySensor driver in kernal level
+    I just double fix this problem in application level.
+    I force unlight the screen when dialing side hang up the call to avoid the ProximitySensor problem
+
+commit 9ab092f55f2f525eb61abb2ab64568615bd30fe9
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri Jun 8 16:18:51 2012 +0800
+
+    Revert "test git"
+    
+    This reverts commit 6d911857f8b27b901e4549578d21abedfebb575b.
+
+commit 6d911857f8b27b901e4549578d21abedfebb575b
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri Jun 8 16:13:26 2012 +0800
+
+    test git
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    
+    [Other info]
+    MTK patch or other info
+
+commit 1cca3a248706a8a426aab8380703659a0f315677
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri Jun 8 16:12:07 2012 +0800
+
+    Revert "add fix the screen is not lit automatically after dialing side hang up the call"
+    
+    This reverts commit 3b0b7a9d022d69ec9ce6f7305514e3dd6d7b6452.
+
+commit 94be31845e41faa3f06e6a8ef8a8b573135fef72
+Merge: 3b0b7a9 1b7c4c6
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri Jun 8 14:20:24 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 3b0b7a9d022d69ec9ce6f7305514e3dd6d7b6452
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri Jun 8 14:16:19 2012 +0800
+
+    add fix the screen is not lit automatically after dialing side hang up the call
+    
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    packages/apps/Phone/src/com/android/phone/PhoneApp.java
+    
+    [Other info]
+    MTK patch or other info
+
+commit 1b7c4c666e445f8de495e14f5e3dbfd895b8fca1
+Author: fang <fangming.yang@ck-telecom.com>
+Date:   Fri Jun 8 12:24:06 2012 +0800
+
+    Forgot some source files
+
+commit abb397aac3b8ab0ab9898401b442d28e1910087c
+Author: fang <fangming.yang@ck-telecom.com>
+Date:   Fri Jun 8 11:21:50 2012 +0800
+
+    [Type]
+    ENHANCEMENT
+    [Product]
+    TUNA_ICS_V1
+    [Requirement]
+    Add Drivers for new lcd and camera of TUNA and update set for new emmc of TUNA.
+    [Solution Description]
+    mediatek/custom/ckt75_cu_ics/preloader/inc/custom_MemoryDevice.h
+    mediatek/custom/common/hal/imgsensor/src/sensorlist.cpp
+    mediatek/custom/common/kernel/imgsensor/gc0309_yuv/gc0309yuv_CameraCustomized.h
+    mediatek/custom/common/kernel/imgsensor/gc0309_yuv/gc0309yuv_Camera_Sensor_para.h
+    mediatek/custom/common/kernel/imgsensor/gc0309_yuv/gc0309yuv_Sensor.c
+    mediatek/custom/common/kernel/imgsensor/gc0309_yuv/gc0309yuv_Sensor.h
+    mediatek/custom/common/kernel/imgsensor/inc/kd_imgsensor.h
+    mediatek/custom/common/kernel/imgsensor/src/kd_sensorlist.h
+    mediatek/custom/common/kernel/lcm/hsd8009/hsd8009.c
+    mediatek/custom/common/kernel/lcm/mt65xx_lcm_list.c
+    [Design Document]
+    N/A
+    [Other Info]
+    N/A
+
+commit 34bfe70b41746e8fe8b9e83994cbf2d5ac981df0
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Thu Jun 7 14:47:21 2012 +0800
+
+    fix bug 10157 about the screen is not lit automatically after dialing side hang up the call.
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    packages/apps/Phone/src/com/android/phone/PhoneApp.java
+    
+    [Other info]
+    MTK patch or other info
+
+commit c3615afe29315fdf35b2971af7d211cc4a65d841
+Author: fang <fangming.yang@ck-telecom.com>
+Date:   Thu Jun 7 14:09:11 2012 +0800
+
+    little change for 1% case
+
+commit ec7b14f94a9b78ededb2f2004fc5cd20d27d8b8a
+Author: ckt <ckt@ckt-desktop.(none)>
+Date:   Thu Jun 7 09:57:11 2012 +0800
+
+    add bootanim.zipy
+
+commit 8b5a1439e6a5de9a83152817773bb9acff1bc4ee
+Merge: 953bcee 12823e4
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Thu Jun 7 09:32:04 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 953bcee49e9ff81fc58fe8967f75c653013e2d87
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Thu Jun 7 09:23:25 2012 +0800
+
+        Fix bug 7455,the lcd cannot be light with power key after a call over sometimes
+        [Type]
+           BUG(7455)
+        [Product]
+            TUNA
+        [Solution Description]
+        file change:
+         mediatek/custom/common/kernel/alsps/tmd2771/tmd2771.c
+        solution:
+         make the system do nothing about ps when system in suspend/resume
+        [Other Info]
+            N/A
+
+commit 12823e4fd887e63fa11844f90b0d77ef5b617ebb
+Merge: d3ca9d5 fabb994
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Thu Jun 7 09:14:36 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit d3ca9d50cfdc1cdbb6c7d0d2d806cbb4fe007867
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Wed Jun 6 17:14:52 2012 +0800
+
+        Fix bug 7455,the lcd cannot be light with power key after a call over sometimes
+        [Type]
+           BUG(7455)
+        [Product]
+            TUNA
+        [Solution Description]
+        file change:
+        mediatek/custom/common/kernel/alsps/tmd2771/tmd2771.c
+        solution:
+        make the system do nothing about ps when system in suspend/resume
+        [Other Info]
+            N/A
+
+commit b1e011ac9ecaea2cf06089781606239f7e603720
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Fri May 11 11:43:24 2012 +0800
+
+    + package apks which are in ckt directory into system image and auto
+    output release file
+    增加自动的apk打包到system/app下的机制,编译完成自动打包
+
+commit c4b68e812c410493afb1a5ed22034073b9b8ccac
+Author: yong.su <yong.su@ck-telecom.com>
+Date:   Wed Jun 6 13:38:48 2012 +0800
+
+    add ignore list and del some unnecessary file form repo
+    修改忽略列表 删除不必要的文件
+
+commit fabb994aedb7a628fc6b769722e6d6bf9fd03cc7
+Author: fang <fangming.yang@ck-telecom.com>
+Date:   Wed Jun 6 10:18:09 2012 +0800
+
+    reset battery setting
+
+commit d68ea8f2762d0f7d8df8a3efee23f3a9f0eb178e
+Merge: e9230fa 2174984
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Tue Jun 5 18:21:01 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit e9230fa84dc3f37ac327cafb0ea41327d57f8b1e
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Tue Jun 5 18:19:06 2012 +0800
+
+    fix the Bug 9224 - [Alarm]The volume level size is not reasonable
+    
+    [TYPE]
+    bug
+    [Products]
+    	TUNA
+    
+    [Solution Description]
+    
+        modified: mediatek/custom/common/cgen/inc/audio_volume_custom_default.h
+        modified: mediatek/platform/mt6575/hardware/audio/AudioYusuPolicyManager.cpp
+    
+    [Other info]
+    N/A
+
+commit 2174984b18fcc89a7ff39ccb1df584c63186bf3b
+Author: xiaoping.chen <xiaoping.chen@ck-telecom.com>
+Date:   Tue Jun 5 14:10:05 2012 +0800
+
+    Modify the Email,download 12 unDownloaded emails once a time,the origin is 25.
+    [TYPE]
+    ENHANCE
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   packages/apps/Email/src/com/android/email/Email.java
+    modified:   packages/apps/Email/src/com/android/email/MessagingController.java
+    [Other info]
+    
+    [Code Reviewer]
+
+commit 406b444edfb5cbbbeea997746a099b402dad315a
+Author: fang <fangming.yang@ck-telecom.com>
+Date:   Tue Jun 5 12:41:40 2012 +0800
+
+    [Type]
+    BUG
+    [Product]
+    TUNA_ICS
+    [Requirement]
+    Fix a little bug for battery management in charging.
+    [Solution Description]
+    mediatek/platform/mt6575/kernel/drivers/power/mt6575_battery.c
+    [Design Document]
+    N/A
+    [Other Info]
+    N/A
+
+commit 9e26c0da83725c09435bff3e91ca011d12649227
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Mon Jun 4 09:37:53 2012 +0800
+
+    change the VOLUME of MIC from 148 to 160 for the outing call sound is a litte low
+    
+    [TYPE]
+    other
+    
+    [Products]
+    	TUNA
+    
+    [Solution Description]
+    
+    	modified: mediatek/custom/common/cgen/inc/audio_volume_custom_default.h
+    
+    [Other info]
+    N/A
+
+commit 21275a5affe2c2f58bb492a3ee0be11a1c806d20
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Thu May 31 17:06:22 2012 +0800
+
+    Bug 9202 - [People]Can't delete frequently contacted contacts from Favorites
+    
+    [TYPE]
+    other
+    
+    [Products]
+    	TUNA
+    
+    [Solution Description]
+    
+    	modified: packages/providers/ContactsProvider/src/com/android/providers/contacts/CallLogProvider.java
+    	modified: packages/providers/ContactsProvider/src/com/android/providers/contacts/ContactsProvider2.java
+    
+    [Other info]
+    	this a patch for the bug.
+    	And patch is to resolve the following problem:
+    	"Now can't delete this contacts from frequent contacted list which is frequently contacted with its email."
+    	By the way,in this patch,I have changed some mechanism in source code
+
+commit 073ba66bb9d57da95bc4c6be397d8bfa4fc03bf9
+Merge: a27d093 d44265d
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Thu May 31 12:37:04 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit a27d09342899c2a04b0dc324682b8a41f53b2148
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Thu May 31 12:31:26 2012 +0800
+
+    fix bug 9876 about The ringtones setting is not update automatically after changing the Audio profiles.
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    packages/apps/Music/src/com/android/music/MediaPlaybackActivity.java
+    
+    [Other info]
+    MTK patch or other info
+
+commit d44265de6a83d6cd18b44c7f2b8f848733ed170d
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Thu May 31 10:53:48 2012 +0800
+
+    apply MTK patch ALPS00282749 to fix the bug "The video clips shot with whiteboard color effect plays badly"
+    
+    [TYPE]
+    BUG
+    8770
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    The video clips shot with whiteboard color effect plays badly
+    
+    [Solution Description]
+    apply MTK PATCH
+    
+    [Other Info]
+
+commit 82c00b925d1696a959c7c2e956d063aa3840539b
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed May 30 19:28:15 2012 +0800
+
+    add fix in comming call number display completely when number is 12 digitals
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    packages/apps/Phone/res/values/dimens.xml
+    
+    [Other info]
+    MTK patch or other info
+
+commit 2f63c89e788dbf904d99b093b77908daa8c1ab8c
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed May 30 16:30:12 2012 +0800
+
+    add fix bug 9867 about The song's list is not update after hot unplug the SD card.
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    packages/providers/MediaProvider/AndroidManifest.xml
+    packages/providers/MediaProvider/src/com/android/providers/media/MediaScannerReceiver.java
+    
+    [Other info]
+    MTK patch or other info
+
+commit fb1253c0859a56d1b588fc3583d7bb355279fdb5
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed May 30 14:15:51 2012 +0800
+
+    add fix SDcard name for phone internal
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    packages/apps/Settings/res/values-zh-rCN/arrays.xml
+    packages/apps/Settings/res/values/arrays.xml
+    
+    [Other info]
+    MTK patch or other info
+
+commit 162051b811e788ba9c93c70b5809997998949564
+Merge: 364e926 602e974
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed May 30 11:35:57 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 364e9265a11dfe5f5a120d4f0482f37b04d4ad8c
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed May 30 11:35:09 2012 +0800
+
+        Add missed cfg_tuning_imgsensor.h
+        Apply ALPS00271906(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P13) to
+        make OV5647 and OV5640 can be compatible in same software
+    
+        [TYPE]
+        FEATURE
+    
+        [Products]
+        TUNA
+    
+        [Solution Description]
+        N/A
+    
+        [Other info]
+        ALPS00271906(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P13)
+
+commit 602e9743f3ffd3019508acec06f9f13550ae3cc4
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Wed May 30 11:04:16 2012 +0800
+
+    [Fix Bug] fix the bug that there have no the four virtual keys , in factory mode test.
+    
+    [TYPE]
+    
+    BUG
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    
+    change file list
+    modified:   mediatek/custom/ckt75_cu_ics/kernel/dct/dct/codegen.dws
+    
+    [Other info]
+    
+    N/A
+
+commit 53291665a8040d71cb42bf97ca513ef654a271bd
+Author: Shenggang Hu <shenggang.hu@ckt-telecom.com>
+Date:   Tue May 29 12:38:09 2012 +0800
+
+    Add Superuser's signature file
+    [Type]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    [Products]
+    TUNA
+    [Solution Description]
+    
+    [Code Reviewer]
+    
+    [Change List]
+    
+    new file:   build/target/product/security/ckt75_cu_ics/superuser.pk8
+    new file:   build/target/product/security/ckt75_cu_ics/superuser.x509.pem
+
+commit e1dbe0657cffad915c41c09a3039e5fe43c41120
+Merge: d6443a5 14b1ca7
+Author: Shenggang Hu <shenggang.hu@ckt-telecom.com>
+Date:   Tue May 29 10:12:01 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit d6443a50a96deb99f7efb3878f3c15d0795d5dc6
+Merge: 668cfec bb3b049
+Author: Shenggang Hu <shenggang.hu@ckt-telecom.com>
+Date:   Mon May 28 20:59:05 2012 +0800
+
+    Merge branch 'hsg' into tuna_cu_ics_v1
+
+commit 14b1ca70f4e81cf514f46acbf312e96bd675b401
+Merge: 32cc03c 4e9d89e
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Mon May 28 20:52:15 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 32cc03c4196531341f8b57ce43620654a0fd07be
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Mon May 28 16:45:32 2012 +0800
+
+    Apply ALPS00271698(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P18) to
+    add the MAV feature into our system
+    
+    [TYPE]
+    FEATURE
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/system/lib/libmhalscenario.so
+    
+    [Other info]
+    ALPS00271698(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P18)
+
+commit 8ca4232f885d48662b53c0f34d7278c969dc8bfc
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Mon May 28 16:28:43 2012 +0800
+
+    Use OV tuned OV5640_YUV driver code
+    
+    [TYPE]
+    FEATURE
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    mediatek/custom/common/kernel/imgsensor/ov5640_mipi_yuv/ov5640mipiyuv_Sensor.c
+    
+    [Other info]
+    N/A
+
+commit cfe81ffdd55ccf608c1aa2077a568b52c017a509
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Mon May 28 13:33:36 2012 +0800
+
+    Apply ALPS00271906(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P13) to
+    make OV5647 and OV5640 can be compatible in same software
+    
+    [TYPE]
+    FEATURE
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    N/A
+    
+    [Other info]
+    ALPS00271906(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P13)
+
+commit bb3b0495d0f8e7dc505a9cdb24712d2ae4165e07
+Author: Shenggang Hu <shenggang.hu@ckt-telecom.com>
+Date:   Mon May 28 20:46:42 2012 +0800
+
+    Enable root function under user mode
+    [Type]
+    FATURE
+    [Products]
+    TUNA
+    [Solution Description]
+    
+    [Code Reviewer]
+    
+    [Change List]
+    modified:   system/extras/su/su.c
+
+commit 0e263503ccd17d7307e06dca851e52a821127ae2
+Author: Shenggang Hu <shenggang.hu@ckt-telecom.com>
+Date:   Mon May 28 20:42:57 2012 +0800
+
+    Enable root under user mode
+    [Type]
+    FEATURE
+    [Products]
+    TUNA
+    [Solution Description]
+    do not checkt ro.debuggable when su
+    [Code Reviewer]
+    
+    [Change List]
+    modified:   system/core/adb/adb.c
+    modified:   system/core/adb/services.c
+
+commit 1dbdf3a3b401c9b705ecc44a13dac032f0a785d4
+Author: Shenggang Hu <shenggang.hu@ckt-telecom.com>
+Date:   Mon May 28 20:40:13 2012 +0800
+
+    apply MTK's path ALPS00283603
+    [Type]
+    BUG
+    [Products]
+    TUNA
+    [Solution Description]
+    after adb root, the device offline
+    [Code Reviewer]
+    
+    [Change List]
+    modified:   kernel/drivers/usb/gadget/f_adb.c
+    new file:   mediatek/config/ckt75_cu_ics/init.usb.rc
+
+commit 4e9d89edfd25454153434d8c313566587466bd17
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Mon May 28 15:07:39 2012 +0800
+
+    On branch bashline need not set the PinYin IME to default ,so Revert "Open PinYin input method"
+    
+    This reverts commit 481aedb2078c74f7936d3ea9e56bdf83a87dcf2e.
+
+commit 296578787e1dbabbe4d9d790546d184e3a1d9c5d
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Mon May 28 13:33:40 2012 +0800
+
+    Open PinYin input method
+    
+    [TYPE]
+    Request
+    
+    [Products]
+    TUNA_NEOBOX
+    
+    [Solution Description]
+    modified:   mediatek/config/ckt75_cu_ics/ProjectConfig.mk
+    
+    [Other info]
+    N/A
+
+commit 4151ea284abed642e66b526f41d3d26c9d1206fd
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Fri May 25 16:19:01 2012 +0800
+
+    Can't again export contacts to SDcard after press "cancel" button
+    
+    [TYPE]
+    BUG
+    bug9661
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   packages/apps/Contacts/src/com/android/contacts/vcard/ExportVCardActivity.java
+    
+    [Other info]
+    N/A
+
+commit b984e8ba711faf6c4add5d28f341bab06dead18b
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Fri May 25 13:34:53 2012 +0800
+
+    The pop-up of calling is not clear and easy to understand.
+    
+    [TYPE]
+    BUG
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    The pop-up of calling is not clear and easy to understand.
+    
+    [Solution Description]
+    modified:   packages/apps/Phone/res/values-zh-rCN/strings.xml
+    
+    [Other Info]
+
+commit 668cfecd73ae2bf9f48656d8fccafc6f9efcd61a
+Merge: d64d51c 8fc9704
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Fri May 25 09:13:46 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit d64d51c1d4377cea05edd873fe90747947b31d4a
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Fri May 25 09:12:15 2012 +0800
+
+    clean a debug log code in MiniThumbFile.java
+    
+    [TYPE]
+    others
+    
+    [Products]
+    	TUNA
+    
+    [Solution Description]
+    
+    	modified: frameworks/base/media/java/android/media/MiniThumbFile.java
+    
+    [Other info]
+    	N/A
+
+commit 8fc970467c342f335ce52b78a195060e1b4f5921
+Merge: c45cf0b 664da1a
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Thu May 24 18:19:31 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit c45cf0b7a9f6864a45e93e1b18807e9334dc2ea8
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Thu May 24 18:17:36 2012 +0800
+
+    change speaker audio para.
+
+commit 664da1a7820f34a2206439ea0adae7a49eaa0655
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Mon May 21 17:54:38 2012 +0800
+
+    fix the Bug 9146 - [Email]Can't set the type of email account when adding a email account and choosing 'Next' item
+    
+    [TYPE]
+    	BUG
+    Bug Id:9146
+    
+    [Products]
+    	TUNA
+    
+    [Solution Description]
+    
+    	modified: packages/apps/Email/res/values-en-rGB/strings.xml
+    	modified: packages/apps/Email/res/values-zh-rCN/strings.xml
+    	modified: packages/apps/Email/res/values-zh-rTW/strings.xml
+    	modified: packages/apps/Email/res/values/strings.xml
+    
+    [Other info]
+    	There is no problem about the bug descript by bug.There is correct right action when user use prebuild email accout type for example google.
+    But there is a puzzle hint problem when the server close the POP3 or IMAP for user accout.I make the hint more friendly and more clear
+
+commit 76536c9b01087268e59f027a9be32709c6591696
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Tue May 22 11:24:44 2012 +0800
+
+    Revert "[Type] Turn off KERNEL LOG"
+    
+    This reverts commit 98391fa312cf80ecbafd98e9b5befd6daa0c5ef6.
+
+commit 8cd7d5d5cb20ca2c61318cbec227087d42b0f2ed
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed May 23 14:04:17 2012 +0800
+
+        Make the front camera preview like uCam Style
+    
+        [TYPE]
+        FEATURE
+    
+        [Products]
+        TUNA
+    
+        [Solution Description]
+        	modified:   packages/apps/Camera/src/com/android/camera/Camera.java
+        	modified:   packages/apps/Camera/src/com/android/camera/PreviewFrameLayout.java
+    
+        [Other info]
+        N/A
+
+commit 6127598f87eeaff86de2bda3addfdd108e36bfd2
+Author: fang <fangming.yang@ck-telecom.com>
+Date:   Tue May 22 13:12:57 2012 +0800
+
+    [Type]
+    ENHANCE
+    [Product]
+    TUNA
+    [Requirement]
+    Disable some log to improve peformance
+    [Solution Description]
+    kernel/block/blk-core.c
+    kernel/drivers/staging/android/binder.c
+    mediatek/platform/mt6575/kernel/drivers/video/lcd_drv.c
+    mediatek/source/kernel/drivers/video/mtkfb.c
+    [Design Document]
+    N/A
+    [Other Info]
+    N/A
+
+commit 647d42b390023629e9bdac30e97999be1b288966
+Merge: 3836faa 92ea710
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Thu May 24 16:03:53 2012 +0800
+
+    Merge branch 'robin' into tuna_cu_ics_v1
+
+commit 92ea7106b865a5e25104ac6be32c81e5ce9e2905
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Thu May 24 16:00:05 2012 +0800
+
+    fixed the Bug 9479 that The phone can not record sound while no sdcard2 insert
+    and fixed the issue that the camera can not photo while no sdcard2 insert
+    
+    [TYPE]
+    	BUG
+    	Bug Id:9479
+    
+    [Products]
+    	TUNA
+    
+    [Solution Description]
+    
+    	modified: frameworks/base/services/java/com/android/server/MountService.java
+    	modified: packages/apps/Camera/src/com/android/camera/Camera.java
+    
+    [Other info]
+    	N/A
+
+commit 3836faab2b131eac3ee5b8ecd61e7995ce0c317a
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Thu May 24 15:18:16 2012 +0800
+
+    CTS test, testLocationFeatures can't pass the test
+    
+    [TYPE]
+    BUG
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   mediatek/config/ckt75_cu_ics/android.hardware.location.gps.xml
+    
+    [Other info]
+    N/A
+
+commit dc89e7034d11aba9608f52b282514a2b39844783
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed May 23 22:23:40 2012 +0800
+
+        Remove MTK logo from boot image, and make the image more light
+    
+        [TYPE]
+        FEATURE
+    
+        [Products]
+        TUNA
+    
+        [Solution Description]
+        mediatek/custom/common/uboot/logo/wvga/wvga_kernel.bmp
+        mediatek/custom/common/uboot/logo/wvga/wvga_uboot.bmp
+    
+        [Other info]
+        N/A
+
+commit 67e634bfb3053aba78aeed8ddb28d2325750b548
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed May 23 17:37:20 2012 +0800
+
+    Remove MTK logo from boot image
+    
+    [TYPE]
+    FEATURE
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    mediatek/custom/common/uboot/logo/wvga/wvga_kernel.bmp
+    mediatek/custom/common/uboot/logo/wvga/wvga_uboot.bmp
+    
+    [Other info]
+    N/A
+
+commit 3a638d70b83e1080bdbac478cde2e638a9e5f6f7
+Merge: e4e9910 735fe4f
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed May 23 14:52:41 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+    
+    Conflicts:
+    	frameworks/base/packages/SystemUI/src/com/android/systemui/usb/StorageNotification.java
+
+commit e4e991001cca9ec897043db457c7b847269b2cad
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed May 23 14:24:13 2012 +0800
+
+    add fix hot Pull out phone reboot error
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    
+    [Other info]
+    MTK patch or other info
+
+commit 735fe4f6aacad128f4d6d4e4a249d0e5408471fc
+Merge: 237c6ce 52f50d4
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed May 23 14:05:02 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 237c6cea39be22298271ffce231500239bae1010
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed May 23 14:04:17 2012 +0800
+
+        Make the front camera preview like uCam Style
+    
+        [TYPE]
+        FEATURE
+    
+        [Products]
+        TUNA
+    
+        [Solution Description]
+        	modified:   packages/apps/Camera/src/com/android/camera/Camera.java
+        	modified:   packages/apps/Camera/src/com/android/camera/PreviewFrameLayout.java
+    
+        [Other info]
+        N/A
+
+commit 52f50d45199f45fca46c92d510aef0ed955bb8b6
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Wed May 23 13:58:39 2012 +0800
+
+    fixed the issue  that SystemUI is stopped when we unplug the sdcard.
+    And this cause we could not reboot by system in this case
+    
+    [TYPE]
+    	BUG
+    	related Bug Id:8624
+    
+    [Products]
+    	TUNA
+    
+    [Solution Description]
+    
+    	modified: frameworks/base/packages/SystemUI/src/com/android/systemui/usb/StorageNotification.java
+    
+    [Other info]
+    	N/A
+
+commit 5aaab923db7b1e7ff413e816c4d152ff41328b11
+Merge: a2748be 9ba0bc2
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Tue May 22 15:56:34 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 9ba0bc26e5bae219d1e89b1e4f77311bc0f86014
+Author: fang <fangming.yang@ck-telecom.com>
+Date:   Tue May 22 13:12:57 2012 +0800
+
+    [Type]
+    ENHANCE
+    [Product]
+    TUNA
+    [Requirement]
+    Disable some log to improve peformance
+    [Solution Description]
+    kernel/block/blk-core.c
+    kernel/drivers/staging/android/binder.c
+    mediatek/platform/mt6575/kernel/drivers/video/lcd_drv.c
+    mediatek/source/kernel/drivers/video/mtkfb.c
+    [Design Document]
+    N/A
+    [Other Info]
+    N/A
+
+commit 4e61d285921efefa65ac4e6acb5089ffc8155b0e
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Tue May 22 11:24:44 2012 +0800
+
+    Revert "[Type] Turn off KERNEL LOG"
+    
+    This reverts commit 98391fa312cf80ecbafd98e9b5befd6daa0c5ef6.
+
+commit a2748beeeb92d96b9647b1c678026c023be43f7f
+Merge: 59f554b 6e0e708
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Tue May 22 11:15:58 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 6e0e70895d32df076efe5585bed38738d950048f
+Merge: c3e3767 98391fa
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Tue May 22 09:44:58 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit c3e37678f6cdaf6c5f5d4f3206f41dbdc5e38fb7
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Tue May 22 09:43:24 2012 +0800
+
+    add when USB storage open and USB storage close ,sdcard lose
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    frameworks/base/packages/SystemUI/src/com/android/systemui/usb/StorageNotification.java
+    
+    [Other info]
+    MTK patch or other info
+
+commit 59f554be21db6ab76ec3cb3fe0e9cc06964a5cf9
+Merge: 98391fa 32fc229
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Mon May 21 18:39:44 2012 +0800
+
+    Merge branch 'robin' into tuna_cu_ics_v1
+
+commit 32fc229322a77c536e6115b7d52dc06cfedd8b9d
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Mon May 21 17:54:38 2012 +0800
+
+    fix the Bug 9146 - [Email]Can't set the type of email account when adding a email account and choosing 'Next' item
+    
+    [TYPE]
+    	BUG
+    Bug Id:9146
+    
+    [Products]
+    	TUNA
+    
+    [Solution Description]
+    
+    	modified: packages/apps/Email/res/values-en-rGB/strings.xml
+    	modified: packages/apps/Email/res/values-zh-rCN/strings.xml
+    	modified: packages/apps/Email/res/values-zh-rTW/strings.xml
+    	modified: packages/apps/Email/res/values/strings.xml
+    
+    [Other info]
+    	There is no problem about the bug descript by bug.There is correct right action when user use prebuild email accout type for example google.
+    But there is a puzzle hint problem when the server close the POP3 or IMAP for user accout.I make the hint more friendly and more clear
+
+commit 98391fa312cf80ecbafd98e9b5befd6daa0c5ef6
+Author: fang <fangming.yang@ck-telecom.com>
+Date:   Mon May 21 17:16:41 2012 +0800
+
+    [Type]
+    ENHANCEMENT
+    [Product]
+    TUNA
+    [Requirement]
+    Disable all kernel log
+    [Solution Description]
+    kernel/kernel/printk.c
+    mediatek/source/kernel/include/linux/xlog.h
+    [Design Document]
+    N/A
+    [Other Info]
+    N/A
+
+commit dd3d39e580867f63c1c66c40e07b9aeafaf33b15
+Merge: a1acc7d 448cc18
+Author: ckt <ckt@ck-telecom.com>
+Date:   Mon May 21 16:16:07 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit a1acc7db7b88eb393ab19293fbe9adc8318d1a86
+Author: ckt <ckt@ck-telecom.com>
+Date:   Mon May 21 16:13:16 2012 +0800
+
+    Enhance the HTMLViwer for pictures display in gallery mode
+    in old mode, the picture will be splitted into two isolated parts
+    [Type]
+    Enhancement
+    
+    [Product]
+    TUNA
+    
+    [Requirement]
+    Beta Test
+    
+    [Design Document]
+    Rolution is to invalidate bigger area for repainting
+    
+    [Other Info]
+    N/A
+
+commit 448cc187e6fb5c938ff9de76c463b5f6df19c24f
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Mon May 21 14:31:41 2012 +0800
+
+    add toast about host sdcard rebootand fix bug 9066 bout The phone reboot automatically after unplugging the USB.
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    frameworks/base/packages/SystemUI/res/values-zh-rCN/strings.xml
+    frameworks/base/packages/SystemUI/res/values-zh-rTW/strings.xml
+    frameworks/base/packages/SystemUI/res/values/strings.xml
+    frameworks/base/packages/SystemUI/src/com/android/systemui/usb/StorageNotification.java
+    
+    [Other info]
+    MTK patch or other info
+
+commit 49ec9a83c256cb25e50f0db8612abaacdb3a7887
+Merge: 460ad61 b6ac687
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Mon May 21 13:43:20 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 460ad610336041a0ec9c39ead09e2c286eb376c7
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Mon May 21 13:41:55 2012 +0800
+
+    add fix sdcard name for internal sdcard
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    
+    [Other info]
+    MTK patch or other info
+
+commit b6ac6874a18f9080c29316ea0ae0d48243f3110c
+Merge: 1748526 5a6ae16
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Mon May 21 13:03:47 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 5a6ae16bd1131df44beb14aac26a7e9ccb7d0e24
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri May 18 19:40:54 2012 +0800
+
+    add fix host sdcard2 about Emmc display bugid 9003 8624 9076 8671
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    frameworks/base/packages/SystemUI/res/values-zh-rCN/strings.xml
+    frameworks/base/packages/SystemUI/res/values-zh-rTW/strings.xml
+    frameworks/base/packages/SystemUI/res/values/strings.xml
+    frameworks/base/packages/SystemUI/src/com/android/systemui/usb/StorageNotification.java
+    
+    [Other info]
+    N/A
+
+commit 687ed10356d9fe7c3da65bbee22fda2a55d6d41f
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Fri May 18 15:12:19 2012 +0800
+
+    CTS test fail . testLocationFeatures test fail.
+    
+    [TYPE]
+    BUG
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   frameworks/base/services/java/com/android/server/LocationManagerService.java
+    
+    [Other info]
+    MTK patch ALPS00286316(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P27).tar.gz
+
+commit 3c5cd7803b5112175cfb1627496f11f288f23b9a
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Fri May 18 14:17:54 2012 +0800
+
+      Fix the bug when in calling ,the host will fall asleep
+    
+        [Type]
+           BUG(9212#)
+        [Product]
+            TUNA
+        [Solution Description]
+        file change:
+         mediatek/custom/common/kernel/alsps/tmd2771/tmd2771.c
+         packages/apps/Phone/src/com/android/phone/PhoneApp.java
+         packages/apps/Phone/src/com/android/phone/CallNotifier.java
+        solution:
+    
+        [Other Info]
+            N/A
+
+commit bfaefb3ff1eddbbf6794dad7cc62b437c7061aa8
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Thu May 17 16:42:32 2012 +0800
+
+    add fix sdcard not update when host pull
+    [TYPE]
+    BUG/FEATURE/ENHANCEMENT
+    bugid if bug or feature or enhanchement
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    frameworks/base/core/res/res/values-zh-rCN/strings.xml
+    frameworks/base/core/res/res/values/strings.xml
+    
+    [Other info]
+    MTK patch or other info
+
+commit 174852632c49f7e0f3108283803ea22d85d689ab
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Thu May 17 15:02:12 2012 +0800
+
+    Fix Bug 8678 - [Mode][CKT-NEW]The phone displays 'modem log is stopped' under user mode
+    
+    [TYPE]
+    BUG
+    Bug 8678
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    mediatek/source/packages/ModemLog/src/com/mediatek/mdlogger/MDLoggerService.java
+    
+    [Other info]
+    ALPS00284104(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P25)
+
+commit 48ec7825f698f524c39ca69895f55c13074dd3da
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Thu May 17 10:43:54 2012 +0800
+
+        Fix system sleep fail bug when dial in/out
+    
+        [Type]
+           BUG(no bugid)
+        [Product]
+            TUNA
+        [Solution Description]
+        file change:
+        mediatek/custom/common/kernel/alsps/tmd2771/tmd2771.c
+        solution:
+        add a wakelock in PS driver when enable this device(not a good resolution,just a while)
+        [Other Info]
+            N/A
+
+commit 9bac99cb8e96d0de22712f57264ee571cac90c97
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Thu May 17 10:18:48 2012 +0800
+
+    The Audio profile is switched to silent after pressing the side key "-" in music playing view.
+    [TYPE]
+    BUG
+    9074
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    frameworks/base/media/java/android/media/AudioService.java
+    
+    [Other info]
+    N/A
+
+commit 719c3444e6aaddcfe2783105ab73502bd709cb17
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Wed May 16 16:50:21 2012 +0800
+
+    add the Settings button for the commit of 7ec2b75e1ca005a66f8d965d1f76d23dd9dca695.
+    
+    [TYPE]
+    BUG
+    9176
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    add the settings button to mobile networks
+    
+    [Solution Description]
+    modified:   frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/toolbar/ConnectionSwitchPanel.java
+    
+    [Other Info]
+
+commit 895dd5e91c80e562051db86feda7af9d8673b216
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed May 16 16:21:45 2012 +0800
+
+    Can''t import contacts from eMMC
+    [TYPE]
+    BUG
+    9338
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    packages/apps/Contacts/src/com/android/contacts/vcard/ImportVCardActivity.java
+    
+    [Other info]
+    N/A
+
+commit a6deb178f5ed6100d5e7345147843a5edef83727
+Merge: 1e74e0a b5bb0b0
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Wed May 16 15:52:29 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 1e74e0abca22332636319bfc0485273c9bd4398c
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Wed May 16 15:51:13 2012 +0800
+
+    fix the Bug 8286 - [Messages]No notice when deleting a thread with locked messages
+    
+    [TYPE]
+    	BUG
+    
+    [Products]
+    	TUNA
+    
+    [Solution Description]
+    
+     modified: packages/apps/Mms/src/com/android/mms/ui/MessageListAdapter.java
+     modified: packages/apps/Mms/src/com/android/mms/ui/MultiDeleteActivity.java
+    
+    [Other info]
+    	N/A
+
+commit b5bb0b06380c5bf885fcc938dacefe83f555538c
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Wed May 16 15:22:10 2012 +0800
+
+    Commit flashlight tuning
+
+commit a32209a0f1c46ce69c2ebc5f39d5015135c91212
+Merge: e6813e9 c3d7af0
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed May 16 13:11:57 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit e6813e9e67575751e79f07c365ee651b659c4001
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed May 16 13:10:53 2012 +0800
+
+    Import busybox command from CM9
+    
+    [TYPE]
+    FEATURE
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    external/busybox/*
+    
+    [Other info]
+    N/A
+
+commit c3d7af00bb29711fa446e13059a0cd7b4f2fa1f0
+Merge: ddc59a4 960ee44
+Author: wanshan.fang <wanshan.fang@10.100.1.119>
+Date:   Wed May 16 13:08:36 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 960ee446de30e48cc969609dbb2c712db8fb5062
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Wed May 16 11:34:45 2012 +0800
+
+    Integrate Dual Mic feature configuration.
+
+commit 421121fe7b5c29c8bb82aa741fdbb52e14800873
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Wed May 16 09:46:39 2012 +0800
+
+    USB icon shows in first startup wizard setting view
+    
+    [TYPE]
+    BUG
+    bug9170
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    renamed:    frameworks/base/core/res/res/drawable-hdpi/ic_audio_media.png -> frameworks/base/core/res/res/draw
+    modified:   packages/apps/Settings/src/com/android/settings/audioprofile/RingerVolumePreference.java
+    
+    [Other info]
+    N/A
+
+commit 0d4edd8e1bbcc4d3bd4db56714378f6a202f4375
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Tue May 15 20:40:18 2012 +0800
+
+    fix the Bug 9286 - [Call][CKT-New] Can not receive call after going to SMS and back repeatedly
+    
+    [TYPE]
+    	BUG
+    	Bug Id:9286
+    [Products]
+    	TUNA
+    
+    [Solution Description]
+    
+     modified: packages/apps/Phone/src/com/android/phone/InCallScreen.java
+     modified: packages/apps/Phone/src/com/android/phone/InCallTouchUi.java
+     modified: packages/apps/Phone/src/com/android/phone/RespondViaSmsManager.java
+    
+    [Other info]
+    	I have looked into source code of google.By some analysis,I think this bug should come from google
+
+commit 280940d33739dd18dc1e203cc8a9413c293a1f8c
+Merge: 7c74d65 8d82ea0
+Author: fang <fangming.yang@ck-telecom.com>
+Date:   Tue May 15 16:50:40 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 7c74d650d5820c9417574d63a09cb203ce440b91
+Author: fang <fangming.yang@ck-telecom.com>
+Date:   Tue May 15 16:46:45 2012 +0800
+
+    [Type]
+    BUG
+    [Product]
+    TUNA
+    [Requirement]
+    Screen flash during poweron period
+    [Solution Description]
+    mt6575_sleep(1000,TRUE)---->mt6575_sleep(1000,FALSE)
+    mediatek/platform/mt6575/uboot/mt6575_bat.c
+    [Design Document]
+    N/A
+    [Other Info]
+    N/A
+
+commit 8d82ea0a57bf3e099f28f1d7e88e19c6772384a4
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Tue May 15 16:27:47 2012 +0800
+
+    fix the Bug 8404 - [FM]Can't turn down/up the volume of a radio by pressing volumn key when locking screen
+    
+    [TYPE]
+    	BUG
+    	Bug Id:8404
+    [Products]
+    	TUNA
+    
+    [Solution Description]
+    
+      modified: frameworks/base/policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
+    
+    [Other info]
+    	Turn on a flag to open the function that  turn down/up the volume of a radio by pressing volumn key when screen is locked and off
+
+commit d934be3fb14a31c8b0ca34589f48b8e8c799ab9a
+Merge: 232956a 7ec2b75
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Tue May 15 15:17:56 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 232956a4f353a397f0cff59d5c80a328e76a933c
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Tue May 15 15:16:36 2012 +0800
+
+    fix the Bug 9202 - [People]Can't delete frequently contacted contacts from Favorites
+    
+    [TYPE]
+    BUG
+    Bug Id:9202
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    
+      modified: packages/apps/Contacts/src/com/android/contacts/activities/DialtactsActivity.java
+      modified: packages/apps/Contacts/src/com/android/contacts/activities/PeopleActivity.java
+      modified: packages/providers/ContactsProvider/src/com/android/providers/contacts/CallLogProvider.java
+      modified: packages/providers/ContactsProvider/src/com/android/providers/contacts/ContactsProvider2.java
+    
+    [Other info]
+     The root problem comes from two side.
+     First side,there is some Logic problem when delete frequently contacted contacts from Favorites in People application
+     Second Side,There is some visible for database in ContactsProvider2 when we access ContactsProvider2 by the Call() method
+
+commit 7ec2b75e1ca005a66f8d965d1f76d23dd9dca695
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Tue May 15 13:31:56 2012 +0800
+
+    Need swtich 3G data connection automatically.
+    
+    [TYPE]
+    BUG
+    9176
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    if the sim card is not checked in 3G service, the we switch the data connection to the sim card, system will prompt the sim card doesn't support 3G service.
+    
+    [Solution Description]
+    change the prompt to the sim card 3G service was not set.
+    modified:   frameworks/base/packages/SystemUI/res/values-zh-rCN/strings.xml
+    
+    [Other Info]
+
+commit 895aae37a245e1799df7705c3151618accd54c7f
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Tue May 15 13:24:09 2012 +0800
+
+    [TYPE]
+    sdcard host T card hot pull out of the code
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    packages/apps/Settings/res/values-zh-rCN/strings.xml
+    packages/apps/Settings/res/values/strings.xml
+    
+    [Other info]
+    update hot pull out of the code
+
+commit bb0a53e6ca27aefa075017b6325f840dc67cd0e1
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Tue May 15 10:39:43 2012 +0800
+
+    Fix the bug that flash light flashes on light env
+    
+    [TYPE]
+    BUG
+    Bug 9261 - [Cmera][CKT-NEW]The fashlight is flickering while capture in the bright environment.
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    Merge 5647 patch from MeiMei Cai
+    
+    [Other info]
+    The patch is released on 2012.05.02.
+    But later on 2012.05.07 MeiMei released another patch, I don't merge it
+    coz it doesn't work.
+
+commit 24c6f985a7c73f96081fc3c169703bc8c4a94ed4
+Author: fang <fangming.yang@ck-telecom.com>
+Date:   Mon May 14 20:56:44 2012 +0800
+
+    [Type]
+    BUG
+    [Product]
+    TUNA_ICS_V1
+    [Requirement]
+    negative value about battery & screen flash
+    [Solution Description]
+    mediatek/platform/mt6575/kernel/drivers/power/mt6575_battery.c
+    mediatek/platform/mt6575/uboot/mt6575_bat.c
+    [Design Document]
+    N/A
+    [Other Info]
+    N/A
+
+commit 54819ca4f5ac550b113134bb228e4c6bf9aeb1a4
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Mon May 14 19:35:04 2012 +0800
+
+    resolved the SD CARD full problem that MiniThumbDataFile fill full the SD card
+    
+    [TYPE]
+    FEATURE
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+      modified: frameworks/base/media/java/android/media/MediaScanner.java
+      modified: frameworks/base/media/java/android/media/MiniThumbFile.java
+    
+    [Other info]
+     The root problem comes from the google Algorithm.I optimize the Algorithm to resolve this issue
+
+commit bf85cec2b4d4b6f612723646cc5bb8a9e5dbe392
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Mon May 14 17:51:15 2012 +0800
+
+    add modify sdcard name not read
+    [TYPE]
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    packages/apps/Settings/src/com/android/settings/deviceinfo/RadioButtonPreference.java
+    
+    [Other info]
+    N/A
+
+commit 61e74a4577f2830c064611a5e6cc56504992f228
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Mon May 14 15:45:25 2012 +0800
+
+    The screen of conference call detail not hold when screen turns off
+    
+    [TYPE]
+    BUG
+    8389
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    The screen of conference call detail not hold when screen turns off
+    
+    [Solution Description]
+    modified:   packages/apps/Phone/src/com/android/phone/InCallScreen.java
+    
+    [Other Info]
+
+commit 662b8d40a5e6465fced1ac6c10a1a16eb8c7d84d
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Mon May 14 14:13:24 2012 +0800
+
+    In soundrecorder,when press the button "HOME" and finish recording, the music cannot continully play
+    
+    [TYPE]
+    BUG
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    In soundrecorder,when press the button "HOME" and finish recording, the music cannot continully play
+    
+    [Solution Description]
+    modified:   packages/apps/SoundRecorder/src/com/android/soundrecorder/SoundRecorder.java
+    
+    [Other Info]
+    enhance the commit 2cd8443
+
+commit 580f4526fe85fbdd22ef08fd8c506821d076458a
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Mon May 14 14:50:53 2012 +0800
+
+    when playing music .then goto audio profiles and adjast vloume , the music auto pause, after that click home to go back to launcher, the music will not auto play.
+    
+    [TYPE]
+    BUG
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   packages/apps/Settings/src/com/android/settings/audioprofile/RingerVolumePreference.java
+    
+    [Other info]
+    re-fix bug 9215.
+
+commit ba45fafae4ce725d05936796e27f954c6ab4b8e7
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Mon May 14 14:24:47 2012 +0800
+
+    The music player shopped after cancel the Voice call ringtone setting.
+    
+    [TYPE]
+    BUG
+    bug9216
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   frameworks/base/core/java/com/android/internal/app/RingtonePickerActivity.java
+    
+    [Other info]
+    N/A
+
+commit 58a7a1b88377b98958320a3b35995df25f883492
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Mon May 14 14:04:14 2012 +0800
+
+    The Music and ringtones play in the same time when changing the ringtones .
+    
+    [TYPE]
+    BUG
+    bug9215
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   packages/apps/Settings/src/com/android/settings/audioprofile/RingerVolumePreference.java
+    
+    [Other info]
+    N/A
+
+commit 76800a246121775da6bea813c51bfa5fdf52ba5a
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Mon May 14 14:02:53 2012 +0800
+
+    Revert "The music player shopped after cancel the Voice call ringtone setting."
+    
+    [reson]
+    commit message is wrong. re commit
+    
+    This reverts commit 0451a93f4b16ccfb3e122cb3e165c6eb5e6a6c97.
+
+commit 0451a93f4b16ccfb3e122cb3e165c6eb5e6a6c97
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Mon May 14 13:57:42 2012 +0800
+
+    The music player shopped after cancel the Voice call ringtone setting.
+    
+    [TYPE]
+    BUG
+    bug9216
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   packages/apps/Settings/src/com/android/settings/audioprofile/RingerVolumePreference.java
+    
+    [Other info]
+    N/A
+
+commit 1cd894e5ddbb9e72a890e47907a06332ad6e43e6
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Mon May 14 13:06:19 2012 +0800
+
+    modify  TPD_KEYS_DIM's value for the bug that the tp5306 softkey area
+    TPD_KEYS_DIM  {{70,852,80,40},{190,852,80,40},{310,852,80,40},{431,852,80,40}}
+    
+    [TYPE]
+    
+    BUG
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    
+    modified:   mediatek/custom/ckt75_cu_ics/kernel/touchpanel/ft5306/tpd_custom_ft5306.h
+    
+    [Other info]
+    
+    N/A
+
+commit e3935832797ac299307327d9b4ddf2db41bb3268
+Merge: 07b4ac1 7b3e8db
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Mon May 14 11:22:08 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 07b4ac16b558b3df91ad1c87bc5fa0507acd12b2
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Mon May 14 11:18:39 2012 +0800
+
+    The contacts who stored in the SIM cannot save a name more than 6 characters.
+    [TYPE]
+    BUG/
+    9099
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    packages/apps/Contacts/src/com/android/contacts/editor/TextFieldsEditorView.java
+    
+    [Other info]
+    N/A
+
+commit 7b3e8dbc902410d94912c50bcbb0e0fa6c76b939
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Fri May 11 20:33:01 2012 +0800
+
+    Change default brightness as automatic type to save power.
+
+commit 5ecd4ec3ffcfac9b625ac00dcff966eca9cc58f7
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Fri May 11 20:29:59 2012 +0800
+
+    add hx8363 lcm with sharp chip into code repo for debug.
+
+commit 2674cb29e1128b1d62bcec2d2c68392f88365c61
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri May 11 11:24:11 2012 +0800
+
+    add Change the name of the sd card
+    [TYPE]
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    frameworks/base/core/res/res/values-zh-rCN/strings.xml
+    frameworks/base/core/res/res/values/strings.xml
+    packages/apps/Settings/res/values-zh-rCN/arrays.xml
+    packages/apps/Settings/res/values-zh-rCN/strings.xml
+    packages/apps/Settings/res/values/arrays.xml
+    packages/apps/Settings/res/values/strings.xml
+    [Other info]
+    N/A
+
+commit f67bc2a9a785c35c09ee25717926fd5acfc30412
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Thu May 10 20:50:01 2012 +0800
+
+    Bug 8379 - [People][CKT-5682]IM-QQ info misses when exporting contacts from SD card to Phone.
+    
+    [TYPE]
+    BUG
+    8379
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    IM-QQ info misses when exporting contacts from SD card to Phone.
+    
+    [Solution Description]
+    modified:   frameworks/opt/vcard/java/com/android/vcard/VCardEntry.java
+    
+    [Other Info]
+
+commit c2a7dff07479218b2e1160cb9911fa8f530cf18b
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Thu May 10 18:11:30 2012 +0800
+
+    modify PCLK as 26.8m for RF Tuning.
+
+commit c1b825b6cf9e52b975df3f3e3a5cd49cc7b85886
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Thu May 10 17:43:25 2012 +0800
+
+    change USB charging current as 550mA
+
+commit 116b6a6fe8627fa1d287178daaf141d1a897c6b9
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Thu May 10 16:27:45 2012 +0800
+
+    [Audio][CATCH-6857]Play the transfer of bluetooth songs will display the wrong cover image.
+    
+    [TYPE]
+    BUG
+    8285
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    Play the transfer of bluetooth songs will display the wrong cover image.
+    
+    [Solution Description]
+    modified:   packages/providers/MediaProvider/src/com/android/providers/media/MediaProvider.java
+    
+    [Other Info]
+
+commit ecf3bb7de952eeececb3b12da2747e099ba782c2
+Merge: 09ede2b dfd68ac
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Thu May 10 16:21:10 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 09ede2b1aef6b9e755b7dbe802144c8331667fe9
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Thu May 10 16:16:27 2012 +0800
+
+    The directory pathname display wrong during entering file mamager
+    [TYPE]
+    BUG
+    9145
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    mediatek/source/packages/FileManager/src/com/mediatek/filemanager/FileManagerBaseActivity.java
+    
+    [Other info]
+    N/A
+
+commit dfd68ac10020484aba7b2e5701d90074de41c792
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Thu May 10 14:07:42 2012 +0800
+
+    Only insert two sim card , the contacts photo will be change to make a distinction between SIM1 adn SIM2.
+    
+    [TYPE]
+    FEATURE
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   packages/apps/Contacts/src/com/android/contacts/ContactPhotoManager.java
+    
+    [Other info]
+    N/A
+
+commit 18532066c256f9554a21e961e09877dd94b8c8a8
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed May 9 20:51:05 2012 +0800
+
+    The contacts who stored in the SIM cannot save a name more than 6 characters.
+    [TYPE]
+    BUG
+    9099
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    change file list
+    packages/apps/Contacts/src/com/android/contacts/editor/TextFieldsEditorView.java
+    
+    [Other info]
+    N/A
+
+commit 8388ea568948372dae19aa558ed5955f744294f2
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed May 9 19:19:35 2012 +0800
+
+    [TYPE]
+    BUG
+    8076 about No warming popup when the audio size reach limit in the MMS.
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    packages/apps/SoundRecorder/res/values-zh-rCN/strings.xml
+    packages/apps/SoundRecorder/res/values/strings.xml
+    packages/apps/SoundRecorder/src/com/android/soundrecorder/SoundRecorder.java
+    
+    [Other info]
+    N/A
+
+commit 797526e2c39832555fd2e782bec6a9f9c9060107
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Wed May 9 17:43:21 2012 +0800
+
+    The Espanol showing patchy in the SIM card unlock interface.
+    
+    [TYPE]
+    BUG
+    bug8290
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   mediatek/source/frameworks/res/res/layout-hdpi/simlock_keyboard.xml
+    modified:   packages/apps/Phone/res/layout-hdpi/simlock_keyboard.xml
+    
+    [Other info]
+    N/A
+
+commit b43bf6d41928af7746a7ab98c15ef45c29ad0ca5
+Author: Shenggang Hu <shenggang.hu@ckt-telecom.com>
+Date:   Wed May 9 17:17:29 2012 +0800
+
+    [TYPE]
+    
+    FEATURE
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    
+    Add root & root access control function
+
+commit 47530c1734b7977399a46197891edb013e3afddd
+Merge: dd575e6 6b329c8
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Wed May 9 15:54:44 2012 +0800
+
+    Merge branch 'robin' into tuna_cu_ics_v1
+
+commit 6b329c845366cd315c6bf6f9c3efe6d9be7360e4
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Wed May 9 15:44:32 2012 +0800
+
+    implements the feature that remove frequent contact directly for frequent contacts list
+    
+    [TYPE]
+    FEATURE
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+      modified: packages/apps/Contacts/res/values-zh-rCN/strings.xml
+      modified: packages/apps/Contacts/res/values-zh-rTW/strings.xml
+      modified: packages/apps/Contacts/res/values/strings.xml
+      modified: packages/apps/Contacts/src/com/android/contacts/activities/DialtactsActivity.java
+      modified: packages/apps/Contacts/src/com/android/contacts/activities/PeopleActivity.java
+      modified: packages/apps/Contacts/src/com/android/contacts/group/GroupDetailFragment.java
+      modified: packages/apps/Contacts/src/com/android/contacts/list/ContactTileAdapter.java
+      modified: packages/apps/Contacts/src/com/android/contacts/list/ContactTileListFragment.java
+      modified: packages/apps/Contacts/src/com/android/contacts/list/ContactTileView.java
+      modified: packages/apps/Contacts/src/com/android/contacts/list/PhoneFavoriteFragment.java
+      modified: packages/providers/ContactsProvider/src/com/android/providers/contacts/ContactsProvider2.java
+    [Other info]
+     N/A
+
+commit dd575e64d6061fc543b51b606ba5b640d8fabd50
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Wed May 9 15:10:42 2012 +0800
+
+    Can't display lyrics when playing music then Switch screen to Vertical
+    
+    [TYPE]
+    BUG
+    bug8425
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   packages/apps/Music/src/com/android/music/LyricsBody.java
+    modified:   packages/apps/Music/src/com/android/music/MediaPlaybackActivity.java
+    
+    [Other info]
+    N/A
+
+commit e0114e7c18725d1839826c3f5844e740e7d38574
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Wed May 9 14:39:24 2012 +0800
+
+        Fix ov5647 red fire effect when in the camera preview mode
+    
+        [Type]
+           BUG(no bugid)
+        [Product]
+            TUNA
+        [Solution Description]
+        file change:
+         mediatek/custom/common/kernel/imgsensor/ov5647_mipi_raw/ov5647mpi_Sensor.c
+        solution:
+         modify the frame rate from 29.6fps to 20fps when in the camera preview mode
+        [Other Info]
+            N/A
+
+commit 80328d551e60aaa12c8534f301bd68788dff1a9e
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Wed May 9 13:31:27 2012 +0800
+
+    Don't support BMP/WBMP format images to print
+    
+    [TYPE]
+    BUG
+    bug8406
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   mediatek/source/packages/Bluetooth/profiles/bpp/src/com/mediatek/bluetooth/bpp/BluetoothBppEntryActivity.java
+    
+    [Other info]
+    N/A
+
+commit e97dc95bdb716f279b86210dac666e050997a697
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Wed May 9 13:07:38 2012 +0800
+
+    This reverts commit 83426a0bfe33c2b5e1f8f36fab4388cae896a533.change the way to close Bluetooth Proximity
+    
+    [TYPE]
+    BUG
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    change the way to close Bluetooth Proximity
+    
+    [Refer]
+    
+    [Solution Description]
+    modified:   mediatek/config/ckt75_cu_ics/ProjectConfig.mk
+    modified:   mediatek/source/packages/Bluetooth/common/bt40/src/com/mediatek/bluetooth/settings/BluetoothAdvancedSettingsActivity.java
+    modified:   mediatek/source/packages/Bluetooth/profiles/prxm/AndroidManifest.xml[Other Info]
+
+commit 6478c40652663ac1a57ee28a37f26ce564abc8dd
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed May 9 10:48:37 2012 +0800
+
+    Revert "add fix bug 7928 about [FileMg][CKT-New] Advice rename the sdcard and sdcard2."
+    
+    This reverts commit 2d8dd7b142f94a17f4e64496292e5110bbd8edef.
+
+commit 59b6a2ff2a2a0ef997f58230db072e755b7c579d
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed May 9 10:45:13 2012 +0800
+
+    Revert "add modify Storage sd card name"
+    
+    This reverts commit fb2b155f65048e3452214076d3eecd4fb3900685.
+
+commit ddc59a40d821b382b7a31f5a965297185f246733
+Author: wanshan.fang <wanshan.fang@10.100.1.119>
+Date:   Tue May 8 18:37:08 2012 +0800
+
+    Modified the action menu view added last into split action bar.
+    
+    [TYPE]
+    
+    Bug - 8365
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    
+    packages/apps/Contacts/AndroidManifest.xml
+    
+    [Other info]
+
+commit 3dd93460f97bf1ac5fcc53091fa3b1ab5b456b83
+Author: wanshan.fang <wanshan.fang@10.100.1.119>
+Date:   Tue May 8 18:15:59 2012 +0800
+
+    Added the feature that delete batch contacts in GroupEditor.
+    [TYPE]
+    
+    BUG - 8365
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+           new file:   packages/apps/Contacts/res/drawable/list_item_activated_background_transparent.xml
+           modified:   packages/apps/Contacts/res/layout/group_member_item.xml
+           modified:   packages/apps/Contacts/res/menu/edit_group.xml
+           modified:   packages/apps/Contacts/res/values/styles.xml
+           modified:   packages/apps/Contacts/src/com/android/contacts/activities/GroupEditorActivity.java
+           modified:   packages/apps/Contacts/src/com/android/contacts/group/GroupEditorFragment.java
+    
+    [Other info]
+
+commit 006d1f029862469f47b2a5c2af01571ef5979755
+Merge: 55e08f9 5ca5d16
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Tue May 8 16:20:07 2012 +0800
+
+    Merge branch 'robin2' into tuna_cu_ics_v1
+
+commit 55e08f92b5d5a1d2da3bc7810c430ff60ab47826
+Merge: cd30852 05e4705
+Author: Shenggang Hu <shenggang.hu@ckt-telecom.com>
+Date:   Tue May 8 16:17:15 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 5ca5d1627056e6e66ab1f03bf97178776c1145a0
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Tue May 8 16:12:05 2012 +0800
+
+    add MTK patch ALPS00277322 for CTS Case.
+    This patch include two patch( ALPS00266737 & ALPS00274308)
+    The patch ALPS00266737 resolve the problem about the following CTS Case:
+    (a) ibcore.java.lang.FloatTest 6 testcase
+    (b) testAccessAllowFileAccess
+    (c) testMeasureTextWithLongText
+    (d) testInterruptReadablePipeChannel
+    The patch ALPS00274308 resolve the problem about the following CTS Case:
+    (a)testPackageSignatures
+    
+    [TYPE]
+    CTS Case
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+      modified: development/tools/make_key
+      modified: frameworks/base/core/java/android/webkit/BrowserFrame.java
+      modified: frameworks/base/core/jni/android/graphics/TextLayoutCache.cpp
+      modified: kernel/fs/open.c
+      modified: vendor/mediatek/ckt75_cu_ics/artifacts/out/host/linux-x86/lib/libdvm.so
+      modified: vendor/mediatek/ckt75_cu_ics/artifacts/out/host/linux-x86/obj/lib/libdvm.so
+      modified: vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libdvm.so
+      modified: vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libdvm_assert.so
+      modified: vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libdvm_interp.so
+      modified: vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/obj/lib/libdvm_sv.so
+      modified: vendor/mediatek/ckt75_cu_ics/artifacts/out/target/product/ckt75_cu_ics/system/lib/libdvm.so
+    
+    [Other info]
+    MTK patch ALPS00277322(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P17).tar.gz
+
+commit 05e4705890cc2377a37d8b951c2c1999988cde51
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Tue May 8 15:48:28 2012 +0800
+
+    The dialog of 'Power off' is auto changed to 'Reboot'.
+    
+    [TYPE]
+    BUG
+    bug8826
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   frameworks/base/core/java/com/android/internal/app/ShutdownThread.java
+    
+    [Other info]
+    N/A
+
+commit cd30852fab9bcafeb1b06f4ef5fb5f726bd64c85
+Author: Shenggang Hu <shenggang.hu@ckt-telecom.com>
+Date:   Tue May 8 15:24:40 2012 +0800
+
+    [TYPE]
+    
+    BUG
+    bugid 8010
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    
+    frameworks/base/data/sounds/effects/Lock.ogg
+    frameworks/base/data/sounds/effects/Unlock.ogg
+    
+    [Other info]
+
+commit 2878df35fb68e1c65204b8fdbecfff278a5ec4c4
+Author: xiaoping.chen <xiaoping.chen@ck-telecom.com>
+Date:   Tue May 8 14:56:16 2012 +0800
+
+    fix bug 8090 ,No sound can be heared when clicking home , back, search keys
+    [TYPE]
+    BUG
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    modified:   frameworks/base/media/java/android/media/AudioService.java
+    modified:   frameworks/base/policy/src/com/android/internal/policy/impl/PhoneWindow.java
+    modified:   frameworks/base/policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
+    
+    [Other info]
+    N/A
+
+commit 7c90ec4aff1872d950b8c9e18158527e3d9e0abc
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Tue May 8 14:07:36 2012 +0800
+
+    Modify charging current of nonstandard same as standard.
+
+commit 83426a0bfe33c2b5e1f8f36fab4388cae896a533
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Tue May 8 13:51:59 2012 +0800
+
+    [TYPE]
+    [Feature] remove bluetooth proximity
+    [Product]
+    TUNA
+    
+    [Description]
+    remove bluetooth proximity
+    
+    [Refer]
+    
+    [Solution Description]
+    modified:   mediatek/config/ckt75_cu_ics/ProjectConfig.mk
+    
+    [Other Info]
+
+commit f541c710fb69649ae4ae03e807672413e3a9403b
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Tue May 8 13:46:06 2012 +0800
+
+    [TYPE]
+    [Feature] remove wifi direct
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    remove wifi direct
+    
+    [Refer]
+    
+    [Solution Description]
+    modified:   packages/apps/Settings/src/com/android/settings/WirelessSettings.java
+    
+    [Other Info]
+
+commit 8aa3bf7d92847b0b7b036832362a40f57f9f2783
+Author: longyu.huang <longyu.huang@ck-telecom.com>
+Date:   Tue May 8 11:17:56 2012 +0800
+
+    The schedule power off is exception in repeat time
+    [TYPE]
+     BUG 8348
+    
+    [Products]
+      TUNA
+    
+    [Solution Description]
+      modified:   packages/apps/Settings/src/com/android/settings/schpwronoff/SchPwrOffReceiver.java
+    
+    [Other info]
+
+commit af6c9594ccf55aaecd9b839f7ffae3b7aee34954
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Tue May 8 09:13:50 2012 +0800
+
+    [TYPE]
+    [FixBug] Bug 8439 - [Music player][CKT-New]The MusicActivity restart Unexpected after played a recorder file
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    The MusicActivity restart Unexpected after played a recorder file
+    
+    [Refer]
+    All about music play
+    
+    [Solution Description]
+    modified:   packages/apps/Music/src/com/android/music/MediaPlaybackService.java
+
+commit d8640a68bd974aa1f20caaa77b1cf739d1802caa
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Mon May 7 15:28:08 2012 +0800
+
+    Add new prefece setting for media ,in 'Audio profiles'
+    
+    [TYPE]
+    FEATURE
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    new file:   frameworks/base/core/res/res/drawable-hdpi/ic_audio_media.png
+    modified:   mediatek/source/frameworks/media/audio/java/com/mediatek/audioprofile/AudioProfile.java
+    modified:   mediatek/source/frameworks/media/audio/java/com/mediatek/audioprofile/AudioProfileImpl.java
+    modified:   mediatek/source/frameworks/media/audio/java/com/mediatek/audioprofile/ProfileSettings.java
+    modified:   mediatek/source/frameworks/media/audio/java/com/mediatek/audioprofile/ProfileState.java
+    modified:   packages/apps/Settings/res/layout/preference_dialog_ringervolume.xml
+    modified:   packages/apps/Settings/src/com/android/settings/audioprofile/RingerVolumePreference.java
+    
+    [Other info]
+    N/A
+
+commit c874ec8f25a5b4d91bed143f8d6d69f9cc5ebf75
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Mon May 7 17:32:05 2012 +0800
+
+    [TYPE]
+    BUG
+    8965
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    packages/apps/Contacts/src/com/android/contacts/editor/TextFieldsEditorView.java
+    
+    [Other info]
+    N/A
+
+commit d805941f5ba31662f0d364132ec68a8728693cae
+Merge: 65266d1 2f1d6e3
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Mon May 7 14:29:13 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 65266d1546b8af6ef7f958b827834e0de6b8c274
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Mon May 7 14:25:13 2012 +0800
+
+        Fix rm68120 LCD overlapping shadow effect on some devices in shenzhen
+    
+        [Type]
+           BUG(no bug id)
+        [Product]
+            TUNA
+        [Solution Description]
+        file change:
+        mediatek/custom/common/kernel/lcm/rm68120/rm68120.c
+        solution:
+        change register 0xB300 value from 0x10 to 0x00 and lower the PCLK to 27.2Mhz    [Other Info]
+            N/A
+
+commit 2f1d6e3536db98a7bbccee1516d9381642646f30
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Mon May 7 11:13:33 2012 +0800
+
+    [TYPE]
+    
+    BUG
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    modify the value for cts camera hardwart test
+           pSensorInfo->CaptureDelayFrame = 2;
+           pSensorInfo->PreviewDelayFrame = 2
+    change file list
+    modified:   mediatek/custom/common/kernel/imgsensor/hi704_yuv/hi704yuv_Sensor.c
+    
+    [Other info]
+    CTS TEST
+
+commit 4ecc25bc6f739a9dc3fd8890c9eac576bed6ae9c
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Mon May 7 11:10:14 2012 +0800
+
+    [TYPE]
+    
+    FEATURE
+    
+    [Products]
+    
+    TUNA
+    
+    [Solution Description]
+    modify the CAR_TUNE_VALUE = 96 (Fuel Gauge)
+    
+    change file list
+    modified:   mediatek/custom/ckt75_cu_ics/kernel/battery/battery/cust_fuel_gauge.h
+    
+    [Other info]
+    N/A
+
+commit c07bc818741c064b03129b0595d2e8e69a6a7fe4
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri May 4 15:58:53 2012 +0800
+
+        Bug 8915 -[People][CKT-New]Modify the waring pop-up to 'Cannot save contact whose name/number is empty' when
+    
+        [Type]
+    
+           bug
+    
+        [Product]
+    
+            TUNA
+    
+        [Requirement]
+    
+            modify strings
+        [Design Document]
+    
+            N/A
+    
+        [Other Info]
+    
+            N/A
+
+commit fb2b155f65048e3452214076d3eecd4fb3900685
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri May 4 15:15:39 2012 +0800
+
+    add modify Storage sd card name
+
+commit 9b0ede7dc1b4d865934035aa3bfc2b6de59ca474
+Merge: 966ee9d 8e9593a
+Author: Qidong Sun <qidong.sun@ck-telecom.com>
+Date:   Fri May 4 13:53:04 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 966ee9d50cd0f4346cf68b06ace96152db024687
+Author: ckt <ckt@ckt-desktop.(none)>
+Date:   Fri May 4 13:45:56 2012 +0800
+
+        Modify the key define from power key to volume-down key which turn on the backlight in the power-off charging period
+    
+        [Type]
+           Feature
+        [Product]
+            TUNA
+        [Requirement]
+           For user experience, we need do this modification
+        [Design Document]
+            N/A
+        [Other Info]
+            N/A
+
+commit 8e9593aaab24fe0ed87c45b6b6e98d4021c64142
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri May 4 10:41:56 2012 +0800
+
+    add Fixed dial-up interface ui
+
+commit 35e5abdbbf293aea3825cad6dae11f87d09a89cb
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Thu May 3 21:43:17 2012 +0800
+
+    Translate the English strings for some new Music feature
+    into Chinese (Simple and Translate)
+    
+    [TYPE]
+    FEATURE
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    N/A
+    
+    [Other info]
+    N/A
+
+commit e148ae4f8b3b126a8602d1ec6a9bf0909b08ceff
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Thu May 3 21:19:05 2012 +0800
+
+    Add "Use as Notificatio Tone" and "Use as Alarm Tone" feature into Music App
+    
+    [TYPE]
+    FEATURE
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    N/A
+    
+    [Other info]
+    N/A
+
+commit a065c839fa79f5eb377966689a96154a2c067698
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed May 2 19:43:00 2012 +0800
+
+    Enable some features in ProjectConfig.mk
+    
+    [TYPE]
+    FEATURE
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    mediatek/config/ckt75_cu_ics/ProjectConfig.mk
+    
+    [Other info]
+    N/A
+
+commit 3c04453f43da8a7599fa28bb0349dfcaca4e088e
+Merge: a01c13d ec09ca4
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed May 2 20:33:00 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit a01c13d47e0912761e14f74b7074d370899afe9c
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed May 2 20:16:04 2012 +0800
+
+    Solve the issue that Google Map/Path and many other apps
+    can't get location
+    
+    [TYPE]
+    
+    Bug8670
+    
+    [Products]
+    TUNA
+    
+    [Solution Description]
+    Add com.android.location.provider.xml into /system/etc/permissions
+    
+    [Other info]
+    N/A
+
+commit ec09ca49fdf838c9be3fc5828ad1a3b556335c7d
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Wed May 2 19:37:30 2012 +0800
+
+    [fixbug] bug miss function reboot .
+    
+    [Products]
+    TUNA
+    
+    [Description]
+    miss function reboot on the shutdown menu
+    
+    [Solution Description]
+    modified:   frameworks/base/core/java/com/android/internal/app/ShutdownThread.java
+    
+    [Other info]
+    N/A
+
+commit 48eb890c6d871cc701615619327a9367e02c47ce
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Wed May 2 17:50:27 2012 +0800
+
+    [Fixbug] bug8057  Contacts icon stored in SIM1 and SIM2 display did not distinguish when viewing in Contacts.
+    
+    [Products]
+       TUNA
+    
+    [Description]
+       Contacts icon stored in SIM1 and SIM2 display did not distinguish when viewing in Contacts.
+    
+    [Solution Description]
+    new file:   res/drawable-hdpi/ic_contact_picture_usim_contact1.png
+    new file:   res/drawable-hdpi/ic_contact_picture_usim_contact2.png
+    new file:   res/drawable-hdpi/ic_contact_picture_usim_holo_dark1.png
+    new file:   res/drawable-hdpi/ic_contact_picture_usim_holo_dark2.png
+    modified:   src/com/android/contacts/ContactPhotoManager.java
+    modified:   src/com/android/contacts/calllog/CallLogAdapter.java
+    modified:   src/com/android/contacts/list/ContactEntryListAdapter.java
+    modified:   src/com/android/contacts/list/ContactTileAdapter.java
+    modified:   src/com/mediatek/contacts/dialpad/DialerSearchUtils.java
+    
+    [Other info]
+       N/A
+
+commit 4251c6a9408be7fde22b0da694efeac358616f17
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed May 2 16:19:09 2012 +0800
+
+    fix Bug 8827 -[Contacts][CKT-New]Contacts stopped unfortunately during setting my profile in Contacts
+
+commit 90207693ff868cb414ba84f067a3ebffe88324d4
+Author: ckt <ckt@ck-telecom.com>
+Date:   Wed May 2 15:00:56 2012 +0800
+
+    Remove eglSwapBuffers log
+    
+    [Type]
+    Enhancement
+    
+    [Product]
+    TUNA
+    
+    [Requirement]
+    N/A
+    
+    [Design Document]
+    N/A
+    
+    [Other Info]
+    N/A
+
+commit 44a428a5b93fa8573fa70479f74ec96b39d4eeba
+Merge: 0a13e2a 3f008ed
+Author: ckt <ckt@ck-telecom.com>
+Date:   Wed May 2 12:44:39 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 0a13e2aa980b409b24329bb886b84add7ac22698
+Author: ckt <ckt@ck-telecom.com>
+Date:   Wed May 2 12:42:40 2012 +0800
+
+    Fix PS suspend issue
+    
+    [Type]
+    BUG
+    
+    [Product]
+    TUNA
+    
+    [Requirement]
+    once the alsps enter suspend,to resume it from power off takes time so much
+    just do nothing in suspend and resume states.
+    
+    pay attention, here I mean suspend instead of early_suspend
+    
+    [Design Document]
+    N/A
+    
+    [Other Info]
+    N/A
+
+commit 3f008eded81f8af656f9af974993730224704d51
+Merge: 4360fe4 2d75e81
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed May 2 09:48:47 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 4360fe48c9d2a2aa885746406e38119fa4786162
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed May 2 09:47:12 2012 +0800
+
+    Generate customized key for app sign
+    
+    [Type]
+    
+        Feature
+    
+    [Product]
+    
+        TUNA
+    
+    [Requirement]
+    
+        To pass CTS, we need to use customized key for app sign
+    
+    [Design Document]
+    
+        N/A
+    
+    [Other Info]
+    
+        N/A
+
+commit 2d75e8126d6df684d62765ea9e61a30fda071541
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Wed May 2 08:58:35 2012 +0800
+
+    [fixBug] fix the bug , have no item for power down
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    click 'reboot' on shutdown menu, when click 'powerdown' , the phone will be not powerdown , it would be reboot!
+    
+    [Solution Description]
+    modified:   frameworks/base/core/java/com/android/internal/app/ShutdownThread.java
+
+commit 3caef09c9d8ab18c71cd6316188dbf100976d581
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Sat Apr 28 20:02:49 2012 +0800
+
+    [Feature] add reboot and screenshot on powerdown menu
+    
+    [Product]
+    TUNA
+    
+    [Solution Description]
+    modified:   frameworks/base/core/java/com/android/internal/app/ShutdownThread.java
+    new file:   frameworks/base/core/res/res/drawable-hdpi/ic_lock_reboot.png
+    new file:   frameworks/base/core/res/res/drawable-hdpi/ic_lock_screenshot.png
+    modified:   frameworks/base/core/res/res/values-zh-rCN/strings.xml
+    modified:   frameworks/base/core/res/res/values/strings.xml
+    modified:   frameworks/base/policy/src/com/android/internal/policy/impl/GlobalActions.java
+
+commit 35166f99178436ac2c125f310f1be5f68b5ae39f
+Merge: a7b8f68 a670444
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Sat Apr 28 20:04:06 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit a7b8f6800c8dbc68b2a3d3e8b5074e4129781bb5
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Sat Apr 28 20:03:42 2012 +0800
+
+    Fixed CTS Failure :junit.framework.AssertionFailedError: PackageManager#hasSystemFeature(android.hardware.sensor.compass) returns false but SensorManager#getSensorList(2) shows sensors [mmc328x 3-axis Magnetic Field sensor] expected:<false> but was:<true> at android.app.cts.SystemFeaturesTest.assertFeatureForSensor(SystemFeaturesTest.java:300)
+
+commit a670444d33c0609efacdb1583a460cbd83fe0e63
+Merge: 9446056 4d2b220
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Sat Apr 28 17:41:21 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 944605626a75c75bfdbdd5c832a44a1e132930c4
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Sat Apr 28 17:38:46 2012 +0800
+
+    add flashlight tuning.
+
+commit 4d2b22091a6c76aaa9fad4d45a6bc1f97c6eb4b3
+Author: ckt <ckt@ck-telecom.com>
+Date:   Sat Apr 28 17:22:21 2012 +0800
+
+    Fix PS issue.
+    
+    don't suspend the ps for phone call app etc.
+
+commit 456e8591deb37e3aa66fc2fef9ff8e768c84ac97
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri Apr 27 19:46:11 2012 +0800
+
+    add fix bug 8597 about It shows sdcard2 when hot-plug the sd card
+
+commit 52ec447afc54e42305e0fdcd0bd753f5cdc0e070
+Merge: 480151e b8e0dbc
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Fri Apr 27 17:42:04 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 480151e05d860889ea796515007edfa547f80999
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Fri Apr 27 13:48:02 2012 +0800
+
+    Apply PATCH ALPS00275710(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P14)
+    to solve the flash light issue.
+
+commit b8e0dbc99fa133ba48fdf6ab88ddab80512949e3
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri Apr 27 17:02:03 2012 +0800
+
+    add fix bug 8715 about The pop up is wrong after deleting the playlist.
+
+commit 1a65072a1f790a66b2bf16dd7b8ad2c4dc5c314b
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri Apr 27 15:56:58 2012 +0800
+
+    add fix bug 8500 about No sound can be heard after pressing the side key to adjust volumn in dailing view.
+
+commit ab1dd20c48336b3b6d2ec42a7dfec350a6084718
+Merge: 6f70932 42584c9
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Fri Apr 27 11:21:55 2012 +0800
+
+    Merge branch 'my_private_tuna' into tuna_cu_ics_v1
+
+commit 42584c9f9910883d414d4079b244e588bcd4d4af
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Fri Apr 27 11:10:44 2012 +0800
+
+    Summary in oneline
+    [Type]
+    Bug Fix
+    [Product]
+    TUNA
+    [Issue ID]
+    N/A
+    [Issue Description]
+    In factory mode , the LoopBack test dosnt't work
+    [Root Cause]
+    The registers about the LoopBack are incorrect
+    [Solution Description]
+    The MTK support the Patch (ALPS00273980(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P12))
+    [MTK Patch Info]
+    E-service ID：ALPS00273980
+
+commit 6f709327fa24c5e6ae2ca61ea3e48c7221716d16
+Merge: 2676c8e 0659ea8
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Thu Apr 26 19:00:05 2012 +0800
+
+    Merge branch 'my_private_tuna' into tuna_cu_ics_v1
+
+commit 0659ea81851927007a546deb0fd1656009e87ee0
+Author: Peng.Liu <Peng.Liu@ck-telecom.com>
+Date:   Thu Apr 26 18:47:06 2012 +0800
+
+    Summary in oneline
+    
+    [Type]
+    Feature
+    
+    [Product]
+    TUNA_cu_ics
+    
+    [Requirement]
+    Fuel Gauge ZCV Data Modify Way
+    
+    [Design Document]
+    N/A (the path on share folder, if there is such document)
+    
+    [Other Info]
+    cust_fuel_gauge.h  modify the value from the ZCV.xlsx  by Fuel Gauge ZCV Data Modify Way
+
+commit 2676c8e6b3505e3f93af94eed8ece92438bec82b
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Thu Apr 26 14:20:25 2012 +0800
+
+    add when incalling and Talking On not playringtone
+
+commit 8ecac324de9b7b2f5c11963c7876b06d07c91500
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Thu Apr 26 11:15:41 2012 +0800
+
+    add fix bug 8397 about Cann't enlarge page in the English.
+
+commit f2212ecf57a22e45cbc6eea3c220689bbeecc29a
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Thu Apr 26 10:25:23 2012 +0800
+
+    a patch for fixed bug 8225
+
+commit b0e6fdf7854a9dbb0113867f5e3df75c9647e45a
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Thu Apr 26 09:41:53 2012 +0800
+
+    [FixBug]Bug 8447 - [Call][Catch-225]No warning pop-up when answering the third call.
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    [Call][Catch-225]No warning pop-up when answering the third call.
+    
+    [Refer]
+    
+    [Solution Description]
+    when the fourth call come in, and user choose to answer the call, there will popup a dialog to prompt user to replace the current call.
+    
+    modified:   packages/apps/Phone/res/values-zh-rCN/strings.xml
+    modified:   packages/apps/Phone/res/values/strings.xml
+    modified:   packages/apps/Phone/src/com/android/phone/InCallTouchUi.java
+    modified:   packages/apps/Phone/src/com/android/phone/PhoneUtils.java
+
+commit 1c6f340ba29551bdd75c7d160fae87c5a3e2057f
+Merge: 09b5e10 11c822e
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed Apr 25 20:26:41 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 09b5e1045184f0373fafbdf348e22fcff188ec9f
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed Apr 25 20:24:35 2012 +0800
+
+    add fix bug 8545 about Some words missing at "Data connect".
+
+commit 11c822edee029aab685ef2ac6e7412268434e424
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed Apr 25 20:19:37 2012 +0800
+
+    Apply Patch ALPS00271906(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P11)
+    
+    In MTK patch description it says:
+    
+    "Don't set device type when ASD init"
+
+commit 2ec6005a9164f6124a4425acd990e84298320efa
+Merge: 876bea7 ef4035c
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed Apr 25 20:16:03 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit ef4035c46f87863c25b4eaf905b09727b6d31078
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed Apr 25 19:53:32 2012 +0800
+
+    add modify incallscreen ui
+
+commit 876bea788e290d63e549b5ebce22e663c38c017c
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed Apr 25 19:02:03 2012 +0800
+
+    Apply Patch ALPS00269704(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P7)
+    
+    Below is from MTK patch description file:
+    
+      [Title for Customer]
+      [Critical Patch] Vold must wait for nvram daemon ready before accessing DM.
+    
+      [Description]
+      In order to make sure that vold get the correct nvram data, vold should wait for nvram daemon ready
+    
+      [Impact]
+      (What would happened if not applying this patch?)
+      Some of the nvram data maybe corrupt after vod to access nvram data
+    
+      [Repeat Step]
+      1.The customer modify the str***ure of nvram data
+      2.the customer upgrade the nvram bin region
+      3.reboot the device
+    
+      [Root Cause]
+      Vold access nvram data before nvram daemon ready.
+    
+      [Solution]
+      Let vold to access nvram data after nvram daemon is ready
+
+commit 9959359e27a8056fbb7549f71833c303ccb3fed2
+Merge: 1796848 7676bad
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Wed Apr 25 19:00:38 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 1796848277dd275aef6fef87930ca31753d8ed46
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Wed Apr 25 17:08:23 2012 +0800
+
+    [fixBug] bug in the main menu have two search application
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    in the main menu have two search application
+    
+    [Solution Description]
+    modified:   build/target/product/common.mk
+
+commit aa3a678f1a423350f93dceb83c67387b30e0c38f
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Wed Apr 25 17:06:27 2012 +0800
+
+    [fixBug] bug8533 The video and FM voice are playing at the same time.
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    The video and FM voice are playing at the same time.
+    
+    [Solution Description]
+    modified:   mediatek/source/packages/FMRadio/src/com/mediatek/FMRadio/FMRadioActivity.java
+
+commit 7676bad353240e68282a8634f968454d35640ed3
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed Apr 25 18:53:58 2012 +0800
+
+    Apply Patch ALPS00269701(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P6)
+    
+    Below is from MTK patch description file:
+    
+      [Title for Customer]
+      Combined Message View dose not show correctly when there are 2 more accounts
+    
+      [Description]
+      Can not switch to combined view successfully when there are 2 more accounts.
+    
+      [Impact]
+      Combined view cannot be switched successfully when there are 2 more accounts.
+    
+      [Repeat Step]
+      1, import 2 email account.
+      2, in Message list UI select combine view in account selector.
+      3, You will find that the combine message view will exit after 2-3 seconds. That means the combine view cannot work correctly.
+    
+      [Root Cause]
+      Did not add combined mailbox information into accountsLoaderCursor in AccountSelectAdapter's Loader.
+    
+      [Solution]
+      Only avoid to get recent mailboxes when AccountId is invalid, instead of skip whole addAccountsToCusor.
+
+commit 933a65cb7ee4d29d654e7d3572ac3f7ae13053ee
+Merge: d970e81 c365073
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed Apr 25 18:50:18 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit d970e81ce5300ed46513af4c807ad7adf3b0e3dc
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed Apr 25 18:46:38 2012 +0800
+
+    Apply ALPS00269696(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P5)
+    Below is from MTK patch description file:
+    
+      [Title for Customer]
+      To fix a bug that after 3G disabled, the preferred network type option value may become blank
+    
+      [Description]
+      This patch would fix a bug that the preferred netwokr type option under "3G Service" may become blank when the 3G capability is set to "Off"
+    
+      [Impact]
+      (What would happened if not applying this patch?)
+      Although the preferred type is set to "GSM Only" when 3G is off, is showed blank and may confuse user.
+    
+      [Repeat Step]
+      1. Open "3G Service" settings and set 3G SIM to "Off"
+      2. Che***he preferred network type
+    
+      [Root Cause]
+      It is because the preferred network type mapping from SIM id to network type is incorrect.
+    
+      [Solution]
+      Correct the type mapping.
+
+commit c36507370a49cf90485ce0a2e16b134714e7ad70
+Merge: 5d5a77a 621435b
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed Apr 25 18:29:29 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 5d5a77a8a6402713b19d13a47cc2cb79a4132349
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed Apr 25 18:27:33 2012 +0800
+
+    add Setting up the other voice, music player will not continue to play
+
+commit 621435b70f4fa277aa83df79d7189bde7c847d20
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed Apr 25 17:22:57 2012 +0800
+
+    Turn off FM Transmitter, because hardware unsupport
+
+commit 001b97f0c8bb72a4c2ddce12d9ac91b129bb14c9
+Merge: 0e3ddd3 c64b476
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Wed Apr 25 17:09:24 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 0e3ddd30f16083a948e434ba49d2e9ab9fb23791
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Wed Apr 25 17:09:03 2012 +0800
+
+    fixed bug 8225
+
+commit c64b476b3d0239da8e3471006a855d732125a1d2
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Tue Apr 24 17:53:18 2012 +0800
+
+    add bug 8401 about  The music is not paused during previewing ringtone.
+
+commit f3e383474ea5fea13fd9cae771a2729815d1bb0d
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Tue Apr 24 14:09:02 2012 +0800
+
+    add fix bug 8190 about Modify files can't be correct name
+
+commit 7042aa5d0eb53f9725313db513bd65f52acfb50c
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Tue Apr 24 10:42:09 2012 +0800
+
+    fixed bug 8018
+
+commit 7a33d43867071e0d7eed757886eb6e8af3c142c2
+Merge: ed8734a 3d108ef
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Mon Apr 23 16:23:34 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 3d108ef09bf727b64761d4937a0a94d40da50385
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Mon Apr 23 16:21:28 2012 +0800
+
+    modify charging current in factory mode as 550mA.
+
+commit ed8734ad28092a0bc4cc53ff417ec73dd2b256b5
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Mon Apr 23 15:38:29 2012 +0800
+
+    [FixBug]Bug 8357 - [CATCH-5712][MultiMedia]The audio file can be uesd as ringtone in Silent Mode
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    [MultiMedia]The audio file can be uesd as ringtone in Silent Mode
+    
+    [Refer]
+    
+    [Solution Description]
+    modified:   packages/apps/Music/src/com/android/music/MediaPlaybackActivity.java
+    modified:   packages/apps/Music/src/com/android/music/TrackBrowserActivity.java
+
+commit f0483baac7936ffe28b370851c5ec18aee332b5e
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Mon Apr 23 14:08:55 2012 +0800
+
+    add fix bug 7933 about The default alarm tone is not correct during ongoing call.
+
+commit 2164885e8656d99d2d29b01f12fec668d3ed7a6e
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Mon Apr 23 13:59:15 2012 +0800
+
+    [FixBug]bug 8249, [Call][CATCH-6854]No prompt box when make a video call to a "china mobile" contact
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    ]No prompt box when make a video call to a "china mobile" contact
+    
+    [Refer]
+    
+    [Solution Description]
+     modified:   packages/apps/Phone/src/com/android/phone/VTInCallScreen.java
+
+commit b61170d89603402e037fc759c1e06ed602d6c971
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Mon Apr 23 11:58:33 2012 +0800
+
+    add fix bug 8219 about Calendar notification is not display completely.
+
+commit 785faaaa5405779044e07de02bcbde645795a0ae
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Mon Apr 23 09:20:43 2012 +0800
+
+    fix bug 8136 about The server address is 'gmail.com' when adding google account
+
+commit a56673532ba562ee5b5cee2f1c643c1b26a718c5
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri Apr 20 17:44:53 2012 +0800
+
+    add fix bug 8297 about No pop up when deleting the playlist.
+
+commit de57e6733ee0f1244b3bd273f3e6de7605de995e
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Fri Apr 20 16:54:01 2012 +0800
+
+    add fix bug8263 and bug 8222 about Can't input more than 13 characters when add email address to contact.
+
+commit 6b20bc42cddfec4baf7835c104fc5f237f5b5c25
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Fri Apr 20 11:16:20 2012 +0800
+
+    [FixBug]Bug 7989 - [Bluetooth Keyboard][CKT-C519]The Profiles is selected when the Bluetooth Keyboard does not connect with TUNA
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    The Profiles is selected when the Bluetooth Keyboard does not connect with TUNA
+    
+    [Refer]
+    
+    [Solution Description]
+    modified:   packages/apps/Settings/src/com/android/settings/bluetoothangel/DeviceProfilesSettings.java
+
+commit 2f40fbb7e8360f02a124f5e80d54b3e1bf6f657f
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Thu Apr 19 19:16:22 2012 +0800
+
+    Use OV tuned new driver for ov5640
+    Note: There is still problem with OV5640
+
+commit ab88a382514ee72dfe2882ce697374601bb41b48
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Thu Apr 19 19:13:10 2012 +0800
+
+    Integrated MTK provided OV5647 driver code.
+    Note: use ov5647_mipi_raw to replace ov5647_raw
+
+commit 00bf59c983140517e20d5b09c8b8901bf34fba1f
+Merge: 1b5c403 8004d4c
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Thu Apr 19 16:53:06 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 1b5c403f9e70f84af26165d421d713ab04e41be9
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Thu Apr 19 16:51:34 2012 +0800
+
+    fixed bug 8129
+
+commit 8004d4c59a62e2f21158134fa9aa2a364a9a92c8
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Thu Apr 19 15:01:06 2012 +0800
+
+    add fix bug 8190 about [File manager][CKT-New]No pop-up 'incorrect file name...' when renaming a filename to '...'
+
+commit 4a24c3ef255e57c43e761e1cc4b59006e6f3d7d1
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Thu Apr 19 14:43:21 2012 +0800
+
+    fixed Bug 8009
+
+commit ea69a0b03c4f1cfc1b4faa0e76f8c98dd9d65875
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed Apr 18 16:39:27 2012 +0800
+
+    Use CATCH hi704 code
+
+commit 11db0ecd9da189abc122aa20fe51f22926789079
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Wed Apr 18 18:29:20 2012 +0800
+
+    [fixBug] bug7992 There should be warning note "Empty" if FM channel list is empty.
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    There should be warning note "Empty" if FM channel list is empty.
+    BTW, fix the bug, when save a  station , this station cloud not be remove.
+    
+    [Solution Description]
+    modified:   mediatek/source/packages/FMRadio/res/values-zh-rCN/strings.xml
+    modified:   mediatek/source/packages/FMRadio/res/values/strings.xml
+    modified:   mediatek/source/packages/FMRadio/src/com/mediatek/FMRadio/FMRadioActivity.java
+    modified:   mediatek/source/packages/FMRadio/src/com/mediatek/FMRadio/FMRadioFavorite.java
+
+commit a7c319cd37c6e0ae5472152028a511178ad3fa04
+Merge: 2141dc2 da3a217
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed Apr 18 16:50:15 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 2141dc2a8e8389d57fa7ea90414b4e4d07bba9f1
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed Apr 18 16:48:18 2012 +0800
+
+    add fix bug 8169 about [FM][CKT-New]Sound can be heard after unplugging earphone during searching.
+
+commit da3a2172a847c778989fae5150ecf564343eadb2
+Merge: a56f843 109e0d9
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Wed Apr 18 16:11:27 2012 +0800
+
+    Merge branch 'robin' into tuna_cu_ics_v1
+
+commit 109e0d9b8a96a330b9694b87209958a056629f2e
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Wed Apr 18 16:09:52 2012 +0800
+
+    fix bug 8115
+
+commit a56f8434c6f0df6f944bfde2325dbd3cbeb67507
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Wed Apr 18 15:09:21 2012 +0800
+
+    [FixBug][Brower][CKT-C695]Can't be saved when editing more than 100 characters into the label of bookmark.
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    Can't be saved when editing more than 100 characters into the label of bookmark.
+    [Refer]
+    
+    [Solution Description]
+    modified:   packages/apps/Browser/src/com/android/browser/AddBookmarkPage.java
+
+commit 8777137087391069b702f1060b1c3d00caf5394e
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Wed Apr 18 14:51:14 2012 +0800
+
+    fix bug 7787
+
+commit 42036e1a9182debd7271b1acdc9e36984361bfa6
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Wed Apr 18 14:33:08 2012 +0800
+
+    Revert "fix bug ./mk ckt75_cu_ics mm frameworks/base/packages/SystemUI"
+    
+    This reverts commit 23a8f4cebcd872659786821f5205e5874f021e48.
+
+commit 23a8f4cebcd872659786821f5205e5874f021e48
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Wed Apr 18 14:31:11 2012 +0800
+
+    fix bug ./mk ckt75_cu_ics mm frameworks/base/packages/SystemUI
+
+commit 5482fa9f7fde962eb30661e2036da58671b6a4f5
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed Apr 18 13:57:29 2012 +0800
+
+    add fix bug 7922 about [FM][CKT-New]Sound can be heard after entering FM if not insert earphone.
+
+commit d3ac82e069d735910912f60ee7439deca4b3a6c5
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed Apr 18 12:32:45 2012 +0800
+
+    add fix bug 7755 about [S00A][Sound Recorder][CKT-New]The phone can't record sound after choosing high
+
+commit 867aacbf777c277b59f1a1f1570700e7cdff57be
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed Apr 18 09:17:17 2012 +0800
+
+    add update bug 7928
+
+commit 6a7889c64c9e90ea850e9d8b72c9f4488d397133
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Tue Apr 17 16:25:56 2012 +0800
+
+    add fix bug 8136 about [Account][CKT-New]The server address is 'gmail.com' when adding google account.
+
+commit ae970a424438ff742eb07989cae9dccda98af54a
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Tue Apr 17 15:00:13 2012 +0800
+
+    complete ALPS00266861(For_CKT75_CU_ICS_ALPS.ICS.MP.V1_P1) for usb mass storage
+
+commit 2d8dd7b142f94a17f4e64496292e5110bbd8edef
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Tue Apr 17 14:12:23 2012 +0800
+
+    add fix bug 7928 about [FileMg][CKT-New] Advice rename the sdcard and sdcard2.
+
+commit 11b1effa68f576855ae1987e171a9bd9a7e78cc6
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Tue Apr 17 10:49:51 2012 +0800
+
+    add fix bug 8104 about [Message][CKT-New]SMS becomes MMS automatically after typing strings beyond 3 pages.
+
+commit 5dd4131d6af7cda7dea28ba73f70ee8aedc41117
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Tue Apr 17 10:40:18 2012 +0800
+
+    [fixBug] bug7814 Cannot search the music whose name is less than 3 characters via search option.
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    Cannot search the music whose name is less than 3 characters via search option.
+    
+    [Solution Description]
+    modified:   packages/apps/Music/res/xml/searchable.xml
+
+commit 8ff88599b45a7cace870b1efe20c7e1108688d63
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Mon Apr 16 17:12:57 2012 +0800
+
+    adjust audio volume
+
+commit 12ab3a5abb0c5a0f71d1f3cb217692145b20f966
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Mon Apr 16 17:11:16 2012 +0800
+
+    support USB mass storage
+
+commit 9ef90ca2b5170af91e9abbf1be1c3cf5b9e2e314
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Mon Apr 16 17:03:21 2012 +0800
+
+    support USB mass storage
+
+commit 31b089d74942a3d6372090f84759dd6c97801e75
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Fri Apr 13 17:18:03 2012 +0800
+
+    fix the bug 8070 that Audio Recorder crash
+
+commit 2cd844310dafb56285d30f1ad40fd33a412f5663
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Mon Apr 16 16:58:24 2012 +0800
+
+    resolve the problem that recorder crashed
+
+commit 1af2295b008f7f93a773fea8faec8076a99473d5
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Mon Apr 16 16:01:45 2012 +0800
+
+    add fix bug 7819 about [Search][CKT-New] Can not go to Search View via pressing Search Key under status view.
+
+commit b16ee10fb6bcda8a132472369dea9bb675c922e7
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Mon Apr 16 12:18:02 2012 +0800
+
+    [Fix Bug]Bug 7883 - [CKT-standard][CKT-New] No vibrate during booting.
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    add vibration when uboot start up, the vibration time is 2ms
+    
+    [Refer]
+    
+    [Solution Description]
+    modified:   bootable/bootloader/uboot/arch/arm/lib/board.c
+    modified:   mediatek/platform/mt6575/uboot/mt6575_bat.c
+
+commit f12e0ea5467b02677937611fa13d9eaac1df6e9c
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Mon Apr 16 11:26:36 2012 +0800
+
+    commit flashlight feature.
+
+commit 8d65e04ded72d26cecd57698872e7b93a8d7a4f1
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Fri Apr 13 14:45:18 2012 +0800
+
+    Remove Gallery2 App in user mode because there is a better one in GMS .
+
+commit b6c7c5d993e7257635c2c6feb5e6675342b027c1
+Merge: 162fd2d d5e1abb
+Author: ckt <ckt@ck-telecom.com>
+Date:   Fri Apr 13 09:36:02 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 162fd2d84e3e75379fc6532afc0cd9f829766ada
+Author: ckt <ckt@ck-telecom.com>
+Date:   Fri Apr 13 09:35:21 2012 +0800
+
+    Modify the key feedback strength
+
+commit d5e1abb94730471526693d7199e9ad7b6247d3e3
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Thu Apr 12 17:34:57 2012 +0800
+
+    add fix bug 8012 about [People][CKT-New] Warning note should pop up just after inputing extra SIM contact name character
+
+commit 5f0c01aa661963cf39f2e2188fed7007a4c09587
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Wed Apr 11 19:11:14 2012 +0800
+
+    add APKInstaller
+
+commit 294f6d3760e67f798c31adfbaef08dbd5da093a0
+Merge: 858ff32 5cbf090
+Author: ckt <ckt@ck-telecom.com>
+Date:   Wed Apr 11 16:22:45 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 858ff323184cdbc33b26ce3447c5a4c53561e98c
+Author: ckt <ckt@ck-telecom.com>
+Date:   Wed Apr 11 16:20:00 2012 +0800
+
+    [fixBug] bug7914  the default inputMethod keypress vibration effect is not obvious.
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    the default inputMethod keypress vibration effect is not obvious.
+    
+    [Solution Description]
+    remove the limitation of the vibration time check
+    reset the LatinInput method vibration default value
+
+commit 5cbf09069f629ede4efc73fbc6f60a3a625b57ba
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed Apr 11 15:53:41 2012 +0800
+
+    add fix bug 7779 about [S00A][Phonebook][CKT-New]The invalid contact be added to SIM card
+
+commit 87432b4d2ff8f4a559734579e134d0e1686dfef0
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Wed Apr 11 14:30:27 2012 +0800
+
+    [FixBug]Bug 7935 - [File manager][CKT-New]The file can not be viewed after renaming the file to largest string.
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    this is caused by  windows of limiting the file length.
+    
+    [Refer]
+    rename the folder or create the folder and file
+    
+    [Solution Description]
+    modified:   mediatek/source/packages/FileManager/src/com/mediatek/filemanager/FileManagerOperationActivity.java
+
+commit 57358f1c7e2aa309399046f15456e6f264e1e91a
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Wed Apr 11 12:52:54 2012 +0800
+
+    fix bug 7702 about [Phonebook][CKT-New] Can not import contacts from sdcard2
+
+commit 1f11d962c0ddd4eb084e505cee01ce5219a77c32
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed Apr 11 12:52:12 2012 +0800
+
+    MSENSOR I2C address should be 0x60
+
+commit 0a4aeaf84c056d26637deaea52d1b788a0e8b54e
+Merge: ebd6486 3846bc1
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed Apr 11 11:34:49 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit ebd6486c82bf436378e1f693a98a7b38eae64e36
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Wed Apr 11 10:30:18 2012 +0800
+
+    Fix M-Sensor Driver
+
+commit 3846bc1646c41f8157bd25eaf76b5146beb2e4ed
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Wed Apr 11 11:25:38 2012 +0800
+
+    Modify AC charging current as 550mA.
+
+commit 76ebc9bee0e6d0750ebbfa411421b4394bfa69c4
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Tue Apr 10 18:03:31 2012 +0800
+
+    [FixBug]Bug 7783 [Sound Recorder][CKT-New]The time of recorded file still display as 24h after changing time format to 12h format.
+    
+    [Product]
+    TUNA
+    
+    [Description]
+    The time of recorded file still display as 24h after changing time format to 12h format.
+    [Refer]
+    
+    [Solution Description]
+    
+    modified:packages/apps/SoundRecorder/src/com/android/soundrecorder/Recorder.java
+    modified:   packages/apps/SoundRecorder/src/com/android/soundrecorder/SoundRecorder.java
+
+commit f1fc73f9ab006f96578f15f5b45be2eba8c87576
+Merge: 10adc44 bed41d2
+Author: ckt <ckt@ck-telecom.com>
+Date:   Tue Apr 10 17:34:46 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 10adc4475e954d56f3def2fefe269f2bf3cb31d4
+Author: ckt <ckt@ck-telecom.com>
+Date:   Tue Apr 10 17:34:14 2012 +0800
+
+    Revert to ICS pre-release version
+
+commit bed41d254ee4b292f049b6c0ff0baa1d8ebe9e83
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Tue Apr 10 16:40:26 2012 +0800
+
+    [fixBug] bug7862 No warning pop up when launching FM without headset.
+    
+    [Product]
+    CATCH
+    
+    [Description]
+    No warning pop up when launching FM without headset.
+    
+    [Solution Description]
+    new file:   mediatek/source/packages/FMRadio/res/drawable-hdpi/button.9.png
+    new file:   mediatek/source/packages/FMRadio/res/layout/layout_dialog_edittext.xml
+    modified:   mediatek/source/packages/FMRadio/res/values/strings.xml
+    modified:   mediatek/source/packages/FMRadio/src/com/mediatek/FMRadio/FMRadioActivity.java
+
+commit 48875b8b71eadc47c003ee98dfb9ad350d8b7bfe
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Tue Apr 10 14:28:28 2012 +0800
+
+    Modify ALSPS's INT from EINT4 to EINT2 for HW V1.1
+
+commit e601ff4cb62f839ff7f174c3c132dc2672d36d77
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Tue Apr 10 11:02:29 2012 +0800
+
+    commit the modification in HW V1.1 for GPS_SYNC and ALSPS EINT.
+
+commit 6e667ee7eb0308a42591fc6b0ccd0c6612f8af33
+Merge: c4b4977 5883c43
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Mon Apr 9 19:58:26 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit c4b49779e4b31dff079801d08c0951d157dc2af6
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Mon Apr 9 19:53:32 2012 +0800
+
+    commit missed file for entering EngineeringMode by "*#*#13646633#*#*".
+
+commit 5883c4394ffb96e86559a245a8f32cf131154e71
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Mon Apr 9 14:30:10 2012 +0800
+
+    [FixBug]Bug 7781 - [S00A][Music Player][CKT-New]Music player is still working while the recorded sound is playing.
+    
+    [Product]
+    TUNA_S00A
+    
+    [Description]
+    Music player is still working while the recorded sound is playing.
+    [Refer]
+    About all of controlling  Music play and paused
+    
+    [Solution Description]
+    when the recording music is on, close the back music.when leave the soundrecorder,send the broadcast to play the back music continully.
+    modified:   packages/apps/SoundRecorder/src/com/android/soundrecorder/SoundRecorder.java
+
+commit 76070ac3d1b7799903fd9a650374c1417edebf01
+Merge: 11ae843 179caa3
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Mon Apr 9 12:08:06 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit 11ae8432ac7f5e106a2ab5238bdf473a21a988f7
+Author: Robin Hu <bin.hu@ck-telecom.com>
+Date:   Mon Apr 9 12:07:18 2012 +0800
+
+    set default brightness to 90% as CKY Rules#28 and set the default radio rate to 98.7mHZ in FM
+
+commit 179caa30334ae5dce82173c8c0a5e6fe7bd5431c
+Author: Yadong Huang <yadong.huang@ck-telecom.com>
+Date:   Mon Apr 9 10:37:35 2012 +0800
+
+    change Photos attribute information for CKT standard
+    
+    [changefile]
+    modified:   mediatek/custom/common/hal/camera/camera/config.cpp
+
+commit fe42d377d2400b7077cdadfc6f0b38433c020561
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Fri Apr 6 18:13:44 2012 +0800
+
+    modifile the model name as CKT standrad req.
+
+commit 66ff1239bd274cc8953ce7ae4fa5850d9eb510c1
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Fri Apr 6 09:40:45 2012 +0800
+
+    Modify modem version of "About Phone" in line with CKT Standard.
+
+commit cfa870e361d63c5deb0f4b12ea77af67dc293414
+Merge: ca60862 4b55ec8
+Author: ckt <ckt@ck-telecom.com>
+Date:   Thu Apr 5 23:19:21 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit ca608625f182675dd8cbd6362005afa7179b5743
+Author: ckt <ckt@ck-telecom.com>
+Date:   Thu Apr 5 23:18:00 2012 +0800
+
+    Fix recovery no action
+    1.remove the evbit maskt
+    2.adjust the key for menu display toggle
+
+commit 4b55ec8291b72ce3b709eaf833840c154c0f1949
+Author: saxon.wu <songbai.wu@ck-telecom.com>
+Date:   Thu Apr 5 17:10:55 2012 +0800
+
+    default settings, close GPS for CKT standard
+
+commit 3db99b788a951a7ff04f5940aa5f535c34419fec
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Thu Apr 5 16:58:44 2012 +0800
+
+    Modify for CKT Standard about FM testing.
+
+commit e6ecc0bfa287f341206ad769472d4599c109a2e7
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Thu Apr 5 15:05:45 2012 +0800
+
+    Modify for ckt standard: to show device id when adb devices
+
+commit b1333dc2ce0ac96b762e29ab2d9e727cc45c16c6
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Thu Apr 5 15:01:26 2012 +0800
+
+    Fix current noise issue when lcd's brightnees is low.
+
+commit aa7056abbcd87b1e06098e7fd69837776ed1121b
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Thu Apr 5 13:23:49 2012 +0800
+
+    Solve the flip mirror issue of camera 5647
+
+commit 52fb8db80c6f22621ab181c263fdce515f55e90f
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Mon Apr 2 20:56:55 2012 +0800
+
+    Modify "*#*#3646633#*#*" to "*#*#13646633#*#*" for entering engineering mode in line with basic ckt standard.
+
+commit 3d43e53db7689618144884d75df64f9fce1a9d44
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Mon Apr 2 16:55:11 2012 +0800
+
+    Commit For_CKT75_CU_ICS_11AMDW1150SP_V13_P1(ALPS00261985) and integrate RF para. from TUNA_GSM4B_WB1_B2_B5_201203161349.csm
+
+commit e19a272d834205790de44d83ef9afbf132d3b2e5
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Mon Apr 2 13:43:48 2012 +0800
+
+    Modify defualt time.
+
+commit 32d99dc2da011be7956c1012d8ad58c5151cacd5
+Author: Gou Runqiang <runqiang.gou@ck-telecom.com>
+Date:   Mon Apr 2 13:21:19 2012 +0800
+
+    Add auto-answer function for blank card testing.
+
+commit 6614fa26c23991beecc6ca57bb6a4c5dd1b29adb
+Merge: d45f2dc bb93e59
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Sun Apr 1 18:30:11 2012 +0800
+
+    Merge branch 'tuna_cu_ics_v1' of 10.120.10.101:/home/ckt/work/tuna_ics_repo/tuna_cu_ics into tuna_cu_ics_v1
+
+commit d45f2dc18c6e763a902e737d79fbb321a142572b
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Sun Apr 1 18:29:21 2012 +0800
+
+    Fix the loading issue when TP is not connected.
+    Remove 2 michros;
+
+commit bb93e59933ff07231a7431851837a53637da8e22
+Author: Berton.zhu <guanjun.zhu@ck-telecom.com>
+Date:   Sun Apr 1 17:36:43 2012 +0800
+
+    add ckt standard about version system
+
+commit f7f071ad050c6f94f4634b0d9aaa1941820f02d0
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Fri Mar 30 22:59:34 2012 +0800
+
+    In OV5647 Sensor driver, return 0xFFFFFFFF if reading ID fail
+
+commit 0ec6e8264cf4b9c4230b0307a0bf5c7e2e8565cf
+Author: Hawk Wang <hao.wang@ck-telecom.com>
+Date:   Fri Mar 30 22:42:44 2012 +0800
+
+    Squashed commit of the following:
+    
+        Add ov5640_mipi_yuv as backup sensor
+        Import OV5647 MIPI RAW
+        And adjust the mirror/flip of ov5647
+
+commit 777493e138ed28376147cd976e20701a7d5998f2
+Author: ckt <ckt@ck-telecom.com>
+Date:   Fri Mar 30 11:38:24 2012 +0800
+
+    Bitorder for sensor: 0
+    Orietenation for sub imgsensor: 0
+
+commit a030bdec451e5642f33ca23142b9421a84c59a27
+Author: ckt <ckt@ck-telecom.com>
+Date:   Thu Mar 29 21:18:17 2012 +0800
+
+    Add gsensor custom file
+
+commit 84cd910ebe7345f00e5ce2dbedffc05ed73aa61c
+Author: ckt <ckt@ck-telecom.com>
+Date:   Thu Mar 29 20:02:49 2012 +0800
+
+    remove intermediate files
+
+commit 6ac3a11bcd593ae2e343ea13f6340da4182a2a9e
+Author: ckt <ckt@ck-telecom.com>
+Date:   Thu Mar 29 19:54:57 2012 +0800
+
+    Set factory mode key to volumeup
+    Revert front camera orientation
+    Use Peak flash light
+    Revert front camera driver
+    Change ioctl to unlocked_ioctl of msensor
+
+commit f075144cef1ad1251368f15ca8ece7c555ca063d
+Author: ckt <ckt@ck-telecom.com>
+Date:   Thu Mar 29 16:39:20 2012 +0800
+
+    porting bsp
+
+commit 6b789ecad2665fac10b4b0043fe0231767e6cadc
+Author: ckt <ckt@ck-telecom.com>
+Date:   Thu Mar 29 13:25:29 2012 +0800
+
+    initial commmit for ICS MP V1

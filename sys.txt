@@ -1,0 +1,12 @@
+total 0
+drwxr-xr-x  2 root root 0 2012-09-10 20:13 block/
+drwxr-xr-x 17 root root 0 2012-09-10 19:47 bus/
+drwxr-xr-x 41 root root 0 2012-09-10 19:47 class/
+drwxr-xr-x  4 root root 0 2012-09-10 19:47 dev/
+drwxr-xr-x  8 root root 0 2012-09-10 19:47 devices/
+drwxr-xr-x  4 root root 0 2012-09-10 19:47 firmware/
+drwxr-xr-x  5 root root 0 2012-09-10 19:47 fs/
+drwxr-xr-x  2 root root 0 2012-09-10 20:13 hypervisor/
+drwxr-xr-x  6 root root 0 2012-09-10 19:47 kernel/
+drwxr-xr-x 84 root root 0 2012-09-10 19:47 module/
+drwxr-xr-x  2 root root 0 2012-09-10 19:47 power/
